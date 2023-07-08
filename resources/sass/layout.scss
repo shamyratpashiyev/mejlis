@@ -13,10 +13,12 @@ header {
                 width: var(--default_width);
                 height: 80px;
                 justify-content: space-between;
+                margin-top: 10px;
 
                 .logo_wrapper{
                     align-items: center;
                     column-gap: 10px;
+                    text-decoration: none;
 
                     .logo_img{
                         width: 80px;
@@ -36,12 +38,41 @@ header {
 
                     .lang_wrapper{
                         align-items: center;
+                        justify-content: center;
                         column-gap: 8px;
+                        position: relative;
+                        cursor: pointer;
 
                         .current_lang{
                             color: var(--default_white);
                             font-family: 'OpenSansRegular', sans-serif;
                             font-size: 16px;
+                        }
+
+                        .lang_menu{
+                            display: none;
+                        }
+
+                        &.active{
+
+                            .lang_menu{
+                                display: flex;
+                                position: absolute;
+                                top: 100%;
+                                background-color: var(--default_white);
+                                width: 100%;
+                                align-items: center;
+                                row-gap: 5px;
+                                box-sizing: border-box;
+                                padding: 5px 0;
+                                margin-top: 5px;
+
+                                span{
+                                    font-family: 'OpenSansRegular', sans-serif;
+                                    font-size: 16px;
+                                    color: var(--text_black_default);
+                                }
+                            }
                         }
                     }
 
@@ -51,6 +82,7 @@ header {
                         position: relative;
                         justify-content: space-between;
                         z-index: 99;
+                        cursor: pointer;
 
                         span{
                             width: 100%;
@@ -59,7 +91,7 @@ header {
                             border-radius: 10px;
                             position: absolute;
                             top: 50%;
-                            transition: all 1s ease-in;
+                            transition: all 0.5s ease-in;
 
                             &::after, &::before{
                                 content: '';
@@ -72,7 +104,23 @@ header {
                             }
 
                             &::before{
-                                transform: translateY(-0.5em) !important;
+                                transform: translateY(-0.5em);
+                            }
+                        }
+
+                        &.active {
+                            
+                            span{
+
+                                &::before{
+                                    transform: rotateZ(-45deg) translate(3px, -5px);
+                                    width: 50%;
+                                }
+                                
+                                &::after{
+                                    transform: rotateZ(45deg) translate(3px ,5px);
+                                    width: 50%;
+                                }
                             }
                         }
 

@@ -7,10 +7,12 @@ header .upper_block .main {
   header .upper_block .main .topbar {
     width: var(--default_width);
     height: 80px;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: 10px; }
     header .upper_block .main .topbar .logo_wrapper {
       align-items: center;
-      column-gap: 10px; }
+      column-gap: 10px;
+      text-decoration: none; }
       header .upper_block .main .topbar .logo_wrapper .logo_img {
         width: 80px;
         height: 80px; }
@@ -23,17 +25,38 @@ header .upper_block .main {
       column-gap: 22px; }
       header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper {
         align-items: center;
-        column-gap: 8px; }
+        justify-content: center;
+        column-gap: 8px;
+        position: relative;
+        cursor: pointer; }
         header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper .current_lang {
           color: var(--default_white);
           font-family: 'OpenSansRegular', sans-serif;
           font-size: 16px; }
+        header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper .lang_menu {
+          display: none; }
+        header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper.active .lang_menu {
+          display: flex;
+          position: absolute;
+          top: 100%;
+          background-color: var(--default_white);
+          width: 100%;
+          align-items: center;
+          row-gap: 5px;
+          box-sizing: border-box;
+          padding: 5px 0;
+          margin-top: 5px; }
+          header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper.active .lang_menu span {
+            font-family: 'OpenSansRegular', sans-serif;
+            font-size: 16px;
+            color: var(--text_black_default); }
       header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper {
         width: 30px;
         height: 20px;
         position: relative;
         justify-content: space-between;
-        z-index: 99; }
+        z-index: 99;
+        cursor: pointer; }
         header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span {
           width: 100%;
           height: 2px;
@@ -41,7 +64,7 @@ header .upper_block .main {
           border-radius: 10px;
           position: absolute;
           top: 50%;
-          transition: all 1s ease-in; }
+          transition: all 0.5s ease-in; }
           header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span::after, header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span::before {
             content: '';
             height: 2px;
@@ -51,7 +74,13 @@ header .upper_block .main {
             transform: translateY(0.5em);
             transition: inherit; }
           header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span::before {
-            transform: translateY(-0.5em) !important; }
+            transform: translateY(-0.5em); }
+        header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper.active span::before {
+          transform: rotateZ(-45deg) translate(3px, -5px);
+          width: 50%; }
+        header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper.active span::after {
+          transform: rotateZ(45deg) translate(3px, 5px);
+          width: 50%; }
   header .upper_block .main .content {
     width: 100%;
     height: max-content;
