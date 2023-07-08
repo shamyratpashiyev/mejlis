@@ -178,7 +178,7 @@ header .lower_block {
   justify-content: center;
   box-sizing: border-box;
   padding: 20px 0;
-  background-color: var(--topbar_background); }
+  background-color: var(--sky_blue); }
   header .lower_block .inner_wrapper {
     width: var(--default_width);
     justify-content: space-between; }

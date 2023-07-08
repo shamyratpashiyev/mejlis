@@ -7,6 +7,7 @@
     <title>Mejlis</title>
     <link rel="stylesheet" href="{{ asset('css/master.css') }}">
     <link rel="stylesheet" href="{{ asset('css/layout.css') }}">
+    @stack('styles')
     <script src="{{ asset('js/jquery.min.js') }}"></script>
 </head>
 <body>
