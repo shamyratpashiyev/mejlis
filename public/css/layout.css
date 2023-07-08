@@ -172,3 +172,49 @@ header .upper_block .main {
             color: var(--default_white);
             font-family: 'OpenSansRegular', sans-serif;
             font-size: 16px; }
+
+header .lower_block {
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px 0;
+  background-color: var(--topbar_background); }
+  header .lower_block .inner_wrapper {
+    width: var(--default_width);
+    justify-content: space-between; }
+    header .lower_block .inner_wrapper .nav_block {
+      column-gap: 50px; }
+      header .lower_block .inner_wrapper .nav_block .nav_button_wrapper {
+        text-decoration: none;
+        cursor: pointer;
+        box-sizing: border-box;
+        padding: 0 10px; }
+        header .lower_block .inner_wrapper .nav_block .nav_button_wrapper span {
+          font-family: 'OpenSansSemiBold', sans-serif;
+          font-size: 16px;
+          color: var(--default_white); }
+    header .lower_block .inner_wrapper .hamburger_block {
+      width: 30px;
+      height: 20px;
+      position: relative;
+      justify-content: space-between;
+      z-index: 99;
+      cursor: pointer; }
+      header .lower_block .inner_wrapper .hamburger_block span {
+        width: 100%;
+        height: 2px;
+        background-color: var(--default_white);
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        transition: all 0.5s ease-in; }
+        header .lower_block .inner_wrapper .hamburger_block span::after, header .lower_block .inner_wrapper .hamburger_block span::before {
+          content: '';
+          height: 2px;
+          width: 100%;
+          position: absolute;
+          background-color: var(--default_white);
+          transform: translateY(0.5em);
+          transition: inherit; }
+        header .lower_block .inner_wrapper .hamburger_block span::before {
+          transform: translateY(-0.5em); }

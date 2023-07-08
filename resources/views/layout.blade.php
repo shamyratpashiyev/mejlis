@@ -75,6 +75,42 @@
                 </div>
             </div>
         </div>
+        <div class="lower_block flex_row">
+            <div class="inner_wrapper flex_row">
+                <div class="nav_block flex_row">
+                    <a class="nav_button_wrapper hover_underline" href="#">
+                        <span>Baş sahypa</span>
+                    </a>
+
+                    <div class="nav_button_wrapper hover_underline">
+                        <span>Mejlis hakynda</span>
+                    </div>
+
+                    <div class="nav_button_wrapper hover_underline">
+                        <span>Düzümi we gurluşygy</span>
+                    </div>
+
+                    <div class="nav_button_wrapper hover_underline">
+                        <span>Kanunçylyk</span>
+                    </div>
+
+                    <div class="nav_button_wrapper hover_underline">
+                        <span>Halkara</span>
+                    </div>
+
+                    <div class="nav_button_wrapper hover_underline">
+                        <span>Habarlar</span>
+                    </div>
+
+                    <div class="nav_button_wrapper hover_underline">
+                        <span>Türkmenistan</span>
+                    </div>
+                </div>
+                <div class="hamburger_block">
+                    <span></span>
+                </div>
+            </div>
+        </div>
     </header>
 
     @yield('content')
