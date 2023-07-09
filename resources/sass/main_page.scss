@@ -352,3 +352,72 @@
         }
     }
 }
+
+.legislation_section{
+    width: 100%;
+    justify-content: center;
+    color: var(--text_black_default);
+    margin: 50px 0;
+
+    .inner_wrapper{
+        width: var(--default_width);
+
+        .title{
+            font-family: 'OpenSansExtraBold', sans-serif;
+            font-size: 30px;
+            margin: 0 0 15px 0;
+            text-transform: uppercase;
+        }
+
+        .content_row{
+            justify-content: space-between;
+
+            .legislation_container{
+                width: 340px;
+                height: 245px;
+                box-sizing: border-box;
+                padding: 10px 15px;
+                justify-content: space-between;
+
+                .upper_block{
+                    align-items: center;
+                    row-gap: 13px;
+
+                    .icon{
+                        width: 113px;
+                        height: 19px;
+                    }
+
+                    .content{
+                        font-family: 'OpenSansSemibold', sans-serif;
+                        font-size: 16px;
+                        margin: 0;
+                        text-transform: uppercase;
+                        line-clamp: 7;
+                        -webkit-line-clamp: 7;
+                    }
+                }
+
+                .bottom_row{
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    .date{
+                        font-family: 'OpenSansRegular', sans-serif;
+                        font-size: 14px;
+                        color: var(--text_gray);
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: var(--sky_blue);
+                        align-items: center;
+                        column-gap: 10px;
+                        border-bottom: 1px solid var(--sky_blue);
+                    }
+                }
+            }
+        }
+    }
+}

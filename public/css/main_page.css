@@ -242,3 +242,51 @@
           outline: none;
           height: 1px;
           margin: 15px 0; }
+
+.legislation_section {
+  width: 100%;
+  justify-content: center;
+  color: var(--text_black_default);
+  margin: 50px 0; }
+  .legislation_section .inner_wrapper {
+    width: var(--default_width); }
+    .legislation_section .inner_wrapper .title {
+      font-family: 'OpenSansExtraBold', sans-serif;
+      font-size: 30px;
+      margin: 0 0 15px 0;
+      text-transform: uppercase; }
+    .legislation_section .inner_wrapper .content_row {
+      justify-content: space-between; }
+      .legislation_section .inner_wrapper .content_row .legislation_container {
+        width: 340px;
+        height: 245px;
+        box-sizing: border-box;
+        padding: 10px 15px;
+        justify-content: space-between; }
+        .legislation_section .inner_wrapper .content_row .legislation_container .upper_block {
+          align-items: center;
+          row-gap: 13px; }
+          .legislation_section .inner_wrapper .content_row .legislation_container .upper_block .icon {
+            width: 113px;
+            height: 19px; }
+          .legislation_section .inner_wrapper .content_row .legislation_container .upper_block .content {
+            font-family: 'OpenSansSemibold', sans-serif;
+            font-size: 16px;
+            margin: 0;
+            text-transform: uppercase;
+            line-clamp: 7;
+            -webkit-line-clamp: 7; }
+        .legislation_section .inner_wrapper .content_row .legislation_container .bottom_row {
+          justify-content: space-between;
+          align-items: center;
+          width: 100%; }
+          .legislation_section .inner_wrapper .content_row .legislation_container .bottom_row .date {
+            font-family: 'OpenSansRegular', sans-serif;
+            font-size: 14px;
+            color: var(--text_gray); }
+          .legislation_section .inner_wrapper .content_row .legislation_container .bottom_row a {
+            text-decoration: none;
+            color: var(--sky_blue);
+            align-items: center;
+            column-gap: 10px;
+            border-bottom: 1px solid var(--sky_blue); }
