@@ -247,3 +247,108 @@
         }
     }
 }
+
+.deputies_section{
+    width: 100%;
+    height: 692px;
+    margin: 50px 0;
+    justify-content: center;
+    color: var(--text_black_default);
+
+    .inner_wrapper{
+        width: var(--default_width);
+
+        .title{
+            font-family: 'OpenSansExtraBold', sans-serif;
+            font-size: 30px;
+            margin: 0 0 15px 0;
+            text-transform: uppercase;
+        }
+
+        .content_block{
+            width: 100%;
+            height: 636px;
+            justify-content: space-between;
+
+            .map_block{
+                width: 946px;
+                height: 100%;
+                align-items: center;
+
+                .map_wrapper{
+                    width: 100%;
+                    height: max-content;
+                    position: relative;
+
+                    svg{
+                        width: 100%;
+                        height: 100%;
+
+                        .region{
+                            fill: var(--region_fill);
+                            stroke: var(--region_stroke);
+                            stroke-width: 2;
+
+                            &:hover{
+                                fill: var(--region_fill_hover);
+                                stroke: var(--region_stroke_hover);
+                            }
+                        }
+
+                    }
+
+                    .region_name{
+                        position: absolute;
+                        display: none;
+                        font-family: 'OpenSansBold', sans-serif;
+                        font-size: 25px;
+                        color: var(--map_text_color);
+                    }
+                }
+            }
+
+            .deputies_block_scroll{
+                box-sizing: border-box;
+                padding: 15px;
+                height: 100%;
+                width: 425px;
+                background-color: #f5f9ff;
+                overflow-y: scroll;
+
+                .region_wrapper{
+
+                    .region_name{
+                        font-family: 'OpenSansExtraBold', sans-serif;
+                        font-size: 25px;
+                        text-transform: uppercase;
+                        margin: 0;
+                    }
+
+                    .deputy_wrapper{
+
+                        .name{
+                            font-family: 'OpenSansBold', sans-serif;
+                            font-size: 16px;
+                            color: var(--sky_blue);
+                            margin: 0;
+                        }
+
+                        .district{
+                            font-size: 14px;
+                            font-family: 'OpenSansRegular', sans-serif;
+                            margin: 0;
+                        }
+                    }
+
+                    hr{
+                        border: none;
+                        background-color: #EAEAEA;
+                        outline: none;
+                        height: 1px;
+                        margin: 15px 0;
+                    }
+                }
+            }
+        }
+    }
+}
