@@ -47,6 +47,19 @@ body {
     --text_gray: #A3A3A3;
 }
 
+.title, .content {
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.title{
+    line-clamp: 2 !important;
+    -webkit-line-clamp: 2 !important;
+}
+
 .flex_row{
     display: flex;
     flex-direction: row;
@@ -80,4 +93,8 @@ body {
             left: 0;
         }
     }
+}
+
+.container_box_shadow{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
 }
