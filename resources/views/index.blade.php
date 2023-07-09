@@ -19,7 +19,9 @@
         <div class="grid_block">
 
             <div class="news_container_big flex_column">
-                <img src="{{ asset('img/news_big.jpg') }}" alt="">
+                <div class="image_wrapper">
+                    <img src="{{ asset('img/news_big.jpg') }}" alt="">
+                </div>
                 <h3 class="title">Türkmen halkynyň Milli Lideri, Türkmenistanyň Halk Maslahatynyň Başlygy Türkiýe Respublikasynyň Prezidentine hat iberdi</h3>
                 <p  class="content">
                     Türkmen halkynyň Milli Lideri, Türkmenistanyň Halk Maslahatynyň Başlygy Gurbanguly Berdimuhamedow Türkiýe Respublikasynyň Prezidenti 
@@ -31,7 +33,9 @@
             <div class="news_block_scroll flex_column">
 
                 <div class="news_container_small flex_row">
-                    <img src="{{ asset('img/news_small.jpg') }}" alt="">
+                    <div class="image_wrapper flex_row">
+                        <img src="{{ asset('img/news_small.jpg') }}" alt="">
+                    </div>
                     <div class="content_block flex_column">
                         <h4 class="title">«Halkara ulag-üstaşyr geçelgeleri: özara arabaglanyşyk we ösüş — 2023» atly II halkara maslahata we sergä gatnaşyjylara</h4>
                         <p class="content">
@@ -43,7 +47,9 @@
                 </div>
 
                 <div class="news_container_small flex_row">
-                    <img src="{{ asset('img/news_small_2.jpg') }}" alt="">
+                    <div class="image_wrapper flex_row">
+                        <img src="{{ asset('img/news_small_2.jpg') }}" alt="">
+                    </div>
                     <div class="content_block flex_column">
                         <h4 class="title">Türkmenistanyň Prezidenti Polşa Respublikasynyň Prezidentini gutlady</h4>
                         <p class="content">
@@ -55,7 +61,9 @@
                 </div>
 
                 <div class="news_container_small flex_row">
-                    <img src="{{ asset('img/news_small_3.jpg') }}" alt="">
+                    <div class="image_wrapper flex_row">
+                        <img src="{{ asset('img/news_small_3.jpg') }}" alt="">
+                    </div>
                     <div class="content_block flex_column">
                         <h4 class="title">Bedew bady bilen ösüşiň täze belentliklerine tarap</h4>
                         <p class="content">
@@ -67,7 +75,9 @@
                 </div>
 
                 <div class="news_container_small flex_row">
-                    <img src="{{ asset('img/news_small.jpg') }}" alt="">
+                    <div class="image_wrapper flex_row">
+                        <img src="{{ asset('img/news_small.jpg') }}" alt="">
+                    </div>
                     <div class="content_block flex_column">
                         <h4 class="title">«Halkara ulag-üstaşyr geçelgeleri: özara arabaglanyşyk we ösüş — 2023» atly II halkara maslahata we sergä gatnaşyjylara</h4>
                         <p class="content">
@@ -76,6 +86,60 @@
                         </p>
                         <span class="date">14.03.2023</span>
                     </div>
+                </div>
+
+            </div>
+
+            <div class="news_row_medium flex_row">
+
+                <div class="news_container_medium flex_column">
+                    <div class="image_wrapper">
+                        <img src="{{ asset('img/news_medium_1.jpg') }}" alt="">
+                    </div>
+                    <h4 class="title">Türkmenistanyň ulag diplomatiýasy ugrunda hyzmatdaşlygynyň meseleleri ara alnyp maslahatlaşyldy</h4>
+                    <p class="content">
+                        2023-nji ýylyň 1-nji maýynda Türkmenistanyň daşary syýasat edarasynyň binasynda Türkmenistanyň Daşary işler 
+                        ministriniň orunbasary B.Mätiýewiň, şu ýylyň 3-4-nji maýynda geçiriljek “Halkara ulag-üstaşyr geçelgeleri:
+                    </p>
+                    <span class="date">01.05.2023</span>
+                </div>
+
+                <div class="news_container_medium flex_column">
+                    <div class="image_wrapper">
+                        <img src="{{ asset('img/news_medium_2.jpg') }}" alt="">
+                    </div>
+                    <h4 class="title">Türkmenistan – ABŞ: hyzmatdaşlygyň täze gözýetimleri</h4>
+                    <p class="content">
+                        Şu gün hormatly Prezidentimiz Serdar Berdimuhamedow Türkmenistanyň Mejlisiniň deputatlarynyň, 
+                        halk maslahatlarynyň we Geňeşleriň agzalarynyň saýlawlaryna gatnaşdy.
+                    </p>
+                    <span class="date">01.05.2023</span>
+                </div>
+
+                <div class="news_container_medium flex_column">
+                    <div class="image_wrapper">
+                        <img src="{{ asset('img/news_medium_3.jpg') }}" alt="">
+                    </div>
+                    <h4 class="title">Türkmenistanyň Prezidenti sanly ulgam arkaly iş maslahatyny geçirdi</h4>
+                    <p class="content">
+                        Şu gün hormatly Prezidentimiz Serdar Berdimuhamedow Ministrler Kabinetiniň Başlygynyň 
+                        obasenagat toplumyna gözegçilik edýän orunbasary A.Ýazmyradowyň, ýurdumyzyň welaýatlarynyň 
+                        häkimleriniň we Ministrler Kabinetiniň Başlygynyň orunbasary,
+                    </p>
+                    <span class="date">01.05.2023</span>
+                </div>
+
+                <div class="news_container_medium flex_column">
+                    <div class="image_wrapper">
+                        <img src="{{ asset('img/news_medium_4.jpg') }}" alt="">
+                    </div>
+                    <h4 class="title">Türkmen halkynyň Milli Lideri, Türkmenistanyň Halk Maslahatynyň Başlygy Özbegistan Respublikasynyň Prezidentini gutlady</h4>
+                    <p class="content">
+                        Türkmen halkynyň Milli Lideri, Türkmenistanyň Halk Maslahatynyň Başlygy Gurbanguly Berdimuhamedow Özbegistan Respublikasynyň Prezidenti 
+                        Şawkat Mirziýoýewe Özbegistanyň Konstitusiýasyna üýtgetmeleri we goşmaçalary girizmek boýunça sala salşygyň üstünlikli geçirilmegi 
+                        mynasybetli tüýs ýürekden çykýan gutlaglaryny beýan etdi.
+                    </p>
+                    <span class="date">01.05.2023</span>
                 </div>
 
             </div>
