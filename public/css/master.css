@@ -39,7 +39,8 @@ body {
   --region_fill_hover: #80c0e3;
   --region_stroke: #B4B4B4;
   --region_stroke_hover: #1d8dcc;
-  --map_text_color: #fff; }
+  --map_text_color: #fff;
+  --container_background_blue: #f5f9ff; }
 
 .title, .content {
   line-clamp: 3;
@@ -47,7 +48,8 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-box-orient: vertical;
-  display: -webkit-box; }
+  display: -webkit-box;
+  max-width: 100%; }
 
 .title {
   line-clamp: 2 !important;

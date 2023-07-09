@@ -50,6 +50,7 @@ body {
     --region_stroke: #B4B4B4;
     --region_stroke_hover: #1d8dcc;
     --map_text_color: #fff;
+    --container_background_blue: #f5f9ff;
 
 }
 
@@ -60,6 +61,7 @@ body {
     overflow: hidden;
     -webkit-box-orient: vertical;
     display: -webkit-box;
+    max-width: 100%;
 }
 .title{
     line-clamp: 2 !important;
