@@ -92,54 +92,62 @@
 
             <div class="news_row_medium flex_row">
 
-                <div class="news_container_medium flex_column">
+                <div class="news_container_medium flex_column container_box_shadow">
                     <div class="image_wrapper">
                         <img src="{{ asset('img/news_medium_1.jpg') }}" alt="">
                     </div>
-                    <h4 class="title">Türkmenistanyň ulag diplomatiýasy ugrunda hyzmatdaşlygynyň meseleleri ara alnyp maslahatlaşyldy</h4>
-                    <p class="content">
-                        2023-nji ýylyň 1-nji maýynda Türkmenistanyň daşary syýasat edarasynyň binasynda Türkmenistanyň Daşary işler 
-                        ministriniň orunbasary B.Mätiýewiň, şu ýylyň 3-4-nji maýynda geçiriljek “Halkara ulag-üstaşyr geçelgeleri:
-                    </p>
-                    <span class="date">01.05.2023</span>
+                    <div class="content_wrapper flex_column">
+                        <h4 class="title">Türkmenistanyň ulag diplomatiýasy ugrunda hyzmatdaşlygynyň meseleleri ara alnyp maslahatlaşyldy</h4>
+                        <p class="content">
+                            2023-nji ýylyň 1-nji maýynda Türkmenistanyň daşary syýasat edarasynyň binasynda Türkmenistanyň Daşary işler 
+                            ministriniň orunbasary B.Mätiýewiň, şu ýylyň 3-4-nji maýynda geçiriljek “Halkara ulag-üstaşyr geçelgeleri:
+                        </p>
+                        <span class="date">01.05.2023</span>
+                    </div>
                 </div>
 
-                <div class="news_container_medium flex_column">
+                <div class="news_container_medium flex_column container_box_shadow">
                     <div class="image_wrapper">
                         <img src="{{ asset('img/news_medium_2.jpg') }}" alt="">
                     </div>
-                    <h4 class="title">Türkmenistan – ABŞ: hyzmatdaşlygyň täze gözýetimleri</h4>
-                    <p class="content">
-                        Şu gün hormatly Prezidentimiz Serdar Berdimuhamedow Türkmenistanyň Mejlisiniň deputatlarynyň, 
-                        halk maslahatlarynyň we Geňeşleriň agzalarynyň saýlawlaryna gatnaşdy.
-                    </p>
-                    <span class="date">01.05.2023</span>
+                    <div class="content_wrapper flex_column">
+                        <h4 class="title">Türkmenistan – ABŞ: hyzmatdaşlygyň täze gözýetimleri</h4>
+                        <p class="content">
+                            Şu gün hormatly Prezidentimiz Serdar Berdimuhamedow Türkmenistanyň Mejlisiniň deputatlarynyň, 
+                            halk maslahatlarynyň we Geňeşleriň agzalarynyň saýlawlaryna gatnaşdy.
+                        </p>
+                        <span class="date">01.05.2023</span>
+                    </div>
                 </div>
 
-                <div class="news_container_medium flex_column">
+                <div class="news_container_medium flex_column container_box_shadow">
                     <div class="image_wrapper">
                         <img src="{{ asset('img/news_medium_3.jpg') }}" alt="">
                     </div>
-                    <h4 class="title">Türkmenistanyň Prezidenti sanly ulgam arkaly iş maslahatyny geçirdi</h4>
-                    <p class="content">
-                        Şu gün hormatly Prezidentimiz Serdar Berdimuhamedow Ministrler Kabinetiniň Başlygynyň 
-                        obasenagat toplumyna gözegçilik edýän orunbasary A.Ýazmyradowyň, ýurdumyzyň welaýatlarynyň 
-                        häkimleriniň we Ministrler Kabinetiniň Başlygynyň orunbasary,
-                    </p>
-                    <span class="date">01.05.2023</span>
+                    <div class="content_wrapper flex_column">
+                        <h4 class="title">Türkmenistanyň Prezidenti sanly ulgam arkaly iş maslahatyny geçirdi</h4>
+                        <p class="content">
+                            Şu gün hormatly Prezidentimiz Serdar Berdimuhamedow Ministrler Kabinetiniň Başlygynyň 
+                            obasenagat toplumyna gözegçilik edýän orunbasary A.Ýazmyradowyň, ýurdumyzyň welaýatlarynyň 
+                            häkimleriniň we Ministrler Kabinetiniň Başlygynyň orunbasary,
+                        </p>
+                        <span class="date">01.05.2023</span>
+                    </div>
                 </div>
 
-                <div class="news_container_medium flex_column">
+                <div class="news_container_medium flex_column container_box_shadow">
                     <div class="image_wrapper">
                         <img src="{{ asset('img/news_medium_4.jpg') }}" alt="">
                     </div>
-                    <h4 class="title">Türkmen halkynyň Milli Lideri, Türkmenistanyň Halk Maslahatynyň Başlygy Özbegistan Respublikasynyň Prezidentini gutlady</h4>
-                    <p class="content">
-                        Türkmen halkynyň Milli Lideri, Türkmenistanyň Halk Maslahatynyň Başlygy Gurbanguly Berdimuhamedow Özbegistan Respublikasynyň Prezidenti 
-                        Şawkat Mirziýoýewe Özbegistanyň Konstitusiýasyna üýtgetmeleri we goşmaçalary girizmek boýunça sala salşygyň üstünlikli geçirilmegi 
-                        mynasybetli tüýs ýürekden çykýan gutlaglaryny beýan etdi.
-                    </p>
-                    <span class="date">01.05.2023</span>
+                    <div class="content_wrapper flex_column">
+                        <h4 class="title">Türkmen halkynyň Milli Lideri, Türkmenistanyň Halk Maslahatynyň Başlygy Özbegistan Respublikasynyň Prezidentini gutlady</h4>
+                        <p class="content">
+                            Türkmen halkynyň Milli Lideri, Türkmenistanyň Halk Maslahatynyň Başlygy Gurbanguly Berdimuhamedow Özbegistan Respublikasynyň Prezidenti 
+                            Şawkat Mirziýoýewe Özbegistanyň Konstitusiýasyna üýtgetmeleri we goşmaçalary girizmek boýunça sala salşygyň üstünlikli geçirilmegi 
+                            mynasybetli tüýs ýürekden çykýan gutlaglaryny beýan etdi.
+                        </p>
+                        <span class="date">01.05.2023</span>
+                    </div>
                 </div>
 
             </div>
