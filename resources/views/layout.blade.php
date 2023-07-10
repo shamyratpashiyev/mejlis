@@ -22,12 +22,18 @@
 
                     <div class="lang_hamburger_wrapper flex_row">
                         <div class="lang_wrapper flex_row">
-                            <img src="{{ asset('img/globe.svg') }}" alt="">
+                            <svg class="globe" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 11C21 16.5228 16.5228 21 11 21M21 11C21 5.47715 16.5228 1 11 1M21 11C21 9.34315 16.5228 8 11 8C5.47715 8 1 9.34315 1 11M21 11C21 12.6569 16.5228 14 11 14C5.47715 14 1 12.6569 1 11M11 21C5.47715 21 1 16.5228 1 11M11 21C13.2091 21 15 16.5228 15 11C15 5.47715 13.2091 1 11 1M11 21C8.79086 21 7 16.5228 7 11C7 5.47715 8.79086 1 11 1M1 11C1 5.47715 5.47715 1 11 1" stroke="white" stroke-width="1.5"/>
+                            </svg>
+                                
                             <span class="current_lang">Türkmençe</span>
-                            <img src="{{ asset('img/chevron_down.svg') }}" alt="">
+                            <svg class="chevron_down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L12 14L17 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
                             <div class="lang_menu flex_column">
-                                <span>Русский</span>
-                                <span>English</span>
+                                <a class="lang_item" href="#">Русский</a>
+                                <a class="lang_item" href="#">English</a>
                             </div>
                         </div>
 
@@ -47,6 +53,9 @@
                 </div>
 
                 <div class="hamburger_menu flex_column">
+                    <div class="hamburger_button_wrapper">
+                        <span class="hamburger_button"></span>
+                    </div>
                     <div class="inner_wrapper flex_column">
                         <div class="top_block flex_column">
                             <img class="building_img" src="{{ asset('img/mejlis_building.svg') }}" alt="">
@@ -66,17 +75,28 @@
                         </div>
 
                         <div class="lang_block flex_row">
+
                             <div class="lang_wrapper flex_row">
-                                <img src="{{ asset('img/globe.svg') }}" alt="">
+                                <svg class="globe" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 11C21 16.5228 16.5228 21 11 21M21 11C21 5.47715 16.5228 1 11 1M21 11C21 9.34315 16.5228 8 11 8C5.47715 8 1 9.34315 1 11M21 11C21 12.6569 16.5228 14 11 14C5.47715 14 1 12.6569 1 11M11 21C5.47715 21 1 16.5228 1 11M11 21C13.2091 21 15 16.5228 15 11C15 5.47715 13.2091 1 11 1M11 21C8.79086 21 7 16.5228 7 11C7 5.47715 8.79086 1 11 1M1 11C1 5.47715 5.47715 1 11 1" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                                    
                                 <span class="current_lang">Türkmençe</span>
-                                <img src="{{ asset('img/chevron_down.svg') }}" alt="">
+                                <svg class="chevron_down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L12 14L17 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                    
+                                <div class="lang_menu flex_column">
+                                    <a class="lang_item" href="#">Русский</a>
+                                    <a class="lang_item" href="#">English</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="lower_block flex_row">
+        <div class="lower_block flex_row" id="scroll_anchor">
             <div class="inner_wrapper flex_row">
                 <div class="nav_block flex_row">
                     <a class="nav_button_wrapper hover_underline" href="#">
@@ -85,31 +105,95 @@
 
                     <div class="nav_button_wrapper hover_underline">
                         <span>Mejlis hakynda</span>
+
+                        <div class="dropdown_menu flex_column">
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Mejlisiň taryhy</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">VII çagyrylyşynyň deputatlarynyň sanawy</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Reglament</a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="nav_button_wrapper hover_underline">
                         <span>Düzümi we gurluşygy</span>
+
+                        <div class="dropdown_menu flex_column">
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Mejlis komitetleri</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Mejlis deputatlary </a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="nav_button_wrapper hover_underline">
                         <span>Kanunçylyk</span>
+
+                        <div class="dropdown_menu flex_column">
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Законопроекты на обсуждение</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Kodeksler</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Kanunlar</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Mejlisiň kararlary</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Konstitusion kanuny</a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="nav_button_wrapper hover_underline">
                         <span>Halkara</span>
+
+                        <div class="dropdown_menu flex_column">
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Halkara hyzmatdaşlyk</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Dostluk topar</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Täzelikler</a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="nav_button_wrapper hover_underline">
                         <span>Habarlar</span>
+
+                        <div class="dropdown_menu flex_column">
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Täzelikler</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Çykyşlar we makalalar</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Türkmenistanyň mejlisinde alnyp barylýan işler</a>
+                            </div>
+                            <div class="item_wrapper hover_underline">
+                                <a href="#">Galereýa</a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="nav_button_wrapper hover_underline">
                         <span>Türkmenistan</span>
                     </div>
                 </div>
-                <div class="hamburger_block">
-                    <span></span>
-                </div>
+                
             </div>
         </div>
     </header>
@@ -180,9 +264,9 @@
         </div>
     </footer>
     <script>
-        $('#hamburger_button').click((e) => {
+        $('.hamburger_wrapper').click((e) => {
             $('.hamburger_menu').toggleClass('active');
-            $('#hamburger_button').toggleClass('active');
+            // $('#hamburger_button').toggleClass('active');
         })
 
         $('.lang_wrapper').click((e) => {

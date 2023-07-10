@@ -1,223 +1,283 @@
-header .upper_block .main {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("/img/header_main.jpg");
-  background-size: cover;
-  align-items: center; }
-  header .upper_block .main .topbar {
-    width: var(--default_width);
-    height: 80px;
-    justify-content: space-between;
-    margin-top: 10px; }
-    header .upper_block .main .topbar .logo_wrapper {
-      align-items: center;
-      column-gap: 10px;
-      text-decoration: none; }
-      header .upper_block .main .topbar .logo_wrapper .logo_img {
-        width: 80px;
-        height: 80px; }
-      header .upper_block .main .topbar .logo_wrapper .logo_text {
-        color: var(--default_white);
-        font-family: 'OpenSansExtraBold', sans-serif;
-        font-size: 20px; }
-    header .upper_block .main .topbar .lang_hamburger_wrapper {
-      align-items: center;
-      column-gap: 22px; }
-      header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper {
-        align-items: center;
-        justify-content: center;
-        column-gap: 8px;
-        position: relative;
-        cursor: pointer; }
-        header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper .current_lang {
-          color: var(--default_white);
-          font-family: 'OpenSansRegular', sans-serif;
-          font-size: 16px; }
-        header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper .lang_menu {
-          display: none; }
-        header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper.active .lang_menu {
-          display: flex;
-          position: absolute;
-          top: 100%;
-          background-color: var(--default_white);
-          width: 100%;
-          align-items: center;
-          row-gap: 5px;
-          box-sizing: border-box;
-          padding: 5px 0;
-          margin-top: 5px; }
-          header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper.active .lang_menu span {
-            font-family: 'OpenSansRegular', sans-serif;
-            font-size: 16px;
-            color: var(--text_black_default); }
-      header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper {
-        width: 30px;
-        height: 20px;
-        position: relative;
-        justify-content: space-between;
-        z-index: 99;
-        cursor: pointer; }
-        header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span {
-          width: 100%;
-          height: 2px;
-          background-color: var(--default_white);
-          border-radius: 10px;
-          position: absolute;
-          top: 50%;
-          transition: all 0.5s ease-in; }
-          header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span::after, header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span::before {
-            content: '';
-            height: 2px;
-            width: 100%;
-            position: absolute;
-            background-color: var(--default_white);
-            transform: translateY(0.5em);
-            transition: inherit; }
-          header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span::before {
-            transform: translateY(-0.5em); }
-        header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper.active span::before {
-          transform: rotateZ(-45deg) translate(3px, -5px);
-          width: 50%; }
-        header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper.active span::after {
-          transform: rotateZ(45deg) translate(3px, 5px);
-          width: 50%; }
-  header .upper_block .main .content {
-    width: 100%;
-    height: max-content;
-    justify-content: center;
-    align-items: center;
-    margin-top: 225px; }
-    header .upper_block .main .content .inner_wrapper {
-      width: 952px;
-      height: 356px;
-      align-items: center; }
-      header .upper_block .main .content .inner_wrapper .building_img {
-        width: 540px;
-        height: 184px; }
-      header .upper_block .main .content .inner_wrapper hr {
-        width: 83%;
-        border: none;
-        height: 2px;
-        background-color: var(--default_white);
-        margin: 25px 0; }
-      header .upper_block .main .content .inner_wrapper .title {
-        font-family: 'RalewayExtraBold', sans-serif;
-        font-size: 70px;
-        color: var(--default_white);
-        margin: 0; }
-      header .upper_block .main .content .inner_wrapper .info {
-        font-size: 25px;
-        font-family: 'RalewayBold', sans-serif;
-        color: var(--default_white);
-        margin-top: 12px; }
-  header .upper_block .main .hamburger_menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 66px 0;
-    background-image: linear-gradient(to right, var(--gradient_background_1), var(--gradient_background_2));
-    transition: 0.4s all ease-in;
-    transform: translateX(100%); }
-    header .upper_block .main .hamburger_menu.active {
-      transform: translate(0%) !important; }
-    header .upper_block .main .hamburger_menu .inner_wrapper {
-      align-items: center;
+header .upper_block {
+  transition: all 0.8s ease-in;
+  height: 100vh; }
+  header .upper_block.active {
+    visibility: hidden;
+    opacity: 0;
+    height: 15vh; }
+  header .upper_block .main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/img/header_main.jpg");
+    background-size: cover;
+    align-items: center; }
+    header .upper_block .main .topbar {
+      width: var(--default_width);
+      height: 80px;
       justify-content: space-between;
-      height: 100%;
-      width: 660px;
-      margin-left: 15px; }
-      header .upper_block .main .hamburger_menu .inner_wrapper .top_block {
-        width: 100%;
+      margin-top: 10px; }
+      header .upper_block .main .topbar .logo_wrapper {
+        align-items: center;
+        column-gap: 10px;
+        text-decoration: none; }
+        header .upper_block .main .topbar .logo_wrapper .logo_img {
+          width: 80px;
+          height: 80px; }
+        header .upper_block .main .topbar .logo_wrapper .logo_text {
+          color: var(--default_white);
+          font-family: 'OpenSansExtraBold', sans-serif;
+          font-size: 20px; }
+      header .upper_block .main .topbar .lang_hamburger_wrapper {
+        align-items: center;
+        column-gap: 22px; }
+        header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper {
+          align-items: center;
+          justify-content: center;
+          column-gap: 8px;
+          position: relative;
+          cursor: pointer;
+          transition: 0.2s all ease-in; }
+          header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper .globe, header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper .chevron_down {
+            width: 24px;
+            height: 24px;
+            transition: inherit; }
+          header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper .current_lang {
+            color: var(--default_white);
+            font-family: 'OpenSansRegular', sans-serif;
+            font-size: 16px; }
+          header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper .lang_menu {
+            display: none; }
+          header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper.active .chevron_down {
+            transform: rotateZ(180deg); }
+          header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper.active .lang_menu {
+            display: flex;
+            position: absolute;
+            top: 100%;
+            background-color: var(--default_white);
+            width: 100%;
+            align-items: center;
+            row-gap: 5px;
+            box-sizing: border-box;
+            padding: 5px 0;
+            margin-top: 5px; }
+            header .upper_block .main .topbar .lang_hamburger_wrapper .lang_wrapper.active .lang_menu .lang_item {
+              font-family: 'OpenSansRegular', sans-serif;
+              font-size: 16px;
+              color: var(--text_black_default); }
+        header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper {
+          width: 30px;
+          height: 20px;
+          position: relative;
+          justify-content: space-between;
+          cursor: pointer; }
+          header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span {
+            width: 100%;
+            height: 2px;
+            background-color: var(--default_white);
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            transition: all 0.5s ease-in; }
+            header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span::after, header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span::before {
+              content: '';
+              height: 2px;
+              width: 100%;
+              position: absolute;
+              background-color: var(--default_white);
+              transform: translateY(0.5em);
+              transition: inherit; }
+            header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper span::before {
+              transform: translateY(-0.5em); }
+          header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper.active span::before {
+            transform: rotateZ(-45deg) translate(3px, -5px);
+            width: 50%; }
+          header .upper_block .main .topbar .lang_hamburger_wrapper .hamburger_wrapper.active span::after {
+            transform: rotateZ(45deg) translate(3px, 5px);
+            width: 50%; }
+    header .upper_block .main .content {
+      width: 100%;
+      height: max-content;
+      justify-content: center;
+      align-items: center;
+      margin-top: 225px; }
+      header .upper_block .main .content .inner_wrapper {
+        width: 952px;
+        height: 356px;
         align-items: center; }
-        header .upper_block .main .hamburger_menu .inner_wrapper .top_block .building_img {
-          width: 435px;
-          height: 114.5px; }
-        header .upper_block .main .hamburger_menu .inner_wrapper .top_block hr {
+        header .upper_block .main .content .inner_wrapper .building_img {
+          width: 540px;
+          height: 184px; }
+        header .upper_block .main .content .inner_wrapper hr {
           width: 83%;
           border: none;
           height: 2px;
           background-color: var(--default_white);
           margin: 25px 0; }
-        header .upper_block .main .hamburger_menu .inner_wrapper .top_block .title {
+        header .upper_block .main .content .inner_wrapper .title {
           font-family: 'RalewayExtraBold', sans-serif;
-          font-size: 25px;
+          font-size: 70px;
           color: var(--default_white);
-          margin: 0;
-          text-align: center; }
-        header .upper_block .main .hamburger_menu .inner_wrapper .top_block .info {
-          font-size: 20px;
+          margin: 0; }
+        header .upper_block .main .content .inner_wrapper .info {
+          font-size: 25px;
           font-family: 'RalewayBold', sans-serif;
           color: var(--default_white);
-          margin-top: 12px;
-          text-align: center; }
-      header .upper_block .main .hamburger_menu .inner_wrapper .nav_block {
+          margin-top: 12px; }
+    header .upper_block .main .hamburger_menu {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 50px 0 66px 0;
+      background-image: linear-gradient(to right, var(--gradient_background_1), var(--gradient_background_2));
+      transition: 0.4s all ease-in;
+      transform: translateX(100%);
+      align-items: center; }
+      header .upper_block .main .hamburger_menu.active {
+        transform: translate(0%) !important; }
+      header .upper_block .main .hamburger_menu .hamburger_button_wrapper {
+        position: absolute;
+        left: 50px;
+        top: 40px; }
+        header .upper_block .main .hamburger_menu .hamburger_button_wrapper .hamburger_button {
+          width: 30px;
+          height: 2px;
+          background-color: var(--default_white);
+          transform: rotateZ(45deg); }
+          header .upper_block .main .hamburger_menu .hamburger_button_wrapper .hamburger_button::after {
+            content: '';
+            width: inherit;
+            height: inherit;
+            border: none;
+            background-color: var(--default_white);
+            transform: rotateZ(-90deg);
+            position: absolute; }
+      header .upper_block .main .hamburger_menu .inner_wrapper {
         align-items: center;
-        row-gap: 35px;
-        width: 100%; }
-        header .upper_block .main .hamburger_menu .inner_wrapper .nav_block a {
-          text-decoration: none;
-          color: var(--default_white);
-          font-family: 'OpenSansSemibold', sans-serif;
-          font-size: 20px; }
-      header .upper_block .main .hamburger_menu .inner_wrapper .lang_block {
-        width: 100%;
-        justify-content: center; }
-        header .upper_block .main .hamburger_menu .inner_wrapper .lang_block .lang_wrapper {
-          align-items: center;
-          column-gap: 8px; }
-          header .upper_block .main .hamburger_menu .inner_wrapper .lang_block .lang_wrapper .current_lang {
+        justify-content: space-between;
+        height: 100%;
+        width: 660px; }
+        header .upper_block .main .hamburger_menu .inner_wrapper .top_block {
+          width: 100%;
+          align-items: center; }
+          header .upper_block .main .hamburger_menu .inner_wrapper .top_block .building_img {
+            width: 435px;
+            height: 114.5px; }
+          header .upper_block .main .hamburger_menu .inner_wrapper .top_block hr {
+            width: 83%;
+            border: none;
+            height: 2px;
+            background-color: var(--default_white);
+            margin: 25px 0; }
+          header .upper_block .main .hamburger_menu .inner_wrapper .top_block .title {
+            font-family: 'RalewayExtraBold', sans-serif;
+            font-size: 25px;
             color: var(--default_white);
-            font-family: 'OpenSansRegular', sans-serif;
-            font-size: 16px; }
+            margin: 0;
+            text-align: center; }
+          header .upper_block .main .hamburger_menu .inner_wrapper .top_block .info {
+            font-size: 20px;
+            font-family: 'RalewayBold', sans-serif;
+            color: var(--default_white);
+            margin-top: 12px;
+            text-align: center; }
+        header .upper_block .main .hamburger_menu .inner_wrapper .nav_block {
+          align-items: center;
+          row-gap: 35px;
+          width: 100%; }
+          header .upper_block .main .hamburger_menu .inner_wrapper .nav_block a {
+            text-decoration: none;
+            color: var(--default_white);
+            font-family: 'OpenSansSemibold', sans-serif;
+            font-size: 20px; }
+        header .upper_block .main .hamburger_menu .inner_wrapper .lang_block {
+          margin-bottom: 15px;
+          width: 100%;
+          justify-content: center; }
+          header .upper_block .main .hamburger_menu .inner_wrapper .lang_block .lang_wrapper {
+            align-items: center;
+            justify-content: center;
+            column-gap: 8px;
+            position: relative;
+            cursor: pointer;
+            transition: 0.2s all ease-in; }
+            header .upper_block .main .hamburger_menu .inner_wrapper .lang_block .lang_wrapper .globe, header .upper_block .main .hamburger_menu .inner_wrapper .lang_block .lang_wrapper .chevron_down {
+              width: 24px;
+              height: 24px;
+              transition: inherit; }
+            header .upper_block .main .hamburger_menu .inner_wrapper .lang_block .lang_wrapper .current_lang {
+              color: var(--default_white);
+              font-family: 'OpenSansRegular', sans-serif;
+              font-size: 16px; }
+            header .upper_block .main .hamburger_menu .inner_wrapper .lang_block .lang_wrapper .lang_menu {
+              display: none; }
+            header .upper_block .main .hamburger_menu .inner_wrapper .lang_block .lang_wrapper.active .chevron_down {
+              transform: rotateZ(180deg); }
+            header .upper_block .main .hamburger_menu .inner_wrapper .lang_block .lang_wrapper.active .lang_menu {
+              display: flex;
+              position: absolute;
+              top: 100%;
+              background-color: var(--default_white);
+              width: 100%;
+              align-items: center;
+              row-gap: 5px;
+              box-sizing: border-box;
+              padding: 5px 0;
+              margin-top: 5px; }
+              header .upper_block .main .hamburger_menu .inner_wrapper .lang_block .lang_wrapper.active .lang_menu .lang_item {
+                font-family: 'OpenSansRegular', sans-serif;
+                font-size: 16px;
+                color: var(--text_black_default); }
 
 header .lower_block {
   width: 100%;
   justify-content: center;
   box-sizing: border-box;
-  padding: 20px 0;
-  background-color: var(--sky_blue); }
+  background-color: var(--sky_blue);
+  color: var(--default_white); }
   header .lower_block .inner_wrapper {
     width: var(--default_width);
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     header .lower_block .inner_wrapper .nav_block {
       column-gap: 50px; }
       header .lower_block .inner_wrapper .nav_block .nav_button_wrapper {
         text-decoration: none;
         cursor: pointer;
         box-sizing: border-box;
-        padding: 0 10px; }
+        padding: 20px 10px;
+        position: relative; }
         header .lower_block .inner_wrapper .nav_block .nav_button_wrapper span {
           font-family: 'OpenSansSemiBold', sans-serif;
           font-size: 16px;
           color: var(--default_white); }
-    header .lower_block .inner_wrapper .hamburger_block {
-      width: 30px;
-      height: 20px;
-      position: relative;
-      justify-content: space-between;
-      z-index: 99;
-      cursor: pointer; }
-      header .lower_block .inner_wrapper .hamburger_block span {
-        width: 100%;
-        height: 2px;
-        background-color: var(--default_white);
-        border-radius: 10px;
-        position: absolute;
-        top: 50%;
-        transition: all 0.5s ease-in; }
-        header .lower_block .inner_wrapper .hamburger_block span::after, header .lower_block .inner_wrapper .hamburger_block span::before {
-          content: '';
-          height: 2px;
-          width: 100%;
+        header .lower_block .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu {
+          display: none;
           position: absolute;
-          background-color: var(--default_white);
-          transform: translateY(0.5em);
-          transition: inherit; }
-        header .lower_block .inner_wrapper .hamburger_block span::before {
-          transform: translateY(-0.5em); }
+          left: 0;
+          top: 63px;
+          background-color: var(--sky_blue);
+          box-sizing: border-box;
+          padding: 20px 15px;
+          width: max-content;
+          max-width: 275px;
+          row-gap: 20px; }
+          header .lower_block .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu .item_wrapper {
+            width: max-content;
+            max-width: 100%; }
+            header .lower_block .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu .item_wrapper a {
+              text-decoration: none;
+              font-family: 'OpenSansRegular', sans-serif;
+              font-size: 16px;
+              color: inherit; }
+          header .lower_block .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu:hover {
+            display: flex; }
+        header .lower_block .inner_wrapper .nav_block .nav_button_wrapper::after {
+          bottom: 15px !important; }
+        header .lower_block .inner_wrapper .nav_block .nav_button_wrapper:hover .dropdown_menu {
+          display: flex; }
 
 footer {
   width: 100%;
