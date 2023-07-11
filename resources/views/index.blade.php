@@ -461,6 +461,11 @@
 const window_height = window.innerHeight
 let scroll_dir = 'down'
 
+$(document).ready(() => {
+    if($(window).scrollTop() > 5) {
+        $('.upper_header').addClass('hidden')
+    }
+})
 $(window).on('scroll',(event)=> {
 
     if($(window).scrollTop() > 150){
