@@ -282,7 +282,8 @@
             <div class="content_row flex_row">
 
                 <div class="legislation_container flex_column container_box_shadow">
-                    <a href="#" class="upper_block flex_column">
+
+                    <div class="upper_block flex_column">
                         <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line x1="4" y1="10" x2="44" y2="10" stroke="#EEB816"/>
                             <mask id="path-2-inside-1_113_1071" fill="white">
@@ -296,17 +297,17 @@
                             Ahal welaýatynyň täze, döwrebap edara ediş merkezinde gurlan bilim, saglygy goraýyş, medeniýet edaralaryna we 
                             sungat binasyna türkmen halkynyň görnükli şahsyýetleriniň atlaryny dakmak hakynda
                         </p>
-                    </a>
+                    </div>
 
-                    <a href="#" class="bottom_row flex_row">
+                    <div class="bottom_row flex_row">
                         <span class="date">11.02.2023</span>
-                        <div href="#" class="flex_row hover_underline">
+                        <a href="#" class="flex_row hover_underline">
                             <span>Doly oka</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="legislation_container flex_column container_box_shadow">

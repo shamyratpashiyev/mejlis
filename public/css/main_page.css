@@ -276,7 +276,8 @@
         height: 245px;
         box-sizing: border-box;
         padding: 10px 15px;
-        justify-content: space-between; }
+        justify-content: space-between;
+        cursor: pointer; }
         .legislation_section .inner_wrapper .content_row .legislation_container:hover .bottom_row a.hover_underline::after {
           width: 100%;
           left: 0;
