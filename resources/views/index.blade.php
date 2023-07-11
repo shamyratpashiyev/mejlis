@@ -10,8 +10,8 @@
     <div class="news_section_main flex_row">
         <div class="inner_wrapper flex_column">
             <div class="title_row flex_row">
-                <h2>Habarlar</h2>
-                <a href="#" class="flex_row">
+                <h2 class="title">Habarlar</h2>
+                <a href="#" class="news_page_link hover_underline flex_row">
                     <span>Hemmesi</span>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -182,7 +182,7 @@
                     </p>
                     <div class="bottom_row flex_row">
                         <span class="date">11.04.2023</span>
-                        <a href="#" class="flex_row">
+                        <a href="#" class="flex_row hover_underline">
                             <span>Doly oka</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -207,7 +207,7 @@
                     </p>
                     <div class="bottom_row flex_row">
                         <span class="date">06.04.2023</span>
-                        <a href="#" class="flex_row">
+                        <a href="#" class="flex_row hover_underline">
                             <span>Doly oka</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -233,7 +233,7 @@
                     </p>
                     <div class="bottom_row flex_row">
                         <span class="date">06.04.2023</span>
-                        <a href="#" class="flex_row">
+                        <a href="#" class="flex_row hover_underline">
                             <span>Doly oka</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -261,7 +261,7 @@
                     </p>
                     <div class="bottom_row flex_row">
                         <span class="date">06.04.2023</span>
-                        <a href="#" class="flex_row">
+                        <a href="#" class="flex_row hover_underline">
                             <span>Doly oka</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -282,7 +282,7 @@
             <div class="content_row flex_row">
 
                 <div class="legislation_container flex_column container_box_shadow">
-                    <div class="upper_block flex_column">
+                    <a href="#" class="upper_block flex_column">
                         <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line x1="4" y1="10" x2="44" y2="10" stroke="#EEB816"/>
                             <mask id="path-2-inside-1_113_1071" fill="white">
@@ -296,17 +296,17 @@
                             Ahal welaýatynyň täze, döwrebap edara ediş merkezinde gurlan bilim, saglygy goraýyş, medeniýet edaralaryna we 
                             sungat binasyna türkmen halkynyň görnükli şahsyýetleriniň atlaryny dakmak hakynda
                         </p>
-                    </div>
+                    </a>
 
-                    <div class="bottom_row flex_row">
+                    <a href="#" class="bottom_row flex_row">
                         <span class="date">11.02.2023</span>
-                        <a href="#" class="flex_row">
+                        <div href="#" class="flex_row hover_underline">
                             <span>Doly oka</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="legislation_container flex_column container_box_shadow">
@@ -328,7 +328,7 @@
 
                     <div class="bottom_row flex_row">
                         <span class="date">11.02.2023</span>
-                        <a href="#" class="flex_row">
+                        <a href="#" class="flex_row hover_underline">
                             <span>Doly oka</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -355,7 +355,7 @@
                         
                     <div class="bottom_row flex_row">
                         <span class="date">14.02.2022</span>
-                        <a href="#" class="flex_row">
+                        <a href="#" class="flex_row hover_underline">
                             <span>Doly oka</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -382,7 +382,7 @@
                         
                     <div class="bottom_row flex_row">
                         <span class="date">27.12.2021</span>
-                        <a href="#" class="flex_row">
+                        <a href="#" class="flex_row hover_underline">
                             <span>Doly oka</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
