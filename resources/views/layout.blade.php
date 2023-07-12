@@ -51,6 +51,9 @@
                 </div>
             </div>
 
+            <div class="blur_effect">
+            </div>
+
             <div class="hamburger_menu flex_column">
                 <div class="hamburger_button_wrapper">
                     <span class="hamburger_button"></span>
@@ -225,7 +228,7 @@
     <footer class="flex_row">
         <div class="inner_wrapper flex_row">
 
-            <div class="left_column flex_column">
+            <a href="#" class="left_column flex_column">
                 <div class="image_wrapper">
                     <img src="{{ asset('img/mejlis_building.svg') }}" alt="">
                 </div>
@@ -233,7 +236,7 @@
                 <h4 class="title">TÜRKMENISTANYŇ MEJLISI</h4>
                 <p class="description">kanun çykaryjy häkimiýeti amala aşyrýan wekilçilikli edara</p>
                 <span class="copyright_text">2023 Ähli hukuklar goralan</span>
-            </div>
+            </a>
 
             <div class="middle_column flex_column">
                 <h3 class="title">Mejlis hakynda</h3>
@@ -249,7 +252,7 @@
             </div>
 
             <div class="right_column flex_column">
-                <h3 class="title">Habarlaşmak üçin</h3>
+                <a href="#" class="title">Habarlaşmak üçin</a>
                 <p class="flex_row contact_row_wrapper">
                     <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z" stroke="white"/>
@@ -285,15 +288,31 @@
 
         </div>
     </footer>
-    <script>
-        $('.hamburger_button_wrapper').click((e) => {
-            $('.hamburger_menu').toggleClass('active');
-            $('.upper_header').toggleClass('blur');
-        })
 
-        $('.lang_wrapper').click((e) => {
-            $('.lang_wrapper').toggleClass('active');
+
+    <script>
+
+        $(document).ready(()=>{
+
+            
+
+            $('.hamburger_button_wrapper').click((e) => {
+                $('.hamburger_menu').toggleClass('active');
+                $('.upper_header').toggleClass('blur');
+            })
+
+            $('.blur_effect').on('click',()=>{
+                $('.hamburger_menu').removeClass('active');
+                $('.upper_header').removeClass('blur');
+            })
+
+            $('.lang_wrapper').click((e) => {
+                $('.lang_wrapper').toggleClass('active');
+            })
         })
+        
+
+        
     </script>
 </body>
 </html>

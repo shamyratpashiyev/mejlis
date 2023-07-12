@@ -5,16 +5,18 @@
     height: 100vh;
     position: relative;
 
-    &::before{
-        content: '';
-        height: 100%;
+    .blur_effect{
         position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        backdrop-filter: blur(5px);
     }
 
     &.blur{
 
-        &::before{
-            backdrop-filter: blur(5px);
+        .blur_effect{
             width: 100%;
         }
 
@@ -30,7 +32,6 @@
     &.hidden{
         visibility: hidden;
         height: 0px;
-        
     }
 
     .main{
@@ -178,6 +179,10 @@
             transform: translateX(100%);
             align-items: center;
             z-index: 11;
+            
+            &:focus-visible{
+                display: none;
+            }
 
             &.active {
                 transform: translate(0%) !important;
@@ -273,6 +278,10 @@
 
                 }
             }
+        }
+
+        #other_half{
+            
         }
     }
 
@@ -414,6 +423,7 @@ footer {
             width: 273px;
             height: 100%;
             align-items: center;
+            color: var(--default_white);
 
             .image_wrapper {
                 width: 100%;
@@ -474,6 +484,7 @@ footer {
                 font-family: 'OpenSansBold', sans-serif;
                 font-size: 14px;
                 margin: 0;
+                color: var(--default_white);
             }
 
             .contact_row_wrapper{

@@ -515,9 +515,9 @@ $(document).ready(() => {
         scroll_point_remainder = websites_scroll_position % website_container_width
 
         if(scroll_point_remainder == 0){
-            $('#websites_block').animate({scrollLeft: websites_scroll_position - website_container_width})
+            $('#websites_block').animate({scrollLeft: websites_scroll_position - website_container_width}, 400)
         } else {
-            $('#websites_block').animate({scrollLeft: websites_scroll_position - scroll_point_remainder})
+            $('#websites_block').animate({scrollLeft: websites_scroll_position - scroll_point_remainder}, 400)
         }
     })
 
@@ -526,9 +526,9 @@ $(document).ready(() => {
         scroll_point_remainder = website_container_width - (websites_scroll_position % website_container_width)
 
         if(scroll_point_remainder == 0){
-            $('#websites_block').animate({scrollLeft: websites_scroll_position + website_container_width})
+            $('#websites_block').animate({scrollLeft: websites_scroll_position + website_container_width}, 400)
         } else {
-            $('#websites_block').animate({scrollLeft: websites_scroll_position + scroll_point_remainder})
+            $('#websites_block').animate({scrollLeft: websites_scroll_position + scroll_point_remainder}, 400)
         }
     })
 })
