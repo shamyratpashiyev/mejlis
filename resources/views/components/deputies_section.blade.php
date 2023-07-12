@@ -24,8 +24,268 @@
 
             <div class="deputies_block_scroll flex_column">
 
-                <div class="region_wrapper">
+                <div class="region_wrapper" data-region-name="ahal_region">
                     <h3 class="region_name">Ahal welaýaty</h3>
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babaýew Kasymguly Gulmyradowiç</h4>
+                        <p class="district">1-nji «Garaşsyzlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Muhamedow Begmurat Rahmangulyýewiç</h4>
+                        <p class="district">2-nji «Bitaraplyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Öwekowa Jenet Ýazberdiýewna</h4>
+                        <p class="district">3-nji «Azatlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Owganow Saparmyrat Esenowiç</h4>
+                        <p class="district">
+                            4-nji «Berkararlyk» saýlaw okrugy
+                            Türkmenistanyň Senagatçylar we telekeçiler partiýasynyň Merkezi geňeşiniň başlygy
+                        </p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Gulmanowa Dünýägözel Akmuhammedowna</h4>
+                        <p class="district">5-nji «Parahatçylyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babanyýazow Çarygeldy Gurbangeldiýewiç</h4>
+                        <p class="district">6-njy «Köpetdag» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Agaýew Guwançmyrat Bagybekowiç</h4>
+                        <p class="district">7-nji «Güneş» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babaýew Kasymguly Gulmyradowiç</h4>
+                        <p class="district">1-nji «Garaşsyzlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                </div>
+
+                <div class="region_wrapper" data-region-name="balkan_region">
+                    <h3 class="region_name">Balkan welaýaty</h3>
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babaýew Kasymguly Gulmyradowiç</h4>
+                        <p class="district">1-nji «Garaşsyzlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Muhamedow Begmurat Rahmangulyýewiç</h4>
+                        <p class="district">2-nji «Bitaraplyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Öwekowa Jenet Ýazberdiýewna</h4>
+                        <p class="district">3-nji «Azatlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Owganow Saparmyrat Esenowiç</h4>
+                        <p class="district">
+                            4-nji «Berkararlyk» saýlaw okrugy
+                            Türkmenistanyň Senagatçylar we telekeçiler partiýasynyň Merkezi geňeşiniň başlygy
+                        </p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Gulmanowa Dünýägözel Akmuhammedowna</h4>
+                        <p class="district">5-nji «Parahatçylyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babanyýazow Çarygeldy Gurbangeldiýewiç</h4>
+                        <p class="district">6-njy «Köpetdag» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Agaýew Guwançmyrat Bagybekowiç</h4>
+                        <p class="district">7-nji «Güneş» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babaýew Kasymguly Gulmyradowiç</h4>
+                        <p class="district">1-nji «Garaşsyzlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                </div>
+
+                <div class="region_wrapper" data-region-name="dashoguz_region">
+                    <h3 class="region_name">Daşoguz welaýaty</h3>
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babaýew Kasymguly Gulmyradowiç</h4>
+                        <p class="district">1-nji «Garaşsyzlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Muhamedow Begmurat Rahmangulyýewiç</h4>
+                        <p class="district">2-nji «Bitaraplyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Öwekowa Jenet Ýazberdiýewna</h4>
+                        <p class="district">3-nji «Azatlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Owganow Saparmyrat Esenowiç</h4>
+                        <p class="district">
+                            4-nji «Berkararlyk» saýlaw okrugy
+                            Türkmenistanyň Senagatçylar we telekeçiler partiýasynyň Merkezi geňeşiniň başlygy
+                        </p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Gulmanowa Dünýägözel Akmuhammedowna</h4>
+                        <p class="district">5-nji «Parahatçylyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babanyýazow Çarygeldy Gurbangeldiýewiç</h4>
+                        <p class="district">6-njy «Köpetdag» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Agaýew Guwançmyrat Bagybekowiç</h4>
+                        <p class="district">7-nji «Güneş» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babaýew Kasymguly Gulmyradowiç</h4>
+                        <p class="district">1-nji «Garaşsyzlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                </div>
+
+                <div class="region_wrapper" data-region-name="lebap_region">
+                    <h3 class="region_name">Lebap welaýaty</h3>
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babaýew Kasymguly Gulmyradowiç</h4>
+                        <p class="district">1-nji «Garaşsyzlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Muhamedow Begmurat Rahmangulyýewiç</h4>
+                        <p class="district">2-nji «Bitaraplyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Öwekowa Jenet Ýazberdiýewna</h4>
+                        <p class="district">3-nji «Azatlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Owganow Saparmyrat Esenowiç</h4>
+                        <p class="district">
+                            4-nji «Berkararlyk» saýlaw okrugy
+                            Türkmenistanyň Senagatçylar we telekeçiler partiýasynyň Merkezi geňeşiniň başlygy
+                        </p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Gulmanowa Dünýägözel Akmuhammedowna</h4>
+                        <p class="district">5-nji «Parahatçylyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babanyýazow Çarygeldy Gurbangeldiýewiç</h4>
+                        <p class="district">6-njy «Köpetdag» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Agaýew Guwançmyrat Bagybekowiç</h4>
+                        <p class="district">7-nji «Güneş» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                    <div class="deputy_wrapper">
+                        <h4 class="name">Babaýew Kasymguly Gulmyradowiç</h4>
+                        <p class="district">1-nji «Garaşsyzlyk» saýlaw okrugy</p>
+                    </div>
+
+                    <hr />
+
+                </div>
+
+                <div class="region_wrapper" data-region-name="mary_region">
+                    <h3 class="region_name">Mary welaýaty</h3>
                     <hr />
 
                     <div class="deputy_wrapper">
@@ -96,57 +356,79 @@
 </div>
 
 <script>
+    document.querySelector(`.region_wrapper`).offsetHeight
 
-    $('.region').on('mouseenter',(event) => {
-        const text_elem = $(`span[data-region-id='${event.target.id}']`)
-
-        switch(event.target.id){
-            case 'balkan_region':
-                $('#island').css('stroke', "var(--region_stroke_hover)")
-                text_elem.css('top', '34%')
-                text_elem.css('left', '13%')
-                break;
-            
-            case 'dashoguz_region':
-                text_elem.css('top', '19%')
-                text_elem.css('left', '37%')
-                break;
-                
-            case 'lebap_region':
-                text_elem.css('top', '48%')
-                text_elem.css('right', '22%')
-                break;
-
-            case 'mary_region':
-                text_elem.css('bottom', '26%')
-                text_elem.css('right', '29%')
-                
-                break;
-
-            case 'ahal_region':
-                text_elem.css('bottom', '45%')
-                text_elem.css('left', '39%')
-                break;
-        }
-
-        text_elem.css('display', 'inline-block')
+    $(document).ready(()=>{
+        const region_blocks = {ahal_region: {height:'',position:''}, balkan_region:{height:'',position:''}, dashoguz_region:{height:'',position:''},
+                                lebap_region:{height:'',position:''}, mary_region:{height:'',position:''}}
+        let current_element = {}
+        let previous_element = {}
         
-    })
-    .on('mouseleave',(event) => {
-        const text_elem = $(`span[data-region-id="${event.target.id}"]`)
+        Object.keys(region_blocks).forEach((elem,index)=>{
+            current_element = $(`.region_wrapper[data-region-name="${elem}"]`)
+            previous_element = region_blocks[Object.keys(region_blocks)[index - 1]]
+            
+            region_blocks[elem].position = (current_element.outerHeight() + (previous_element ? previous_element.position : 0 ))
+            region_blocks[elem].height = current_element.outerHeight()
+        })
 
-        if(event.target.id == 'balkan_region'){
-            $('#island').css('stroke', "var(--region_stroke)")
-        }
-        $(event.target).css('fill','')
-        $(event.target).css('stroke','')
-        text_elem.css('display', 'none')
-    })
+        $('.region').on('mouseenter',(event) => {
+            const text_elem = $(`span[data-region-id='${event.target.id}']`)
+            const current_region_scroll_position = region_blocks[event.target.id].position - region_blocks[event.target.id].height
 
-    $('span.region_name').on('mouseenter',(event) => {
-        $(event.target).css('display', 'block')
-        $(`#${event.target.attributes['data-region-id']?.value}`).css('fill','var(--region_fill_hover)')
-        $(`#${event.target.attributes['data-region-id']?.value}`).css('stroke','var(--region_stroke_hover)')
+            switch(event.target.id){
+                case 'balkan_region':
+                    $('#island').css('stroke', "var(--region_stroke_hover)")
+                    text_elem.css('top', '34%')
+                    text_elem.css('left', '13%')
+                    $('.deputies_block_scroll').animate({ scrollTop: current_region_scroll_position}, 500)
+                    break;
+                
+                case 'dashoguz_region':
+                    text_elem.css('top', '19%')
+                    text_elem.css('left', '37%')
+                    $('.deputies_block_scroll').animate({ scrollTop: current_region_scroll_position}, 500)
+                    break;
+                    
+                case 'lebap_region':
+                    text_elem.css('top', '48%')
+                    text_elem.css('right', '22%')
+                    $('.deputies_block_scroll').animate({ scrollTop: current_region_scroll_position}, 500)
+                    break;
+
+                case 'mary_region':
+                    text_elem.css('bottom', '26%')
+                    text_elem.css('right', '29%')
+                    $('.deputies_block_scroll').animate({ scrollTop: current_region_scroll_position}, 500)
+                    break;
+
+                case 'ahal_region':
+                    text_elem.css('bottom', '45%')
+                    text_elem.css('left', '39%')
+                    $('.deputies_block_scroll').animate({ scrollTop: current_region_scroll_position}, 500)
+                    break;
+            }
+
+            text_elem.css('display', 'inline-block')
+            
+        })
+        .on('mouseleave',(event) => {
+            const text_elem = $(`span[data-region-id="${event.target.id}"]`)
+
+            if(event.target.id == 'balkan_region'){
+                $('#island').css('stroke', "var(--region_stroke)")
+            }
+            $(event.target).css('fill','')
+            $(event.target).css('stroke','')
+            text_elem.css('display', 'none')
+        })
+
+        $('span.region_name').on('mouseenter',(event) => {
+            $(event.target).css('display', 'block')
+            $(`#${event.target.attributes['data-region-id']?.value}`).css('fill','var(--region_fill_hover)')
+            $(`#${event.target.attributes['data-region-id']?.value}`).css('stroke','var(--region_stroke_hover)')
+        })
+
     })
 
 </script>
