@@ -163,7 +163,7 @@
 
             <div class="activities_row flex_row">
 
-                <div class="activity_container flex_column container_box_shadow">
+                <div class="activity_container flex_column container_box_shadow" data-href-value="#">
                     <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="4" y1="10" x2="44" y2="10" stroke="#EEB816"/>
                         <mask id="path-2-inside-1_113_1071" fill="white">
@@ -191,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="activity_container flex_column container_box_shadow">
+                <div class="activity_container flex_column container_box_shadow" data-href-value="#">
                     <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="4" y1="10" x2="44" y2="10" stroke="#EEB816"/>
                         <mask id="path-2-inside-1_113_1071" fill="white">
@@ -216,7 +216,7 @@
                     </div>
                 </div>
 
-                <div class="activity_container flex_column container_box_shadow">
+                <div class="activity_container flex_column container_box_shadow" data-href-value="#">
                     <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="4" y1="10" x2="44" y2="10" stroke="#EEB816"/>
                         <mask id="path-2-inside-1_113_1071" fill="white">
@@ -242,7 +242,7 @@
                     </div>
                 </div>
 
-                <div class="activity_container flex_column container_box_shadow">
+                <div class="activity_container flex_column container_box_shadow" data-href-value="#">
                     <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="4" y1="10" x2="44" y2="10" stroke="#EEB816"/>
                         <mask id="path-2-inside-1_113_1071" fill="white">
@@ -467,6 +467,10 @@ $(document).ready(() => {
         $('.upper_header').addClass('hidden')
     }
     $('.legislation_container').on('click', (event)=>{
+        $(event.target).data('href-value') ? window.location.replace($(event.target).data('href-value')) : ''
+    })
+
+    $('.activity_container').on('click', (event)=>{
         $(event.target).data('href-value') ? window.location.replace($(event.target).data('href-value')) : ''
     })
 })
