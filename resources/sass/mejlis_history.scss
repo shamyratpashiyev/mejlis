@@ -1,0 +1,16 @@
+
+.mejlis_history_page{
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0 50px 0;
+
+    .inner_wrapper{
+        width: var(--default_width);
+
+        .breadcrumbs_row{
+            font-size: 16px;
+            font-family: 'OpenSansRegular', sans-serif;
+            color: var(--text_black_default);
+        }
+    }
+}

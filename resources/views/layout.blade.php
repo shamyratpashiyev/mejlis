@@ -125,7 +125,7 @@
     <div class="lower_header flex_row" id="scroll_anchor">
         <div class="inner_wrapper flex_row">
             <div class="nav_block flex_row">
-                <a class="nav_button_wrapper hover_underline" href="#">
+                <a class="nav_button_wrapper hover_underline" href="{{ route('main_page') }}">
                     <span>Baş sahypa</span>
                 </a>
 
@@ -134,7 +134,7 @@
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Mejlisiň taryhy</a>
+                            <a href="{{ route('mejlis_history') }}">Mejlisiň taryhy</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">VII çagyrylyşynyň deputatlarynyň sanawy</a>

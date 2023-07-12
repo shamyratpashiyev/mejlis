@@ -1,7 +1,8 @@
 .upper_header {
   transition: all 0.7s ease-in;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  display: none; }
   .upper_header .blur_effect {
     position: absolute;
     left: 0;
