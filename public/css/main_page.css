@@ -220,7 +220,7 @@
               fill: var(--region_fill);
               stroke: var(--region_stroke);
               stroke-width: 2; }
-              .deputies_section .inner_wrapper .content_block .map_block .map_wrapper svg .region:hover {
+              .deputies_section .inner_wrapper .content_block .map_block .map_wrapper svg .region.active {
                 fill: var(--region_fill_hover);
                 stroke: var(--region_stroke_hover); }
           .deputies_section .inner_wrapper .content_block .map_block .map_wrapper .region_name {
@@ -229,6 +229,23 @@
             font-family: 'OpenSansBold', sans-serif;
             font-size: 25px;
             color: var(--map_text_color); }
+            .deputies_section .inner_wrapper .content_block .map_block .map_wrapper .region_name.active {
+              display: inline-block; }
+            .deputies_section .inner_wrapper .content_block .map_block .map_wrapper .region_name[data-region-id='balkan_region'] {
+              top: 34%;
+              left: 13%; }
+            .deputies_section .inner_wrapper .content_block .map_block .map_wrapper .region_name[data-region-id='dashoguz_region'] {
+              top: 19%;
+              left: 37%; }
+            .deputies_section .inner_wrapper .content_block .map_block .map_wrapper .region_name[data-region-id='lebap_region'] {
+              top: 48%;
+              right: 22%; }
+            .deputies_section .inner_wrapper .content_block .map_block .map_wrapper .region_name[data-region-id='mary_region'] {
+              bottom: 26%;
+              right: 29%; }
+            .deputies_section .inner_wrapper .content_block .map_block .map_wrapper .region_name[data-region-id='ahal_region'] {
+              bottom: 45%;
+              left: 39%; }
       .deputies_section .inner_wrapper .content_block .deputies_block_scroll {
         box-sizing: border-box;
         padding: 15px;
@@ -236,26 +253,32 @@
         width: 425px;
         background-color: var(--container_background_blue);
         overflow-y: scroll; }
-        .deputies_section .inner_wrapper .content_block .deputies_block_scroll .region_wrapper .region_name {
-          font-family: 'OpenSansExtraBold', sans-serif;
-          font-size: 25px;
-          text-transform: uppercase;
-          margin: 0; }
-        .deputies_section .inner_wrapper .content_block .deputies_block_scroll .region_wrapper .deputy_wrapper .name {
-          font-family: 'OpenSansBold', sans-serif;
-          font-size: 16px;
-          color: var(--sky_blue);
-          margin: 0; }
-        .deputies_section .inner_wrapper .content_block .deputies_block_scroll .region_wrapper .deputy_wrapper .district {
-          font-size: 14px;
-          font-family: 'OpenSansRegular', sans-serif;
-          margin: 0; }
-        .deputies_section .inner_wrapper .content_block .deputies_block_scroll .region_wrapper hr {
-          border: none;
-          background-color: #EAEAEA;
-          outline: none;
-          height: 1px;
-          margin: 15px 0; }
+        .deputies_section .inner_wrapper .content_block .deputies_block_scroll .region_wrapper {
+          display: none; }
+          .deputies_section .inner_wrapper .content_block .deputies_block_scroll .region_wrapper .region_name {
+            font-family: 'OpenSansExtraBold', sans-serif;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin: 0; }
+          .deputies_section .inner_wrapper .content_block .deputies_block_scroll .region_wrapper .deputy_wrapper {
+            color: var(--text_black_default); }
+            .deputies_section .inner_wrapper .content_block .deputies_block_scroll .region_wrapper .deputy_wrapper .name {
+              font-family: 'OpenSansBold', sans-serif;
+              font-size: 16px;
+              color: var(--sky_blue);
+              margin: 0; }
+            .deputies_section .inner_wrapper .content_block .deputies_block_scroll .region_wrapper .deputy_wrapper .district {
+              font-size: 14px;
+              font-family: 'OpenSansRegular', sans-serif;
+              margin: 0; }
+          .deputies_section .inner_wrapper .content_block .deputies_block_scroll .region_wrapper hr {
+            border: none;
+            background-color: #EAEAEA;
+            outline: none;
+            height: 1px;
+            margin: 15px 0; }
+          .deputies_section .inner_wrapper .content_block .deputies_block_scroll .region_wrapper.active {
+            display: block; }
 
 .legislation_section {
   width: 100%;

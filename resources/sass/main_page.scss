@@ -321,7 +321,7 @@
                             stroke: var(--region_stroke);
                             stroke-width: 2;
 
-                            &:hover{
+                            &.active{
                                 fill: var(--region_fill_hover);
                                 stroke: var(--region_stroke_hover);
                             }
@@ -335,6 +335,35 @@
                         font-family: 'OpenSansBold', sans-serif;
                         font-size: 25px;
                         color: var(--map_text_color);
+
+                        &.active{
+                            display: inline-block;
+                        }
+
+                        &[data-region-id='balkan_region']{
+                            top: 34%;
+                            left: 13%;
+                        }
+
+                        &[data-region-id='dashoguz_region']{
+                            top: 19%;
+                            left: 37%;
+                        }
+
+                        &[data-region-id='lebap_region']{
+                            top: 48%;
+                            right: 22%;
+                        }
+
+                        &[data-region-id='mary_region']{
+                            bottom: 26%;
+                            right: 29%;
+                        }
+
+                        &[data-region-id='ahal_region']{
+                            bottom: 45%;
+                            left: 39%;
+                        }
                     }
                 }
             }
@@ -348,6 +377,7 @@
                 overflow-y: scroll;
 
                 .region_wrapper{
+                    display: none;
 
                     .region_name{
                         font-family: 'OpenSansExtraBold', sans-serif;
@@ -357,6 +387,7 @@
                     }
 
                     .deputy_wrapper{
+                        color: var(--text_black_default);
 
                         .name{
                             font-family: 'OpenSansBold', sans-serif;
@@ -378,6 +409,10 @@
                         outline: none;
                         height: 1px;
                         margin: 15px 0;
+                    }
+
+                    &.active{
+                        display: block;
                     }
                 }
             }
