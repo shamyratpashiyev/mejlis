@@ -529,10 +529,27 @@
                 font-size: 30px;
                 text-transform: uppercase;
             }
+
+            .buttons_block{
+
+                .arrow_left, .arrow_right{
+                    stroke: var(--text_black_default);
+
+                    path, circle{
+                        stroke: inherit;
+                    }
+
+                    &:hover{
+                        stroke: var(--sky_blue);
+                    }
+                }
+            }
         }
         
         .content_block{
             justify-content: space-between;
+            overflow-x: scroll;
+            column-gap: 24px;
 
             .website_container{
                 width: 269px;
@@ -542,6 +559,8 @@
                 background-color: var(--container_background_blue);
                 box-sizing: border-box;
                 padding: 10px;
+                color: var(--text_black_default);
+                flex-shrink: 0;
 
                 .icon{
                     width: 90px;
