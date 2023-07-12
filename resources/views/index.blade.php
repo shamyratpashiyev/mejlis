@@ -281,7 +281,7 @@
             <h2 class="title">Kanunçylyk</h2>
             <div class="content_row flex_row">
 
-                <div class="legislation_container flex_column container_box_shadow">
+                <div class="legislation_container flex_column container_box_shadow" data-href-value="#">
 
                     <div class="upper_block flex_column">
                         <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -310,7 +310,7 @@
                     </div>
                 </div>
 
-                <div class="legislation_container flex_column container_box_shadow">
+                <div class="legislation_container flex_column container_box_shadow" data-href-value="#">
 
                     <div class="upper_block flex_column">
                         <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -338,7 +338,7 @@
                     </div>
                 </div>
 
-                <div class="legislation_container flex_column container_box_shadow">
+                <div class="legislation_container flex_column container_box_shadow" data-href-value="#">
                     <div class="upper_block flex_column">
                         <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line x1="4" y1="10" x2="44" y2="10" stroke="#EEB816"/>
@@ -365,7 +365,7 @@
                     </div>
                 </div>
 
-                <div class="legislation_container flex_column container_box_shadow">
+                <div class="legislation_container flex_column container_box_shadow" data-href-value="#">
                     <div class="upper_block flex_column">
                         <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line x1="4" y1="10" x2="44" y2="10" stroke="#EEB816"/>
@@ -466,6 +466,9 @@ $(document).ready(() => {
     if($(window).scrollTop() > 5) {
         $('.upper_header').addClass('hidden')
     }
+    $('.legislation_container').on('click', (event)=>{
+        $(event.target).data('href-value') ? window.location.replace($(event.target).data('href-value')) : ''
+    })
 })
 $(window).on('scroll',(event)=> {
 
