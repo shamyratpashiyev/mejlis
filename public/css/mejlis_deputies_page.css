@@ -1,0 +1,71 @@
+.mejlis_deputies_page {
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0 35px 0; }
+  .mejlis_deputies_page .inner_wrapper {
+    width: var(--default_width);
+    row-gap: 35px; }
+    .mejlis_deputies_page .inner_wrapper .breadcrumbs_row {
+      font-size: 16px;
+      font-family: 'OpenSansRegular', sans-serif;
+      color: var(--text_gray_2); }
+      .mejlis_deputies_page .inner_wrapper .breadcrumbs_row span {
+        color: var(--sky_blue); }
+    .mejlis_deputies_page .inner_wrapper .page_content_block {
+      width: 100%;
+      column-gap: 75px; }
+      .mejlis_deputies_page .inner_wrapper .page_content_block .right_block {
+        width: 1075px;
+        row-gap: 25px; }
+        .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .title_row {
+          justify-content: space-between;
+          width: 100%;
+          align-items: center; }
+          .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .title_row .title {
+            font-size: 25px;
+            font-family: 'OpenSansExtraBold', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0; }
+          .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .title_row .select_block select {
+            font-size: 14px;
+            font-family: 'OpenSansRegular', sans-serif;
+            color: var(--text_gray);
+            box-sizing: border-box;
+            padding: 10px 150px 10px 10px;
+            border: 1px solid #EAEAEA;
+            background: var(--text_gray_4);
+            background-color: var(--default_white);
+            outline: none; }
+        .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .letters_row {
+          color: var(--text_gray_3);
+          column-gap: 15px; }
+          .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .letters_row .letter {
+            font-family: 'OpenSansBold', sans-serif;
+            font-size: 18px; }
+        .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .deputies_block {
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          row-gap: 25px; }
+          .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .deputies_block .deputy_container {
+            width: 527px;
+            height: 240px;
+            background-color: var(--container_background_blue);
+            box-sizing: border-box;
+            padding: 20px;
+            row-gap: 10px;
+            flex-shrink: 0; }
+            .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .deputies_block .deputy_container .name {
+              font-size: 16px;
+              font-family: 'OpenSansBold', sans-serif;
+              color: var(--sky_blue); }
+            .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .deputies_block .deputy_container .key_value_wrapper {
+              row-gap: 5px;
+              max-width: 73%; }
+              .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .deputies_block .deputy_container .key_value_wrapper .key {
+                font-family: 'OpenSansBold', sans-serif;
+                font-size: 14px; }
+              .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .deputies_block .deputy_container .key_value_wrapper .value {
+                font-size: 14px;
+                font-family: 'OpenSansRegular', sans-serif; }

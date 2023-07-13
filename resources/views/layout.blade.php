@@ -153,7 +153,7 @@
                             <a href="{{ route('mejlis_committees_page') }}">Mejlis komitetleri</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Mejlis deputatlary </a>
+                            <a href="{{ route('mejlis_deputies_page') }}">Mejlis deputatlary </a>
                         </div>
                     </div>
                 </div>
