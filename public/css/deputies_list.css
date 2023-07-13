@@ -1,0 +1,54 @@
+.deputies_list_page {
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0 50px 0; }
+  .deputies_list_page .inner_wrapper {
+    width: var(--default_width);
+    row-gap: 50px; }
+    .deputies_list_page .inner_wrapper .breadcrumbs_row {
+      font-size: 16px;
+      font-family: 'OpenSansRegular', sans-serif;
+      color: var(--text_gray_2); }
+      .deputies_list_page .inner_wrapper .breadcrumbs_row span {
+        color: var(--sky_blue); }
+    .deputies_list_page .inner_wrapper .page_content_block {
+      width: 100%;
+      column-gap: 50px; }
+      .deputies_list_page .inner_wrapper .page_content_block .right_side {
+        color: var(--text_black_default); }
+        .deputies_list_page .inner_wrapper .page_content_block .right_side .block_title {
+          font-size: 25px;
+          font-family: 'OpenSansExtraBold', sans-serif;
+          margin: 0 0 25px 0; }
+        .deputies_list_page .inner_wrapper .page_content_block .right_side .search_block {
+          row-gap: 25px;
+          color: var(--text_gray_3); }
+          .deputies_list_page .inner_wrapper .page_content_block .right_side .search_block .letters_row {
+            column-gap: 15px; }
+            .deputies_list_page .inner_wrapper .page_content_block .right_side .search_block .letters_row .letter {
+              font-size: 18px;
+              font-family: 'OpenSansBold', sans-serif;
+              cursor: pointer; }
+          .deputies_list_page .inner_wrapper .page_content_block .right_side .search_block .select_row select {
+            color: inherit;
+            font-family: 'OpenSansRegular', sans-serif;
+            font-size: 14px;
+            box-sizing: border-box;
+            padding: 10px 102px 10px 10px;
+            border: 1px solid var(--text_gray_4);
+            background: var(--default_white);
+            outline: none; }
+        .deputies_list_page .inner_wrapper .page_content_block .right_side .deputies_list_block {
+          justify-content: space-between;
+          width: 752px;
+          box-sizing: border-box;
+          padding: 10px 20px 20px 20px;
+          margin-top: 25px;
+          background-color: var(--container_background_blue); }
+          .deputies_list_page .inner_wrapper .page_content_block .right_side .deputies_list_block .left_column, .deputies_list_page .inner_wrapper .page_content_block .right_side .deputies_list_block .right_column {
+            row-gap: 25px; }
+            .deputies_list_page .inner_wrapper .page_content_block .right_side .deputies_list_block .left_column .deputy_name, .deputies_list_page .inner_wrapper .page_content_block .right_side .deputies_list_block .right_column .deputy_name {
+              font-size: 16px;
+              font-family: 'OpenSansSemiBold', sans-serif;
+              color: var(--pure_black);
+              cursor: pointer; }

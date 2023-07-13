@@ -15,4 +15,9 @@ class SiteController extends Controller
         
         return view('mejlis_history');
     }
+
+    public function deputies_list(){
+
+        return view('deputies_list');
+    }
 }

@@ -43,7 +43,10 @@ body {
   --region_stroke_hover: #1d8dcc;
   --map_text_color: #fff;
   --container_background_blue: #f5f9ff;
-  --text_gray_2: #B4B4B4; }
+  --text_gray_2: #B4B4B4;
+  --text_gray_3: #D1D1D1;
+  --text_gray_4: #EAEAEA;
+  --pure_black: #000; }
 
 .title, .content {
   line-clamp: 3;

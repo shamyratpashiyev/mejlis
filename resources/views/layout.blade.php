@@ -137,7 +137,7 @@
                             <a href="{{ route('mejlis_history') }}">Mejlisiň taryhy</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">VII çagyrylyşynyň deputatlarynyň sanawy</a>
+                            <a href="{{ route('deputies_list') }}">VII çagyrylyşynyň deputatlarynyň sanawy</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">Reglament</a>

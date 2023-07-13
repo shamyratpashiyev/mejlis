@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [SiteController::class, 'index'])->name('main_page');
 Route::get('/mejlis-history', [SiteController::class, 'mejlis_history'])->name('mejlis_history');
+Route::get('/deputies-list', [SiteController::class, 'deputies_list'])->name('deputies_list');
