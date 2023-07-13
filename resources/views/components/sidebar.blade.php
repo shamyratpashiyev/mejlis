@@ -1,12 +1,13 @@
-<div class="nav_container flex_column">
+<div class="sidebar_container flex_column">
 
     <div class="nav_block flex_column">
-        <h3 class="title">Mejlis hakynda</h3>
+        <h3 class="title">{{ $title }}</h3>
         
         <div class="nav_buttons_block flex_column">
-            <a href="" class="hover_underline">Mejlisiň taryhy</a>
-            <a href="" class="hover_underline">VII çagyrylyşynyň deputatlarynyň sanawy</a>
-            <a href="" class="hover_underline">Reglament</a>
+            @foreach ($linksList as $item)
+                <a href="{{ $item['url'] }}" class="hover_underline">{{ $item['name'] }}</a>
+            @endforeach
+            
         </div>
     </div>
 

@@ -132,44 +132,44 @@ a {
       font-size: 16px;
       color: var(--text_black_default); }
 
-.nav_container {
+.sidebar_container {
   width: 290px;
   row-gap: 40px; }
-  .nav_container .nav_block {
+  .sidebar_container .nav_block {
     color: var(--default_white);
     background-color: var(--sky_blue);
     box-sizing: border-box;
     padding: 20px;
     row-gap: 15px; }
-    .nav_container .nav_block .title {
+    .sidebar_container .nav_block .title {
       font-family: 'OpenSansExtraBold', sans-serif;
       font-size: 18px;
       margin: 0; }
-    .nav_container .nav_block .nav_buttons_block {
+    .sidebar_container .nav_block .nav_buttons_block {
       row-gap: 20px; }
-      .nav_container .nav_block .nav_buttons_block a {
+      .sidebar_container .nav_block .nav_buttons_block a {
         font-size: 16px;
         font-family: 'OpenSansRegular', sans-serif;
         color: var(--default_white);
         width: max-content;
         max-width: 100%; }
-  .nav_container .contacts_block {
+  .sidebar_container .contacts_block {
     width: 100%;
     row-gap: 25px;
     color: var(--text_black_default); }
-    .nav_container .contacts_block .contact_rows_block {
+    .sidebar_container .contacts_block .contact_rows_block {
       row-gap: 20px; }
-      .nav_container .contacts_block .contact_rows_block .contact_row {
+      .sidebar_container .contacts_block .contact_rows_block .contact_row {
         font-size: 14px;
         font-family: 'OpenSansRegular', sans-serif;
         align-items: center;
         column-gap: 5px; }
-        .nav_container .contacts_block .contact_rows_block .contact_row .icon {
+        .sidebar_container .contacts_block .contact_rows_block .contact_row .icon {
           width: 24px;
           height: 24px; }
-        .nav_container .contacts_block .contact_rows_block .contact_row a {
+        .sidebar_container .contacts_block .contact_rows_block .contact_row a {
           color: var(--text_black_default); }
-    .nav_container .contacts_block .link_row {
+    .sidebar_container .contacts_block .link_row {
       color: var(--text_black_default);
       column-gap: 50px;
       align-items: center;

@@ -4,6 +4,14 @@
     <link rel="stylesheet" href="{{ asset('css/mejlis_history.css') }}">
 @endpush
 
+@php
+    $links_list = [
+                    ['name'=>'Mejlisiň taryhy', 'url' => '#'],
+                    ['name'=>'VII çagyrylyşynyň deputatlarynyň sanawy','url' => '#'], 
+                    ['name'=>'Reglament', 'url' => '#'],
+                ]
+@endphp
+
 @section('content')
     <div class="mejlis_history_page flex_row">
         <div class="inner_wrapper flex_column">
@@ -13,7 +21,7 @@
 
             <div class="page_content_block flex_row">
 
-                @include('components.navbar')
+                <x-sidebar :links-list="$links_list" title="Mejlis hakynda"/>
 
                 <div class="right_side">
                     <h3 class="block_title">Mejlisiň taryhy</h3>
