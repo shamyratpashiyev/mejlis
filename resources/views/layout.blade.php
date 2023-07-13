@@ -134,10 +134,10 @@
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('mejlis_history') }}">Mejlisiň taryhy</a>
+                            <a href="{{ route('mejlis_history_page') }}">Mejlisiň taryhy</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('deputies_list') }}">VII çagyrylyşynyň deputatlarynyň sanawy</a>
+                            <a href="{{ route('deputies_list_page') }}">VII çagyrylyşynyň deputatlarynyň sanawy</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">Reglament</a>
@@ -150,7 +150,7 @@
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Mejlis komitetleri</a>
+                            <a href="{{ route('mejlis_committees_page') }}">Mejlis komitetleri</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">Mejlis deputatlary </a>

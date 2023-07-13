@@ -1,7 +1,7 @@
 @extends('layout')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/deputies_list.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/deputies_list_page.css') }}">
 @endpush
 
 @php

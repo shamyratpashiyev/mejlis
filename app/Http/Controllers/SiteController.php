@@ -20,4 +20,9 @@ class SiteController extends Controller
 
         return view('deputies_list');
     }
+
+    public function mejlis_committees(){
+
+        return view('mejlis_committees');
+    }
 }

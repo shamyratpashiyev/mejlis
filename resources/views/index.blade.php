@@ -274,7 +274,7 @@
         </div>
     </div>
 
-    @include('components.deputies_section_main')
+    @include('sections.deputies_section_main')
 
     <div class="legislation_section flex_row">
         <div class="inner_wrapper">
