@@ -3,8 +3,36 @@
   justify-content: center;
   margin: 10px 0 50px 0; }
   .mejlis_history_page .inner_wrapper {
-    width: var(--default_width); }
+    width: var(--default_width);
+    row-gap: 50px; }
     .mejlis_history_page .inner_wrapper .breadcrumbs_row {
       font-size: 16px;
       font-family: 'OpenSansRegular', sans-serif;
-      color: var(--text_black_default); }
+      color: var(--text_gray_2); }
+      .mejlis_history_page .inner_wrapper .breadcrumbs_row span {
+        color: var(--sky_blue); }
+    .mejlis_history_page .inner_wrapper .page_content_block {
+      width: 100%;
+      column-gap: 50px; }
+      .mejlis_history_page .inner_wrapper .page_content_block .right_side {
+        color: var(--text_black_default); }
+        .mejlis_history_page .inner_wrapper .page_content_block .right_side .block_title {
+          font-size: 30px;
+          font-family: 'OpenSansExtraBold', sans-serif;
+          margin: 0 0 25px 0;
+          text-transform: uppercase; }
+        .mejlis_history_page .inner_wrapper .page_content_block .right_side .text_block {
+          background-color: var(--container_background_blue);
+          box-sizing: border-box;
+          padding: 10px 10px 15px 10px;
+          box-shadow: 5px 5px 15px 0px #EFF1F2; }
+          .mejlis_history_page .inner_wrapper .page_content_block .right_side .text_block .text_title {
+            font-family: 'OpenSansExtraBold', sans-serif;
+            font-size: 25px;
+            margin: 0 0 25px 0;
+            text-align: center; }
+          .mejlis_history_page .inner_wrapper .page_content_block .right_side .text_block p {
+            font-size: 16px !important;
+            font-family: 'OpenSansRegular', sans-serif !important;
+            color: var(--text_black_default) !important;
+            margin: 0; }

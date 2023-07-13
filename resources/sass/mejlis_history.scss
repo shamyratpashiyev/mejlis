@@ -6,11 +6,53 @@
 
     .inner_wrapper{
         width: var(--default_width);
+        row-gap: 50px;
 
         .breadcrumbs_row{
             font-size: 16px;
             font-family: 'OpenSansRegular', sans-serif;
-            color: var(--text_black_default);
+            color: var(--text_gray_2);
+
+            span{
+                color: var(--sky_blue);
+            }
+        }
+
+        .page_content_block{
+            width: 100%;
+            column-gap: 50px;
+
+            .right_side{
+                color: var(--text_black_default);
+
+                .block_title{
+                    font-size: 30px;
+                    font-family: 'OpenSansExtraBold', sans-serif;
+                    margin: 0 0 25px 0;
+                    text-transform: uppercase;
+                }
+
+                .text_block{
+                    background-color: var(--container_background_blue);
+                    box-sizing: border-box;
+                    padding: 10px 10px 15px 10px;
+                    box-shadow: 5px 5px 15px 0px #EFF1F2;;
+
+                    .text_title{
+                        font-family: 'OpenSansExtraBold', sans-serif;
+                        font-size: 25px;
+                        margin: 0 0 25px 0;
+                        text-align: center;
+                    }
+
+                    p{
+                        font-size: 16px !important;
+                        font-family: 'OpenSansRegular', sans-serif !important;
+                        color: var(--text_black_default) !important;
+                        margin: 0;
+                    }
+                }
+            }
         }
     }
 }
