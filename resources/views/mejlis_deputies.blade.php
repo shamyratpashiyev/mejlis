@@ -12,7 +12,7 @@
 @endphp
 
 @section('content')
-    <div class="single_deputy_page flex_row">
+    <div class="mejlis_deputies_page flex_row">
         <div class="inner_wrapper flex_column">
             <div class="breadcrumbs_row">
                 <span>Baş sahypa</span> / Düzümi we gurluşygy / Mejlis deputatlary
