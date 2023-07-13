@@ -19,3 +19,4 @@ Route::get('/mejlis-history', [SiteController::class, 'mejlis_history'])->name('
 Route::get('/deputies-list', [SiteController::class, 'deputies_list'])->name('deputies_list_page');
 Route::get('/mejlis-committees', [SiteController::class, 'mejlis_committees'])->name('mejlis_committees_page');
 Route::get('/mejlis-deputies', [SiteController::class, 'mejlis_deputies'])->name('mejlis_deputies_page');
+Route::get('/single-deputy/{id}', [SiteController::class, 'single_deputy'])->name('single_deputy_page');

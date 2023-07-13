@@ -30,4 +30,9 @@ class SiteController extends Controller
 
         return view('mejlis_deputies');
     }
+
+    public function single_deputy(){
+
+        return view('single_deputy_page');
+    }
 }

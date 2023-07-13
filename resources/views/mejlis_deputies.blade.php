@@ -12,10 +12,10 @@
 @endphp
 
 @section('content')
-    <div class="mejlis_deputies_page flex_row">
+    <div class="single_deputy_page flex_row">
         <div class="inner_wrapper flex_column">
             <div class="breadcrumbs_row">
-                <span>Baş sahypa</span> / Düzümi we gurluşygy / Mejlis komitetleri 
+                <span>Baş sahypa</span> / Düzümi we gurluşygy / Mejlis deputatlary
             </div>
 
             <div class="page_content_block flex_row">
@@ -76,7 +76,7 @@
                     <div class="deputies_block flex_row">
 
                         <div class="deputy_container flex_column">
-                            <a href="#" class="name">Babaýew Kasymguly Gulmyradowiç</a>
+                            <a href="{{ route('single_deputy_page',1) }}" class="name">Babaýew Kasymguly Gulmyradowiç</a>
 
                             <div class="key_value_wrapper flex_column">
                                 <span class="key">Saýlaw okrugy:</span>
