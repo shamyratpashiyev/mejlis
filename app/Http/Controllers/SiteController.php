@@ -35,4 +35,9 @@ class SiteController extends Controller
 
         return view('single_deputy_page');
     }
+
+    public function bills_discussion(){
+
+        return view('bills_discussion');
+    }
 }

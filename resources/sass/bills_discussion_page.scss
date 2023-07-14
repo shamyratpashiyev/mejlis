@@ -1,0 +1,133 @@
+.bills_discussion_page{
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0 50px 0;
+
+    .inner_wrapper{
+        width: var(--default_width);
+        row-gap: 50px;
+
+        .breadcrumbs_row{
+            font-size: 16px;
+            font-family: 'OpenSansRegular', sans-serif;
+            color: var(--text_gray_2);
+
+            span{
+                color: var(--sky_blue);
+            }
+        }
+
+        .page_content_block{
+            width: 100%;
+            column-gap: 50px;
+
+            .right_side{
+                row-gap: 25px;
+                width: -webkit-fill-available;
+
+                .block_title{
+                    font-family: 'OpenSansExtraBold', sans-serif;
+                    font-size: 30px;
+                    color: var(--text_black_default);
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+
+                .select_row{
+                    column-gap: 15px;
+
+                    select{
+                        font-family: 'OpenSansRegular', sans-serif;
+                        font-size: 14px;
+                        color: var(--text_gray);
+                        outline: none;
+                        border: 1px solid var(--text_gray_4);
+                        background-color: var(--default_white);
+                        box-sizing: border-box;
+                        padding: 10px 157px 10px 10px;
+                    }
+                }
+
+                .table_container{
+
+                    .header_row, .table_row{
+                        box-sizing: border-box;
+
+                        span:first-child{
+                            width: 47%;
+                        }
+
+                        span:nth-child(2){
+                            width: 24%;
+                            border-left: 1px solid var(--text_gray_4);
+                            box-sizing: border-box;
+                            padding: 0 25px;
+                            text-align: center;
+                        }
+
+                        span:nth-child(3){
+                            width: 29%;
+                            box-sizing: border-box;
+                            padding: 0 0 0 25px;
+                            border-left: 1px solid var(--text_gray_4);
+                            text-align: center;
+                        }
+                    }
+
+                    .header_row{
+                        background-color: var(--sky_blue);
+                        align-items: center;
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                        padding: 10px;
+
+
+                        span{
+                            font-family: 'OpenSansBold', sans-serif;
+                            font-size: 16px;
+                            color: var(--default_white);
+                        }
+                    }
+
+                    .table_row{
+                        box-sizing: border-box;
+                        padding: 13px 10px;
+                        background-color: var(--container_background_blue);
+                        border-bottom: 1px solid var(--text_gray_4);
+                        align-items: center;
+
+                        span{
+                            font-family: 'OpenSansMedium', sans-serif;
+                            font-size: 16px;
+                            color: var(--text_black_default);
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .pagination_row{
+                        column-gap: 15px;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 37px;
+
+                        svg{
+                            width: 24px;
+                            height: 24px;
+
+                            path{
+                                fill: var(--text_gray_5);
+                            }
+                        }
+
+                        .item{
+                            font-size: 'GilroyMedium', sans-serif;
+                            font-size: 18px;
+                            color: var(--text_gray_5);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

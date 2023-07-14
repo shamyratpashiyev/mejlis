@@ -26,6 +26,10 @@
   font-family: RalewayBold;
   src: url(/fonts/Raleway-Bold.ttf) format("truetype"); }
 
+@font-face {
+  font-family: GilroyMedium;
+  src: url(/fonts/Gilroy-Medium.ttf) format("truetype"); }
+
 body, html {
   margin: 0;
   padding: 0; }
@@ -51,6 +55,7 @@ body {
   --text_gray_2: #B4B4B4;
   --text_gray_3: #D1D1D1;
   --text_gray_4: #EAEAEA;
+  --text_gray_5: #565E63;
   --pure_black: #000; }
 
 .title, .content {

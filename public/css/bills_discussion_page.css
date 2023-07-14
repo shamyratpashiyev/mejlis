@@ -1,0 +1,87 @@
+.bills_discussion_page {
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0 50px 0; }
+  .bills_discussion_page .inner_wrapper {
+    width: var(--default_width);
+    row-gap: 50px; }
+    .bills_discussion_page .inner_wrapper .breadcrumbs_row {
+      font-size: 16px;
+      font-family: 'OpenSansRegular', sans-serif;
+      color: var(--text_gray_2); }
+      .bills_discussion_page .inner_wrapper .breadcrumbs_row span {
+        color: var(--sky_blue); }
+    .bills_discussion_page .inner_wrapper .page_content_block {
+      width: 100%;
+      column-gap: 50px; }
+      .bills_discussion_page .inner_wrapper .page_content_block .right_side {
+        row-gap: 25px;
+        width: -webkit-fill-available; }
+        .bills_discussion_page .inner_wrapper .page_content_block .right_side .block_title {
+          font-family: 'OpenSansExtraBold', sans-serif;
+          font-size: 30px;
+          color: var(--text_black_default);
+          text-transform: uppercase;
+          margin: 0; }
+        .bills_discussion_page .inner_wrapper .page_content_block .right_side .select_row {
+          column-gap: 15px; }
+          .bills_discussion_page .inner_wrapper .page_content_block .right_side .select_row select {
+            font-family: 'OpenSansRegular', sans-serif;
+            font-size: 14px;
+            color: var(--text_gray);
+            outline: none;
+            border: 1px solid var(--text_gray_4);
+            background-color: var(--default_white);
+            box-sizing: border-box;
+            padding: 10px 157px 10px 10px; }
+        .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .header_row, .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .table_row {
+          box-sizing: border-box; }
+          .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .header_row span:first-child, .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .table_row span:first-child {
+            width: 47%; }
+          .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .header_row span:nth-child(2), .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .table_row span:nth-child(2) {
+            width: 24%;
+            border-left: 1px solid var(--text_gray_4);
+            box-sizing: border-box;
+            padding: 0 25px;
+            text-align: center; }
+          .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .header_row span:nth-child(3), .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .table_row span:nth-child(3) {
+            width: 29%;
+            box-sizing: border-box;
+            padding: 0 0 0 25px;
+            border-left: 1px solid var(--text_gray_4);
+            text-align: center; }
+        .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .header_row {
+          background-color: var(--sky_blue);
+          align-items: center;
+          box-sizing: border-box;
+          border-radius: 5px;
+          padding: 10px; }
+          .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .header_row span {
+            font-family: 'OpenSansBold', sans-serif;
+            font-size: 16px;
+            color: var(--default_white); }
+        .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .table_row {
+          box-sizing: border-box;
+          padding: 13px 10px;
+          background-color: var(--container_background_blue);
+          border-bottom: 1px solid var(--text_gray_4);
+          align-items: center; }
+          .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .table_row span {
+            font-family: 'OpenSansMedium', sans-serif;
+            font-size: 16px;
+            color: var(--text_black_default);
+            text-transform: uppercase; }
+        .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .pagination_row {
+          column-gap: 15px;
+          align-items: center;
+          justify-content: center;
+          margin-top: 37px; }
+          .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .pagination_row svg {
+            width: 24px;
+            height: 24px; }
+            .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .pagination_row svg path {
+              fill: var(--text_gray_5); }
+          .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .pagination_row .item {
+            font-size: 'GilroyMedium', sans-serif;
+            font-size: 18px;
+            color: var(--text_gray_5); }

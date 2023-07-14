@@ -163,7 +163,7 @@
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Законопроекты на обсуждение</a>
+                            <a href="{{ route('bills_discussion_page') }}">Законопроекты на обсуждение</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">Kodeksler</a>
