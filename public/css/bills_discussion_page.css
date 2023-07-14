@@ -82,6 +82,6 @@
             .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .pagination_row svg path {
               fill: var(--text_gray_5); }
           .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .pagination_row .item {
-            font-size: 'GilroyMedium', sans-serif;
+            font-family: 'GilroyMedium', sans-serif;
             font-size: 18px;
             color: var(--text_gray_5); }
