@@ -86,11 +86,11 @@
 
                     <div class="deputies_block flex_row">
 
-                        <div class="deputy_container flex_column" data-href-value="#">
+                        <div class="deputy_container flex_column" data-href-value="{{ route('single_deputy_page', 1) }}">
                             <span class="name">Babaýew Kasymguly Gulmyradowiç</span>
                             <x-deputy-popup name="Babaýew Kasymguly Gulmyradowiç" district="1-nji «Garaşsyzlyk» saýlaw okrugy" :description="$deputy_description" />
 
-                            <div class="key_value_wrapper flex_column" data-district-id='1'>
+                            <div class="key_value_wrapper flex_column">
                                 <span class="key election_district">Saýlaw okrugy:</span>
                                 <span class="value">1-nji «Garaşsyzlyk» saýlaw okrugy</span>
                                 <x-election-district-popup name="1-nji «Garaşsyzlyk» saýlaw okrugy" :description="$district_desc"/>
