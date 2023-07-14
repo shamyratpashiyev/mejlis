@@ -104,27 +104,6 @@
                         }
                     }
 
-                    .pagination_row{
-                        column-gap: 15px;
-                        align-items: center;
-                        justify-content: center;
-                        margin-top: 37px;
-
-                        svg{
-                            width: 24px;
-                            height: 24px;
-
-                            path{
-                                fill: var(--text_gray_5);
-                            }
-                        }
-
-                        .item{
-                            font-family: 'GilroyMedium', sans-serif;
-                            font-size: 18px;
-                            color: var(--text_gray_5);
-                        }
-                    }
                 }
             }
             

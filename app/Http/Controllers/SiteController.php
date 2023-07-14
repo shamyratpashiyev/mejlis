@@ -13,22 +13,22 @@ class SiteController extends Controller
 
     public function mejlis_history(){
         
-        return view('mejlis_history');
+        return view('mejlis_history_page');
     }
 
     public function deputies_list(){
 
-        return view('deputies_list');
+        return view('deputies_list_page');
     }
 
     public function mejlis_committees(){
 
-        return view('mejlis_committees');
+        return view('mejlis_committees_page');
     }
 
     public function mejlis_deputies(){
 
-        return view('mejlis_deputies');
+        return view('mejlis_deputies_page');
     }
 
     public function single_deputy(){
@@ -38,6 +38,11 @@ class SiteController extends Controller
 
     public function bills_discussion(){
 
-        return view('bills_discussion');
+        return view('bills_discussion_page');
+    }
+
+    public function codes(){
+
+        return view('codes_page');
     }
 }

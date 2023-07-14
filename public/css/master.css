@@ -271,3 +271,18 @@ a {
       right: 10px;
       top: 10px;
       cursor: pointer; }
+
+.pagination_row {
+  column-gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 37px; }
+  .pagination_row svg {
+    width: 24px;
+    height: 24px; }
+    .pagination_row svg path {
+      fill: var(--text_gray_5); }
+  .pagination_row .item {
+    font-family: 'GilroyMedium', sans-serif;
+    font-size: 18px;
+    color: var(--text_gray_5); }

@@ -71,17 +71,3 @@
             font-size: 16px;
             color: var(--text_black_default);
             text-transform: uppercase; }
-        .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .pagination_row {
-          column-gap: 15px;
-          align-items: center;
-          justify-content: center;
-          margin-top: 37px; }
-          .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .pagination_row svg {
-            width: 24px;
-            height: 24px; }
-            .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .pagination_row svg path {
-              fill: var(--text_gray_5); }
-          .bills_discussion_page .inner_wrapper .page_content_block .right_side .table_container .pagination_row .item {
-            font-family: 'GilroyMedium', sans-serif;
-            font-size: 18px;
-            color: var(--text_gray_5); }

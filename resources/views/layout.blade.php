@@ -166,7 +166,7 @@
                             <a href="{{ route('bills_discussion_page') }}">Законопроекты на обсуждение</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Kodeksler</a>
+                            <a href="{{ route('codes_page') }}">Kodeksler</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">Kanunlar</a>
