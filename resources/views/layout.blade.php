@@ -188,7 +188,7 @@
                             <a href="{{ route('international_cooperation_page') }}">Halkara hyzmatdaşlyk</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Dostluk topar</a>
+                            <a href="{{ route('friendship_group_page') }}">Dostluk topar</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="{{ route('news_international_page') }}">Täzelikler</a>

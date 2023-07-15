@@ -1,0 +1,67 @@
+.friendship_group_page{
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0 50px 0;
+
+    .inner_wrapper{
+        width: var(--default_width);
+        row-gap: 50px;
+
+
+        .page_content_block{
+            width: 100%;
+            column-gap: 80px;
+
+            .middle_column{
+                color: var(--text_black_default);
+                width: 729px;
+                
+                .block_title{
+                    font-family: 'OpenSansExtraBold',sans-serif;
+                    font-size: 25px;
+                    text-align: center;
+                    margin: 0 0 25px 0;
+                }
+
+                .text_block{
+                    background-color: var(--container_background_blue);
+                    box-sizing: border-box;
+                    padding: 10px 10px 15px 10px;
+
+                    .text_title{
+                        font-family: 'OpenSansBold',sans-serif;
+                        font-size: 16px;
+                        color: var(--sky_blue);
+                        margin: 0 0 25px 0;
+                    }
+
+                    p{
+                        font-family: 'OpenSansRegular', sans-serif !important;
+                        font-size: 16px !important;
+                        color: var(--text_black_default) !important;
+                        margin: 0 !important;
+                    }
+                }
+            }
+
+            .right_column{
+                width: 339px;
+                row-gap: 18px;
+                box-sizing: border-box;
+                padding: 10px 20px;
+                background-color: var(--sky_blue);
+                color: var(--default_white);
+                height: max-content;
+
+                .item{
+                    font-family: 'OpenSansRegular', sans-serif;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .pagination_row{
+            margin-top: 0;
+        }
+    }
+}

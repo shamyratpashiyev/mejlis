@@ -75,4 +75,9 @@ class SiteController extends Controller
 
         return view('single_item_international_page');
     }
+
+    public function friendship_group(){
+
+        return view('friendship_group_page');
+    }
 }
