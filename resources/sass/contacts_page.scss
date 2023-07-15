@@ -1,0 +1,78 @@
+.contacts_page{
+    justify-content: center;
+    
+    .inner_wrapper{
+        width: var(--default_width);
+
+        .breadcrumbs_row{
+            margin: 10px 0 50px 0;
+        }
+
+        .contacts_row{
+            justify-content: space-between;
+
+            .contacts_wrapper{
+                width: 747px;
+                height: 360px;
+                background-color: var(--container_background_blue);
+                color: var(--text_black_default);
+                box-sizing: border-box;
+                padding: 10px 10px 15px 10px;
+                justify-content: center;
+
+                .title{
+                    margin: 0;
+                    font-family: 'OpenSansExtraBold', sans-serif;
+                    font-size: 25px;
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+
+                .content_row{
+                    box-sizing: border-box;
+                    padding: 0 40px;
+
+                    .left_cell{
+                        width: 50%;
+                        row-gap: 25px;
+                        justify-content: center;
+
+                        .contact_row_wrapper{
+                            align-items: center;
+                            column-gap: 5px;
+                            color: var(--text_black_default);
+                            margin: 0;
+
+                            svg{
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+
+                    .right_cell{
+                        width: 50%;
+                        row-gap: 18px;
+                        justify-content: center;
+
+                        .title{
+                            font-family: 'OpenSansBold', sans-serif;
+                            font-size: 16px;
+                            margin: 0;
+                            text-align: center;
+                        }
+
+                        span{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .map_wrapper{
+                width: 623px;
+                height: 364px;
+            }
+        }
+    }
+}

@@ -5,12 +5,6 @@
   .bills_discussion_page .inner_wrapper {
     width: var(--default_width);
     row-gap: 50px; }
-    .bills_discussion_page .inner_wrapper .breadcrumbs_row {
-      font-size: 16px;
-      font-family: 'OpenSansRegular', sans-serif;
-      color: var(--text_gray_2); }
-      .bills_discussion_page .inner_wrapper .breadcrumbs_row span {
-        color: var(--sky_blue); }
     .bills_discussion_page .inner_wrapper .page_content_block {
       width: 100%;
       column-gap: 50px; }

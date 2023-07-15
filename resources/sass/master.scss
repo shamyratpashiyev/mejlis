@@ -388,3 +388,13 @@ a{
         color: var(--text_gray_5);
     }
 }
+
+.breadcrumbs_row{
+    font-size: 16px;
+    font-family: 'OpenSansRegular', sans-serif;
+    color: var(--text_gray_2);
+
+    span{
+        color: var(--sky_blue);
+    }
+}

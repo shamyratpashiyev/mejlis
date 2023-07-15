@@ -5,12 +5,6 @@
   .codes_page .inner_wrapper {
     width: var(--default_width);
     row-gap: 50px; }
-    .codes_page .inner_wrapper .breadcrumbs_row {
-      font-size: 16px;
-      font-family: 'OpenSansRegular', sans-serif;
-      color: var(--text_gray_2); }
-      .codes_page .inner_wrapper .breadcrumbs_row span {
-        color: var(--sky_blue); }
     .codes_page .inner_wrapper .page_content_block {
       width: 100%;
       column-gap: 80px; }

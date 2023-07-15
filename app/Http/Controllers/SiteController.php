@@ -50,4 +50,9 @@ class SiteController extends Controller
 
         return view('constitutional_law_page');
     }
+
+    public function contacts(){
+
+        return view('contacts_page');
+    }
 }

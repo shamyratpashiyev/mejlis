@@ -6,16 +6,7 @@
     .inner_wrapper{
         width: var(--default_width);
         row-gap: 50px;
-
-        .breadcrumbs_row{
-            font-size: 16px;
-            font-family: 'OpenSansRegular', sans-serif;
-            color: var(--text_gray_2);
-
-            span{
-                color: var(--sky_blue);
-            }
-        }
+        
 
         .page_content_block{
             width: 100%;

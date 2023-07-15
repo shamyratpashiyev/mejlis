@@ -5,12 +5,6 @@
   .single_deputy_page .inner_wrapper {
     width: var(--default_width);
     row-gap: 35px; }
-    .single_deputy_page .inner_wrapper .breadcrumbs_row {
-      font-size: 16px;
-      font-family: 'OpenSansRegular', sans-serif;
-      color: var(--text_gray_2); }
-      .single_deputy_page .inner_wrapper .breadcrumbs_row span {
-        color: var(--sky_blue); }
     .single_deputy_page .inner_wrapper .page_content_block {
       width: 100%;
       column-gap: 75px; }

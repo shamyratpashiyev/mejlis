@@ -252,7 +252,7 @@
             </div>
 
             <div class="right_column flex_column">
-                <a href="#" class="title">Habarlaşmak üçin</a>
+                <a href="{{ route('contacts_page') }}" class="title">Habarlaşmak üçin</a>
                 <p class="flex_row contact_row_wrapper">
                     <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z" stroke="white"/>
@@ -282,8 +282,6 @@
                     </svg>
                     <span>(+9912) 92-45-60</span>
                 </a>
-
-                
             </div>
 
         </div>
@@ -291,10 +289,7 @@
 
 
     <script>
-
         $(document).ready(()=>{
-
-            
 
             $('.hamburger_button_wrapper').click((e) => {
                 $('.hamburger_menu').toggleClass('active');
@@ -310,8 +305,6 @@
                 $('.lang_wrapper').toggleClass('active');
             })
         })
-        
-
         
     </script>
 </body>

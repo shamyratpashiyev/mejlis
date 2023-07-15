@@ -1,0 +1,51 @@
+.contacts_page {
+  justify-content: center; }
+  .contacts_page .inner_wrapper {
+    width: var(--default_width); }
+    .contacts_page .inner_wrapper .breadcrumbs_row {
+      margin: 10px 0 50px 0; }
+    .contacts_page .inner_wrapper .contacts_row {
+      justify-content: space-between; }
+      .contacts_page .inner_wrapper .contacts_row .contacts_wrapper {
+        width: 747px;
+        height: 360px;
+        background-color: var(--container_background_blue);
+        color: var(--text_black_default);
+        box-sizing: border-box;
+        padding: 10px 10px 15px 10px;
+        justify-content: center; }
+        .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .title {
+          margin: 0;
+          font-family: 'OpenSansExtraBold', sans-serif;
+          font-size: 25px;
+          text-align: center;
+          margin-bottom: 40px; }
+        .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row {
+          box-sizing: border-box;
+          padding: 0 40px; }
+          .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row .left_cell {
+            width: 50%;
+            row-gap: 25px;
+            justify-content: center; }
+            .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row .left_cell .contact_row_wrapper {
+              align-items: center;
+              column-gap: 5px;
+              color: var(--text_black_default);
+              margin: 0; }
+              .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row .left_cell .contact_row_wrapper svg {
+                width: 24px;
+                height: 24px; }
+          .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row .right_cell {
+            width: 50%;
+            row-gap: 18px;
+            justify-content: center; }
+            .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row .right_cell .title {
+              font-family: 'OpenSansBold', sans-serif;
+              font-size: 16px;
+              margin: 0;
+              text-align: center; }
+            .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row .right_cell span {
+              text-align: center; }
+      .contacts_page .inner_wrapper .contacts_row .map_wrapper {
+        width: 623px;
+        height: 364px; }
