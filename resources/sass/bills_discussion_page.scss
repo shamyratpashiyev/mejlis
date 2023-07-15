@@ -14,6 +14,8 @@
             .right_side{
                 row-gap: 25px;
                 width: -webkit-fill-available;
+                width: -moz-available;
+                width: -ms-available;
 
                 .block_title{
                     font-family: 'OpenSansExtraBold', sans-serif;

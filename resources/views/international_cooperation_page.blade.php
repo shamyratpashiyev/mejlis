@@ -26,7 +26,7 @@
 
                 <div class="right_side flex_column">
 
-                    <a href="#" class="item_container flex_row">
+                    <a href="{{ route('single_item_international_page',1) }}" class="item_container flex_row">
                         <div class="text_block flex_column">
                             <h3 class="title">Türkmenistan «Merkezi Aziýa – Hytaý» formatynda köptaraply geňeşmeleriň usullaryny döretmegi teklip etdi</h3>
                             <p class="content">Hormatly Prezidentimiz Serdar Berdimuhamedow «Merkezi Aziýa – Hytaý» formatynda köptaraply geňeşmeleriň usullaryny döretmegi teklip etdi. Bu barada döwlet Baştutanymyz Hytaýyň Sian şäherinde geçirilen «Merkezi Aziýa – Hytaý» birinji sammitinde eden çykyşynda belledi.</p>

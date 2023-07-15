@@ -70,4 +70,9 @@ class SiteController extends Controller
 
         return view('single_news_international_page');
     }
+
+    public function single_item_international(){
+
+        return view('single_item_international_page');
+    }
 }
