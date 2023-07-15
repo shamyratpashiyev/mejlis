@@ -26,7 +26,7 @@
 
                 <div class="right_side flex_column">
 
-                    <a href="#" class="news_container flex_row">
+                    <a href="{{ route('single_news_international_page',1) }}" class="news_container flex_row">
                         <div class="text_block flex_column">
                             <h3 class="title">Türkmenistan — Gruziýa: parlamentara gatnaşyklar pugtalandyrylýar</h3>
                             <p class="content">Şu gün Türkmenistanyň Mejlisinde “Türkmenistan — Gruziýa” parlamentara dostluk toparynyň başlygy Dawid Matikaşwiliniň ýolbaşçylygynda ýurdumyza gelen Gruziýanyň parlament wekiliýeti bilen duşuşyk geçirildi.</p>

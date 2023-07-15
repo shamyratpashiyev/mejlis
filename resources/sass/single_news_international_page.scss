@@ -1,0 +1,83 @@
+.single_news_international_page{
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0 50px 0;
+
+    .inner_wrapper{
+        width: var(--default_width);
+        row-gap: 50px;
+
+
+        .page_content_block{
+            width: 100%;
+            column-gap: 80px;
+
+            .news_content_block{
+                color: var(--text_black_default);
+                row-gap: 15px;
+                width: 1070px;
+                align-items: center;
+
+                .images_wrapper{
+                    width: 886px;
+                    height: 503.5px;
+                    justify-content: space-between;
+
+                    .image_big{
+                        width: 85.6%;
+                        height: 100%;
+                    }
+
+                    .small_images_wrapper{
+                        width: 13.2%;
+                        justify-content: center;
+                        height: 100%;
+                        row-gap: 15px;
+
+                        .image_small{
+                            width: 100%;
+                        }
+                    }
+                        
+                }
+
+                .date_row{
+                    justify-content: center;
+                    position: relative;
+                    width: 100%;
+
+                    .icon{
+                        position: absolute;
+                    }
+
+                    .date{
+                        width: 100%;
+                        text-align: end;
+                        font-family: 'OpenSansRegular', sans-serif;
+                        font-size: 18px;
+                    }
+                }
+
+                .news_title{
+                    font-family: 'OpenSansExtraBold', sans-serif;
+                    font-size: 25px;
+                    margin: 0;
+                    text-align: center;
+                }
+
+                .news_content{
+
+                    p{
+                        font-family: 'OpenSansRegular', sans-serif !important;
+                        font-size: 16px !important;
+                        margin: 0 !important;
+                    }
+                }
+            }            
+        }
+
+        .pagination_row{
+            margin-top: 0;
+        }
+    }
+}
