@@ -17,7 +17,7 @@
     <div class="friendship_group_page flex_row">
         <div class="inner_wrapper flex_column">
             <div class="breadcrumbs_row">
-                <span>Baş sahypa</span> / Halkara / Täzelikler
+                <span>Baş sahypa</span> / Halkara / Dostluk topar
             </div>
 
             <div class="page_content_block flex_row">
