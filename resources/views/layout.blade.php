@@ -185,7 +185,7 @@
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Halkara hyzmatdaşlyk</a>
+                            <a href="{{ route('international_cooperation_page') }}">Halkara hyzmatdaşlyk</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">Dostluk topar</a>

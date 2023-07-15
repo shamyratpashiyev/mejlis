@@ -24,3 +24,4 @@ Route::get('/bills-discussion', [SiteController::class, 'bills_discussion'])->na
 Route::get('/codes', [SiteController::class, 'codes'])->name('codes_page');
 Route::get('/constitutional-law', [SiteController::class, 'constitutional_law'])->name('constitutional_law_page');
 Route::get('/contacts', [SiteController::class, 'contacts'])->name('contacts_page');
+Route::get('/international-cooperation', [SiteController::class, 'international_cooperation'])->name('international_cooperation_page');

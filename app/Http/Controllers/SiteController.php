@@ -55,4 +55,9 @@ class SiteController extends Controller
 
         return view('contacts_page');
     }
+
+    public function international_cooperation(){
+
+        return view('international_cooperation_page');
+    }
 }
