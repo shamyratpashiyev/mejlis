@@ -28,25 +28,28 @@
 
                     <a href="#" class="news_container flex_row">
                         <div class="text_block flex_column">
-                            <h3 class="title">Türkmenistan «Merkezi Aziýa – Hytaý» formatynda köptaraply geňeşmeleriň usullaryny döretmegi teklip etdi</h3>
-                            <p class="content">Hormatly Prezidentimiz Serdar Berdimuhamedow «Merkezi Aziýa – Hytaý» formatynda köptaraply geňeşmeleriň usullaryny döretmegi teklip etdi. Bu barada döwlet Baştutanymyz Hytaýyň Sian şäherinde geçirilen «Merkezi Aziýa – Hytaý» birinji sammitinde eden çykyşynda belledi.</p>
-                            <span class="date">19.05.2023</span>
+                            <h3 class="title">Türkmenistan — Gruziýa: parlamentara gatnaşyklar pugtalandyrylýar</h3>
+                            <p class="content">Şu gün Türkmenistanyň Mejlisinde “Türkmenistan — Gruziýa” parlamentara dostluk toparynyň başlygy Dawid Matikaşwiliniň ýolbaşçylygynda ýurdumyza gelen Gruziýanyň parlament wekiliýeti bilen duşuşyk geçirildi.</p>
+                            <span class="date">22.05.2023</span>
                         </div>
 
                         <div class="image_wrapper">
-                            <img src="{{ asset('img/inter_item_1.jpg') }}" alt="">
+                            <img src="{{ asset('img/news_inter_1.jpg') }}" alt="">
                         </div>
                     </a>
 
                     <a href="#" class="news_container flex_row">
                         <div class="text_block flex_column">
-                            <h3 class="title">Türkmenistan «Russiýa – Yslam dünýäsi: Kazan Forum2023» atly halkara ykdysady foruma gatnaşýar</h3>
-                            <p class="content">Türkmenistanyň Ministrler Kabinetiniň ýanyndaky Ulag we kommunikasiýalar agentliginiň Baş direktory Mämmethan Çakyýewiň ýolbaşçylygyndaky ýurdumyzyň wekiliýeti «Russiýa – Yslam dünýäsi: Kazan Forum2023» atly XIV halkara ykdysady foruma gatnaşýar.</p>
-                            <span class="date">18.05.2023</span>
+                            <h3 class="title">Türkmenistanyň wekiliýeti «KazanForum 2023» forumyň çärelerine gatnaşýar</h3>
+                            <p class="content">
+                                2023-nji ýylyň 18-nji maýynda Tatarstanyň paýtagtynda «KazanForum 2023» halkara ykdysady forumyň ilkinji çäreleri öz işine başlady. Bu barada ýurdumyzyň daşary syýasat edarasy habar berýär.
+                                Forumyň çäklerinde “Demirgazyk-Günorta” halkara ulag geçelgesiniň ösdürilmegi barada” atly sessiýanyň dowamynda Türkmenistanyň Ministrler Kabinetiniň ýanyndaky Ulag we kommunikasiýalar agentliginiň Baş direktory M.Çakyýew çykyş etdi. Türkmen wekiliýetiniň ýolbaşçysynyň çykyşynda
+                            </p>
+                            <span class="date">19.05.2023</span>
                         </div>
 
                         <div class="image_wrapper">
-                            <img src="{{ asset('img/inter_item_2.jpg') }}" alt="">
+                            <img src="{{ asset('img/news_inter_2.jpg') }}" alt="">
                         </div>
                     </a>
 
@@ -58,7 +61,7 @@
                         </div>
 
                         <div class="image_wrapper">
-                            <img src="{{ asset('img/inter_item_3.jpg') }}" alt="">
+                            <img src="{{ asset('img/news_inter_3.jpg') }}" alt="">
                         </div>
                     </a>
 
@@ -70,7 +73,7 @@
                         </div>
 
                         <div class="image_wrapper">
-                            <img src="{{ asset('img/inter_item_4.jpg') }}" alt="">
+                            <img src="{{ asset('img/news_inter_4.jpg') }}" alt="">
                         </div>
                     </a>
                 </div>
