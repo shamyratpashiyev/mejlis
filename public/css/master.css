@@ -56,6 +56,7 @@ body {
   --text_gray_3: #D1D1D1;
   --text_gray_4: #EAEAEA;
   --text_gray_5: #565E63;
+  --text_gray_6: #4D4D4D;
   --pure_black: #000; }
 
 .title, .content {
