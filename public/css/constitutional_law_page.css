@@ -1,0 +1,47 @@
+.constitutional_law_page {
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0 50px 0; }
+  .constitutional_law_page .inner_wrapper {
+    width: var(--default_width);
+    row-gap: 50px; }
+    .constitutional_law_page .inner_wrapper .breadcrumbs_row {
+      font-size: 16px;
+      font-family: 'OpenSansRegular', sans-serif;
+      color: var(--text_gray_2); }
+      .constitutional_law_page .inner_wrapper .breadcrumbs_row span {
+        color: var(--sky_blue); }
+    .constitutional_law_page .inner_wrapper .page_content_block {
+      width: 100%;
+      column-gap: 50px; }
+      .constitutional_law_page .inner_wrapper .page_content_block .right_side {
+        row-gap: 35px;
+        color: var(--text_black_default); }
+        .constitutional_law_page .inner_wrapper .page_content_block .right_side .block_title {
+          font-family: 'OpenSansExtraBold', sans-serif;
+          font-size: 30px;
+          margin: 0;
+          text-transform: uppercase; }
+        .constitutional_law_page .inner_wrapper .page_content_block .right_side .text_block {
+          background-color: var(--container_background_blue);
+          color: var(--text_black_default);
+          box-sizing: border-box;
+          padding: 10px 10px 15px 10px; }
+          .constitutional_law_page .inner_wrapper .page_content_block .right_side .text_block .title_block {
+            row-gap: 10px;
+            font-family: 'OpenSansBold', sans-serif;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 25px; }
+            .constitutional_law_page .inner_wrapper .page_content_block .right_side .text_block .title_block .text_title {
+              text-transform: uppercase;
+              margin: 0; }
+            .constitutional_law_page .inner_wrapper .page_content_block .right_side .text_block .title_block .text_subtitle {
+              margin: 0; }
+            .constitutional_law_page .inner_wrapper .page_content_block .right_side .text_block .title_block span {
+              font-family: 'OpenSansRegular', sans-serif;
+              font-size: 16px; }
+          .constitutional_law_page .inner_wrapper .page_content_block .right_side .text_block p {
+            font-family: 'OpenSansRegular', sans-serif !important;
+            font-size: 16px !important;
+            margin: 0 !important; }

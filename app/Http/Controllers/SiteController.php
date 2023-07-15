@@ -45,4 +45,9 @@ class SiteController extends Controller
 
         return view('codes_page');
     }
+
+    public function constitutional_law(){
+
+        return view('constitutional_law_page');
+    }
 }

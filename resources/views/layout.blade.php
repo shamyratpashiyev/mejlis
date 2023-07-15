@@ -175,7 +175,7 @@
                             <a href="#">Mejlisiň kararlary</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Konstitusion kanuny</a>
+                            <a href="{{ route('constitutional_law_page') }}">Konstitusion kanuny</a>
                         </div>
                     </div>
                 </div>

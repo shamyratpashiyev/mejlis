@@ -96,3 +96,5 @@
                 .codes_page .inner_wrapper .page_content_block .right_side .codes_block .code_container .bottom_row a::after {
                   background-color: var(--sky_blue);
                   bottom: 0; }
+          .codes_page .inner_wrapper .page_content_block .right_side .codes_block .pagination_row {
+            margin: 0; }
