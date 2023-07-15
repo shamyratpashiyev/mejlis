@@ -191,7 +191,7 @@
                             <a href="#">Dostluk topar</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Täzelikler</a>
+                            <a href="{{ route('news_international_page') }}">Täzelikler</a>
                         </div>
                     </div>
                 </div>

@@ -60,4 +60,9 @@ class SiteController extends Controller
 
         return view('international_cooperation_page');
     }
+
+    public function news_international(){
+
+        return view('news_international_page');
+    }
 }
