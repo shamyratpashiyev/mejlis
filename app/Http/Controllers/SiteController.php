@@ -125,4 +125,9 @@ class SiteController extends Controller
 
         return view('turkmenistan.population_page');
     }
+
+    public function tkm_state_symbols(){
+
+        return view('turkmenistan.state_symbols_page');
+    }
 }
