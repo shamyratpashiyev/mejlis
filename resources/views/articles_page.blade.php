@@ -341,7 +341,7 @@
         $(document).ready(()=>{
             $('.article_container').on('click', (event)=>{
                 console.log($(event.target).data('href-value'))
-                $(event.target).data('href-value') ? window.location.replace($(event.target).data('href-value')) : window.location.replace($(event.target).parents('.article_container').data('href-value'));
+                $(event.target).data('href-value') ? window.location.assign($(event.target).data('href-value')) : window.location.assign($(event.target).parents('.article_container').data('href-value'));
             })
         })
     </script>

@@ -412,11 +412,11 @@ $(document).ready(() => {
         $('.upper_header').addClass('hidden')
     }
     $('.legislation_container').on('click', (event)=>{
-        $(event.target).data('href-value') ? window.location.replace($(event.target).data('href-value')) : ''
+        $(event.target).data('href-value') ? window.location.assign($(event.target).data('href-value')) : ''
     })
 
     $('.activity_container').on('click', (event)=>{
-        $(event.target).data('href-value') ? window.location.replace($(event.target).data('href-value')) : ''
+        $(event.target).data('href-value') ? window.location.assign($(event.target).data('href-value')) : ''
     })
 })
 $(window).on('scroll',(event)=> {

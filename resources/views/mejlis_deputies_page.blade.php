@@ -223,7 +223,7 @@
                 href_value = $(event.target).data('href-value')  //if the block itself is the event target
                 ? $(event.target).data('href-value') 
                 : $(event.target).parent().data('href-value') ?? $(event.target).parent().parent().data('href-value') //else if first child or second child is the event target
-                window.location.replace(href_value)
+                window.location.assign(href_value)
             }
             
         })
