@@ -204,7 +204,7 @@
                             <a href="{{ route('news_page') }}">Täzelikler</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Çykyşlar we makalalar</a>
+                            <a href="{{ route('articles_page') }}">Çykyşlar we makalalar</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">Türkmenistanyň mejlisinde alnyp barylýan işler</a>

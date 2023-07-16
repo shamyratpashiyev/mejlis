@@ -31,3 +31,4 @@ Route::get('/single-item-international/{id}', [SiteController::class, 'single_it
 Route::get('/friendship-group', [SiteController::class, 'friendship_group'])->name('friendship_group_page');
 Route::get('/news', [SiteController::class, 'news'])->name('news_page');
 Route::get('/single-news/{id}', [SiteController::class, 'single_news'])->name('single_news_page');
+Route::get('/articles', [SiteController::class, 'articles'])->name('articles_page');
