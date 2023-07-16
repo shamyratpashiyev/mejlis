@@ -80,4 +80,9 @@ class SiteController extends Controller
 
         return view('friendship_group_page');
     }
+
+    public function news(){
+
+        return view('news_page');
+    }
 }

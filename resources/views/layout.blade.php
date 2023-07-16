@@ -201,7 +201,7 @@
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Täzelikler</a>
+                            <a href="{{ route('news_page') }}">Täzelikler</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">Çykyşlar we makalalar</a>

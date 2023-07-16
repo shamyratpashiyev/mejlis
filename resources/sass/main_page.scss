@@ -141,12 +141,16 @@
             .news_row_medium {
                 grid-column-start: 1;
                 grid-column-end: 3;
-                justify-content: space-between;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                column-gap: 28px;
+                row-gap: 35px;
 
                 .news_container_medium {
                     width: 340px;
                     height: 392px;
                     color: var(--text_black_default);
+                    flex-shrink: 0;
 
                     .image_wrapper{
                         width: 100%;
