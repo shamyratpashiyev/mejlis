@@ -207,7 +207,7 @@
                             <a href="{{ route('articles_page') }}">Çykyşlar we makalalar</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">Türkmenistanyň mejlisinde alnyp barylýan işler</a>
+                            <a href="{{ route('mejlis_activities_page') }}">Türkmenistanyň mejlisinde alnyp barylýan işler</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">Galereýa</a>

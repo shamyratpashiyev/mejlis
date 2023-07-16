@@ -1,0 +1,27 @@
+.mejlis_activities_page {
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0 35px 0; }
+  .mejlis_activities_page .inner_wrapper {
+    width: var(--default_width); }
+    .mejlis_activities_page .inner_wrapper .breadcrumbs_row {
+      margin: 0 0 35px 0; }
+    .mejlis_activities_page .inner_wrapper .page_content_block {
+      width: 100%;
+      column-gap: 80px;
+      color: var(--text_black_default); }
+      .mejlis_activities_page .inner_wrapper .page_content_block .activities_block {
+        width: -webkit-fill-available;
+        width: -moz-available;
+        width: -ms-available; }
+        .mejlis_activities_page .inner_wrapper .page_content_block .activities_block .block_title {
+          font-family: 'OpenSansExtraBold', sans-serif;
+          font-size: 30px;
+          margin: 0 0 15px 0;
+          text-transform: uppercase; }
+        .mejlis_activities_page .inner_wrapper .page_content_block .activities_block .activities_row {
+          justify-content: space-between;
+          flex-wrap: wrap;
+          row-gap: 15px; }
+    .mejlis_activities_page .inner_wrapper .pagination_row {
+      margin-top: 35px; }

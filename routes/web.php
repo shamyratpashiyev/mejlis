@@ -33,3 +33,4 @@ Route::get('/news', [SiteController::class, 'news'])->name('news_page');
 Route::get('/single-news/{id}', [SiteController::class, 'single_news'])->name('single_news_page');
 Route::get('/articles', [SiteController::class, 'articles'])->name('articles_page');
 Route::get('/single-article/{id}', [SiteController::class, 'single_article'])->name('single_article_page');
+Route::get('/mejlis-activities', [SiteController::class, 'mejlis_activities'])->name('mejlis_activities_page');

@@ -100,4 +100,9 @@ class SiteController extends Controller
 
         return view('single_article_page');
     }
+    
+    public function mejlis_activities(){
+
+        return view('mejlis_activities_page');
+    }
 }
