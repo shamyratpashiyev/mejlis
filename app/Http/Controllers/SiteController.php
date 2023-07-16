@@ -120,4 +120,9 @@ class SiteController extends Controller
 
         return view('turkmenistan.area_page');
     }
+
+    public function tkm_population(){
+
+        return view('turkmenistan.population_page');
+    }
 }

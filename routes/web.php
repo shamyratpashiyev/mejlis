@@ -39,6 +39,7 @@ Route::get('/single-activity/{id}', [SiteController::class, 'single_activity'])-
 Route::group(['prefix' => 'turkmenistan'],function (){
     Route::get('/history', [SiteController::class, 'tkm_history'])->name('tkm_history_page');
     Route::get('/area', [SiteController::class, 'tkm_area'])->name('tkm_area_page');
+    Route::get('/population', [SiteController::class, 'tkm_population'])->name('tkm_population_page');
     
 });
 
