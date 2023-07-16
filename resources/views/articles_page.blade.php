@@ -30,7 +30,7 @@
 
                     <div class="articles_row flex_row">
 
-                        <div class="article_container flex_column">
+                        <div data-href-value="{{ route('single_article_page',1) }}" class="article_container flex_column">
                             <div class="top_block flex_column">
                                 <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <line x1="4" y1="10" x2="44" y2="10" stroke="#EEB816"/>
@@ -336,4 +336,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(()=>{
+            $('.article_container').on('click', (event)=>{
+                console.log($(event.target).data('href-value'))
+                $(event.target).data('href-value') ? window.location.replace($(event.target).data('href-value')) : window.location.replace($(event.target).parents('.article_container').data('href-value'));
+            })
+        })
+    </script>
 @endsection

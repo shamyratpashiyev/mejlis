@@ -95,4 +95,9 @@ class SiteController extends Controller
 
         return view('articles_page');
     }
+
+    public function single_article(){
+
+        return view('single_article_page');
+    }
 }
