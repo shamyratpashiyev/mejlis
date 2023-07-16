@@ -215,9 +215,9 @@
                     </div>
                 </div>
 
-                <div class="nav_button_wrapper hover_underline">
+                <a href="{{ route('tkm_history_page') }}" class="nav_button_wrapper hover_underline">
                     <span>Türkmenistan</span>
-                </div>
+                </a>
             </div>
             
         </div>
