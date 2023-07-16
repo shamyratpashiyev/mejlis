@@ -6,9 +6,7 @@
 
 @php
     $links_list = [
-                    ['name'=>'Halkara hyzmatdaşlyk', 'url' => '#'],
-                    ['name'=>'Dostluk topar','url' => '#'], 
-                    ['name'=>'Täzelikler', 'url' => '#'],
+                    ['name'=>'--', 'url' => '#'],
     ];
     
 @endphp
@@ -22,7 +20,7 @@
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="Halkara"/>
+                <x-sidebar :links-list="$links_list" title="--"/>
 
                 <div class="middle_column flex_column">
                     <h3 class="column_title">Taryhy</h3>
@@ -34,8 +32,8 @@
 
                 <div class="right_column flex_column">
                     <a href="#">Prezidenti</a>
-                    <a href="#" class="active">Taryhy</a>
-                    <a href="#">Meýdany</a>
+                    <a href="{{ route('tkm_history_page') }}" class="active">Taryhy</a>
+                    <a href="{{ route('tkm_area_page') }}">Meýdany</a>
                     <a href="#">Ilaty</a>
                     <a href="#">Döwlet nyşanlary</a>
                     <a href="#">Konstitusiýasy</a>
