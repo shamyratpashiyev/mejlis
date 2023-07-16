@@ -25,7 +25,7 @@
             </div>
             <div class="grid_block">
 
-                <a href="#" class="news_container_big flex_column">
+                <a href="{{ route('single_news_page', 1) }}" class="news_container_big flex_column">
                     <div class="image_wrapper">
                         <img src="{{ asset('img/news_big.jpg') }}" alt="">
                     </div>
