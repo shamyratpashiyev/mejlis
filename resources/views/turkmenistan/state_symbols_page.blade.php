@@ -43,7 +43,7 @@
                     <a href="{{ route('tkm_population_page') }}">Ilaty</a>
                     <a href="{{ route('tkm_state_symbols_page') }}" class="active">Döwlet nyşanlary</a>
                     <a href="#">Konstitusiýasy</a>
-                    <a href="#">Döwlet baýramçylyklary we matam günleri</a>
+                    <a href="{{ route('tkm_state_holidays_page') }}">Döwlet baýramçylyklary we matam günleri</a>
                 </div>
             </div>
         </div>

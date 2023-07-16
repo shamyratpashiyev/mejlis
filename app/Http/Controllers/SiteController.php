@@ -130,4 +130,9 @@ class SiteController extends Controller
 
         return view('turkmenistan.state_symbols_page');
     }
+
+    public function tkm_state_holidays(){
+
+        return view('turkmenistan.state_holidays_page');
+    }
 }
