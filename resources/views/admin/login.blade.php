@@ -33,7 +33,7 @@
             =====================================-->
             <div class="login">
                 <div class="login__body">
-                    <form action="{{route('login')}}" method="post" class="form__login">
+                    <form action="{{route('login_post')}}" method="POST" class="form__login">
                         @csrf
                         <div class="login__title">
                             <h1>Авторизация</h1>
@@ -42,11 +42,13 @@
                         <div class="form__item">
                             <label>Логин:</label>
                             <input type="text" name="email">
+                            <span class="error_msg">{{ session('invalid_creds') }}</span>
                         </div>
 
                         <div class="form__item">
                             <label>Пароль:</label>
                             <input type="password" name="password">
+                            <span class="error_msg">{{ session('invalid_creds') }}</span>
                         </div>
 
                         <div class="form__button">
@@ -64,6 +66,13 @@
             </a>
         </main>
     </div>
+    <style>
+        .error_msg{
+            font-family: Inter;
+            color: red;
+            font-size: 12px;
+        }
+    </style>
     <script src="{{ asset('admins/js/jquery.min.js?_v=20230211214539') }}"></script>
 <script src="{{ asset('admins/js/ckeditor.js?_v=20230211214539') }}"></script>
 <script src="{{ asset('admins/js/app.min.js?_v=20230211214539') }}"></script>

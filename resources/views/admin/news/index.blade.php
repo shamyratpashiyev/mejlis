@@ -22,7 +22,7 @@
         <h1 class="title">Новости</h1>
 
 
-        <a href="{{ route('admin.news.create') }}">
+        <a href="{{ route('news_admin_add') }}">
             Добавить
         </a>
 
@@ -46,28 +46,28 @@
 
     <div class="content__list">
         <!-- list__item -->
-        @foreach($news as $key => $item )
+        {{-- @foreach($news as $key => $item ) --}}
 
         <div class="list__item">
             <div class="item__txt">
-                <div class="w5">{{$key + 1}}</div>
-                <div class="w35">{{ $item->ru_title }}</div>
+                <div class="w5">$key + 1</div>
+                <div class="w35"> $item->ru_title </div>
                 <div class="w35">
-                    {!! $item->ru_content !!}
+                    !! $item->ru_content !!
                 </div>
-                <div class="date w15">{{ $date[$item->id] }}</div>
+                <div class="date w15"> $date[$item->id] </div>
             </div>
 
             <div class="item__button w5a5">
-                <a href="{{ route('admin.news.edit', $item) }}">
+                <a href="#">
                     <img src="{{ asset('admins/img/ico/edit_v2.svg') }}">
                 </a>
 
-                <form action="{{ route('admin.news.destroy', $item)}}" method="post">
+                <form action="#" method="post">
                     @csrf
                     @method('delete')
-                    <input type="submit" id="{{$item->id}}" value="">
-                    <label for="{{$item->id}}">
+                    <input type="submit" id="$item->id" value="">
+                    <label for="$item->id">
                         <img src="{{ asset('admins/img/ico/delete.svg') }}">
                     </label>
                 </form>
@@ -77,7 +77,7 @@
                 </a> --}}
             </div>
         </div>
-        @endforeach
+        {{-- @endforeach --}}
     </div>
 
 </div>

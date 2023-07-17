@@ -7,7 +7,7 @@
 
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
-    <a href="{{ route('admin.news.index') }}">
+    <a href="#">
         Новости
     </a>
 
@@ -33,7 +33,7 @@
         <h1 class="title">Добавление Новости</h1>
     </div>
 
-    <form action="{{route('admin.news.store')}}" method="post" class="edit__form" enctype="multipart/form-data">
+    <form action="#" method="post" class="edit__form" enctype="multipart/form-data">
         @csrf
         <!-- ROW  -->
         <div class="row">
@@ -138,7 +138,7 @@
             <!-- form__button -->
             <div class="form__button">
                 <input type="submit" value="Сохранить">
-                <a href="{{ route('admin.news.index') }}">Отмена</a>
+                <a href="#">Отмена</a>
             </div>
         </div>
     </form>

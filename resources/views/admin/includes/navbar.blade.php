@@ -12,14 +12,14 @@
 
     <div class="user">
         <div class="user__name">
-            <span>auth()->user()->name</span>
+            <span>{{ auth()->user()->name }}</span>
             <span>Admin</span>
         </div>
         <img src="{{ asset('admins/img/ico/ava.svg') }}" alt="">
     </div>
 
     <div class="logout">
-        <form action="" method="get">
+        <form action="{{ route('logout') }}" method="GET" >
             @csrf
             <input type="submit" id="logout" value="">
             <label for="logout">

@@ -46,8 +46,12 @@ Route::group(['prefix' => 'turkmenistan'],function (){
 });
 
 Route::get('/login', [AdminController::class, 'login'])->name('login');
+Route::post('/login', [AdminController::class, 'login_post'])->name('login_post');
 
-Route::group(['prefix' => 'adminpanel'],function (){
-    Route::get('/', [AdminController::class, 'index'])->name('main');
+Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
+    Route::get('/', [AdminController::class, 'index'])->name('admin_main');
+    Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
+    Route::get('/news', [AdminController::class, 'news_admin'])->name('news_admin');
+    Route::get('/news-add', [AdminController::class, 'news_admin_add'])->name('news_admin_add');
 });
 

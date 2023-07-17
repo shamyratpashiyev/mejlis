@@ -8,15 +8,15 @@
 
 <nav class="menu">
 
-    <a href="#" class="{{request()->path() == 'admin' || str_contains(request()->path(), 'headers') || str_contains(request()->path(), 'contacts') || str_contains(request()->path(), 'aboutus') || str_contains(request()->path(), 'photoblocks') || str_contains(request()->path(), 'counters')   ? ' menu__link active' : 'menu__link'}} ">
+    <a href="#" class="menu__link {{ (Route::currentRouteName() == 'admin_main' ? 'active' : '') }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-home.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/home.svg') }}">
         </div>
-        <span>Главная страница</span>
+        <span>Главная страница </span>
     </a>
 
-    <div class="{{str_contains(request()->path(), 'committees') || (str_contains(request()->path(), 'search') && (session('search') == 'categories' || session('search') == 'subCategories' )) ? ' menu__link active' : 'menu__link'}} ">
+    <div class="menu__link">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
@@ -49,7 +49,7 @@
     </div>
 
 
-    <a href="#" class="{{str_contains(request()->path(), 'news') || (str_contains(request()->path(), 'search') &&   session('search') == 'news') ? ' menu__link ml active' : 'menu__link ml'}}">
+    <a href="{{ route('news_admin') }}" class="menu__link ml {{ (Route::currentRouteName() == 'news_admin' ? 'active' : '') }}">
         <div class="icon">
             <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
             <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
