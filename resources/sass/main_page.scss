@@ -53,7 +53,21 @@
             .news_block_scroll{
                 row-gap: 25px;
                 overflow-y: scroll;
-
+                
+                &::-webkit-scrollbar {
+                    -ms-overflow-style: none;  /* IE and Edge */
+                    scrollbar-width: none;
+                }
+                &::-moz-scrollbar{
+                    width: 0px;
+                }
+                &::-ms-scrollbar{
+                    width: 0px;
+                }
+                &::-o-scrollbar{
+                    width: 0px;
+                }
+                
             }
 
             .news_row_medium {

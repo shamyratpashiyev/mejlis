@@ -39,6 +39,16 @@
       .news_section_main .inner_wrapper .grid_block .news_block_scroll {
         row-gap: 25px;
         overflow-y: scroll; }
+        .news_section_main .inner_wrapper .grid_block .news_block_scroll::-webkit-scrollbar {
+          -ms-overflow-style: none;
+          /* IE and Edge */
+          scrollbar-width: none; }
+        .news_section_main .inner_wrapper .grid_block .news_block_scroll::-moz-scrollbar {
+          width: 0px; }
+        .news_section_main .inner_wrapper .grid_block .news_block_scroll::-ms-scrollbar {
+          width: 0px; }
+        .news_section_main .inner_wrapper .grid_block .news_block_scroll::-o-scrollbar {
+          width: 0px; }
       .news_section_main .inner_wrapper .grid_block .news_row_medium {
         grid-column-start: 1;
         grid-column-end: 3;

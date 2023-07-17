@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -42,5 +43,11 @@ Route::group(['prefix' => 'turkmenistan'],function (){
     Route::get('/population', [SiteController::class, 'tkm_population'])->name('tkm_population_page');
     Route::get('/state-symbols', [SiteController::class, 'tkm_state_symbols'])->name('tkm_state_symbols_page');
     Route::get('/state-holidays', [SiteController::class, 'tkm_state_holidays'])->name('tkm_state_holidays_page');
+});
+
+Route::get('/login', [AdminController::class, 'login'])->name('login');
+
+Route::group(['prefix' => 'adminpanel'],function (){
+    Route::get('/', [AdminController::class, 'index'])->name('main');
 });
 
