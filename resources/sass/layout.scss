@@ -287,12 +287,12 @@
 .middle_header{
     position: relative;
     background-color: var(--default_white);
-    height: 160px;
+    height: max-content;
     width: 100%;
     justify-content: center;
     color: var(--text_black_default);
     box-sizing: border-box;
-    padding-top: 10px;
+    padding: 10px 0 25px 0;
     z-index: 101;
 
     .inner_wrapper{
@@ -300,6 +300,7 @@
         justify-content: space-between;
         position: relative;
         width: var(--default_width);
+        row-gap: 10px;
 
         img{
             height: 87.5px;
@@ -315,7 +316,7 @@
         .lang_wrapper{
             position: absolute;
             right: 0;
-            bottom: 14px;
+            bottom: 0;
             color: black;
 
             .globe, .chevron_down{
@@ -360,13 +361,14 @@
                     display: none;
                     position: absolute;
                     left: 0;
-                    top: 63px;
+                    top: 62.4px;
                     background-color: var(--sky_blue);
                     box-sizing: border-box;
                     padding: 20px 15px;
                     width: max-content;
                     max-width: 275px;
                     row-gap: 20px;
+                    border-top: 1px solid var(--default_white);
 
                     .item_wrapper{
                         width: max-content;
