@@ -31,12 +31,4 @@ class AdminController extends Controller
         Auth::logout();
         return redirect(route('login'));
     }
-
-    public function news_admin(){
-        return view('admin.news.index');
-    }
-
-    public function news_admin_add(){
-        return view('admin.news.create');
-    }
 }

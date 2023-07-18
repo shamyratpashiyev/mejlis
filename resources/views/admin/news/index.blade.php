@@ -22,7 +22,7 @@
         <h1 class="title">Новости</h1>
 
 
-        <a href="{{ route('news_admin_add') }}">
+        <a href="{{ route('news.create') }}">
             Добавить
         </a>
 
@@ -46,38 +46,39 @@
 
     <div class="content__list">
         <!-- list__item -->
-        {{-- @foreach($news as $key => $item ) --}}
+        @foreach($news_all as $news )
 
-        <div class="list__item">
-            <div class="item__txt">
-                <div class="w5">$key + 1</div>
-                <div class="w35"> $item->ru_title </div>
-                <div class="w35">
-                    !! $item->ru_content !!
+            <div class="list__item">
+                <div class="item__txt">
+                    <div class="w5">{{ $news->id }}</div>
+                    <div class="w35"> {{ $news->title_tm }} </div>
+                    <div class="w35">
+                        {!! $news->description_tm !!}
+                    </div>
+                    <div class="date w15"> {{ $news->event_date }} </div>
                 </div>
-                <div class="date w15"> $date[$item->id] </div>
+
+                <div class="item__button w5a5">
+                    <a href="{{ route('news.edit', $news->id) }}">
+                        <img src="{{ asset('admins/img/ico/edit_v2.svg') }}">
+                    </a>
+
+                    <form action="{{ route('news.destroy', $news->id) }}" method="POST">
+                        @csrf
+                        @method('delete')
+                        <label for="{{ $news->id }}">
+                            <img src="{{ asset('admins/img/ico/delete.svg') }}">
+                        </label>
+                        <input type="submit" id="{{ $news->id }}" value="{{ $news->id }}" style="font-size: 0;">
+                        
+                    </form>
+
+                    {{-- <a class="btn btn-info" href="{{ route('admin.news.destroy', $item)}}">
+                    <img src="{{ asset('admins/img/ico/delete.svg') }}">
+                    </a> --}}
+                </div>
             </div>
-
-            <div class="item__button w5a5">
-                <a href="#">
-                    <img src="{{ asset('admins/img/ico/edit_v2.svg') }}">
-                </a>
-
-                <form action="#" method="post">
-                    @csrf
-                    @method('delete')
-                    <input type="submit" id="$item->id" value="">
-                    <label for="$item->id">
-                        <img src="{{ asset('admins/img/ico/delete.svg') }}">
-                    </label>
-                </form>
-
-                {{-- <a class="btn btn-info" href="{{ route('admin.news.destroy', $item)}}">
-                <img src="{{ asset('admins/img/ico/delete.svg') }}">
-                </a> --}}
-            </div>
-        </div>
-        {{-- @endforeach --}}
+        @endforeach
     </div>
 
 </div>

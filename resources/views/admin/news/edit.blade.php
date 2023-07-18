@@ -10,7 +10,7 @@
 
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
-    <a href="{{ route('admin.news.index') }}">
+    <a href="">
         Новости
     </a>
 
@@ -36,35 +36,35 @@
         <h1 class="title">Изменение Новости</h1>
     </div>
 
-    <form action="{{route('admin.news.update', $news)}}" method="post" class="edit__form" enctype="multipart/form-data">
+    <form action="{{ route('news.update', $selected_news->id) }}" method="POST" class="edit__form" enctype="multipart/form-data">
         @csrf
-        @method('patch')
+        @method('PUT')
         <!-- ROW  -->
         <div class="row">
             <!-- form__item -->
             <div class="form__item w30">
                 <label class="txt">TM - Заголовок</label>
-                <input type="text" class="inputTxt" name="tm_title" value="{{$news->tm_title}}">
-                @error('tm_title')
-                <p class="err">{{$message}}</p>
+                <input type="text" class="inputTxt" name="title_tm" value="{{ $selected_news->title_tm }}">
+                @error('title_tm')
+                    <p class="err">{{ $message }}</p>
                 @enderror
             </div>
 
             <!-- form__item -->
             <div class="form__item w30">
                 <label class="txt">RU - Заголовок</label>
-                <input type="text" class="inputTxt" name="ru_title" value="{{$news->ru_title}}">
-                @error('ru_title')
-                <p class="err">{{$message}}</p>
+                <input type="text" class="inputTxt" name="title_ru" value="{{ $selected_news->title_ru }}">
+                @error('title_ru')
+                    <p class="err">{{$message}}</p>
                 @enderror
             </div>
 
             <!-- form__item -->
             <div class="form__item w30">
                 <label class="txt">EN - Заголовок</label>
-                <input type="text" class="inputTxt" name="en_title" value="{{$news->en_title}}">
-                @error('en_title')
-                <p class="err">{{$message}}</p>
+                <input type="text" class="inputTxt" name="title_en" value="{{$selected_news->title_en}}">
+                @error('title_en')
+                    <p class="err">{{$message}}</p>
                 @enderror
             </div>
         </div>
@@ -74,18 +74,18 @@
             <!-- form__item -->
             <div class="form__item w45">
                 <label class="txt">TM - описание</label>
-                <textarea id="editor-10" name="tm_content">{{$news->tm_content}}</textarea>
-                @error('tm_content')
-                <p class="err">{{$message}}</p>
+                <textarea id="editor-10" name="description_tm">{{$selected_news->description_tm}}</textarea>
+                @error('description_tm')
+                    <p class="err">{{ $message }}</p>
                 @enderror
             </div>
 
             <!-- form__item -->
             <div class="form__item w45">
                 <label class="txt">RU - описание</label>
-                <textarea id="editor-11" name="ru_content">{{$news->ru_content}}</textarea>
-                @error('ru_content')
-                <p class="err">{{$message}}</p>
+                <textarea id="editor-11" name="description_ru">{{ $selected_news->description_ru }}</textarea>
+                @error('description_ru')
+                    <p class="err">{{ $message }}</p>
                 @enderror
             </div>
         </div>
@@ -95,9 +95,9 @@
             <!-- form__item -->
             <div class="form__item w45">
                 <label class="txt">EN - описание</label>
-                <textarea id="editor-12" name="en_content">{{$news->en_content}}</textarea>
-                @error('en_content')
-                <p class="err">{{$message}}</p>
+                <textarea id="editor-12" name="description_en">{{ $selected_news->description_en }}</textarea>
+                @error('description_en')
+                    <p class="err">{{$message}}</p>
                 @enderror
             </div>
         </div>
@@ -107,9 +107,9 @@
             <!-- form__item -->
             <div class="form__item w15">
                 <label class="txt">Дата</label>
-                <input type="datetime-local" class="inputDate" name="date" value="{{ $news->date }}">
+                <input type="datetime-local" class="inputDate" name="event_date" value="{{ $selected_news->event_date }}">
                 @error('date')
-                <p class="err">{{$message}}</p>
+                    <p class="err">{{ $message }}</p>
                 @enderror
             </div>
 
@@ -120,7 +120,7 @@
                         Прикрепить файл
                         <img src="{{ asset('admins/img/ico/link.svg') }}">
                     </label>
-                    <input type="file" id="file-3" class="inputFile" accept="image/png, image/jpg, image/jpeg" name="main_image">
+                    <input type="file" id="file-3" class="inputFile" accept="image/png, image/jpg, image/jpeg" name="image">
                     <!-- HELP -->
                     <div class="help">
                         <div class="help__icon">?</div>
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                     @error('main_image')
-                    <p class="err">{{$message}}</p>
+                        <p class="err">{{ $message }}</p>
                     @enderror
                 </div>
             </div>
@@ -142,7 +142,7 @@
             <!-- form__button -->
             <div class="form__button">
                 <input type="submit" value="Сохранить">
-                <a href="{{ route('admin.news.index') }}">Отмена</a>
+                <a href="{{ route('news.index') }}">Отмена</a>
             </div>
         </div>
     </form>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -51,7 +52,6 @@ Route::post('/login', [AdminController::class, 'login_post'])->name('login_post'
 Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::get('/', [AdminController::class, 'index'])->name('admin_main');
     Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
-    Route::get('/news', [AdminController::class, 'news_admin'])->name('news_admin');
-    Route::get('/news-add', [AdminController::class, 'news_admin_add'])->name('news_admin_add');
+    Route::resource('/news', NewsController::class);
 });
 

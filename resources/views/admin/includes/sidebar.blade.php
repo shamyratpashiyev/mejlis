@@ -8,7 +8,7 @@
 
 <nav class="menu">
 
-    <a href="#" class="menu__link {{ (Route::currentRouteName() == 'admin_main' ? 'active' : '') }}">
+    <a href="{{ route('admin_main') }}" class="menu__link {{ (Route::currentRouteName() == 'admin_main' ? 'active' : '') }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-home.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/home.svg') }}">
@@ -49,7 +49,7 @@
     </div>
 
 
-    <a href="{{ route('news_admin') }}" class="menu__link ml {{ (Route::currentRouteName() == 'news_admin' ? 'active' : '') }}">
+    <a href="{{ route('news.index') }}" class="menu__link ml {{ (Route::currentRouteName() == 'news.index' ? 'active' : '') }}">
         <div class="icon">
             <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
             <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">

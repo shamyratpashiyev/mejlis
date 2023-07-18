@@ -20,8 +20,7 @@ return new class extends Migration
             $table->text('description_ru');
             $table->text('description_en');
             $table->timestamp('event_date');
-            $table->string('image');
-            $table->foreignId('category_id')->nullable()->references('id')->on('news_categories')->onUpdate('CASCADE')->onDelete('SET NULL');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
