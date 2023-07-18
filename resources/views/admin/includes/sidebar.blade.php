@@ -18,30 +18,6 @@
 
     <div class="menu__link">
         <div class="icon">
-            <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
-            <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
-        </div>
-        <span>Комитеты</span>
-    </div>
-
-    <a href="#" class="{{str_contains(request()->path(), 'categories') || (str_contains(request()->path(), 'search') && session('search') == 'categories') ? ' menu__link ml active' : 'menu__link ml'}} ">
-        <div class="icon">
-            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
-            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
-        </div>
-        <span>Категории</span>
-    </a>
-
-    <a href="#" class="{{str_contains(request()->path(), 'subCategories') || (str_contains(request()->path(), 'search') && session('search') == 'subCategories') ? ' menu__link ml active' : 'menu__link ml'}} ">
-        <div class="icon">
-            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
-            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
-        </div>
-        <span>Под категории</span>
-    </a>
-
-    <div class="{{str_contains(request()->path(), 'add') ||( str_contains(request()->path(), 'search') && (session('search') == 'news' || session('search') == 'metodical' || session('search') == 'science' || session('search') == 'block')) ? ' menu__link active' : 'menu__link'}} ">
-        <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-edit.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/edit.svg') }}">
         </div>
@@ -95,6 +71,14 @@
             <img class="img2" src="{{ asset('admins/img/ico/setting.svg') }}">
         </div>
         <span>Депутаты</span>
+    </a>
+
+    <a href="{{ route('committees.index') }}" class="menu__link {{ (Route::currentRouteName() == 'committees.index' ? 'active' : '') }}">
+        <div class="icon">
+            <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
+            <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
+        </div>
+        <span>Комитеты</span>
     </a>
 
     <a href="#" class="menu__link">

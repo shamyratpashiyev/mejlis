@@ -2,17 +2,16 @@
 
 @section('crumbs')
 
-<!--====================================
-                        CRUMBS SECTION
-            =====================================-->
 <div class="crumbs">
-    <img src="{{ asset('admins/img/ico/purple-home.svg') }}" alt="">
+    <img src="{{ asset('admins/img/ico/purple-home.svg')}}" alt="">
 
-    <img src="{{ asset('admins/img/ico/arrow.svg') }}">
+
+
+
+    <img src="{{ asset('admins/img/ico/arrow.svg')}}">
     <div>
-        Блок "Объявление"
+        Комитеты
     </div>
-
 
 </div>
 
@@ -22,10 +21,10 @@
 
 <div class="content">
     <div class="title">
-        <h1 class="title">Блок "Объявление"</h1>
+        <h1 class="title">Комитеты</h1>
 
 
-        <a href="{{route('admin.ad-block.create')}}">
+        <a href="{{ route('committees.create') }}">
             Добавить
         </a>
 
@@ -50,41 +49,33 @@
 
     <div class="content__list">
         <!-- list__item -->
-        @foreach ($adblocks as $key => $adblock)
-
+        @foreach ($committees_all as $committee)
         <div class="list__item">
             <div class="item__txt">
-                <div class="w5">{{$key + 1}}</div>
-                <div class="w35">{{$adblock->ru_title}}</div>
+                <div class="w5">{{ $committee->id }}</div>
+                <div class="w35">{{ $committee->name }}</div>
                 <div class="w35">
-                    {{$adblock->ru_content}}
+                    {{-- {!! $committee->description_tm !!} --}}
                 </div>
-                <div class="date w15">{{$date[$adblock->id]}}</div>
+                <div class="date w15">$committee->event_date </div>
             </div>
 
             <div class="item__button w5a5">
-                <a href="{{route('admin.ad-block.edit', $adblock)}}">
+                <a href="{{ route('committees.edit', $committee->id) }}">
                     <img src="{{ asset('admins/img/ico/edit_v2.svg')}}">
                 </a>
-
-                <form action="{{route('admin.ad-block.destroy', $adblock) }}" method="post">
+                <form action="{{ route('committees.destroy', $committee->id) }}" method="POST">
                     @csrf
                     @method('delete')
-                    <input type="submit" id="{{$adblock->id}}" value="">
-                    <label for="{{$adblock->id}}">
+                    <input type="submit" id="{{ $committee->id }}" value="">
+                    <label for="{{ $committee->id }}">
                         <img src="{{ asset('admins/img/ico/delete.svg') }}">
                     </label>
                 </form>
             </div>
         </div>
         @endforeach
-
     </div>
 
-
-    <!-- #####. scienceArticles. #####. -->
-    <!-- ============================ -->
-
 </div>
-
 @endsection
