@@ -89,6 +89,14 @@
         <span>Деятельность Меджлиса</span>
     </a>
 
+    <a href="{{ route('deputies.index') }}" class="menu__link {{ (Route::currentRouteName() == 'deputies.index' ? 'active' : '') }}">
+        <div class="icon">
+            <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">
+            <img class="img2" src="{{ asset('admins/img/ico/setting.svg') }}">
+        </div>
+        <span>Депутаты</span>
+    </a>
+
     <a href="#" class="menu__link">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">

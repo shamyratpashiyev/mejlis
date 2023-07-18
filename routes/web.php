@@ -6,6 +6,7 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\DeputyController;
 use App\Http\Controllers\MejlisActivitiesController;
 use App\Http\Controllers\NewsCooperationController;
 use App\Http\Controllers\NewsInternationalController;
@@ -62,5 +63,6 @@ Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::resource('news_coop', NewsCooperationController::class);
     Route::resource('articles', ArticlesController::class);
     Route::resource('mejlis_activities', MejlisActivitiesController::class);
+    Route::resource('deputies', DeputyController::class);
 });
 
