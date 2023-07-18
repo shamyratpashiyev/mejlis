@@ -99,7 +99,10 @@ class NewsController extends Controller
      */
     public function destroy(string $id)
     {
-        News::findOrFail($id)->delete();
+        $selected_news = News::findOrFail($id);
+        File::delete(public_path() . '/' . $selected_news->image);
+        $selected_news->delete();
+        
         return redirect(route('news.index'));
     }
 }

@@ -10,7 +10,7 @@
 
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
-    <a href="">
+    <a href="{{ route('news.index') }}">
         Новости
     </a>
 
