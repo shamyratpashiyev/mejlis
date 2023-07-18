@@ -73,6 +73,14 @@
         <span>Международное соотрудничество</span>
     </a>
 
+    <a href="{{ route('articles.index') }}" class="menu__link {{ (Route::currentRouteName() == 'articles.index' ? 'active' : '') }}">
+        <div class="icon">
+            <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">
+            <img class="img2" src="{{ asset('admins/img/ico/setting.svg') }}">
+        </div>
+        <span>Выступления и Статьи</span>
+    </a>
+
     <a href="#" class="menu__link">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">

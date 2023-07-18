@@ -10,7 +10,7 @@
 
     <img src="{{ asset('admins/img/ico/arrow.svg')}}">
     <div>
-        Научные статьи
+        Выступления и Статьи
     </div>
 
 </div>
@@ -21,10 +21,10 @@
 
 <div class="content">
     <div class="title">
-        <h1 class="title">Научные статьи</h1>
+        <h1 class="title">Выступления и Статьи</h1>
 
 
-        <a href="{{route('admin.science-article.create')}}">
+        <a href="{{ route('articles.create') }}">
             Добавить
         </a>
 
@@ -49,26 +49,26 @@
 
     <div class="content__list">
         <!-- list__item -->
-        @foreach ($articles as $key => $article)
+        @foreach ($articles_all as $article)
         <div class="list__item">
             <div class="item__txt">
-                <div class="w5">{{$key + 1}}</div>
-                <div class="w35">{{$article->ru_title}}</div>
+                <div class="w5">{{ $article->id }}</div>
+                <div class="w35">{{ $article->title_tm }}</div>
                 <div class="w35">
-                    {!!$article->ru_content!!}
+                    {!! $article->description_tm !!}
                 </div>
-                <div class="date w15">{{$date[$article->id]}}</div>
+                <div class="date w15">{{ $article->event_date }}</div>
             </div>
 
             <div class="item__button w5a5">
-                <a href="{{route('admin.science-article.edit', $article)}}">
+                <a href="{{ route('articles.edit', $article->id) }}">
                     <img src="{{ asset('admins/img/ico/edit_v2.svg')}}">
                 </a>
-                <form action="{{ route('admin.science-article.destroy', $article)}}" method="post">
+                <form action="{{ route('articles.destroy', $article->id) }}" method="POST">
                     @csrf
                     @method('delete')
-                    <input type="submit" id="{{$article->id}}" value="">
-                    <label for="{{$article->id}}">
+                    <input type="submit" id="{{ $article->id }}" value="">
+                    <label for="{{ $article->id }}">
                         <img src="{{ asset('admins/img/ico/delete.svg') }}">
                     </label>
                 </form>

@@ -1,12 +1,13 @@
 <?php
 
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\NewsController;
-use App\Http\Controllers\NewsCooperationController;
-use App\Http\Controllers\NewsInternationalController;
-use App\Http\Controllers\SiteController;
 use App\Models\NewsCooperation;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\SiteController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\NewsCooperationController;
+use App\Http\Controllers\NewsInternationalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,5 +59,6 @@ Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::resource('/news', NewsController::class);
     Route::resource('/news_inter', NewsInternationalController::class);
     Route::resource('/news_coop', NewsCooperationController::class);
+    Route::resource('/articles', ArticlesController::class);
 });
 
