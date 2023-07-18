@@ -65,23 +65,15 @@
         <span>Международные новости</span>
     </a>
 
-    <a href="#" class="{{str_contains(request()->path(), 'science-articles') || (str_contains(request()->path(), 'search') && session('search') == 'science') ? ' menu__link ml active' : 'menu__link ml'}}">
+    <a href="{{ route('news_coop.index') }}" class="menu__link ml {{ (Route::currentRouteName() == 'news_coop.index' ? 'active' : '') }}">
         <div class="icon">
             <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
             <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
         </div>
-        <span>Научные статьи</span>
+        <span>Международное соотрудничество</span>
     </a>
 
-    <a href="#" class="{{str_contains(request()->path(), 'ad-block') || (str_contains(request()->path(), 'search') && session('search') == 'block') ? ' menu__link ml active' : 'menu__link ml'}}">
-        <div class="icon">
-            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
-            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
-        </div>
-        <span>Блок "Объявление"</span>
-    </a>
-
-    <a href="#" class="{{str_contains(request()->path(), 'settings' ) ? ' menu__link active' : 'menu__link'}}">
+    <a href="#" class="menu__link">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/setting.svg') }}">

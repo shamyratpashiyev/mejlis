@@ -3,20 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\NewsCooperation;
 use App\Http\Requests\NewsStore;
-use App\Models\NewsInternational;
 use Illuminate\Support\Facades\File;
 
-class NewsInternationalController extends Controller
+class NewsCooperationController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $news_all = NewsInternational::get();
+        $news_all = NewsCooperation::get();
 
-        return view('admin.news_inter.index', ['news_all' => $news_all]);
+        return view('admin.news_coop.index', ['news_all' => $news_all]);
     }
 
     /**
@@ -24,7 +24,7 @@ class NewsInternationalController extends Controller
      */
     public function create()
     {
-        return view('admin.news_inter.create');
+        return view('admin.news_coop.create');
     }
 
     /**
@@ -32,7 +32,7 @@ class NewsInternationalController extends Controller
      */
     public function store(NewsStore $request)
     {
-        $news = new NewsInternational();
+        $news = new NewsCooperation();
         $news->title_tm = $request->title_tm;
         $news->title_ru = $request->title_ru;
         $news->title_en = $request->title_en;
@@ -42,27 +42,27 @@ class NewsInternationalController extends Controller
         $news->event_date = $request->event_date;
 
         if($request->hasFile('image_1')){
-            $news->image_1 = $request->file('image_1')->store('/uploaded_files/news_inter_img');
+            $news->image_1 = $request->file('image_1')->store('/uploaded_files/news_coop_img');
         }
 
         if($request->hasFile('image_2')){
-            $news->image_2 = $request->file('image_2')->store('/uploaded_files/news_inter_img');
+            $news->image_2 = $request->file('image_2')->store('/uploaded_files/news_coop_img');
         }
         
         if($request->hasFile('image_3')){
-            $news->image_3 = $request->file('image_3')->store('/uploaded_files/news_inter_img');
+            $news->image_3 = $request->file('image_3')->store('/uploaded_files/news_coop_img');
         }
         
         if($request->hasFile('image_4')){
-            $news->image_4 = $request->file('image_4')->store('/uploaded_files/news_inter_img');
+            $news->image_4 = $request->file('image_4')->store('/uploaded_files/news_coop_img');
         }
 
         if($request->hasFile('image_5')){
-            $news->image_5 = $request->file('image_5')->store('/uploaded_files/news_inter_img');
+            $news->image_5 = $request->file('image_5')->store('/uploaded_files/news_coop_img');
         }
 
         if($request->hasFile('image_6')){
-            $news->image_6 = $request->file('image_6')->store('/uploaded_files/news_inter_img');
+            $news->image_6 = $request->file('image_6')->store('/uploaded_files/news_coop_img');
         }
 
         $news->save();
@@ -83,8 +83,8 @@ class NewsInternationalController extends Controller
      */
     public function edit(string $id)
     {
-        $selected_news = NewsInternational::findOrFail($id);
-        return view('admin.news_inter.edit', ['selected_news' => $selected_news]);
+        $selected_news = NewsCooperation::findOrFail($id);
+        return view('admin.news_coop.edit', ['selected_news' => $selected_news]);
     }
 
     /**
@@ -92,7 +92,7 @@ class NewsInternationalController extends Controller
      */
     public function update(NewsStore $request, string $id)
     {
-        $selected_news = NewsInternational::findOrFail($id);
+        $selected_news = NewsCooperation::findOrFail($id);
         
         $selected_news->title_tm = $request->title_tm;
         $selected_news->title_ru = $request->title_ru;
@@ -103,38 +103,38 @@ class NewsInternationalController extends Controller
         $selected_news->event_date = $request->event_date;
 
         if($request->hasFile('image_1')){
-            $selected_news->image_1 = $request->file('image_1')->store('/uploaded_files/news_inter_img');
+            $selected_news->image_1 = $request->file('image_1')->store('/uploaded_files/news_coop_img');
             File::delete(public_path() . '/' . $selected_news->image_1);
         }
 
         if($request->hasFile('image_2')){
-            $selected_news->image_2 = $request->file('image_2')->store('/uploaded_files/news_inter_img');
+            $selected_news->image_2 = $request->file('image_2')->store('/uploaded_files/news_coop_img');
             File::delete(public_path() . '/' . $selected_news->image_2);
         }
         
         if($request->hasFile('image_3')){
-            $selected_news->image_3 = $request->file('image_3')->store('/uploaded_files/news_inter_img');
+            $selected_news->image_3 = $request->file('image_3')->store('/uploaded_files/news_coop_img');
             File::delete(public_path() . '/' . $selected_news->image_3);
         }
         
         if($request->hasFile('image_4')){
-            $selected_news->image_4 = $request->file('image_4')->store('/uploaded_files/news_inter_img');
+            $selected_news->image_4 = $request->file('image_4')->store('/uploaded_files/news_coop_img');
             File::delete(public_path() . '/' . $selected_news->image_4);
         }
 
         if($request->hasFile('image_5')){
-            $selected_news->image_5 = $request->file('image_5')->store('/uploaded_files/news_inter_img');
+            $selected_news->image_5 = $request->file('image_5')->store('/uploaded_files/news_coop_img');
             File::delete(public_path() . '/' . $selected_news->image_5);
         }
 
         if($request->hasFile('image_6')){
-            $selected_news->image_6 = $request->file('image_6')->store('/uploaded_files/news_inter_img');
+            $selected_news->image_6 = $request->file('image_6')->store('/uploaded_files/news_coop_img');
             File::delete(public_path() . '/' . $selected_news->image_6);
         }
 
         $selected_news->save();
         
-        return redirect(route('news_inter.index'));
+        return redirect(route('news_coop.index'));
     }
 
     /**
@@ -142,7 +142,7 @@ class NewsInternationalController extends Controller
      */
     public function destroy(string $id)
     {
-        $selected_news = NewsInternational::findOrFail($id);
+        $selected_news = NewsCooperation::findOrFail($id);
         File::delete(public_path() . '/' . $selected_news->image_1);
         File::delete(public_path() . '/' . $selected_news->image_2);
         File::delete(public_path() . '/' . $selected_news->image_3);
@@ -151,6 +151,6 @@ class NewsInternationalController extends Controller
         File::delete(public_path() . '/' . $selected_news->image_6);
         $selected_news->delete();
         
-        return redirect(route('news_inter.index'));
+        return redirect(route('news_coop.index'));
     }
 }

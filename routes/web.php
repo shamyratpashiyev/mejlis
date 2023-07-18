@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\NewsCooperationController;
 use App\Http\Controllers\NewsInternationalController;
 use App\Http\Controllers\SiteController;
+use App\Models\NewsCooperation;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -55,5 +57,6 @@ Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
     Route::resource('/news', NewsController::class);
     Route::resource('/news_inter', NewsInternationalController::class);
+    Route::resource('/news_coop', NewsCooperationController::class);
 });
 
