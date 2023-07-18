@@ -45,7 +45,7 @@
             <img class="img1" src="{{ asset('admins/img/ico/dark-edit.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/edit.svg') }}">
         </div>
-        <span>Добавление</span>
+        <span>Виды Новостей</span>
     </div>
 
 
@@ -57,12 +57,12 @@
         <span>Новости</span>
     </a>
 
-    <a href="#" class="{{str_contains(request()->path(), 'metodical-materials') || (str_contains(request()->path(), 'search') && session('search') == 'metodical') ? ' menu__link ml active' : 'menu__link ml'}} ">
+    <a href="{{ route('news_inter.index') }}" class="menu__link ml {{ (Route::currentRouteName() == 'news_inter.index' ? 'active' : '') }}">
         <div class="icon">
             <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
             <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
         </div>
-        <span>Метод.материалы</span>
+        <span>Международные новости</span>
     </a>
 
     <a href="#" class="{{str_contains(request()->path(), 'science-articles') || (str_contains(request()->path(), 'search') && session('search') == 'science') ? ' menu__link ml active' : 'menu__link ml'}}">

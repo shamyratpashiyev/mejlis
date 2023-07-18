@@ -73,7 +73,6 @@ class NewsController extends Controller
      */
     public function update(NewsStore $request, string $id)
     {
-        Log::debug('Success');
         $selected_news = News::findOrFail($id);
         
         $selected_news->title_tm = $request->title_tm;

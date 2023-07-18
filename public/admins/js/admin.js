@@ -233,6 +233,38 @@ function form() {
       formItem.appendChild(listFiles);
     });
 
+    $("#file-5").on("change", function () {
+      var arrayFiles = this.files,
+        formItem = this.parentNode,
+        listFiles = document.createElement("ul"),
+        li = "";
+      if (formItem.querySelector(".list-files")) {
+        formItem.querySelector(".list-files").remove();
+      }
+      listFiles.className = "list-files";
+      for (var i = 0; i < arrayFiles.length; i++) {
+        li += "<li>" + arrayFiles[i].name + "</li>";
+      }
+      listFiles.innerHTML = li;
+      formItem.appendChild(listFiles);
+    });
+
+    $("#file-6").on("change", function () {
+      var arrayFiles = this.files,
+        formItem = this.parentNode,
+        listFiles = document.createElement("ul"),
+        li = "";
+      if (formItem.querySelector(".list-files")) {
+        formItem.querySelector(".list-files").remove();
+      }
+      listFiles.className = "list-files";
+      for (var i = 0; i < arrayFiles.length; i++) {
+        li += "<li>" + arrayFiles[i].name + "</li>";
+      }
+      listFiles.innerHTML = li;
+      formItem.appendChild(listFiles);
+    });
+
     // ckeditor
     ClassicEditor.create(document.querySelector("#editor-1"))["catch"](function (error) {
       console.error(error);
