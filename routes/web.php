@@ -6,6 +6,7 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\MejlisActivitiesController;
 use App\Http\Controllers\NewsCooperationController;
 use App\Http\Controllers\NewsInternationalController;
 
@@ -56,9 +57,10 @@ Route::post('/login', [AdminController::class, 'login_post'])->name('login_post'
 Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::get('/', [AdminController::class, 'index'])->name('admin_main');
     Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
-    Route::resource('/news', NewsController::class);
-    Route::resource('/news_inter', NewsInternationalController::class);
-    Route::resource('/news_coop', NewsCooperationController::class);
-    Route::resource('/articles', ArticlesController::class);
+    Route::resource('news', NewsController::class);
+    Route::resource('news_inter', NewsInternationalController::class);
+    Route::resource('news_coop', NewsCooperationController::class);
+    Route::resource('articles', ArticlesController::class);
+    Route::resource('mejlis_activities', MejlisActivitiesController::class);
 });
 

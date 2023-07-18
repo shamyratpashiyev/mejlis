@@ -81,6 +81,14 @@
         <span>Выступления и Статьи</span>
     </a>
 
+    <a href="{{ route('mejlis_activities.index') }}" class="menu__link {{ (Route::currentRouteName() == 'mejlis_activities.index' ? 'active' : '') }}">
+        <div class="icon">
+            <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">
+            <img class="img2" src="{{ asset('admins/img/ico/setting.svg') }}">
+        </div>
+        <span>Деятельность Меджлиса</span>
+    </a>
+
     <a href="#" class="menu__link">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">
