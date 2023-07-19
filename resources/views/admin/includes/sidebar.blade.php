@@ -113,6 +113,14 @@
         <span>Постановления Меджлиса</span>
     </a>
 
+    <a href="{{ route('friendship_groups.index') }}" class="menu__link {{ (Route::currentRouteName() == 'friendship_groups.index' ? 'active' : '') }}">
+        <div class="icon">
+            <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
+            <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
+        </div>
+        <span>Группы Дружбы</span>
+    </a>
+
     <a href="#" class="menu__link">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">

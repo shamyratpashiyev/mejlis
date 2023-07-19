@@ -11,11 +11,13 @@ use App\Http\Controllers\DeputyController;
 use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\CommitteesController;
 use App\Http\Controllers\ConvocationController;
+use App\Http\Controllers\FriendshipGroupController;
 use App\Http\Controllers\LawsController;
 use App\Http\Controllers\NewsCooperationController;
 use App\Http\Controllers\MejlisActivitiesController;
 use App\Http\Controllers\MejlisDecreesController;
 use App\Http\Controllers\NewsInternationalController;
+use App\Models\FriendshipGroup;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,5 +77,6 @@ Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::resource('codes', CodesController::class);
     Route::resource('laws', LawsController::class);
     Route::resource('mejlis_decrees', MejlisDecreesController::class);
+    Route::resource('friendship_groups', FriendshipGroupController::class);
 });
 

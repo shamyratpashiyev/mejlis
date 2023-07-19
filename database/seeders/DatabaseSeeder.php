@@ -7,6 +7,7 @@ use Database\Seeders\LawSeeder;
 use Illuminate\Database\Seeder;
 use Database\Seeders\CodesSeeder;
 use Database\Seeders\DeputySeeder;
+use Database\Seeders\FriendshipGroupSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -29,6 +30,7 @@ class DatabaseSeeder extends Seeder
             CodesSeeder::class,
             LawSeeder::class,
             MejlisDecreeSeeder::class,
+            FriendshipGroupSeeder::class,
         ]);
     }
 }
