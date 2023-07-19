@@ -20,7 +20,7 @@ return new class extends Migration
             $table->mediumText('biography_tm');
             $table->mediumText('biography_ru');
             $table->mediumText('biography_en');
-            $table->string('email');
+            $table->string('email',500);
             $table->timestamps();
         });
     }

@@ -1,0 +1,64 @@
+form {
+    .help {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        width: 35px;
+
+        .help__icon {
+            border: 1.5px solid #e7e7e7;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            font-size: 16px;
+            font-weight: 500;
+            color: red;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .help__content {
+            position: absolute;
+            bottom: 120%;
+            background-color: $purple;
+            color: #fff;
+            border-radius: 10px;
+            padding: 20px 20px;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+
+            span {
+                display: block;
+                white-space: nowrap;
+                margin: 0px 0px 10px 0px;
+                font-size: 16px;
+
+                b {
+                    font-weight: 700;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &:hover {
+            .help__icon {
+                background-color: red;
+                color: #fff;
+            }
+
+            .help__content {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

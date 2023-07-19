@@ -2,12 +2,21 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Deputy;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Committee extends Model
 {
     use HasFactory;
 
     protected $fillable = ['name'];
+
+    public function deputies(){
+        return $this->belongsToMany(Deputy::class, 'deputy_committee', 'committee_id', 'deputy_id');
+    }
+
+    public function committee_head() {
+        return $this->belongsTo(Deputy::class, 'committee_head_id');
+    }
 }

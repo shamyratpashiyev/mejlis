@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Deputy;
+use App\Models\ElectionDistrict;
+use App\Models\Velayat;
 use Illuminate\Http\Request;
 
 class DeputyController extends Controller
@@ -21,7 +23,9 @@ class DeputyController extends Controller
      */
     public function create()
     {
-        return view('admin.deputies.create');
+        $velayats_all = Velayat::get();
+        $districts_all = ElectionDistrict::get();
+        return view('admin.deputies.create',['districts_all' => $districts_all, 'velayats_all' => $velayats_all]);
     }
 
     /**
@@ -38,6 +42,8 @@ class DeputyController extends Controller
         $deputy->biography_tm = $request->biography_tm;
         $deputy->biography_ru = $request->biography_ru;
         $deputy->biography_en = $request->biography_en;
+        $deputy->velayat_id = $request->velayat_id;
+        $deputy->election_district_id = $request->district_id;
 
         $deputy->save();
 
@@ -58,7 +64,10 @@ class DeputyController extends Controller
     public function edit(string $id)
     {
         $selected_deputy = Deputy::findOrFail($id);
-        return view('admin.deputies.edit', ['selected_deputy' => $selected_deputy]);
+        $velayats_all = Velayat::get();
+        $districts_all = ElectionDistrict::get();
+        return view('admin.deputies.edit', ['selected_deputy' => $selected_deputy,'districts_all' => $districts_all,
+                                             'velayats_all' => $velayats_all]);
     }
 
     /**

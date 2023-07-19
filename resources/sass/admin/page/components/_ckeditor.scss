@@ -1,0 +1,15 @@
+.ck-content {
+    height: 200px;
+
+    ul,
+    ol {
+        li {
+            list-style: revert;
+        }
+    }
+}
+
+.ck.ck-dropdown .ck-dropdown__panel.ck-dropdown__panel_nw,
+.ck.ck-dropdown .ck-dropdown__panel.ck-dropdown__panel_sw {
+    right: -260% !important;
+}

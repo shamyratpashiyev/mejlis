@@ -1,0 +1,36 @@
+/* ====================================
+            1440px
+==================================== */
+@media (max-width: $md1+px) {
+    .navigation {
+        .logo {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                margin: 0px 0px 10px 0px;
+            }
+
+            span {
+                text-align: center;
+            }
+        }
+
+        nav.menu {
+            .menu__link {
+                margin: 0px 0px 15px 0px;
+
+                .icon {
+                    img {
+                        width: 18px;
+                    }
+                }
+
+                span {
+                    font-size: 14px;
+                    line-height: 130%;
+                }
+            }
+        }
+    }
+}

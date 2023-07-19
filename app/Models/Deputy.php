@@ -2,12 +2,27 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Velayat;
+use App\Models\Committee;
+use App\Models\ElectionDistrict;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Deputy extends Model
 {
     use HasFactory;
 
     protected $fillable = ['full_name', 'biography_en', 'biography_tm', 'biography_ru', 'position_tm', 'position_ru', 'position_en', 'email'];
+
+    public function committees(){
+        return $this->belongsToMany(Committee::class, 'deputy_committee', 'deputy_id', 'committee_id');
+    }
+
+    public function district(){
+        return $this->belongsTo(ElectionDistrict::class, 'election_district_id');
+    }
+
+    public function velayat(){
+        return $this->belongsTo(Velayat::class, 'velayat_id');
+    }
 }

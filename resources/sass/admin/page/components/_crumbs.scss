@@ -1,0 +1,19 @@
+.crumbs {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 10px;
+
+    img {
+        width: 17px;
+        margin: 0px 5px 0px 0px;
+    }
+
+    a,
+    div {
+        color: $purple;
+        margin: 0px 5px 0px 0px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

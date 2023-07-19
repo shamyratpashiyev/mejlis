@@ -82,6 +82,33 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="form__item w30">
+                <label class="txt">Избирательный округ</label>
+                <select name="district_id" id="" class="inputTxt">
+                    @foreach ($districts_all as $district)
+                        <option value="{{ $district->id }}">{{ $district->name_tm }}</option>
+                    @endforeach
+                </select>
+                @error('position_en')
+                    <p class="err">{{ $message }}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">Велаят</label>
+                <select name="velayat_id" id="" class="inputTxt">
+                    @foreach ($velayats_all as $velayat)
+                        <option value="{{ $velayat->id }}">{{ $velayat->name_tm }}</option>
+                    @endforeach
+                </select>
+                @error('position_en')
+                    <p class="err">{{ $message }}</p>
+                @enderror
+            </div>
+            
+        </div>
+
 
         <!-- ROW  -->
         <div class="row">
@@ -149,5 +176,20 @@
 
 </div>
 
+<style>
+     select{
+        width: 100%;
+        height: 40px;
+        padding: 0px 10px;
+        border: 1.5px solid #e7e7e7;
+        border-radius: 10px;
+        transition: 0.2s;
+        box-shadow: 4px 15px 15px rgba(191, 191, 191, 0.2);
+        
+        &:focus {
+            border: 1.5px solid #7367f0;
+        }
+    }
+</style>
 
 @endsection
