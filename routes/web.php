@@ -2,15 +2,17 @@
 
 use App\Models\NewsCooperation;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CodeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CodesController;
+use App\Http\Controllers\DeputyController;
 use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\CommitteesController;
 use App\Http\Controllers\ConvocationController;
-use App\Http\Controllers\DeputyController;
-use App\Http\Controllers\MejlisActivitiesController;
 use App\Http\Controllers\NewsCooperationController;
+use App\Http\Controllers\MejlisActivitiesController;
 use App\Http\Controllers\NewsInternationalController;
 
 /*
@@ -68,5 +70,6 @@ Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::resource('deputies', DeputyController::class);
     Route::resource('committees', CommitteesController::class);
     Route::resource('convocations', ConvocationController::class);
+    Route::resource('codes', CodesController::class);
 });
 

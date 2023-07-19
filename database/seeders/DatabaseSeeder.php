@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Database\Seeders\CodesSeeder;
 use Database\Seeders\DeputySeeder;
 
 class DatabaseSeeder extends Seeder
@@ -24,6 +25,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             DeputySeeder::class,
             CommitteeSeeder::class,
+            CodesSeeder::class,
         ]);
     }
 }

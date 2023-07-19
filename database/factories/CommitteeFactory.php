@@ -17,9 +17,9 @@ class CommitteeFactory extends Factory
     public function definition(): array
     {
         return [
-            'name_tm' => fake()->word(),
-            'name_ru' => fake()->word(),
-            'name_en' => fake()->word()
+            'name_tm' => fake()->paragraph(),
+            'name_ru' => fake()->paragraph(),
+            'name_en' => fake()->paragraph()
         ];
     }
 }

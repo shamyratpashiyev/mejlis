@@ -18,9 +18,9 @@ class DeputyFactory extends Factory
     {
         return [
             'full_name' => fake()->name(),
-            'position_tm' => fake()->word(),
-            'position_ru' => fake()->word(),
-            'position_en' => fake()->word(),
+            'position_tm' => fake()->paragraph(),
+            'position_ru' => fake()->paragraph(),
+            'position_en' => fake()->paragraph(),
             'biography_tm' => fake()->realText(),
             'biography_ru' => fake()->realText(),
             'biography_en' => fake()->realText(),
