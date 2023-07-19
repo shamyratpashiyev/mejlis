@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Committee;
+use App\Models\Deputy;
 use Illuminate\Http\Request;
 
 class CommitteesController extends Controller
@@ -21,7 +22,8 @@ class CommitteesController extends Controller
      */
     public function create()
     {
-        return view('admin.committees.create');
+        $deputies_all = Deputy::get();
+        return view('admin.committees.create', ['deputies_all' => $deputies_all]);
     }
 
     /**
@@ -30,7 +32,10 @@ class CommitteesController extends Controller
     public function store(Request $request)
     {
         $committee = new Committee();
-        $committee->name = $request->name;
+        $committee->name_tm = $request->name_tm;
+        $committee->name_ru = $request->name_ru;
+        $committee->name_en = $request->name_en;
+        $committee->committee_head_id = $request->committee_head_id;
 
         $committee->save();
 

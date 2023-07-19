@@ -10,7 +10,7 @@ class Committee extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name'];
+    protected $fillable = ['name_tm', 'name_ru', 'name_en'];
 
     public function deputies(){
         return $this->belongsToMany(Deputy::class, 'deputy_committee', 'committee_id', 'deputy_id');

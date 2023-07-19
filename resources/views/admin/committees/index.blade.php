@@ -53,7 +53,7 @@
         <div class="list__item">
             <div class="item__txt">
                 <div class="w5">{{ $committee->id }}</div>
-                <div class="w35">{{ $committee->name }}</div>
+                <div class="w35">{{ $committee->name_tm }}</div>
                 <div class="w35">
                     {{-- {!! $committee->description_tm !!} --}}
                 </div>

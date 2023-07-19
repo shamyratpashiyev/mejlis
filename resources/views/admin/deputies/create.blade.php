@@ -185,6 +185,7 @@
         border-radius: 10px;
         transition: 0.2s;
         box-shadow: 4px 15px 15px rgba(191, 191, 191, 0.2);
+        background-color: #fff;
         
         &:focus {
             border: 1.5px solid #7367f0;
