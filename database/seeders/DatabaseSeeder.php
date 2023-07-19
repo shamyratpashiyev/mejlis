@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
             CommitteeSeeder::class,
             CodesSeeder::class,
             LawSeeder::class,
+            MejlisDecreeSeeder::class,
         ]);
     }
 }

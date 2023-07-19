@@ -14,6 +14,7 @@ use App\Http\Controllers\ConvocationController;
 use App\Http\Controllers\LawsController;
 use App\Http\Controllers\NewsCooperationController;
 use App\Http\Controllers\MejlisActivitiesController;
+use App\Http\Controllers\MejlisDecreesController;
 use App\Http\Controllers\NewsInternationalController;
 
 /*
@@ -73,5 +74,6 @@ Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::resource('convocations', ConvocationController::class);
     Route::resource('codes', CodesController::class);
     Route::resource('laws', LawsController::class);
+    Route::resource('mejlis_decrees', MejlisDecreesController::class);
 });
 
