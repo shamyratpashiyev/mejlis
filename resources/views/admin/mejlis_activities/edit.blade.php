@@ -11,12 +11,12 @@
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
     <a href="{{ route('mejlis_activities.index') }}">
-        Выступления и Статьи
+        Деятельность Меджлиса
     </a>
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
     <div>
-        Изменение Статьи
+        Изменение Деятельности
     </div>
 
 

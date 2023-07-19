@@ -10,7 +10,7 @@
 
     <img src="{{ asset('admins/img/ico/arrow.svg')}}">
     <div>
-        Депутаты
+        Созывы
     </div>
 
 </div>
@@ -21,12 +21,11 @@
 
 <div class="content">
     <div class="title">
-        <h1 class="title">Депутаты</h1>
+        <h1 class="title">Созывы</h1>
 
-
-        <a href="{{ route('deputies.create') }}">
+        {{-- <a href="{{ route('convocations.create') }}">
             Добавить
-        </a>
+        </a> --}}
 
     </div>
 
@@ -49,29 +48,22 @@
 
     <div class="content__list">
         <!-- list__item -->
-        @foreach ($deputies_all as $deputy)
+        @foreach ($convocations_all as $convocation)
         <div class="list__item">
             <div class="item__txt">
-                <div class="w5">{{ $deputy->id }}</div>
-                <div class="w35">{{ $deputy->full_name }}</div>
+                <div class="w5">{{ $convocation->id }}</div>
+                <div class="w35">{{ $convocation->name_tm }}</div>
                 <div class="w35">
-                    {{-- {!! $deputy->description_tm !!} --}}
+                    {{-- {!! $article->description_tm !!} --}}
                 </div>
-                <div class="date w15">$deputy->event_date </div>
+                <div class="date w15">$article->event_date </div>
             </div>
 
             <div class="item__button w5a5">
-                <a href="{{ route('deputies.edit', $deputy->id) }}">
+                <a href="{{ route('convocations.edit', $convocation->id) }}">
                     <img src="{{ asset('admins/img/ico/edit_v2.svg')}}">
                 </a>
-                <form action="{{ route('deputies.destroy', $deputy->id) }}" method="POST">
-                    @csrf
-                    @method('delete')
-                    <input type="submit" id="{{ $deputy->id }}" value="">
-                    <label for="{{ $deputy->id }}">
-                        <img src="{{ asset('admins/img/ico/delete.svg') }}">
-                    </label>
-                </form>
+                
             </div>
         </div>
         @endforeach
