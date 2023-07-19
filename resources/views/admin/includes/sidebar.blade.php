@@ -97,6 +97,14 @@
         <span>Кодексы</span>
     </a>
 
+    <a href="{{ route('laws.index') }}" class="menu__link {{ (Route::currentRouteName() == 'laws.index' ? 'active' : '') }}">
+        <div class="icon">
+            <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
+            <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
+        </div>
+        <span>Законы</span>
+    </a>
+
     <a href="#" class="menu__link">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">

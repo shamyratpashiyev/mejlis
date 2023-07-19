@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Database\Seeders\LawSeeder;
 use Illuminate\Database\Seeder;
 use Database\Seeders\CodesSeeder;
 use Database\Seeders\DeputySeeder;
@@ -26,6 +27,7 @@ class DatabaseSeeder extends Seeder
             DeputySeeder::class,
             CommitteeSeeder::class,
             CodesSeeder::class,
+            LawSeeder::class,
         ]);
     }
 }

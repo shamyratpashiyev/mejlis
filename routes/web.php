@@ -11,6 +11,7 @@ use App\Http\Controllers\DeputyController;
 use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\CommitteesController;
 use App\Http\Controllers\ConvocationController;
+use App\Http\Controllers\LawsController;
 use App\Http\Controllers\NewsCooperationController;
 use App\Http\Controllers\MejlisActivitiesController;
 use App\Http\Controllers\NewsInternationalController;
@@ -71,5 +72,6 @@ Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::resource('committees', CommitteesController::class);
     Route::resource('convocations', ConvocationController::class);
     Route::resource('codes', CodesController::class);
+    Route::resource('laws', LawsController::class);
 });
 
