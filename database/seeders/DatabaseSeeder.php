@@ -7,7 +7,12 @@ use Database\Seeders\LawSeeder;
 use Illuminate\Database\Seeder;
 use Database\Seeders\CodesSeeder;
 use Database\Seeders\DeputySeeder;
+use Database\Seeders\ArticleSeeder;
+use Database\Seeders\CommitteeSeeder;
+use Database\Seeders\MejlisDecreeSeeder;
+use Database\Seeders\MejlisActivitySeeder;
 use Database\Seeders\FriendshipGroupSeeder;
+use Database\Seeders\ElectionDistrictSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -25,12 +30,15 @@ class DatabaseSeeder extends Seeder
 
         
         $this->call([
+            ArticleSeeder::class,
+            MejlisActivitySeeder::class,
             DeputySeeder::class,
             CommitteeSeeder::class,
             CodesSeeder::class,
             LawSeeder::class,
             MejlisDecreeSeeder::class,
             FriendshipGroupSeeder::class,
+            ElectionDistrictSeeder::class,
         ]);
     }
 }

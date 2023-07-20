@@ -129,3 +129,7 @@
         <span>Доп. настройки</span>
     </a>
 </nav>
+
+<script>
+    document.querySelector('.menu__link.active').scrollIntoView();
+</script>

@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\DeputyStore;
 use App\Models\Deputy;
-use App\Models\ElectionDistrict;
 use App\Models\Velayat;
 use Illuminate\Http\Request;
+use App\Models\ElectionDistrict;
+use Illuminate\Support\Facades\Log;
 
 class DeputyController extends Controller
 {
@@ -31,7 +33,7 @@ class DeputyController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(DeputyStore $request)
     {
         $deputy = new Deputy();
         $deputy->fullname_tm = $request->fullname_tm;
@@ -68,6 +70,7 @@ class DeputyController extends Controller
         $selected_deputy = Deputy::findOrFail($id);
         $velayats_all = Velayat::get();
         $districts_all = ElectionDistrict::get();
+        
         return view('admin.deputies.edit', ['selected_deputy' => $selected_deputy,'districts_all' => $districts_all,
                                              'velayats_all' => $velayats_all]);
     }
@@ -75,9 +78,25 @@ class DeputyController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(DeputyStore $request, string $id)
     {
-        //
+        $selected_deputy = Deputy::findOrFail($id);
+        $selected_deputy->fullname_tm = $request->fullname_tm;
+        $selected_deputy->fullname_ru = $request->fullname_ru;
+        $selected_deputy->fullname_en = $request->fullname_en;
+        $selected_deputy->email = $request->email;
+        $selected_deputy->position_tm = $request->position_tm;
+        $selected_deputy->position_ru = $request->position_ru;
+        $selected_deputy->position_en = $request->position_en;
+        $selected_deputy->biography_tm = $request->biography_tm;
+        $selected_deputy->biography_ru = $request->biography_ru;
+        $selected_deputy->biography_en = $request->biography_en;
+        $selected_deputy->velayat_id = $request->velayat_id;
+        $selected_deputy->election_district_id = $request->district_id;
+
+        $selected_deputy->save();
+
+        return redirect()->back();
     }
 
     /**
