@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name_tm', 500);
             $table->string('name_ru', 500);
             $table->string('name_en', 500);
-            $table->integer('district_id');
+            $table->integer('district_number');
             $table->text('borders_tm');
             $table->text('borders_ru');
             $table->text('borders_en');

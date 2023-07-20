@@ -11,6 +11,7 @@ use App\Http\Controllers\DeputyController;
 use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\CommitteesController;
 use App\Http\Controllers\ConvocationController;
+use App\Http\Controllers\ElectionDistrictController;
 use App\Http\Controllers\FriendshipGroupController;
 use App\Http\Controllers\LawsController;
 use App\Http\Controllers\NewsCooperationController;
@@ -78,5 +79,6 @@ Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::resource('laws', LawsController::class);
     Route::resource('mejlis_decrees', MejlisDecreesController::class);
     Route::resource('friendship_groups', FriendshipGroupController::class);
+    Route::resource('election_districts', ElectionDistrictController::class);
 });
 

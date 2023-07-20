@@ -9,5 +9,5 @@ class ElectionDistrict extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name_tm', 'name_ru', 'name_en', 'district_id', 'borders_tm', 'borders_ru', 'borders_en'];
+    protected $fillable = ['name_tm', 'name_ru', 'name_en', 'district_number', 'borders_tm', 'borders_ru', 'borders_en'];
 }

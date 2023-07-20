@@ -121,6 +121,14 @@
         <span>Группы Дружбы</span>
     </a>
 
+    <a href="{{ route('election_districts.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'election_districts.') ? 'active' : '' }}">
+        <div class="icon">
+            <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
+            <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
+        </div>
+        <span>Избирательные Округи</span>
+    </a>
+
     <a href="#" class="menu__link">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">
