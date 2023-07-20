@@ -40,8 +40,8 @@
             <!-- form__item -->
             <div class="form__item w30">
                 <label class="txt">Ф.И.О</label>
-                <input value="{{ old('full_name') }}" type="text" value="{{ $selected_deputy->full_name }}" placeholder="" class="inputTxt" name="full_name">
-                @error('full_name')
+                <input value="{{ old('fullname_tm') }}" type="text" value="{{ $selected_deputy->fullname_tm }}" placeholder="" class="inputTxt" name="fullname_tm">
+                @error('fullname_tm')
                     <p class="err">{{ $message }}</p>
                 @enderror
             </div>

@@ -66,7 +66,7 @@
                 <label class="txt">Глава комитета</label>
                 <select name="committee_head_id" id="">
                     @foreach ($deputies_all as $deputy)
-                        <option value="{{ $deputy->id }}">{{ $deputy->full_name }}</option>
+                        <option value="{{ $deputy->id }}">{{ $deputy->fullname_tm }}</option>
                     @endforeach
                 </select>
                 @error('name')

@@ -53,7 +53,7 @@
         <div class="list__item">
             <div class="item__txt">
                 <div class="w5">{{ $deputy->id }}</div>
-                <div class="w35">{{ $deputy->full_name }}</div>
+                <div class="w35">{{ $deputy->fullname_tm }}</div>
                 <div class="w35">
                     {{-- {!! $deputy->description_tm !!} --}}
                 </div>

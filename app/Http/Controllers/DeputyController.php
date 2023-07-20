@@ -34,7 +34,9 @@ class DeputyController extends Controller
     public function store(Request $request)
     {
         $deputy = new Deputy();
-        $deputy->full_name = $request->full_name;
+        $deputy->fullname_tm = $request->fullname_tm;
+        $deputy->fullname_ru = $request->fullname_ru;
+        $deputy->fullname_en = $request->fullname_en;
         $deputy->email = $request->email;
         $deputy->position_tm = $request->position_tm;
         $deputy->position_ru = $request->position_ru;

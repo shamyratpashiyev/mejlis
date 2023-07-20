@@ -39,17 +39,25 @@
         <div class="row">
             <!-- form__item -->
             <div class="form__item w30">
-                <label class="txt">Ф.И.О</label>
-                <input value="{{ old('full_name') }}" type="text" placeholder="" class="inputTxt" name="full_name">
-                @error('full_name')
+                <label class="txt">TM - Ф.И.О</label>
+                <input value="{{ old('fullname_tm') }}" type="text" placeholder="" class="inputTxt" name="fullname_tm">
+                @error('fullname_tm')
                     <p class="err">{{ $message }}</p>
                 @enderror
             </div>
 
             <div class="form__item w30">
-                <label class="txt">Email</label>
-                <input value="{{ old('email') }}" type="email" placeholder="" class="inputTxt" name="email">
-                @error('email')
+                <label class="txt">RU - Ф.И.О</label>
+                <input value="{{ old('fullname_ru') }}" type="text" placeholder="" class="inputTxt" name="fullname_ru">
+                @error('fullname_ru')
+                    <p class="err">{{ $message }}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">EN - Ф.И.О</label>
+                <input value="{{ old('fullname_en') }}" type="text" placeholder="" class="inputTxt" name="fullname_en">
+                @error('fullname_en')
                     <p class="err">{{ $message }}</p>
                 @enderror
             </div>
@@ -83,6 +91,14 @@
         </div>
 
         <div class="row">
+            <div class="form__item w30">
+                <label class="txt">Email</label>
+                <input value="{{ old('email') }}" type="email" placeholder="" class="inputTxt" name="email">
+                @error('email')
+                    <p class="err">{{ $message }}</p>
+                @enderror
+            </div>
+            
             <div class="form__item w30">
                 <label class="txt">Избирательный округ</label>
                 <select name="district_id" id="" class="inputTxt">
@@ -143,18 +159,6 @@
             </div>
         </div>
 
-        <!-- ROW  -->
-        {{-- <div class="row">
-            <!-- form__item -->
-            <div class="form__item w15">
-                <label class="txt">Дата</label>
-                <input type="datetime-local" class="inputDate" name="event_date">
-                @error('event_date')
-                    <p class="err">{{ $message }}</p>
-                @enderror
-            </div>
-
-        </div> --}}
 
         <!-- ROW  -->
         <div class="row">

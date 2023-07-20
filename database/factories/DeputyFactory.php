@@ -17,7 +17,9 @@ class DeputyFactory extends Factory
     public function definition(): array
     {
         return [
-            'full_name' => fake()->name(),
+            'fullname_tm' => fake()->name(),
+            'fullname_en' => fake()->name(),
+            'fullname_ru' => fake()->name(),
             'position_tm' => fake()->paragraph(),
             'position_ru' => fake()->paragraph(),
             'position_en' => fake()->paragraph(),

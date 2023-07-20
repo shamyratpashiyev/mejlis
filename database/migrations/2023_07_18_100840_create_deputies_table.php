@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('deputies', function (Blueprint $table) {
             $table->id();
-            $table->string('full_name');
+            $table->string('fullname_tm');
+            $table->string('fullname_en');
+            $table->string('fullname_ru');
             $table->string('position_tm', 500);
             $table->string('position_ru', 500);
             $table->string('position_en', 500);
