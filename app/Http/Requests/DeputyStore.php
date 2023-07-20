@@ -31,6 +31,8 @@ class DeputyStore extends FormRequest
             'position_tm' => 'required',
             'position_ru' => 'required',
             'position_en' => 'required',
+            'velayat_id' => '', 
+            'election_district_id' => '',
             'email' => 'required|email'
         ];
     }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CommitteesStore;
 use App\Models\Committee;
 use App\Models\Deputy;
 use Illuminate\Http\Request;
@@ -29,7 +30,7 @@ class CommitteesController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(CommitteesStore $request)
     {
         $committee = new Committee();
         $committee->name_tm = $request->name_tm;
@@ -55,15 +56,25 @@ class CommitteesController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $deputies_all = Deputy::get();
+        $selected_committee = Committee::findOrFail($id);
+        return view('admin.committees.edit', ['selected_committee' => $selected_committee,'deputies_all' => $deputies_all]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(CommitteesStore $request, string $id)
     {
-        //
+        $selected_committee = Committee::findOrFail($id);
+        $selected_committee->name_tm = $request->name_tm;
+        $selected_committee->name_ru = $request->name_ru;
+        $selected_committee->name_en = $request->name_en;
+        $selected_committee->committee_head_id = $request->committee_head_id;
+
+        $selected_committee->save();
+
+        return redirect()->back();
     }
 
     /**

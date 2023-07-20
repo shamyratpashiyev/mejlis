@@ -7,13 +7,13 @@
 
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
-    <a href="{{ route('deputies.index') }}">
-        Депутаты
+    <a href="{{ route('committees.index') }}">
+        Комитеты
     </a>
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
     <div>
-        Добавление Депутата
+        Изменение Комитета
     </div>
 
 
@@ -30,85 +30,59 @@
 <div class="content">
 
     <div class="title">
-        <h1 class="title">Добавление Депутата</h1>
+        <h1 class="title">Изменение Комитета</h1>
     </div>
 
-    <form action="{{ route('deputies.store') }}" method="POST" class="edit__form" enctype="multipart/form-data">
+    <form action="{{ route('committees.update', $selected_committee->id) }}" method="POST" class="edit__form" enctype="multipart/form-data">
         @csrf
+        @method('PUT')
         <!-- ROW  -->
         <div class="row">
             <!-- form__item -->
             <div class="form__item w30">
-                <label class="txt">Ф.И.О</label>
-                <input value="{{ old('fullname_tm') }}" type="text" value="{{ $selected_deputy->fullname_tm }}" placeholder="" class="inputTxt" name="fullname_tm">
-                @error('fullname_tm')
+                <label class="txt">ТМ - Название</label>
+                <input value="{{ $selected_committee->name_tm }}" type="text" placeholder="" class="inputTxt" name="name_tm">
+                @error('name_tm')
                     <p class="err">{{ $message }}</p>
                 @enderror
             </div>
 
             <div class="form__item w30">
-                <label class="txt">Должность</label>
-                <input value="{{ old('position') }}" type="text" placeholder="" class="inputTxt" value="{{ $selected_deputy->position }}" name="position">
-                @error('position')
+                <label class="txt">RU - Название</label>
+                <input value="{{ $selected_committee->name_ru }}" type="text" placeholder="" class="inputTxt" name="name_ru">
+                @error('name_ru')
+                    <p class="err">{{ $message }}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">EN - Название</label>
+                <input value="{{ $selected_committee->name_en }}" type="text" placeholder="" class="inputTxt" name="name_en">
+                @error('name_en')
+                    <p class="err">{{ $message }}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">Глава комитета</label>
+                <select name="committee_head_id" id="">
+                    @foreach ($deputies_all as $deputy)
+                        <option value="{{ $deputy->id }}" @if($selected_committee->committee_head_id == $deputy->id) selected @endif>{{ $deputy->fullname_tm }}</option>
+                    @endforeach
+                </select>
+                @error('name')
                     <p class="err">{{ $message }}</p>
                 @enderror
             </div>
 
         </div>
-
-
-        <!-- ROW  -->
-        <div class="row">
-            <!-- form__item -->
-            <div class="form__item w45">
-                <label class="txt">TM - Биография</label>
-                <textarea id="editor-10" name="biography_tm">{{ old('biography_tm') }}</textarea>
-                @error('biography_tm')
-                    <p class="err">{{ $message }}</p>
-                @enderror
-            </div>
-
-            <!-- form__item -->
-            <div class="form__item w45">
-                <label class="txt">RU - Биография</label>
-                <textarea id="editor-11" name="biography_ru">{{ old('biography_ru') }}</textarea>
-                @error('biography_ru')
-                    <p class="err">{{ $message }}</p>
-                @enderror
-            </div>
-        </div>
-
-        <!-- ROW  -->
-        <div class="row">
-            <!-- form__item -->
-            <div class="form__item w45">
-                <label class="txt">EN - Биография</label>
-                <textarea id="editor-12" name="biography_en">{{ old('biography_en') }}</textarea>
-                @error('biography_en')
-                    <p class="err">{{ $message }}</p>
-                @enderror
-            </div>
-        </div>
-
-        <!-- ROW  -->
-        {{-- <div class="row">
-            <!-- form__item -->
-            <div class="form__item w15">
-                <label class="txt">Дата</label>
-                <input type="datetime-local" class="inputDate" name="event_date">
-                @error('event_date')
-                    <p class="err">{{ $message }}</p>
-                @enderror
-            </div>
-
-        </div> --}}
 
         <!-- ROW  -->
         <div class="row">
             <!-- form__button -->
             <div class="form__button">
                 <input type="submit" value="Сохранить">
-                <a href="{{ route('deputies.index') }}">Отмена</a>
+                <a href="{{ route('committees.index') }}">Отмена</a>
             </div>
         </div>
     </form>
@@ -123,5 +97,21 @@
 
 </div>
 
+<style>
+    select{
+       width: 100%;
+       height: 40px;
+       padding: 0px 10px;
+       border: 1.5px solid #e7e7e7;
+       border-radius: 10px;
+       transition: 0.2s;
+       box-shadow: 4px 15px 15px rgba(191, 191, 191, 0.2);
+       background-color: #fff;
+       
+       &:focus {
+           border: 1.5px solid #7367f0;
+       }
+   }
+</style>
 
 @endsection

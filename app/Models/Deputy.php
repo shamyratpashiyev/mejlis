@@ -12,7 +12,8 @@ class Deputy extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['fullname_tm','fullname_ru','fullname_en', 'biography_en', 'biography_tm', 'biography_ru', 'position_tm', 'position_ru', 'position_en', 'email'];
+    protected $fillable = ['fullname_tm','fullname_ru','fullname_en', 'biography_en', 'biography_tm', 'biography_ru', 
+                            'position_tm', 'position_ru', 'position_en', 'email', 'velayat_id', 'election_district_id'];
 
     public function committees(){
         return $this->belongsToMany(Committee::class, 'deputy_committee', 'deputy_id', 'committee_id');
