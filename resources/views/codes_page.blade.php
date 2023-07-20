@@ -6,6 +6,7 @@
 
 @php
     $links_list = [
+                    ['name'=>'Законопроекты на обсуждение', 'url' => '#'],
                     ['name'=>'Kodeksler','url' => '#'], 
                     ['name'=>'Kanunlar', 'url' => '#'],
                     ['name'=>'Mejlisiň kararlary', 'url' => '#'],

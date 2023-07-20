@@ -162,7 +162,9 @@
                     <span>Kanunçylyk</span>
 
                     <div class="dropdown_menu flex_column">
-                        
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('bills_discussion_page') }}">Законопроекты на обсуждение</a>
+                        </div>
                         <div class="item_wrapper hover_underline">
                             <a href="{{ route('codes_page') }}">Kodeksler</a>
                         </div>

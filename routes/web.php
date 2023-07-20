@@ -37,6 +37,7 @@ Route::get('/deputies-list', [SiteController::class, 'deputies_list'])->name('de
 Route::get('/mejlis-committees', [SiteController::class, 'mejlis_committees'])->name('mejlis_committees_page');
 Route::get('/mejlis-deputies', [SiteController::class, 'mejlis_deputies'])->name('mejlis_deputies_page');
 Route::get('/single-deputy/{id}', [SiteController::class, 'single_deputy'])->name('single_deputy_page');
+Route::get('/bills-discussion', [SiteController::class, 'bills_discussion'])->name('bills_discussion_page');
 Route::get('/codes', [SiteController::class, 'codes'])->name('codes_page');
 Route::get('/constitutional-law', [SiteController::class, 'constitutional_law'])->name('constitutional_law_page');
 Route::get('/contacts', [SiteController::class, 'contacts'])->name('contacts_page');
