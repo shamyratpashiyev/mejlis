@@ -25,7 +25,7 @@
     </div>
 
 
-    <a href="{{ route('news.index') }}" class="menu__link ml {{ (Route::currentRouteName() == 'news.index' ? 'active' : '') }}">
+    <a href="{{ route('news.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'news.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
             <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
@@ -33,7 +33,7 @@
         <span>Новости</span>
     </a>
 
-    <a href="{{ route('news_inter.index') }}" class="menu__link ml {{ (Route::currentRouteName() == 'news_inter.index' ? 'active' : '') }}">
+    <a href="{{ route('news_inter.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'news_inter.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
             <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
@@ -41,7 +41,7 @@
         <span>Международные новости</span>
     </a>
 
-    <a href="{{ route('news_coop.index') }}" class="menu__link ml {{ (Route::currentRouteName() == 'news_coop.index' ? 'active' : '') }}">
+    <a href="{{ route('news_coop.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'news_coop.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
             <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
@@ -49,7 +49,7 @@
         <span>Международное соотрудничество</span>
     </a>
 
-    <a href="{{ route('articles.index') }}" class="menu__link {{ (Route::currentRouteName() == 'articles.index' ? 'active' : '') }}">
+    <a href="{{ route('articles.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'articles.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/setting.svg') }}">
@@ -57,7 +57,7 @@
         <span>Выступления и Статьи</span>
     </a>
 
-    <a href="{{ route('mejlis_activities.index') }}" class="menu__link {{ (Route::currentRouteName() == 'mejlis_activities.index' ? 'active' : '') }}">
+    <a href="{{ route('mejlis_activities.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'mejlis_activities.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/setting.svg') }}">
@@ -65,7 +65,7 @@
         <span>Деятельность Меджлиса</span>
     </a>
 
-    <a href="{{ route('deputies.index') }}" class="menu__link {{ (Route::currentRouteName() == 'deputies.index' ? 'active' : '') }}">
+    <a href="{{ route('deputies.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'deputies.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/setting.svg') }}">
@@ -73,7 +73,7 @@
         <span>Депутаты</span>
     </a>
 
-    <a href="{{ route('committees.index') }}" class="menu__link {{ (Route::currentRouteName() == 'committees.index' ? 'active' : '') }}">
+    <a href="{{ route('committees.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'committees.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
@@ -81,7 +81,7 @@
         <span>Комитеты</span>
     </a>
 
-    <a href="{{ route('convocations.index') }}" class="menu__link {{ (Route::currentRouteName() == 'convocations.index' ? 'active' : '') }}">
+    <a href="{{ route('convocations.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'convocations.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
@@ -89,7 +89,7 @@
         <span>Созывы</span>
     </a>
 
-    <a href="{{ route('codes.index') }}" class="menu__link {{ (Route::currentRouteName() == 'codes.index' ? 'active' : '') }}">
+    <a href="{{ route('codes.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'codes.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
@@ -97,7 +97,7 @@
         <span>Кодексы</span>
     </a>
 
-    <a href="{{ route('laws.index') }}" class="menu__link {{ (Route::currentRouteName() == 'laws.index' ? 'active' : '') }}">
+    <a href="{{ route('laws.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'laws.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
@@ -105,7 +105,7 @@
         <span>Законы</span>
     </a>
 
-    <a href="{{ route('mejlis_decrees.index') }}" class="menu__link {{ (Route::currentRouteName() == 'mejlis_decrees.index' ? 'active' : '') }}">
+    <a href="{{ route('mejlis_decrees.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'mejlis_decrees.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
@@ -113,7 +113,7 @@
         <span>Постановления Меджлиса</span>
     </a>
 
-    <a href="{{ route('friendship_groups.index') }}" class="menu__link {{ (Route::currentRouteName() == 'friendship_groups.index' ? 'active' : '') }}">
+    <a href="{{ route('friendship_groups.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'friendship_groups.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-board.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/board.svg') }}">
