@@ -139,9 +139,7 @@
                         <div class="item_wrapper hover_underline">
                             <a href="{{ route('deputies_list_page') }}">VII çagyrylyşynyň deputatlarynyň sanawy</a>
                         </div>
-                        <div class="item_wrapper hover_underline">
-                            <a href="#">Reglament</a>
-                        </div>
+                        
                     </div>
                 </div>
 

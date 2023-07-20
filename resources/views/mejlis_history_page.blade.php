@@ -8,7 +8,6 @@
     $links_list = [
                     ['name'=>'Mejlisiň taryhy', 'url' => '#'],
                     ['name'=>'VII çagyrylyşynyň deputatlarynyň sanawy','url' => '#'], 
-                    ['name'=>'Reglament', 'url' => '#'],
                 ]
 @endphp
 
