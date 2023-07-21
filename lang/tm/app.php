@@ -107,6 +107,8 @@ return [
     'mejlis_deputies_page' => [
         'title' => 'Mejlis deputatlary',
         'deputies' => 'Deputatlar',
+        'election_district' => 'Saýlaw okrugy',
+        'committee' => 'Komitet',
     ],
 
 ];

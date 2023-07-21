@@ -95,7 +95,7 @@
                             <x-deputy-popup name="Babaýew Kasymguly Gulmyradowiç" district="1-nji «Garaşsyzlyk» saýlaw okrugy" :description="$deputy_description" />
 
                             <div class="key_value_wrapper flex_column">
-                                <span class="key election_district">Saýlaw okrugy:</span>
+                                <span class="key election_district">@lang('app.mejlis_deputies_page.election_district'):</span>
                                 <span class="value">1-nji «Garaşsyzlyk» saýlaw okrugy</span>
                                 <x-election-district-popup name="1-nji «Garaşsyzlyk» saýlaw okrugy" :description="$district_desc"/>
                             </div>
@@ -106,7 +106,7 @@
                             </div>
 
                             <div class="key_value_wrapper flex_column">
-                                <span class="key">Komitet:</span>
+                                <span class="key">@lang('app.mejlis_deputies_page.committee'):</span>
                                 <span class="value">Adam hukuklaryny we azatlyklaryny goramak baradaky komitet</span>
                             </div>
                         </div>
