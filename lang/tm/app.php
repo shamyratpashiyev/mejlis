@@ -198,4 +198,70 @@ return [
         'title' => 'Galereýa',
     ],
 
+    'tkm' => [
+        'president' => 'Prezidenti',
+        'history' => 'Taryhy',
+        'area' => 'Meýdany',
+        'population' => 'Ilaty',
+        'state_symbols' => 'Döwlet nyşanlary',
+        'constitution' => 'Konstitusiýasy',
+        'state_holidays' => 'Döwlet baýramçylyklary we matam günleri',
+
+        'history_page' => [
+            'title' => 'Türkmenistanyň Taryhy',
+            'text_title' => 'Taryhy',
+            'text' => " <p>
+                            &emsp;&emsp;Türkmenistan 1991-nji ýylyň 27-nji oktýabrynda Garaşsyz döwlet boldy we şondan bäri bu sene ýurtda Garaşsyzlyk güni hökmünde bellenilýär. 1995-nji ýylyň 12-nji dekabrynda 185 döwletiň biragyzdan goldamagy bilen, Birleşen Milletler Guramasynyň Baş Assambleýasynyň Rezolýusiýasy bilen hemişelik Bitarap döwlet diýlip ykrar edildi. Häzirki wagtda Türkmenistan 142 döwlet bilen diplomatik gatnaşyklary ýola goýdy.
+                        </p>",
+        ],
+
+        'area_page' => [
+            'title' => 'Türkmenistanyň Meýdany',
+            'text_title' => 'Meýdany',
+            'text' => " <p>
+                            &emsp;&emsp;Türkmenistan– Merkezi Aziýanyň bäş ýurdunyň biri bolup, onuň meýdany boýunça olaryň arasynda ikinji orny eýeleýär, ýagny Türkmenistanyň tutýan meýdany 491,21 müň km2 deňdir.
+                        </p>
+                        <p>
+                            &emsp;&emsp;Onuň günbatardan gündogara 1100 km. we demirgazykdan günorta 650 km. uzaýar.
+                        </p>
+                        <p>
+                            &emsp;&emsp;Türkmenistan demirgazykda Gazagystan Respublikasy, demirgazyk–gündogarda we gündogarda Özbegistan Respublikasy bilen, günorta-gündogarda Owganystan Yslam Respublikasy bilen, günortada Eýran Yslam Respublikasy bilen serhetleşýär. Şeýle hem günbatarda Hazar deňzi tebigy serhedi bolmak bilen Azerbaýjan Respublikasy bilen hem serhetleşýär.
+                        </p>",
+        ],
+
+        'population_page' => [
+            'title' => 'Türkmenistanyň Ilaty',
+            'text_title' => 'Ilaty',
+            'text' => " <p>
+                            &emsp;&emsp;Türkmenistanyň ilaty 6,2 mln. adamdan gowrakdyr. Türkmenistan — köp milletli döwletdir. Ýurtda 100-den gowrak milletleriň we halkyýetleriň wekilleri ýaşaýarlar.
+                        </p>",
+        ],
+
+        'state_holidays_page' => [
+            'title' => 'Döwlet baýramçylyklary we matam günleri',
+            'text_title' => 'Döwlet baýramçylyklary we matam günleri',
+            'text' => ' <p>
+                            &emsp;&emsp; <strong>Döwletiň esasy döwlet we milli baýramçylyklary : </strong><br><br>
+                            &emsp;&emsp;Täze ýyl — 1-nji ýanwar; <br>
+                            &emsp;&emsp;Döwlet Baýdagynyň güni — 19-njy fewral; <br>
+                            &emsp;&emsp;Halkara zenanlar güni — 8-nji mart; <br>
+                            &emsp;&emsp;Milli bahar baýramy (Nowruz) — 21-22-nji mart; <br>
+                            &emsp;&emsp;Ýeňiş güni — 9-njy maý; <br>
+                            &emsp;&emsp;Konstitusiýa güni we Galkynyş, Agzybirlik we Magtymguly Pyragynyň şygryýet güni — 18-nji maý; <br>
+                            &emsp;&emsp;Türkmenistanyň Garaşsyzlyk güni — 27-28-nji oktýabr; <br>
+                            &emsp;&emsp;Türkmenistanyň milli baýramy — Bitaraplyk güni — 12-nji dekabr. <br>
+                        </p>
+                        <br>
+                        <p style="color: var(--sky_blue); text-align:justify; font-weight: bold;">
+                            &emsp;&emsp; 
+                            Her ýyl bellenilip geçilýän Gurban baýramynyň we Oraza baýramynyň seneleri Türkmenistanyň Prezidentiniň namalaryna laýyklykda kesgitlenilýär.
+                        </p>
+                        <br>
+                        <p>
+                            &emsp;&emsp; <strong> Matam günleri:</strong><br>
+                            &emsp;&emsp; Milli ýatlama güni — 6-njy oktýabr.
+                        </p>',
+        ],
+    ]
+
 ];
