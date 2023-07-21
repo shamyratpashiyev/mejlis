@@ -19,7 +19,7 @@
                     <path d="M18 9.58398C18 12.8977 14 17.584 12 17.584C10 17.584 6 12.8977 6 9.58398C6 6.27028 8.68629 3.58398 12 3.58398C15.3137 3.58398 18 6.27028 18 9.58398Z" stroke="black"/>
                     <path d="M15.0003 15.584H16.1268C17.314 15.584 18.4397 16.1113 19.1997 17.0232L20.2667 18.3036C21.3522 19.6063 20.4259 21.584 18.7303 21.584H5.27042C3.57475 21.584 2.64844 19.6063 3.73398 18.3036L4.80096 17.0232C5.56093 16.1113 6.68672 15.584 7.87384 15.584H9.00034" stroke="black" stroke-linejoin="round"/>
                 </svg>
-                <span class="value">Aşgabat ş., Garaşsyzlyk şaýoly, 110</span>    
+                <span class="value">@lang('app.layout.footer_address_value')</span>    
             </div>
 
             <div class="contact_row flex_row">
@@ -45,8 +45,8 @@
             </div>
         </div>
 
-        <a href="#" class="link_row flex_row">
-            <span>Habarlaşmak üçin</span>
+        <a href="{{ route('contacts_page') }}" class="link_row flex_row">
+            <span>@lang('app.layout.contacts_page')</span>
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12.5" cy="12" r="10" stroke="#28303F" stroke-width="1.5"/>
                 <path d="M13.5 15L16.5 12M16.5 12L13.5 9M16.5 12L8.5 12" stroke="#28303F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

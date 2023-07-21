@@ -68,7 +68,7 @@
 
                     <div class="nav_block flex_column">
                         <a class="hover_underline" href="#">@lang('app.layout.main_page')</a>
-                        <a class="hover_underline" href="#">@lang('app.layout.about_us_page')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.about_mejlis_page')</a>
                         <a class="hover_underline" href="#">@lang('app.layout.mejlis_structure_page')</a>
                         <a class="hover_underline" href="#">@lang('app.layout.media_page')</a>
                         <a class="hover_underline" href="#">@lang('app.layout.international')</a>
@@ -125,16 +125,16 @@
     <div class="lower_header flex_row" id="scroll_anchor">
         <div class="inner_wrapper flex_row">
             <div class="nav_block flex_row">
-                <a class="nav_button_wrapper hover_underline" href="{{ route('main_page') }}">
+                <a class="nav_button_wrapper hover_underline" href="{{ route('main_page',['lang'=>app()->getLocale()]) }}">
                     <span>@lang('app.layout.main_page')</span>
                 </a>
 
                 <div class="nav_button_wrapper hover_underline">
-                    <span>@lang('app.layout.about_us_page')</span>
+                    <span>@lang('app.layout.about_mejlis_page')</span>
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('mejlis_history_page') }}">@lang('app.layout.mejlis_history_page')</a>
+                            <a href="{{ route('mejlis_history_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_history_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="{{ route('deputies_list_page') }}">@lang('app.layout.seventh_convocation_page')</a>
@@ -237,7 +237,7 @@
             </a>
 
             <div class="middle_column flex_column">
-                <h3 class="title">@lang('app.layout.about_us_page')</h3>
+                <h3 class="title">@lang('app.layout.about_mejlis_page')</h3>
                 <p class="description">
                     @lang('app.layout.footer_text')
                 </p>

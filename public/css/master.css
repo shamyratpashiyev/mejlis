@@ -291,9 +291,10 @@ a {
 
 .breadcrumbs_row {
   font-size: 16px;
-  font-family: 'OpenSansRegular', sans-serif;
-  color: var(--text_gray_2); }
-  .breadcrumbs_row span {
+  font-family: 'OpenSansRegular', sans-serif; }
+  .breadcrumbs_row a {
+    color: var(--text_gray_2); }
+  .breadcrumbs_row .main_page {
     color: var(--sky_blue); }
 
 .news_container_big {

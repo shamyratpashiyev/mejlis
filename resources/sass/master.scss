@@ -392,9 +392,12 @@ a{
 .breadcrumbs_row{
     font-size: 16px;
     font-family: 'OpenSansRegular', sans-serif;
-    color: var(--text_gray_2);
+    
+    a{
+        color: var(--text_gray_2);
+    }
 
-    span{
+    .main_page{
         color: var(--sky_blue);
     }
 }

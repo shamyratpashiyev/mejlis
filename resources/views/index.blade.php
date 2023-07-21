@@ -1,4 +1,4 @@
-@extends('layout',['title' => 'Bash sahypa'])
+@extends('layout',['title' => __('app.main.title')])
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/main_page.css') }}">
