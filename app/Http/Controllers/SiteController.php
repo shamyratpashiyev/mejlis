@@ -122,6 +122,10 @@ class SiteController extends Controller
         return view('single_activity_page');
     }
 
+    public function gallery(){
+
+    }
+
     public function tkm_history(){
 
         return view('turkmenistan.history_page');

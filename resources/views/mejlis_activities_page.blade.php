@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout',['title' => __('app.mejlis_activities_page.title')])
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/mejlis_activities_page.css') }}">
@@ -6,19 +6,22 @@
 
 @php
     $links_list = [
-                    ['name'=>'Täzelikler', 'url' => '#'],
-                    ['name'=>'Çykyşlar we makalalar','url' => '#'], 
-                    ['name'=>'Türkmenistanyň mejlisinde alnyp barylýan işler', 'url' => '#'],
-                    ['name'=>'Galereýa', 'url' => '#'],
-                ]
+                    ['name'=>__('app.news_page.title'), 'url' => route('news_page',['lang' => app()->getLocale()])],
+                    ['name'=>__('app.articles_page.title'),'url' => route('articles_page',['lang' => app()->getLocale()])], 
+                    ['name'=>__('app.mejlis_activities_page.title'), 'url' => route('mejlis_activities_page',['lang' => app()->getLocale()])],
+                    ['name'=>__('app.gallery_page.title'), 'url' => route('gallery_page',['lang' => app()->getLocale()])],
+    ];
+    $breadcrumbs_array = [
+                    ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
+                    ['name' => __('app.layout.headlines'), 'url' => '#'],
+                    ['name' => __('app.mejlis_activities_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
+    ];
 @endphp
 
 @section('content')
     <div class="mejlis_activities_page flex_row">
         <div class="inner_wrapper flex_column">
-            <div class="breadcrumbs_row">
-                <span>Baş sahypa</span> / Media / Habarlar
-            </div>
+            <x-breadcrumbs :breadcrumbs-array="$breadcrumbs_array" />
 
             <div class="page_content_block flex_row">
 
@@ -26,7 +29,7 @@
 
                 <div class="activities_block">
 
-                    <h3 class="block_title">MEJLISDE ALNYP BARYLÝAN IŞLER</h3>
+                    <h3 class="block_title">@lang('app.mejlis_activities_page.title_short')</h3>
 
                     <div class="activities_row flex_row">
 
@@ -50,7 +53,7 @@
                             <div class="bottom_row flex_row">
                                 <span class="date">11.04.2023</span>
                                 <a href="#" class="flex_row hover_underline">
-                                    <span>Doly oka</span>
+                                    <span>@lang('app.buttons.more_button')</span>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -75,7 +78,7 @@
                             <div class="bottom_row flex_row">
                                 <span class="date">06.04.2023</span>
                                 <a href="#" class="flex_row hover_underline">
-                                    <span>Doly oka</span>
+                                    <span>@lang('app.buttons.more_button')</span>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -101,7 +104,7 @@
                             <div class="bottom_row flex_row">
                                 <span class="date">06.04.2023</span>
                                 <a href="#" class="flex_row hover_underline">
-                                    <span>Doly oka</span>
+                                    <span>@lang('app.buttons.more_button')</span>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -129,7 +132,7 @@
                             <div class="bottom_row flex_row">
                                 <span class="date">11.04.2023</span>
                                 <a href="#" class="flex_row hover_underline">
-                                    <span>Doly oka</span>
+                                    <span>@lang('app.buttons.more_button')</span>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -154,7 +157,7 @@
                             <div class="bottom_row flex_row">
                                 <span class="date">06.04.2023</span>
                                 <a href="#" class="flex_row hover_underline">
-                                    <span>Doly oka</span>
+                                    <span>@lang('app.buttons.more_button')</span>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -180,7 +183,7 @@
                             <div class="bottom_row flex_row">
                                 <span class="date">06.04.2023</span>
                                 <a href="#" class="flex_row hover_underline">
-                                    <span>Doly oka</span>
+                                    <span>@lang('app.buttons.more_button')</span>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -208,7 +211,7 @@
                             <div class="bottom_row flex_row">
                                 <span class="date">11.04.2023</span>
                                 <a href="#" class="flex_row hover_underline">
-                                    <span>Doly oka</span>
+                                    <span>@lang('app.buttons.more_button')</span>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -233,7 +236,7 @@
                             <div class="bottom_row flex_row">
                                 <span class="date">06.04.2023</span>
                                 <a href="#" class="flex_row hover_underline">
-                                    <span>Doly oka</span>
+                                    <span>@lang('app.buttons.more_button')</span>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
@@ -259,7 +262,7 @@
                             <div class="bottom_row flex_row">
                                 <span class="date">06.04.2023</span>
                                 <a href="#" class="flex_row hover_underline">
-                                    <span>Doly oka</span>
+                                    <span>@lang('app.buttons.more_button')</span>
                                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>

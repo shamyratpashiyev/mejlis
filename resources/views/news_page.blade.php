@@ -1,23 +1,29 @@
-@extends('layout')
+@extends('layout',['title' => __('app.news_page.title')])
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/main_page.css') }}">
     <link rel="stylesheet" href="{{ asset('css/news_page.css') }}">
 @endpush
 
+@php
+    $breadcrumbs_array = [
+                    ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
+                    ['name' => __('app.layout.headlines'), 'url' => '#'],
+                    ['name' => __('app.news_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
+    ];
+@endphp
+
 @section('content')
 <div class="news_page">
 
     <div class="news_section_main flex_row">
         <div class="inner_wrapper flex_column">
-            <div class="breadcrumbs_row">
-                <span>Baş sahypa</span> / Halkara / Täzelikler
-            </div>
+            <x-breadcrumbs :breadcrumbs-array="$breadcrumbs_array" />
 
             <div class="title_row flex_row">
-                <h2 class="title">Habarlar</h2>
+                <h2 class="title">@lang('app.layout.headlines')</h2>
                 <a href="#" class="news_page_link hover_underline flex_row">
-                    <span>Hemmesi</span>
+                    <span>@lang('app.buttons.see_all')</span>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>

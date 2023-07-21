@@ -3,3 +3,5 @@
   margin: 10px 0 35px 0; }
   .news_page .news_section_main .inner_wrapper .breadcrumbs_row {
     margin: 0 0 35px 0; }
+  .news_page .news_section_main .inner_wrapper .title_row .news_page_link {
+    display: none; }

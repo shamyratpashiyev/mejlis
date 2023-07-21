@@ -208,7 +208,7 @@
                             <a href="{{ route('mejlis_activities_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_activities_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">@lang('app.layout.gallery_page')</a>
+                            <a href="{{ route('gallery_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.gallery_page')</a>
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@
 return [
     'buttons' => [
         'more_button' => 'Giňişleýin',
+        'see_all' => 'Ählisini görmek',
     ],
 
     'layout' => [
@@ -45,7 +46,6 @@ return [
 
     'main' => [
         'title' => 'Baş sahypa',
-        'see_all' => 'Ählisini görmek',
         'headlines_section' => 'HABARLAR',
         'mejlis_activities_section' => 'MEJLISDE ALNYP BARYLÝAN IŞLER',
         'deputies_section' => 'Deputatlar',
@@ -179,6 +179,23 @@ return [
 
     'news_international_page' => [
         'title' => 'Täzelikler',
-    ]
+    ],
+
+    'news_page' => [
+        'title' => 'Täzelikler',
+    ],
+
+    'articles_page' => [
+        'title' => 'Çykyşlar we makalalar',
+    ],
+
+    'mejlis_activities_page' => [
+        'title' => 'Türkmenistanyň mejlisinde alnyp barylýan işler',
+        'title_short' => 'MEJLISDE ALNYP BARYLÝAN IŞLER'
+    ],
+
+    'gallery_page' => [
+        'title' => 'Galereýa',
+    ],
 
 ];
