@@ -170,6 +170,15 @@ return [
 
     'international_cooperation_page' => [
         'title' => 'Halkara hyzmatdaşlyk',
+    ],
+
+    'friendship_group_page' => [
+        'title' => 'Dostluk topar',
+        'title_full' => 'Daşary ýurt döwletleriniň parlamentleri bilen parlamentara dostluk toparlary'
+    ],
+
+    'news_international_page' => [
+        'title' => 'Täzelikler',
     ]
 
 ];
