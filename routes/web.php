@@ -36,7 +36,7 @@ Route::group(['middleware'=>'localization'],function (){
     Route::get('/mejlis-history', [SiteController::class, 'mejlis_history'])->name('mejlis_history_page');
     Route::get('/convocation', [SiteController::class, 'convocation'])->name('convocation_page');
 
-});
+
     
     Route::get('/mejlis-committees', [SiteController::class, 'mejlis_committees'])->name('mejlis_committees_page');
     Route::get('/mejlis-deputies', [SiteController::class, 'mejlis_deputies'])->name('mejlis_deputies_page');
@@ -64,7 +64,7 @@ Route::group(['middleware'=>'localization'],function (){
         Route::get('/state-symbols', [SiteController::class, 'tkm_state_symbols'])->name('tkm_state_symbols_page');
         Route::get('/state-holidays', [SiteController::class, 'tkm_state_holidays'])->name('tkm_state_holidays_page');
     });
-
+});
 
 
 Route::get('/login', [AdminController::class, 'login'])->name('login');

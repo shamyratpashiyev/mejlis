@@ -148,10 +148,10 @@
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('mejlis_committees_page') }}">@lang('app.layout.mejlis_committees_page')</a>
+                            <a href="{{ route('mejlis_committees_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_committees_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('mejlis_deputies_page') }}">@lang('app.layout.mejlis_deputies_page')</a>
+                            <a href="{{ route('mejlis_deputies_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_deputies_page')</a>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                             <a href="{{ route('bills_discussion_page') }}">Законопроекты на обсуждение</a>
                         </div> --}}
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('codes_page') }}">@lang('app.layout.codes_page')</a>
+                            <a href="{{ route('codes_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.codes_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">@lang('app.layout.laws_page')</a>
@@ -173,7 +173,7 @@
                             <a href="#">@lang('app.layout.mejlis_decrees_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('constitutional_law_page') }}">@lang('app.layout.constitutional_law_page')</a>
+                            <a href="{{ route('constitutional_law_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.constitutional_law_page')</a>
                         </div>
                     </div>
                 </div>
@@ -183,13 +183,13 @@
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('international_cooperation_page') }}">@lang('app.layout.international_cooperation_page')</a>
+                            <a href="{{ route('international_cooperation_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.international_cooperation_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('friendship_group_page') }}">@lang('app.layout.friendship_groups_page')</a>
+                            <a href="{{ route('friendship_group_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.friendship_groups_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('news_international_page') }}">@lang('app.layout.news_page')</a>
+                            <a href="{{ route('news_international_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_page')</a>
                         </div>
                     </div>
                 </div>
@@ -199,13 +199,13 @@
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('news_page') }}">@lang('app.layout.news_page')</a>
+                            <a href="{{ route('news_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('articles_page') }}">@lang('app.layout.articles_page')</a>
+                            <a href="{{ route('articles_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.articles_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('mejlis_activities_page') }}">@lang('app.layout.mejlis_activities_page')</a>
+                            <a href="{{ route('mejlis_activities_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_activities_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="#">@lang('app.layout.gallery_page')</a>
@@ -213,7 +213,7 @@
                     </div>
                 </div>
 
-                <a href="{{ route('tkm_history_page') }}" class="nav_button_wrapper hover_underline">
+                <a href="{{ route('tkm_history_page',['lang'=>app()->getLocale()]) }}" class="nav_button_wrapper hover_underline">
                     <span>@lang('app.layout.tkm_page')</span>
                 </a>
             </div>
@@ -244,7 +244,7 @@
             </div>
 
             <div class="right_column flex_column">
-                <a href="{{ route('contacts_page') }}" class="title">@lang('app.layout.contacts_page')</a>
+                <a href="{{ route('contacts_page',['lang'=>app()->getLocale()]) }}" class="title">@lang('app.layout.contacts_page')</a>
                 <p class="flex_row contact_row_wrapper">
                     <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z" stroke="white"/>

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout',['title' => __('app.mejlis_committees_page.title')])
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/mejlis_committees_page.css') }}">
@@ -6,21 +6,26 @@
 
 @php
     $links_list = [
-                    ['name'=>'Mejlis komitetleri ', 'url' => '#'],
-                    ['name'=>'Mejlis deputatlary ','url' => '#'], 
-                ]
+                    ['name'=>__('app.mejlis_committees_page.title'), 'url' => route('mejlis_committees_page',['lang' => app()->getLocale()])],
+                    ['name'=>__('app.mejlis_deputies_page.title'),'url' => route('mejlis_deputies_page',['lang' => app()->getLocale()])], 
+    ];
+
+    $breadcrumbs_array = [
+                    ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
+                    ['name' => __('app.layout.mejlis_structure_page'), 'url' => '#'],
+                    ['name' => __('app.mejlis_committees_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
+    ];
 @endphp
 
 @section('content')
     <div class="mejlis_committees_page flex_row">
         <div class="inner_wrapper flex_column">
-            <div class="breadcrumbs_row">
-                <span>Baş sahypa</span> / Düzümi we gurluşygy / Mejlis komitetleri 
-            </div>
+            
+            <x-breadcrumbs :breadcrumbs-array="$breadcrumbs_array" />
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="Düzümi we gurluşygy"/>
+                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.mejlis_structure_page') }}"/>
 
                 <div class="middle_column">
                     <h3 class="block_title">Adam hukuklaryny we azatlyklaryny goramak baradaky komiteti</h3>
@@ -151,7 +156,7 @@
                 </div>
 
                 <div class="right_column flex_column">
-                    <h3 class="block_title">Mejlis komitetleri</h3>
+                    <h3 class="block_title">@lang('app.mejlis_committees_page.mejlis_committees')</h3>
 
                     <div class="buttons_block flex_column">
                         <span class="committee_name active">Adam hukuklaryny we azatlyklaryny goramak baradaky komiteti</span>

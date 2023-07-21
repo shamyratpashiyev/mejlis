@@ -97,6 +97,16 @@ return [
     'convocation_page' => [
         'title' => 'VII çagyrylyşynyň deputatlarynyň sanawy',
         'convocation_deputies_list' => 'Türkmenistanyň Mejlisiniň VII çagyrylyşynyň deputatlarynyň sanawy',
-    ]
+    ],
+
+    'mejlis_committees_page' => [
+        'title' => 'Mejlis komitetleri',
+        'mejlis_committees' => 'Mejlis komitetleri',
+    ],
+
+    'mejlis_deputies_page' => [
+        'title' => 'Mejlis deputatlary',
+        'deputies' => 'Deputatlar',
+    ],
 
 ];

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout',['title' => __('app.mejlis_deputies_page.title')])
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/mejlis_deputies_page.css') }}">
@@ -6,9 +6,15 @@
 
 @php
     $links_list = [
-                    ['name'=>'Mejlis komitetleri ', 'url' => '#'],
-                    ['name'=>'Mejlis deputatlary ','url' => '#'], 
-];
+                    ['name'=>__('app.mejlis_committees_page.title'), 'url' => route('mejlis_committees_page',['lang' => app()->getLocale()])],
+                    ['name'=>__('app.mejlis_deputies_page.title'),'url' => route('mejlis_deputies_page',['lang' => app()->getLocale()])], 
+    ];
+
+    $breadcrumbs_array = [
+                    ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
+                    ['name' => __('app.layout.mejlis_structure_page'), 'url' => '#'],
+                    ['name' => __('app.mejlis_committees_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
+    ];
     $deputy_description = "<p>
             Kasymguly Gulmyradowiç Babaýew 1966-njy ýylyň 12-nji sentýabrynda Ahal welaýatynyň Ak bugdaý etrabynyň Gämi obasynda doguldy. Milleti türkmen.
             1973 — 1983-nji ýyllarda Ahal welaýaty- nyň Ak bugdaý etrabyndaky l-nji orta mek- depde okady. 1983 — 1989-njy ýyllarda Türkmen döwlet ykdysadyýet we dolandy- ryş institutynda okap, ony ykdysatçy hünäri boýunça tamamlady. 1984 — 1986-njy ýyl- larda harby gullukda boldy. 1989 — 1991- nji ýyllarda SSSR-iň Zähmet we durmuş üpjünçiligi baradaky döw- let komitetiniň Zähmet ylmy-barlag institutynyň Türkmenistandaky bölüminde ykdysatçy bolup işledi. 1991 — 1993-nji ýyllarda Türk­men döwlet ykdysadyýet we dolandyryş institutynyň dolandyryş we halkara ykdysady aragatnaşyklar kafedrasynyň mugallymy bolup işledi. 1993 — 1996-njy ýyllarda şol institutyň dünýä ykdysadyýe- ti we halkara ykdysady gatnaşyklar kafedrasynyň mugallymy, şol bir wagtda, 1991-nji ýylyň sentýabr aýynda institutyň kommersiýa- tehnologiýa fakultetiniň dekanynyň orunbasary wezipesine belle­nildi we 1992-nji ýylyň sentýabr aýynda söwda we halkara ykdysa- dy aragatnaşyklar fakultetiniň dekanynyň orunbasary bolup işledi. 1993 — 1995-nji ýyllarda aspiranturada okady. 1996 — 2002-nji ýyllarda Magtymguly adyndaky Türkmen döwlet uniwersitetiniň dünýä ykdysadyýeti we halkara ykdysady gatnaşyklar kafedrasy- nyň mugallymy, 2002 — 2007-nji ýyllarda şol uniwersitetiň dünýä tejribesini öwreniş kafedrasynyň uly mugallymy bolup işledi. Şol bir wagtda, 2000-nji ýylyň ýanwar aýyndan başlap uniwersitetiň hukuk we halkara gatnaşyklary fakultetiniň dekanynyň orunbasary wezipesine bellendi we şol ýylyň sentýabr aýyndan başlap, 2007- nji ýylyň fewral aýyna çenli hukuk we halkara gatnaşyklar fakulteti- niň dekany wezipesinde işledi.
@@ -25,18 +31,16 @@
 @section('content')
     <div class="mejlis_deputies_page flex_row">
         <div class="inner_wrapper flex_column">
-            <div class="breadcrumbs_row">
-                <span>Baş sahypa</span> / Düzümi we gurluşygy / Mejlis deputatlary
-            </div>
+            <x-breadcrumbs :breadcrumbs-array="$breadcrumbs_array" />
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="Düzümi we gurluşygy"/>
+                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.mejlis_structure_page') }}"/>
 
                 <div class="right_block flex_column">
 
                     <div class="title_row flex_row">
-                        <h3 class="title">Deputatlar</h3>
+                        <h3 class="title">@lang('app.mejlis_deputies_page.deputies')</h3>
                         
                         <div class="select_block">
                             <select name="" id="">
