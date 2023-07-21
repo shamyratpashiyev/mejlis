@@ -193,6 +193,7 @@ a{
 .sidebar_container{
     width: 290px;
     row-gap: 40px;
+    flex-shrink: 0;
 
     .nav_block{
         color: var(--default_white);
@@ -393,7 +394,7 @@ a{
     font-size: 16px;
     font-family: 'OpenSansRegular', sans-serif;
     
-    a{
+    a, span{
         color: var(--text_gray_2);
     }
 

@@ -167,10 +167,10 @@
                             <a href="{{ route('codes_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.codes_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">@lang('app.layout.laws_page')</a>
+                            <a href="{{ route('laws_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.laws_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">@lang('app.layout.mejlis_decrees_page')</a>
+                            <a href="{{ route('mejlis_decrees_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_decrees_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
                             <a href="{{ route('constitutional_law_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.constitutional_law_page')</a>

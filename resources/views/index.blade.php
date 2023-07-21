@@ -183,7 +183,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">11.04.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>@lang('app.main.more_button')</span>
+                            <span>@lang('app.buttons.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -208,7 +208,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">06.04.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>@lang('app.main.more_button')</span>
+                            <span>@lang('app.buttons.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -234,7 +234,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">06.04.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>@lang('app.main.more_button')</span>
+                            <span>@lang('app.buttons.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -262,7 +262,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">06.04.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>@lang('app.main.more_button')</span>
+                            <span>@lang('app.buttons.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -302,7 +302,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">11.02.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>@lang('app.main.more_button')</span>
+                            <span>@lang('app.buttons.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -330,7 +330,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">11.02.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>@lang('app.main.more_button')</span>
+                            <span>@lang('app.buttons.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -357,7 +357,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">14.02.2022</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>@lang('app.main.more_button')</span>
+                            <span>@lang('app.buttons.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -384,7 +384,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">27.12.2021</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>@lang('app.main.more_button')</span>
+                            <span>@lang('app.buttons.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>

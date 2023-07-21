@@ -37,14 +37,24 @@ class SiteController extends Controller
         return view('single_deputy_page');
     }
 
-    public function bills_discussion(){
+    // public function bills_discussion(){
 
-        return view('bills_discussion_page');
-    }
+    //     return view('bills_discussion_page');
+    // }
 
     public function codes(){
 
         return view('codes_page');
+    }
+
+    public function laws(){
+
+        return view('laws_page');
+    }
+
+    public function mejlis_decrees(){
+
+        return view('mejlis_decrees_page');
     }
 
     public function constitutional_law(){

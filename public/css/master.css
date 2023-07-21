@@ -145,7 +145,8 @@ a {
 
 .sidebar_container {
   width: 290px;
-  row-gap: 40px; }
+  row-gap: 40px;
+  flex-shrink: 0; }
   .sidebar_container .nav_block {
     color: var(--default_white);
     background-color: var(--sky_blue);
@@ -292,7 +293,7 @@ a {
 .breadcrumbs_row {
   font-size: 16px;
   font-family: 'OpenSansRegular', sans-serif; }
-  .breadcrumbs_row a {
+  .breadcrumbs_row a, .breadcrumbs_row span {
     color: var(--text_gray_2); }
   .breadcrumbs_row .main_page {
     color: var(--sky_blue); }

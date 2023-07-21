@@ -1,4 +1,4 @@
-@extends('layout', ['title' => __('app.codes_page.title')])
+@extends('layout', ['title' => __('app.laws_page.title')])
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/codes_laws_decrees_pages.css') }}">
@@ -35,7 +35,7 @@
 
                     <div class="nav_buttons_row flex_row">
 
-                        <a href="{{ route('codes_page', ['lang' => app()->getLocale()]) }}" class="button_container active flex_column">
+                        <a href="{{ route('codes_page', ['lang' => app()->getLocale()]) }}" class="button_container flex_column">
                             <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="path-1-inside-1_161_8853" fill="white">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M55.058 19.141L46 10.083L36.9419 19.141H24.4333V31.6497L15.5 40.583L24.4333 49.5163V62.2745H37.1915L46 71.083L54.8084 62.2745H67.5668V49.5162L76.5 40.583L67.5668 31.6498V19.141H55.058Z"/>
@@ -45,7 +45,7 @@
                             <span class="button_title">@lang('app.codes_page.title')</span>
                         </a>
 
-                        <a href="{{ route('laws_page', ['lang' => app()->getLocale()]) }}" class="button_container flex_column">
+                        <a href="{{ route('laws_page', ['lang' => app()->getLocale()]) }}" class="button_container flex_column active">
                             <svg width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="path-1-inside-1_161_8853" fill="white">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M55.058 19.141L46 10.083L36.9419 19.141H24.4333V31.6497L15.5 40.583L24.4333 49.5163V62.2745H37.1915L46 71.083L54.8084 62.2745H67.5668V49.5162L76.5 40.583L67.5668 31.6498V19.141H55.058Z"/>

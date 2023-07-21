@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'buttons' => [
+        'more_button' => 'Giňişleýin',
+    ],
+
     'layout' => [
         'logo_main' => 'TÜRKMENISTANYŇ<br/> MEJLISI',
         'logo_title' => 'TÜRKMENISTANYŇ MEJLISI',
@@ -56,7 +60,6 @@ return [
         'lebap_region' => 'Lebap welaýaty',
         'mary_region' => 'Mary welaýaty',
         'legislation_section' => 'Kanunçylyk',
-        'more_button' => 'Giňişleýin',
         'websites_section' => 'Web Saýtlar',
     ],
 
@@ -110,5 +113,18 @@ return [
         'election_district' => 'Saýlaw okrugy',
         'committee' => 'Komitet',
     ],
+
+    'codes_page' => [
+        'title' => 'Kodeksler',
+        
+    ],
+
+    'laws_page' => [
+        'title' => 'Kanunlar',
+    ],
+
+    'mejlis_decrees_page' => [
+        'title' => 'Mejlisiň kararlary',
+    ]
 
 ];
