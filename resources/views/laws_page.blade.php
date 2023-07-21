@@ -16,7 +16,7 @@
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
                     ['name' => __('app.layout.legislation_page'), 'url' => '#'],
-                    ['name' => __('app.codes_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
+                    ['name' => __('app.laws_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
     ];
     
 @endphp
