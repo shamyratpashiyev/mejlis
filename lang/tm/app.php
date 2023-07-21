@@ -10,11 +10,11 @@ return [
         'logo_title' => 'TÜRKMENISTANYŇ MEJLISI',
         'logo_description' => 'kanun çykaryjy häkimiýeti amala aşyrýan wekilçilikli edara',
         'main_page' => 'Baş sahypa',
-        'about_mejlis_page' => 'Mejlis hakynda',
-        'mejlis_structure_page' => 'Düzümi we gurluşygy',
-        'media_page' => 'Media',
+        'about_mejlis' => 'Mejlis hakynda',
+        'mejlis_structure' => 'Düzümi we gurluşygy',
+        'media' => 'Media',
         'international' => 'Halkara',
-        'legislation_page' => 'Kanunçylyk',
+        'legislation' => 'Kanunçylyk',
         'contacts_page' => 'Habarlaşmak üçin',
         'mejlis_history_page' => 'Mejlisiň taryhy',
         'seventh_convocation_page' => 'VII çagyrylyşynyň deputatlarynyň sanawy',
@@ -165,7 +165,11 @@ return [
                         &emsp;&emsp;jemgyýetde asudalygy we agzybirligi üpjün etmäge, halk häkimiýetiniň hem-de demokratik, hukuk, dünýewi döwletiň esaslaryny berkarar etmäge çalşyp,<br><br>
                         &emsp;&emsp;Türkmenistanyň Esasy Kanunyny – şu Konstitusiýany kabul edýäris.<br><br>
                     </p>",
-        
+
     ],
+
+    'international_cooperation_page' => [
+        'title' => 'Halkara hyzmatdaşlyk',
+    ]
 
 ];

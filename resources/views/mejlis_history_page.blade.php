@@ -12,7 +12,7 @@
     
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
-                    ['name' => __('app.layout.about_mejlis_page'), 'url' => '#'],
+                    ['name' => __('app.layout.about_mejlis'), 'url' => '#'],
                     ['name' => __('app.mejlis_history_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
     ];
 @endphp
@@ -24,7 +24,7 @@
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.about_mejlis_page') }}"/>
+                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.about_mejlis') }}"/>
 
                 <div class="right_side">
                     <h3 class="block_title">@lang('app.mejlis_history_page.title')</h3>

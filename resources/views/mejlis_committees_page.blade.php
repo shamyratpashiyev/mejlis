@@ -12,7 +12,7 @@
 
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
-                    ['name' => __('app.layout.mejlis_structure_page'), 'url' => '#'],
+                    ['name' => __('app.layout.mejlis_structure'), 'url' => '#'],
                     ['name' => __('app.mejlis_committees_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
     ];
 @endphp
@@ -25,7 +25,7 @@
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.mejlis_structure_page') }}"/>
+                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.mejlis_structure') }}"/>
 
                 <div class="middle_column">
                     <h3 class="block_title">Adam hukuklaryny we azatlyklaryny goramak baradaky komiteti</h3>

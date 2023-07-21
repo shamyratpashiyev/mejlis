@@ -68,11 +68,11 @@
 
                     <div class="nav_block flex_column">
                         <a class="hover_underline" href="#">@lang('app.layout.main_page')</a>
-                        <a class="hover_underline" href="#">@lang('app.layout.about_mejlis_page')</a>
-                        <a class="hover_underline" href="#">@lang('app.layout.mejlis_structure_page')</a>
-                        <a class="hover_underline" href="#">@lang('app.layout.media_page')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.about_mejlis')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.mejlis_structure')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.media')</a>
                         <a class="hover_underline" href="#">@lang('app.layout.international')</a>
-                        <a class="hover_underline" href="#">@lang('app.layout.legislation_page')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.legislation')</a>
                         <a class="hover_underline" href="#">@lang('app.layout.contacts_page')</a>
                     </div>
 
@@ -130,7 +130,7 @@
                 </a>
 
                 <div class="nav_button_wrapper hover_underline">
-                    <span>@lang('app.layout.about_mejlis_page')</span>
+                    <span>@lang('app.layout.about_mejlis')</span>
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
@@ -144,7 +144,7 @@
                 </div>
 
                 <div class="nav_button_wrapper hover_underline">
-                    <span>@lang('app.layout.mejlis_structure_page')</span>
+                    <span>@lang('app.layout.mejlis_structure')</span>
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
@@ -157,7 +157,7 @@
                 </div>
 
                 <div class="nav_button_wrapper hover_underline">
-                    <span>@lang('app.layout.legislation_page')</span>
+                    <span>@lang('app.layout.legislation')</span>
 
                     <div class="dropdown_menu flex_column">
                         {{-- <div class="item_wrapper hover_underline">
@@ -237,7 +237,7 @@
             </a>
 
             <div class="middle_column flex_column">
-                <h3 class="title">@lang('app.layout.about_mejlis_page')</h3>
+                <h3 class="title">@lang('app.layout.about_mejlis')</h3>
                 <p class="description">
                     @lang('app.layout.footer_text')
                 </p>

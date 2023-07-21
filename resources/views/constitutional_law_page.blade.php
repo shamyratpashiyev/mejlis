@@ -15,7 +15,7 @@
 
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
-                    ['name' => __('app.layout.legislation_page'), 'url' => '#'],
+                    ['name' => __('app.layout.legislation'), 'url' => '#'],
                     ['name' => __('app.constitutional_law_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
     ];
     
@@ -28,7 +28,7 @@
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.mejlis_structure_page') }}"/>
+                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.mejlis_structure') }}"/>
 
                 <div class="right_side flex_column">
                     <h3 class="block_title">@lang('app.constitutional_law_page.title')</h3>

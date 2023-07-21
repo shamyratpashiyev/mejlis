@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout',['title' => __('app.international_cooperation_page.title')])
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/international_cooperation_page.css') }}">
@@ -6,23 +6,26 @@
 
 @php
     $links_list = [
-                    ['name'=>'Halkara hyzmatdaşlyk', 'url' => '#'],
-                    ['name'=>'Dostluk topar','url' => '#'], 
-                    ['name'=>'Täzelikler', 'url' => '#'],
-];
+                    ['name'=>__('app.international_cooperation_page.title'), 'url' => route('international_cooperation_page',['lang' => app()->getLocale()])],
+                    ['name'=>__('app.friendship_group_page.title'),'url' => route('friendship_group_page',['lang' => app()->getLocale()])], 
+                    ['name'=>__('app.news_international_page.title'), 'url' => route('news_international_page',['lang' => app()->getLocale()])],
+    ];
+    $breadcrumbs_array = [
+                    ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
+                    ['name' => __('app.layout.international'), 'url' => '#'],
+                    ['name' => __('app.international_cooperation_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
+    ];
     
 @endphp
 
 @section('content')
     <div class="international_cooperation_page flex_row">
         <div class="inner_wrapper flex_column">
-            <div class="breadcrumbs_row">
-                <span>Baş sahypa</span> / Halkara / Halkara hyzmatdaşlyk
-            </div>
+            <x-breadcrumbs :breadcrumbs-array="$breadcrumbs_array" />
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="Halkara"/>
+                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.international') }}"/>
 
                 <div class="right_side flex_column">
 
