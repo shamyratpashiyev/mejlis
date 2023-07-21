@@ -16,7 +16,7 @@
             <div class="topbar flex_row">
                 <a href="#" class="logo_wrapper flex_row">
                     <img class="logo_img" src="{{ asset('/img/logo.svg') }}" alt="">
-                    <span class="logo_text">@lang('app.logo_main')</span>
+                    <span class="logo_text">@lang('app.layout.logo_main')</span>
                 </a>
 
                 <div class="lang_hamburger_wrapper flex_row">
@@ -46,8 +46,8 @@
                 <div class="inner_wrapper flex_column">
                     <img class="building_img" src="{{ asset('img/mejlis_building.svg') }}" alt="">
                     <hr/>
-                    <p class="title">@lang('app.logo_title')</p>
-                    <span class="info">@lang('app.logo_description')</span>
+                    <p class="title">@lang('app.layout.logo_title')</p>
+                    <span class="info">@lang('app.layout.logo_description')</span>
                 </div>
             </div>
 
@@ -62,18 +62,18 @@
                     <div class="top_block flex_column">
                         <img class="building_img" src="{{ asset('img/mejlis_building.svg') }}" alt="">
                         <hr/>
-                        <p class="title">@lang('app.logo_title')</p>
-                        <span class="info">@lang('app.logo_description')</span>
+                        <p class="title">@lang('app.layout.logo_title')</p>
+                        <span class="info">@lang('app.layout.logo_description')</span>
                     </div>
 
                     <div class="nav_block flex_column">
-                        <a class="hover_underline" href="#">@lang('app.main_page')</a>
-                        <a class="hover_underline" href="#">@lang('app.about_us_page')</a>
-                        <a class="hover_underline" href="#">@lang('app.mejlis_structure_page')</a>
-                        <a class="hover_underline" href="#">@lang('app.media_page')</a>
-                        <a class="hover_underline" href="#">@lang('app.international_page')</a>
-                        <a class="hover_underline" href="#">@lang('app.legislation_page')</a>
-                        <a class="hover_underline" href="#">@lang('app.contacts_page')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.main_page')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.about_us_page')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.mejlis_structure_page')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.media_page')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.international')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.legislation_page')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.contacts_page')</a>
                     </div>
 
                     <div class="lang_block flex_row">
@@ -102,7 +102,7 @@
     <div class="middle_header flex_row">
         <div class="inner_wrapper flex_column">
             <img src="{{ asset('img/mejlis_building.svg') }}" alt="">
-            <h3 class="logo_text">@lang('app.logo_title')</h3>
+            <h3 class="logo_text">@lang('app.layout.logo_title')</h3>
 
             <div class="lang_wrapper flex_row">
                 <svg class="globe" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,95 +126,95 @@
         <div class="inner_wrapper flex_row">
             <div class="nav_block flex_row">
                 <a class="nav_button_wrapper hover_underline" href="{{ route('main_page') }}">
-                    <span>@lang('app.main_page')</span>
+                    <span>@lang('app.layout.main_page')</span>
                 </a>
 
                 <div class="nav_button_wrapper hover_underline">
-                    <span>@lang('app.about_us_page')</span>
+                    <span>@lang('app.layout.about_us_page')</span>
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('mejlis_history_page') }}">@lang('app.mejlis_history_page')</a>
+                            <a href="{{ route('mejlis_history_page') }}">@lang('app.layout.mejlis_history_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('deputies_list_page') }}">@lang('app.seventh_convocation_page')</a>
+                            <a href="{{ route('deputies_list_page') }}">@lang('app.layout.seventh_convocation_page')</a>
                         </div>
                         
                     </div>
                 </div>
 
                 <div class="nav_button_wrapper hover_underline">
-                    <span>@lang('app.mejlis_structure_page')</span>
+                    <span>@lang('app.layout.mejlis_structure_page')</span>
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('mejlis_committees_page') }}">@lang('app.mejlis_committees_page')</a>
+                            <a href="{{ route('mejlis_committees_page') }}">@lang('app.layout.mejlis_committees_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('mejlis_deputies_page') }}">@lang('app.mejlis_deputies_page')</a>
+                            <a href="{{ route('mejlis_deputies_page') }}">@lang('app.layout.mejlis_deputies_page')</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="nav_button_wrapper hover_underline">
-                    <span>@lang('app.legislation_page')</span>
+                    <span>@lang('app.layout.legislation_page')</span>
 
                     <div class="dropdown_menu flex_column">
                         {{-- <div class="item_wrapper hover_underline">
                             <a href="{{ route('bills_discussion_page') }}">Законопроекты на обсуждение</a>
                         </div> --}}
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('codes_page') }}">@lang('app.codes_page')</a>
+                            <a href="{{ route('codes_page') }}">@lang('app.layout.codes_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">@lang('app.laws_page')</a>
+                            <a href="#">@lang('app.layout.laws_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">@lang('app.mejlis_decrees_page')</a>
+                            <a href="#">@lang('app.layout.mejlis_decrees_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('constitutional_law_page') }}">@lang('app.constitutional_law_page')</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="nav_button_wrapper hover_underline">
-                    <span>@lang('app.international_page')</span>
-
-                    <div class="dropdown_menu flex_column">
-                        <div class="item_wrapper hover_underline">
-                            <a href="{{ route('international_cooperation_page') }}">@lang('app.international_cooperation_page')</a>
-                        </div>
-                        <div class="item_wrapper hover_underline">
-                            <a href="{{ route('friendship_group_page') }}">@lang('app.friendship_groups_page')</a>
-                        </div>
-                        <div class="item_wrapper hover_underline">
-                            <a href="{{ route('news_international_page') }}">@lang('app.news_page')</a>
+                            <a href="{{ route('constitutional_law_page') }}">@lang('app.layout.constitutional_law_page')</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="nav_button_wrapper hover_underline">
-                    <span>Habarlar</span>
+                    <span>@lang('app.layout.international')</span>
 
                     <div class="dropdown_menu flex_column">
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('news_page') }}">@lang('app.news_page')</a>
+                            <a href="{{ route('international_cooperation_page') }}">@lang('app.layout.international_cooperation_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('articles_page') }}">@lang('app.articles_page')</a>
+                            <a href="{{ route('friendship_group_page') }}">@lang('app.layout.friendship_groups_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('mejlis_activities_page') }}">@lang('app.mejlis_activities_page')</a>
+                            <a href="{{ route('news_international_page') }}">@lang('app.layout.news_page')</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav_button_wrapper hover_underline">
+                    <span>@lang('app.layout.headlines')</span>
+
+                    <div class="dropdown_menu flex_column">
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('news_page') }}">@lang('app.layout.news_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="#">@lang('app.gallery_page')</a>
+                            <a href="{{ route('articles_page') }}">@lang('app.layout.articles_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('mejlis_activities_page') }}">@lang('app.layout.mejlis_activities_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="#">@lang('app.layout.gallery_page')</a>
                         </div>
                     </div>
                 </div>
 
                 <a href="{{ route('tkm_history_page') }}" class="nav_button_wrapper hover_underline">
-                    <span>@lang('app.tkm_page')</span>
+                    <span>@lang('app.layout.tkm_page')</span>
                 </a>
             </div>
             
@@ -231,27 +231,27 @@
                     <img src="{{ asset('img/mejlis_building.svg') }}" alt="">
                 </div>
 
-                <h4 class="title">@lang('app.logo_title')</h4>
-                <p class="description">@lang('app.logo_description')</p>
-                <span class="copyright_text">2023 @lang('app.copyright_text')</span>
+                <h4 class="title">@lang('app.layout.logo_title')</h4>
+                <p class="description">@lang('app.layout.logo_description')</p>
+                <span class="copyright_text">2023 @lang('app.layout.copyright_text')</span>
             </a>
 
             <div class="middle_column flex_column">
-                <h3 class="title">@lang('app.about_us_page')</h3>
+                <h3 class="title">@lang('app.layout.about_us_page')</h3>
                 <p class="description">
-                    @lang('app.footer_text')
+                    @lang('app.layout.footer_text')
                 </p>
             </div>
 
             <div class="right_column flex_column">
-                <a href="{{ route('contacts_page') }}" class="title">@lang('app.contacts_page')</a>
+                <a href="{{ route('contacts_page') }}" class="title">@lang('app.layout.contacts_page')</a>
                 <p class="flex_row contact_row_wrapper">
                     <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z" stroke="white"/>
                         <path d="M18 9C18 12.3137 14 17 12 17C10 17 6 12.3137 6 9C6 5.68629 8.68629 3 12 3C15.3137 3 18 5.68629 18 9Z" stroke="white"/>
                         <path d="M14.9994 15H16.1259C17.313 15 18.4388 15.5273 19.1987 16.4393L20.2657 17.7196C21.3513 19.0223 20.425 21 18.7293 21H5.26945C3.57377 21 2.64746 19.0223 3.733 17.7196L4.79998 16.4393C5.55995 15.5273 6.68574 15 7.87286 15H8.99936" stroke="white" stroke-linejoin="round"/>
                     </svg>
-                    <span>@lang('app.footer_address_value')</span>
+                    <span>@lang('app.layout.footer_address_value')</span>
                 </p>
 
                 <a class="flex_row contact_row_wrapper" href="mailto:info@mejlis.gov.tm">

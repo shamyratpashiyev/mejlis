@@ -10,9 +10,9 @@
     <div class="news_section_main flex_row">
         <div class="inner_wrapper flex_column">
             <div class="title_row flex_row">
-                <h2 class="title">Habarlar</h2>
+                <h2 class="title">@lang('app.main.headlines_section')</h2>
                 <a href="#" class="news_page_link hover_underline flex_row">
-                    <span>Hemmesi</span>
+                    <span>@lang('app.main.see_all')</span>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -159,7 +159,7 @@
 
     <div class="activities_section flex_row">
         <div class="inner_wrapper flex_column">
-            <h2 class="title">MEJLISDE ALNYP BARYLÝAN IŞLER</h2>
+            <h2 class="title">@lang('app.main.mejlis_activities_section')</h2>
 
             <div class="activities_row flex_row">
 
@@ -183,7 +183,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">11.04.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>Doly oka</span>
+                            <span>@lang('app.main.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -208,7 +208,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">06.04.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>Doly oka</span>
+                            <span>@lang('app.main.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -234,7 +234,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">06.04.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>Doly oka</span>
+                            <span>@lang('app.main.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -262,7 +262,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">06.04.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>Doly oka</span>
+                            <span>@lang('app.main.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -278,7 +278,7 @@
 
     <div class="legislation_section flex_row">
         <div class="inner_wrapper">
-            <h2 class="title">Kanunçylyk</h2>
+            <h2 class="title">@lang('app.main.legislation_section')</h2>
             <div class="content_row flex_row">
 
                 <div class="legislation_container flex_column container_box_shadow" data-href-value="#">
@@ -302,7 +302,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">11.02.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>Doly oka</span>
+                            <span>@lang('app.main.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -330,7 +330,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">11.02.2023</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>Doly oka</span>
+                            <span>@lang('app.main.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -357,7 +357,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">14.02.2022</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>Doly oka</span>
+                            <span>@lang('app.main.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -384,7 +384,7 @@
                     <div class="bottom_row flex_row">
                         <span class="date">27.12.2021</span>
                         <a href="#" class="flex_row hover_underline">
-                            <span>Doly oka</span>
+                            <span>@lang('app.main.more_button')</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 17L14.5 12L10.5 7" stroke="#0080C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>

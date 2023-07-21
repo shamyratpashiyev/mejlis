@@ -2,7 +2,7 @@
         
     <div class="inner_wrapper">
         <div class="title_row flex_row">
-            <h2 class="title">Web Saýtlar</h2>
+            <h2 class="title">@lang('app.main.websites_section')</h2>
 
             <div class="buttons_block">
                 <svg class="arrow_left" id="scroll_left" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
