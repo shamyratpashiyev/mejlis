@@ -137,7 +137,7 @@
                             <a href="{{ route('mejlis_history_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_history_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('deputies_list_page') }}">@lang('app.layout.seventh_convocation_page')</a>
+                            <a href="{{ route('convocation_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.seventh_convocation_page')</a>
                         </div>
                         
                     </div>

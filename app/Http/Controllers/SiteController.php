@@ -17,9 +17,9 @@ class SiteController extends Controller
         return view('mejlis_history_page');
     }
 
-    public function deputies_list(){
+    public function convocation(){
 
-        return view('deputies_list_page');
+        return view('convocation_page');
     }
 
     public function mejlis_committees(){

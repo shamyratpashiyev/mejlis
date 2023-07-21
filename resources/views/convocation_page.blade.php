@@ -1,30 +1,34 @@
-@extends('layout')
+@extends('layout',['title' => __('app.convocation_page.title')])
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/deputies_list_page.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/convocation_page.css') }}">
 @endpush
 
 @php
     $links_list = [
                     ['name'=>'Mejlisiň taryhy', 'url' => '#'],
                     ['name'=>'VII çagyrylyşynyň deputatlarynyň sanawy','url' => '#'], 
-                ]
+    ];
+
+    $breadcrumbs_array = [
+                    ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
+                    ['name' => __('app.layout.about_mejlis_page'), 'url' => '#'],
+                    ['name' => __('app.convocation_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
+    ];
 @endphp
 
 @section('content')
 
-    <div class="deputies_list_page flex_row">
+    <div class="convocation_page flex_row">
         <div class="inner_wrapper flex_column">
-            <div class="breadcrumbs_row">
-                <span>Baş sahypa</span> / Mejlis hakynda / VII çagyrylyşynyň deputatlarynyň sanawy
-            </div>
+            <x-breadcrumbs :breadcrumbs-array="$breadcrumbs_array" />
 
             <div class="page_content_block flex_row">
 
                 <x-sidebar :links-list="$links_list" title="Mejlis hakynda" />
 
                 <div class="right_side">
-                    <h3 class="block_title">Türkmenistanyň Mejlisiniň VII çagyrylyşynyň deputatlarynyň sanawy</h3>
+                    <h3 class="block_title">@lang('app.convocation_page.convocation_deputies_list')</h3>
 
                     <div class="search_block flex_column">
 

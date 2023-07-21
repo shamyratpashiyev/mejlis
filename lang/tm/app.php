@@ -94,4 +94,9 @@ return [
                     <p>&emsp;&emsp;&ensp;Parlamentiň ikinji çagyrylyşynyň deputatlarynyň saýlawlary 1999-njy ýylyň dekabrynda, üçünji çagyrylyşynyň saýlawlary 2004-nji ýylyň dekabrynda, dördünji çagyrylyşynyň saýlawlary 2008-nji ýylyň dekabrynda, bäşinji çagyrylyşynyň saýlawlary 2013-nji ýylyň dekabrynda, altynjy çagyrylyşynyň saýlawlary möhletinden öň, 2018-nji ýylyň mart aýynda geçirildi. Mejlisiň dördünji çagyrylyşyndan başlap deputatlaryň sany 125 adamdan ybarat bolup, olaryň ygtyýarlyk möhleti 5 ýyla deň boldy. Parlamentde häzirki wagtda ýurdumyzda hereket edýän üç sany syýasy partiýa ‒ Türkmenistanyň Demokratik partiýasy, Türkmenistanyň Agrar partiýasy we Türkmenistanyň Senagatçylar hem-de telekeçiler partiýasy şeýle hem raýatlaryň toparlary tarapyndan hödürlenilen we saýlanylan deputatlar wekilçilik edýärler.</p>",
     ],
 
+    'convocation_page' => [
+        'title' => 'VII çagyrylyşynyň deputatlarynyň sanawy',
+        'convocation_deputies_list' => 'Türkmenistanyň Mejlisiniň VII çagyrylyşynyň deputatlarynyň sanawy',
+    ]
+
 ];
