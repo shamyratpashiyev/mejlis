@@ -6,8 +6,8 @@
 
 @php
     $links_list = [
-                    ['name'=>'Mejlisiň taryhy', 'url' => '#'],
-                    ['name'=>'VII çagyrylyşynyň deputatlarynyň sanawy','url' => '#'], 
+                    ['name'=>__('app.mejlis_history_page.title'), 'url' => route('mejlis_history_page',['lang' => app()->getLocale()])],
+                    ['name'=> __('app.layout.seventh_convocation_page'), 'url' => route('convocation_page',['lang' => app()->getLocale()])],
     ];
 
     $breadcrumbs_array = [
@@ -25,7 +25,7 @@
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="Mejlis hakynda" />
+                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.about_mejlis_page') }}" />
 
                 <div class="right_side">
                     <h3 class="block_title">@lang('app.convocation_page.convocation_deputies_list')</h3>

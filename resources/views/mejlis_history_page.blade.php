@@ -24,7 +24,7 @@
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.contacts_page') }}"/>
+                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.about_mejlis_page') }}"/>
 
                 <div class="right_side">
                     <h3 class="block_title">@lang('app.mejlis_history_page.title')</h3>
