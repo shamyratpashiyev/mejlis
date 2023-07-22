@@ -22,35 +22,51 @@
             .middle_column{
                 width: 747px;
                 box-sizing: border-box;
-                padding: 10px 10px 15px 10px;
+                padding: 10px 20px 35px 20px;
                 background-color: var(--container_background_blue);
                 height: max-content;
+                align-items: center;
 
-                .column_title{
-                    font-family: 'OpenSansExtraBold', sans-serif;
-                    font-size: 25px;
-                    margin: 0 0 25px 0;
-                    text-align: center;
-                }
+                .symbol_container{
 
-                .image_wrapper{
-                    width: 100%;
-                    justify-content: center;
-                    margin-bottom: 25px;
+                    .block_title{
+                        font-family: 'OpenSansExtraBold', sans-serif;
+                        font-size: 25px;
+                        margin: 0 0 25px 0;
+                        text-align: center;
+                    }
 
-                    img{
-                        width: 500px;
-                        height: 333px;
-                        object-fit: cover;
-                        object-position: center;
+                    .image_wrapper{
+                        width: 100%;
+                        justify-content: center;
+                        margin-bottom: 25px;
+
+                        img{
+                            width: 500px;
+                            height: 333px;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+
+                    p{
+                        font-family: 'OpenSansRegular', sans-serif !important;
+                        font-size: 16px !important;
+                        margin: 0 !important;
+                        color: var(--text_black_default) !important;
                     }
                 }
 
-                p{
-                    font-family: 'OpenSansRegular', sans-serif !important;
-                    font-size: 16px !important;
-                    margin: 0 !important;
-                    color: var(--text_black_default) !important;
+                .anthem_container{
+                    text-align: center;
+                }
+
+                hr{
+                    width: 94%;
+                    height: 1px;
+                    background-color: var(--sky_blue);
+                    border: none;
+                    margin: 25px 0;
                 }
             }
 

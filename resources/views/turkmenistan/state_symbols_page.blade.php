@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout',['title' => __('app.tkm.state_symbols_page.title')])
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/turkmenistan/state_symbols_page.css') }}">
@@ -8,42 +8,75 @@
     $links_list = [
                     ['name'=>'--', 'url' => '#'],
     ];
-    
+    $breadcrumbs_array = [
+                    ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
+                    ['name' => __('app.tkm.state_symbols_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
+    ];
 @endphp
 
 @section('content')
     <div class="tkm_state_symbols_page flex_row">
         <div class="inner_wrapper flex_column">
-            <div class="breadcrumbs_row">
-                <span>Baş sahypa</span> / Türkmenistanyň döwlet nyşanlary
-            </div>
+            <x-breadcrumbs :breadcrumbs-array="$breadcrumbs_array" />
 
             <div class="page_content_block flex_row">
 
                 <x-sidebar :links-list="$links_list" title="--"/>
 
                 <div class="middle_column flex_column">
-                    <h3 class="column_title">Türkmenistanyň dowlet baýdagy</h3>
 
-                    <div class="image_wrapper flex_row">
-                        <img src="{{ asset('img/flag.jpg') }}" alt="">
+                    <div class="symbol_container">
+
+                        <h3 class="block_title">@lang('app.tkm.state_symbols_page.flag.title')</h3>
+
+                        <div class="image_wrapper flex_row">
+                            <img src="{{ asset('img/flag.jpg') }}" alt="">
+                        </div>
+                        @lang('app.tkm.state_symbols_page.flag.text')
                     </div>
-                    <p>
-                        &emsp;&emsp;Türkmenistanyň Döwlet baýdagy milletiň agzybirliginiň we Garaşsyzlygynyň hem-de döwlet Bitaraplygynyň nyşanydyr.
-                    </p>
-                    <p>
-                        &emsp;&emsp;2008-nji ýylyň 29-njy iýunynda Aşgabat şäherinde Ginnesiň Bütindünýä rekordlar kitabyna girizilen dünýäde iň belent 133 metrlik flagştokda uzynlygy 52,5 we ini 35 metre, agramy bolsa 420 kilograma barabar ägirt uly Döwlet baýdagy dikeldildi.
-                    </p>
+
+                    <hr>
+
+                    <div class="symbol_container">
+
+                        <h3 class="block_title">@lang('app.tkm.state_symbols_page.emblem.title')</h3>
+
+                        <div class="image_wrapper flex_row">
+                            <img src="{{ asset('img/state_emblem.jpg') }}" alt="">
+                        </div>
+                        @lang('app.tkm.state_symbols_page.emblem.text')
+                    </div>
+
+                    <hr>
+
+                    <div class="symbol_container">
+
+                        <h3 class="block_title">@lang('app.tkm.state_symbols_page.anthem_desc.title')</h3>
+                        
+                        @lang('app.tkm.state_symbols_page.anthem_desc.text')
+                    </div>
+
+                    <hr>
+
+                    <div class="symbol_container anthem_container">
+
+                        <h3 class="block_title">@lang('app.tkm.state_symbols_page.anthem.title')</h3>
+                        
+                        @lang('app.tkm.state_symbols_page.anthem.text')
+
+                    </div>
+
+
                 </div>
 
                 <div class="right_column flex_column">
-                    <a href="#">Prezidenti</a>
-                    <a href="{{ route('tkm_history_page') }}">Taryhy</a>
-                    <a href="{{ route('tkm_area_page') }}">Meýdany</a>
-                    <a href="{{ route('tkm_population_page') }}">Ilaty</a>
-                    <a href="{{ route('tkm_state_symbols_page') }}" class="active">Döwlet nyşanlary</a>
-                    <a href="#">Konstitusiýasy</a>
-                    <a href="{{ route('tkm_state_holidays_page') }}">Döwlet baýramçylyklary we matam günleri</a>
+                    <a href="#">@lang('app.tkm.president')</a>
+                    <a href="{{ route('tkm_history_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.history')</a>
+                    <a href="{{ route('tkm_area_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.area')</a>
+                    <a href="{{ route('tkm_population_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.population')</a>
+                    <a href="{{ route('tkm_state_symbols_page',['lang'=>app()->getLocale()]) }}" class="active">@lang('app.tkm.state_symbols')</a>
+                    <a href="#">@lang('app.tkm.constitution',['lang'=>app()->getLocale()])</a>
+                    <a href="{{ route('tkm_state_holidays_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.state_holidays')</a>
                 </div>
             </div>
         </div>

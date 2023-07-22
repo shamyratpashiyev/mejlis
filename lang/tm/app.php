@@ -238,7 +238,7 @@ return [
         ],
 
         'state_holidays_page' => [
-            'title' => 'Döwlet baýramçylyklary we matam günleri',
+            'title' => 'Türkmenistanyň Döwlet baýramçylyklary we matam günleri',
             'text_title' => 'Döwlet baýramçylyklary we matam günleri',
             'text' => ' <p>
                             &emsp;&emsp; <strong>Döwletiň esasy döwlet we milli baýramçylyklary : </strong><br><br>
@@ -261,6 +261,64 @@ return [
                             &emsp;&emsp; <strong> Matam günleri:</strong><br>
                             &emsp;&emsp; Milli ýatlama güni — 6-njy oktýabr.
                         </p>',
+        ],
+
+        'state_symbols_page' => [
+            'title' => 'Türkmenistanyň Döwlet nyşanlary',
+
+            'flag' => [
+                'title' => 'Türkmenistanyň dowlet baýdagy',
+                'text' => ' <p>
+                                &emsp;&emsp;Türkmenistanyň Döwlet baýdagy milletiň agzybirliginiň we Garaşsyzlygynyň hem-de döwlet Bitaraplygynyň nyşanydyr.
+                            </p>
+                            <p>
+                                &emsp;&emsp;2008-nji ýylyň 29-njy iýunynda Aşgabat şäherinde Ginnesiň Bütindünýä rekordlar kitabyna girizilen dünýäde iň belent 133 metrlik flagştokda uzynlygy 52,5 we ini 35 metre, agramy bolsa 420 kilograma barabar ägirt uly Döwlet baýdagy dikeldildi.
+                            </p>',
+            ],
+
+            'emblem' => [
+                'title' => 'Türkmenistanyň döwlet tugrasy',
+                'text' => ' <p>
+                                &emsp;&emsp;Türkmenistanyň döwlet häkimiýetiniň nyşany hökmünde türkmen halkynyň nesilbaşylary Beýik Oguzhan Türkmeniň we kuwwatly döwletleri döreden hem-de adamzadyň ösüşine düýpli täsirini ýetiren Beýik seljuklaryň gadymy medeni mirasyny özünde jemlän Türkmenistanyň Döwlet TugrasyTürkmenistanyň Döwlet häkimiýetiniň nyşanydyr.
+                            </p>',
+            ],
+
+            'anthem_desc' => [
+                'title' => 'Garaşsyz, baky bitarap Türkmenistanyň döwlet senasy',
+                'text' => ' <p>
+                                &emsp;&emsp;Türkmenistanyň Döwlet senasy garaşsyz, bitarap Türkmenistanyň döwlet nyşanydyr we ol türkmen milletiniň agzybirligini hem-de jebisligini janlandyryp görkezýär.
+                            </p>
+                            <p>
+                                &emsp;&emsp;Türkmenistanyň Döwlet senasynyň şu Kanuny bozmak bilen ýerine ýetirilmegi ýa-da peýdalanylmagy, şeýle hem Türkmenistanyň Döwlet senasynyň hormatynyň gaçyrylmagy Türkmenistanyň kanunçylygyna laýyklykda jogapkärçilige eltýär.
+                            </p>',
+            ],
+
+            'anthem' => [
+                'title' => 'Türkmenistanyň döwlet senasy',
+                'text' => ' <p>
+                                Janym gurban saňa, erkana ýurdum, <br>
+                                Mert pederleň ruhy bardyr köňülde.<br>
+                                Bitarap, garaşsyz topragyň nurdur,<br>
+                                Baýdagyň belentdir dünýäň öňünde.<br>
+                                <br>                 
+                                Gaýtalama:<br>
+                                Halkyň guran Baky beýik binasy,<br>
+                                Berkarar döwletim, jigerim-janym.<br>
+                                Başlaryň täji sen, diller senasy,<br>
+                                Dünýä dursun, sen dur, Türkmenistanym!<br>
+                                <br>
+                                Gardaşdyr tireler, amandyr iller,<br>
+                                Owal-ahyr birdir biziň ganymyz.<br>
+                                Harasatlar almaz, syndyrmaz siller,<br>
+                                Nesiller döş gerip gorar şanymyz.<br>
+                                <br>
+                                Gaýtalama:<br>
+                                Halkyň guran Baky beýik binasy,<br>
+                                Berkarar döwletim, jigerim-janym.<br>
+                                Başlaryň täji sen, diller senasy,<br>
+                                Dünýä dursun, sen dur, Türkmenistanym!<br>
+                            </p>',
+            ],
         ],
     ]
 
