@@ -302,8 +302,12 @@
                 $('.upper_header').removeClass('blur');
             })
 
-            $('.lang_wrapper').click((e) => {
-                $('.lang_wrapper').toggleClass('active');
+            $('body').on('click',(e) => {
+                if($(e.target).hasClass('lang_wrapper') || $(e.target).parents().hasClass('lang_wrapper')){
+                    $('.lang_wrapper').addClass('active');
+                } else {
+                    $('.lang_wrapper').removeClass('active');
+                }
             })
         })
         
