@@ -183,6 +183,7 @@ return [
 
     'news_page' => [
         'title' => 'Täzelikler',
+        'relative_news' => 'MEŇZEŞ HABARLAR',
     ],
 
     'articles_page' => [

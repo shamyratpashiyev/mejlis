@@ -17,12 +17,12 @@ class NewsFactory extends Factory
     public function definition(): array
     {
         return [
-            'title_tm' => fake()->paragraph(),
-            'title_ru' => fake()->paragraph(),
-            'title_en' => fake()->paragraph(),
-            'description_tm' => fake()->text(),
-            'description_ru' => fake()->text(),
-            'description_en' => fake()->text(),
+            'title_tm' => 'Turkmen' . fake()->paragraph(),
+            'title_ru' => 'Russian' . fake()->paragraph(),
+            'title_en' => 'English' . fake()->paragraph(),
+            'description_tm' => '<p>Turkmen' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'description_ru' => '<p>Russian' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'description_en' => '<p>English' . fake()->realText($maxNbChars = 5000) . '</p>',
             'event_date' => fake()->dateTime(),
             'image' => 'img/news_medium_' . fake()->randomDigit() . '.jpg',
         ];

@@ -20,9 +20,9 @@ class MejlisActivityFactory extends Factory
             'title_tm' => fake()->paragraph(),
             'title_ru' => fake()->paragraph(),
             'title_en' => fake()->paragraph(),
-            'description_tm' => fake()->text(),
-            'description_ru' => fake()->text(),
-            'description_en' => fake()->text(),
+            'description_tm' => '<p>' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'description_ru' => '<p>' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'description_en' => '<p>' . fake()->realText($maxNbChars = 5000) . '</p>',
             'event_date' => fake()->dateTime(),
         ];
     }

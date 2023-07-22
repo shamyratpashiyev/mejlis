@@ -21,7 +21,7 @@
                 width: 1070px;
                 align-items: center;
 
-                .images_wrapper{
+                .image_wrapper{
                     width: 758px;
                     height: 503.5px;
                     
@@ -34,19 +34,33 @@
                 }
 
                 .date_row{
-                    justify-content: center;
+                    justify-content: space-between;
+                    align-items: center;
                     position: relative;
                     width: 100%;
 
-                    .icon{
-                        position: absolute;
-                    }
-
                     .date{
-                        width: 100%;
-                        text-align: end;
                         font-family: 'OpenSansRegular', sans-serif;
                         font-size: 18px;
+                    }
+
+                    .icon{
+                        width: 117px;
+                        height: 21px;
+                    }
+
+                    .langs_block{
+                        column-gap: 10px;
+
+                        .flag_button{
+                            width: 37px;
+                            height: 22px;
+                            transition: all 0.2s ease-in;
+
+                            &.active{
+                                box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.55);
+                            }
+                        }
                     }
                 }
 
@@ -55,9 +69,19 @@
                     font-size: 25px;
                     margin: 0;
                     text-align: center;
+                    display: none !important;
+
+                    &.active{
+                        display: block !important;
+                    }
                 }
 
                 .news_text{
+                    display: none !important;
+
+                    &.active{
+                        display: block !important;
+                    }
 
                     p{
                         font-family: 'OpenSansRegular', sans-serif !important;

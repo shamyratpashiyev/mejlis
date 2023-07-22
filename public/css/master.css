@@ -406,7 +406,9 @@ a {
     font-family: 'OpenSansSemibold', sans-serif !important;
     font-size: 16px !important;
     margin: 0 !important;
-    text-transform: uppercase !important; }
+    text-transform: uppercase !important;
+    line-clamp: 3 !important;
+    -webkit-line-clamp: 3 !important; }
   .activity_container .content {
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 14px;

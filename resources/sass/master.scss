@@ -560,6 +560,8 @@ a{
         font-size: 16px !important;
         margin: 0 !important;
         text-transform: uppercase !important;
+        line-clamp: 3 !important;
+        -webkit-line-clamp: 3 !important;
     }
 
     .content{

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lang;
+use App\Models\MejlisActivity;
+use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,7 +16,14 @@ class SiteController extends Controller
     }
 
     public function index(){
+        $news = News::orderBy('created_at','desc')->limit(11)->get(['id',"title_{$this->current_lang->name}",
+                                                                "description_{$this->current_lang->name}", 'event_date', 'image'])->toArray();
+        $this->news_big = $news[1];
+        $this->news_small = array_slice($news, 1, 6);
+        $this->news_medium = array_slice($news, 7);
 
+        $this->mejlis_activities = MejlisActivity::orderBy('created_at','desc')->limit(4)->get(['id',"title_{$this->current_lang->name}",
+                                    "description_{$this->current_lang->name}", 'event_date']);
         return view('index', $this->data);
     }
 
@@ -100,12 +109,14 @@ class SiteController extends Controller
 
     public function news(){
 
-        return view('news_page');
+        return view('news_page', $this->data);
     }
 
-    public function single_news(){
-
-        return view('single_news_page');
+    public function single_news($id){
+        $this->selected_news = News::findOrFail($id);
+        $this->relative_news = News::whereNotIn('id', [$this->selected_news->id])->orderBy('created_at','desc')->limit(4)->get(['id',"title_{$this->current_lang->name}",
+                                "description_{$this->current_lang->name}", 'event_date', 'image']);
+        return view('single_news_page',$this->data);
     }
 
     public function articles(){
