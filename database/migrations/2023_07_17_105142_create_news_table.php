@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id();
-            $table->string('title_tm');
-            $table->string('title_ru');
-            $table->string('title_en');
+            $table->string('title_tm', 1000);
+            $table->string('title_ru', 1000);
+            $table->string('title_en', 1000);
             $table->text('description_tm');
             $table->text('description_ru');
             $table->text('description_en');

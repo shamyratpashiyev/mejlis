@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Database\Seeders\LawSeeder;
 use Illuminate\Database\Seeder;
+use Database\Seeders\NewsSeeder;
 use Database\Seeders\CodesSeeder;
 use Database\Seeders\DeputySeeder;
 use Database\Seeders\ArticleSeeder;
@@ -39,6 +40,7 @@ class DatabaseSeeder extends Seeder
             MejlisDecreeSeeder::class,
             FriendshipGroupSeeder::class,
             ElectionDistrictSeeder::class,
+            NewsSeeder::class,
         ]);
     }
 }
