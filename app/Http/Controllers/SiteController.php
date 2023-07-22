@@ -2,14 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Lang;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 class SiteController extends Controller
 {
+    public function __construct(){
+        $this->active_langs = Lang::where('is_active',true)->get();
+        $this->current_lang = Lang::where('name', request()->query('lang'))->first();
+    }
+
     public function index(){
 
-        return view('index');
+        return view('index', $this->data);
     }
 
     public function mejlis_history(){

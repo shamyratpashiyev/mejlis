@@ -25,14 +25,17 @@
                             <path d="M21 11C21 16.5228 16.5228 21 11 21M21 11C21 5.47715 16.5228 1 11 1M21 11C21 9.34315 16.5228 8 11 8C5.47715 8 1 9.34315 1 11M21 11C21 12.6569 16.5228 14 11 14C5.47715 14 1 12.6569 1 11M11 21C5.47715 21 1 16.5228 1 11M11 21C13.2091 21 15 16.5228 15 11C15 5.47715 13.2091 1 11 1M11 21C8.79086 21 7 16.5228 7 11C7 5.47715 8.79086 1 11 1M1 11C1 5.47715 5.47715 1 11 1" stroke="white" stroke-width="1.5"/>
                         </svg>
                             
-                        <span class="current_lang">Türkmençe</span>
+                        <span class="current_lang">{{ $current_lang->label }}</span>
                         <svg class="chevron_down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 10L12 14L17 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                             
                         <div class="lang_menu flex_column">
-                            <a class="lang_item" href="#">Русский</a>
-                            <a class="lang_item" href="#">English</a>
+                            @foreach ($active_langs as $lang)
+                                @if ($lang->name != app()->getLocale())
+                                    <a class="lang_item" href="{{ route(Route::currentRouteName(),['lang'=>$lang->name]) }}">{{ $lang->label }}</a>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
 
@@ -83,14 +86,17 @@
                                 <path d="M21 11C21 16.5228 16.5228 21 11 21M21 11C21 5.47715 16.5228 1 11 1M21 11C21 9.34315 16.5228 8 11 8C5.47715 8 1 9.34315 1 11M21 11C21 12.6569 16.5228 14 11 14C5.47715 14 1 12.6569 1 11M11 21C5.47715 21 1 16.5228 1 11M11 21C13.2091 21 15 16.5228 15 11C15 5.47715 13.2091 1 11 1M11 21C8.79086 21 7 16.5228 7 11C7 5.47715 8.79086 1 11 1M1 11C1 5.47715 5.47715 1 11 1" stroke="white" stroke-width="1.5"/>
                             </svg>
                                 
-                            <span class="current_lang">Türkmençe</span>
+                            <span class="current_lang">{{ $current_lang->label }}</span>
                             <svg class="chevron_down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 10L12 14L17 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                                 
                             <div class="lang_menu flex_column">
-                                <a class="lang_item" href="#">Русский</a>
-                                <a class="lang_item" href="#">English</a>
+                                @foreach ($active_langs as $lang)
+                                    @if ($lang->name != app()->getLocale())
+                                        <a class="lang_item" href="{{ route(Route::currentRouteName(),['lang'=>$lang->name]) }}">{{ $lang->label }}</a>
+                                    @endif
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -109,14 +115,17 @@
                     <path d="M21 11C21 16.5228 16.5228 21 11 21M21 11C21 5.47715 16.5228 1 11 1M21 11C21 9.34315 16.5228 8 11 8C5.47715 8 1 9.34315 1 11M21 11C21 12.6569 16.5228 14 11 14C5.47715 14 1 12.6569 1 11M11 21C5.47715 21 1 16.5228 1 11M11 21C13.2091 21 15 16.5228 15 11C15 5.47715 13.2091 1 11 1M11 21C8.79086 21 7 16.5228 7 11C7 5.47715 8.79086 1 11 1M1 11C1 5.47715 5.47715 1 11 1" stroke="white" stroke-width="1.5"/>
                 </svg>
                     
-                <span class="current_lang">Türkmençe</span>
+                <span class="current_lang">{{ $current_lang->label }}</span>
                 <svg class="chevron_down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 10L12 14L17 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                     
                 <div class="lang_menu flex_column">
-                    <a class="lang_item" href="#">Русский</a>
-                    <a class="lang_item" href="#">English</a>
+                    @foreach ($active_langs as $lang)
+                        @if ($lang->name != app()->getLocale())
+                            <a class="lang_item" href="{{ route(Route::currentRouteName(),['lang'=>$lang->name]) }}">{{ $lang->label }}</a>
+                        @endif
+                    @endforeach
                 </div>
             </div>
         </div>
