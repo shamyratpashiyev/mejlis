@@ -33,7 +33,6 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ArticleSeeder::class,
             MejlisActivitySeeder::class,
-            DeputySeeder::class,
             CommitteeSeeder::class,
             CodesSeeder::class,
             LawSeeder::class,
@@ -41,6 +40,8 @@ class DatabaseSeeder extends Seeder
             FriendshipGroupSeeder::class,
             ElectionDistrictSeeder::class,
             NewsSeeder::class,
+            DeputySeeder::class,
+            DeputyCommitteeSeeder::class,
         ]);
     }
 }

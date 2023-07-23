@@ -21,12 +21,12 @@ return new class extends Migration
         });
 
         DB::table('velayats')->insert([
+            ['name_tm' => 'Aşgabat', 'name_ru' => 'Ашгабат', 'name_en' => 'Aşgabat'],
             ['name_tm' => 'Ahal', 'name_ru' => 'Ахал', 'name_en' => 'Ahal'],
             ['name_tm' => 'Mary', 'name_ru' => 'Мары', 'name_en' => 'Mary'],
             ['name_tm' => 'Lebap', 'name_ru' => 'Лебап', 'name_en' => 'Lebap'],
             ['name_tm' => 'Daşoguz', 'name_ru' => 'Дашогуз', 'name_en' => 'Daşoguz'],
             ['name_tm' => 'Balkan', 'name_ru' => 'Балкан', 'name_en' => 'Balkan'],
-            ['name_tm' => 'Aşgabat', 'name_ru' => 'Ашгабат', 'name_en' => 'Aşgabat'],
         ]);
     }
 

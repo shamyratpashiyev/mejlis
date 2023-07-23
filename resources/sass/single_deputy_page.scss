@@ -36,11 +36,27 @@
                     .value{
                         font-family: 'OpenSansRegular', sans-serif;
                         font-size: 14px;
+                        row-gap: 10px;
 
                         &.link{
                             color: var(--sky_blue);
                             cursor: pointer;
                         }
+                        p{
+                            margin: 0;
+                        }
+                    }
+
+                    #election_district_wrapper, #deputy_bio_wrapper{
+                        overflow-y: hidden !important;
+                        transition: all 0.3s ease-in;
+                        row-gap: 20px;
+
+                        .district_borders_text, .deputy_bio_text {
+                            display: none;
+                            color: var(--text_black_default);
+                        }
+
                     }
                 }
 

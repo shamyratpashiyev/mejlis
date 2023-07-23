@@ -17,15 +17,20 @@ class DeputyFactory extends Factory
     public function definition(): array
     {
         return [
-            'fullname_tm' => fake()->name(),
-            'fullname_en' => fake()->name(),
-            'fullname_ru' => fake()->name(),
-            'position_tm' => fake()->paragraph(),
-            'position_ru' => fake()->paragraph(),
-            'position_en' => fake()->paragraph(),
-            'biography_tm' => fake()->realText(),
-            'biography_ru' => fake()->realText(),
-            'biography_en' => fake()->realText(),
+            'fullname_tm' => 'Turkmen' . fake()->name(),
+            'fullname_ru' => 'Russian' . fake()->name(),
+            'fullname_en' => 'English' . fake()->name(),
+            'birth_year_tm' => fake()->year() . ' yyl',
+            'birth_year_ru' => fake()->year() . ' год',
+            'birth_year_en' => fake()->year() . ' year',
+            'position_tm' => 'Turkmen' . fake()->paragraph(),
+            'position_ru' => 'Russian' . fake()->paragraph(),
+            'position_en' => 'English' . fake()->paragraph(),
+            'biography_tm' => '<p>Turkmen' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'biography_ru' => '<p>Russian' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'biography_en' => '<p>English' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'election_district_id' => fake()->numberBetween(1, 5),
+            'velayat_id' => fake()->numberBetween(1, 6),
             'email' => fake()->email(),
         ];
     }

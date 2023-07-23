@@ -26,7 +26,17 @@
             min-width: 37.3%; }
           .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper .value {
             font-family: 'OpenSansRegular', sans-serif;
-            font-size: 14px; }
+            font-size: 14px;
+            row-gap: 10px; }
             .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper .value.link {
               color: var(--sky_blue);
               cursor: pointer; }
+            .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper .value p {
+              margin: 0; }
+          .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper #election_district_wrapper, .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper #deputy_bio_wrapper {
+            overflow-y: hidden !important;
+            transition: all 0.3s ease-in;
+            row-gap: 20px; }
+            .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper #election_district_wrapper .district_borders_text, .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper #election_district_wrapper .deputy_bio_text, .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper #deputy_bio_wrapper .district_borders_text, .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper #deputy_bio_wrapper .deputy_bio_text {
+              display: none;
+              color: var(--text_black_default); }

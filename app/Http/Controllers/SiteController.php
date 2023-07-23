@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Deputy;
 use App\Models\Lang;
 use App\Models\MejlisActivity;
 use App\Models\News;
@@ -24,6 +25,13 @@ class SiteController extends Controller
 
         $this->mejlis_activities = MejlisActivity::orderBy('created_at','desc')->limit(4)->get(['id',"title_{$this->current_lang->code}",
                                     "description_{$this->current_lang->code}", 'event_date']);
+
+        $this->ashgabat_deputies = Deputy::where('velayat_id', 1)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
+        $this->ahal_deputies = Deputy::where('velayat_id', 2)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
+        $this->mary_deputies = Deputy::where('velayat_id', 3)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
+        $this->lebap_deputies = Deputy::where('velayat_id', 4)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
+        $this->dashoguz_deputies = Deputy::where('velayat_id', 5)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
+        $this->balkan_deputies = Deputy::where('velayat_id', 6)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
         return view('index', $this->data);
     }
 
@@ -47,7 +55,9 @@ class SiteController extends Controller
         return view('mejlis_deputies_page', $this->data);
     }
 
-    public function single_deputy(){
+    public function single_deputy(string $id){
+        $this->selected_deputy = Deputy::findOrFail($id)->get(['id', "fullname_" . request()->query('lang'),'biography_' . request()->query('lang'),
+                 'birth_year_' . request()->query('lang'), 'position_' . request()->query('lang'), 'email', 'velayat_id', 'election_district_id'])->first();
 
         return view('single_deputy_page', $this->data);
     }
