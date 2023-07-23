@@ -14,15 +14,15 @@ return new class extends Migration
     {
         Schema::create('langs', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('code');
             $table->string('label');
             $table->boolean('is_active')->default(true);
         });
 
         DB::table('langs')->insert([
-            ['name' => 'tm', 'label' => 'Türkmençe'],
-            ['name' => 'ru', 'label' => 'Русский'],
-            ['name' => 'en', 'label' => 'English'],
+            ['code' => 'tm', 'label' => 'Türkmençe'],
+            ['code' => 'ru', 'label' => 'Русский'],
+            ['code' => 'en', 'label' => 'English'],
         ]);
     }
 

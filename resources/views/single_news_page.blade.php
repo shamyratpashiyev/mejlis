@@ -14,7 +14,8 @@
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
                     ['name' => __('app.layout.headlines'), 'url' => '#'],
-                    ['name' => $selected_news["title_{$current_lang->name}"], 'url' => route(Route::currentRouteName(), ['id'=>$selected_news->id,'lang' => app()->getLocale()])],
+                    ['name' => __('app.news_page.title'), 'url' => route('news_page', ['lang' => app()->getLocale()])],
+                    ['name' => $selected_news["title_{$current_lang->code}"], 'url' => route(Route::currentRouteName(), ['id'=>$selected_news->id,'lang' => app()->getLocale()])],
     ];
 @endphp
 
@@ -44,19 +45,19 @@
                         </svg>
                         <div class="langs_block flex_row">
                             @foreach ($active_langs as $lang)
-                                <img class="flag_button {{ $lang->name == $current_lang->name ? 'active' : '' }}" id="{{ $lang->name }}" src="{{ asset('img/' . $lang->name . '.svg') }}" alt="">
+                                <img class="flag_button {{ $lang->code == $current_lang->code ? 'active' : '' }}" id="{{ $lang->code }}" src="{{ asset('img/' . $lang->code . '.svg') }}" alt="">
                             @endforeach
                         </div>
                     </div>
                     @foreach ($active_langs as $lang)
-                        <h2 id="{{ 'title_' . $lang->name }}" class="news_title {{ $lang->name == $current_lang->name ? 'active' : '' }}">
-                            {{ $selected_news['title_' . $lang->name] }}
+                        <h2 id="{{ 'title_' . $lang->code }}" class="news_title {{ $lang->code == $current_lang->code ? 'active' : '' }}">
+                            {{ $selected_news['title_' . $lang->code] }}
                         </h2>
                     @endforeach
 
                     @foreach ($active_langs as $lang)
-                        <div id="{{ 'description_' . $lang->name }}" class="news_text {{ $lang->name == $current_lang->name ? 'active' : '' }}">
-                            {!! $selected_news['description_' . $lang->name] !!}
+                        <div id="{{ 'description_' . $lang->code }}" class="news_text {{ $lang->code == $current_lang->code ? 'active' : '' }}">
+                            {!! $selected_news['description_' . $lang->code] !!}
                         </div>
                     @endforeach
                         
@@ -74,9 +75,9 @@
                                 <img src="{{ asset($news->image) }}" alt="">
                             </div>
                             <div class="content_wrapper flex_column">
-                                <h4 class="title">{{ $news->{"title_" . $current_lang->name} }}</h4>
+                                <h4 class="title">{{ $news->{"title_" . $current_lang->code} }}</h4>
                                 <div class="content">
-                                    {!! $news->{"description_" . $current_lang->name} !!}
+                                    {!! $news->{"description_" . $current_lang->code} !!}
                                 </div>
                                 <span class="date">{{ date('d.m.Y', strtotime($news->event_date)) }}</span>
                             </div>

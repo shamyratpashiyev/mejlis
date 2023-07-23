@@ -32,8 +32,8 @@
                             
                         <div class="lang_menu flex_column">
                             @foreach ($active_langs as $lang)
-                                @if ($lang->name != app()->getLocale())
-                                    <a class="lang_item" href="{{ request()->url() }}?lang={{ $lang->name }}">{{ $lang->label }}</a>
+                                @if ($lang->code != app()->getLocale())
+                                    <a class="lang_item" href="{{ request()->url() }}?lang={{ $lang->code }}">{{ $lang->label }}</a>
                                 @endif
                             @endforeach
                         </div>
@@ -93,8 +93,8 @@
                                 
                             <div class="lang_menu flex_column">
                                 @foreach ($active_langs as $lang)
-                                    @if ($lang->name != app()->getLocale())
-                                        <a class="lang_item" href="{{ request()->url() }}?lang={{ $lang->name }}">{{ $lang->label }}</a>
+                                    @if ($lang->code != app()->getLocale())
+                                        <a class="lang_item" href="{{ request()->url() }}?lang={{ $lang->code }}">{{ $lang->label }}</a>
                                     @endif
                                 @endforeach
                             </div>
@@ -122,8 +122,8 @@
                     
                 <div class="lang_menu flex_column">
                     @foreach ($active_langs as $lang)
-                        @if ($lang->name != app()->getLocale())
-                            <a class="lang_item" href="{{ request()->url() }}?lang={{ $lang->name }}">{{ $lang->label }}</a>
+                        @if ($lang->code != app()->getLocale())
+                            <a class="lang_item" href="{{ request()->url() }}?lang={{ $lang->code }}">{{ $lang->label }}</a>
                         @endif
                     @endforeach
                 </div>

@@ -17,12 +17,12 @@ class MejlisActivityFactory extends Factory
     public function definition(): array
     {
         return [
-            'title_tm' => fake()->paragraph(),
-            'title_ru' => fake()->paragraph(),
-            'title_en' => fake()->paragraph(),
-            'description_tm' => '<p>' . fake()->realText($maxNbChars = 5000) . '</p>',
-            'description_ru' => '<p>' . fake()->realText($maxNbChars = 5000) . '</p>',
-            'description_en' => '<p>' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'title_tm' => 'Turkmen' . fake()->paragraph(),
+            'title_ru' => 'Russian' . fake()->paragraph(),
+            'title_en' => 'English' . fake()->paragraph(),
+            'description_tm' => '<p>Turkmen' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'description_ru' => '<p>Russian' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'description_en' => '<p>English' . fake()->realText($maxNbChars = 5000) . '</p>',
             'event_date' => fake()->dateTime(),
         ];
     }

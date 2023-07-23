@@ -25,7 +25,7 @@
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="Habarlar"/>
+                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.headlines') }}"/>
 
                 <div class="activities_block">
 
