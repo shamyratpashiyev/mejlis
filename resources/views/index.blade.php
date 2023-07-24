@@ -155,9 +155,7 @@ const window_height = window.innerHeight
 let scroll_dir = 'down'
 $('.upper_header').css('display', 'block')
 
-
 $(document).ready(() => {
-    
 
     if($(window).scrollTop() > 5) {
         $('.upper_header').addClass('hidden')

@@ -7,12 +7,19 @@
     <title>{{ $title }}</title>
     <link rel="stylesheet" href="{{ asset('css/master.css') }}">
     <link rel="stylesheet" href="{{ asset('css/layout.css') }}">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     @stack('styles')
     <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    
 </head>
 <body>
     <div class="upper_header">
         <div class="main flex_column">
+            <div class="slider">
+                <img class="background_image" src="{{ asset('img/header_main.jpg') }}" alt="">
+            </div>
             <div class="topbar flex_row">
                 <a href="#" class="logo_wrapper flex_row">
                     <img class="logo_img" src="{{ asset('/img/logo.svg') }}" alt="">

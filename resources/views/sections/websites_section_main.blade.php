@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <div class="content_block flex_row" id="websites_block">
+        <div class="content_block owl-carousel flex_row" id="websites_block">
 
             <a href="#" class="website_container flex_column">
                 <img class="icon" src="{{ asset('icons/website_logo_1.svg') }}" alt="">
@@ -88,33 +88,27 @@
 </div>
 
 <script>
-    $(document).ready(()=>{
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:false,
+            items:5,
+            loop:true,
+            nav:false,
+        });
         
-        let websites_scroll_position = 0
-        const website_container_width = document.querySelector('.website_container').offsetWidth + 24
-        let scroll_point_remainder = 0  //Till the next scroll point (so the container stays in viewPort in full width)
+        const arrow_left = $('.buttons_block .arrow_left') 
+        const arrow_right = $('.buttons_block .arrow_right') 
+        const owl = $('#websites_block');
         
-
-        $('#scroll_left').on('click', (event) => {
-            websites_scroll_position = $('#websites_block').scrollLeft()
-            scroll_point_remainder = websites_scroll_position % website_container_width
-
-            if(scroll_point_remainder == 0){
-                $('#websites_block').animate({scrollLeft: websites_scroll_position - website_container_width}, 400)
-            } else {
-                $('#websites_block').animate({scrollLeft: websites_scroll_position - scroll_point_remainder}, 400)
-            }
+        arrow_left.on('click', (event)=>{
+            owl.trigger('prev.owl');
         })
 
-        $('#scroll_right').on('click', (event) => {
-            websites_scroll_position = $('#websites_block').scrollLeft()
-            scroll_point_remainder = website_container_width - (websites_scroll_position % website_container_width)
-
-            if(scroll_point_remainder == 0){
-                $('#websites_block').animate({scrollLeft: websites_scroll_position + website_container_width}, 400)
-            } else {
-                $('#websites_block').animate({scrollLeft: websites_scroll_position + scroll_point_remainder}, 400)
-            }
+        arrow_right.on('click', (event)=>{
+            owl.trigger('next.owl');
         })
+       
     })
 </script>

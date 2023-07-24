@@ -246,7 +246,6 @@
           stroke: var(--sky_blue); }
     .websites_section .inner_wrapper .content_block {
       justify-content: space-between;
-      overflow-x: scroll;
       column-gap: 24px; }
       .websites_section .inner_wrapper .content_block .website_container {
         width: 269px;
