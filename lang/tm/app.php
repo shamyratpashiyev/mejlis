@@ -18,7 +18,7 @@ return [
         'legislation' => 'Kanunçylyk',
         'contacts_page' => 'Habarlaşmak üçin',
         'mejlis_history_page' => 'Mejlisiň taryhy',
-        'seventh_convocation_page' => 'VII çagyrylyşynyň deputatlarynyň sanawy',
+        'convocation_page' => 'VII çagyrylyşynyň deputatlarynyň sanawy',
         'mejlis_committees_page' => 'Mejlis komitetleri',
         'mejlis_deputies_page' => 'Mejlis deputatlary',
         'codes_page' => 'Kodeksler',
@@ -102,6 +102,7 @@ return [
     'convocation_page' => [
         'title' => 'VII çagyrylyşynyň deputatlarynyň sanawy',
         'convocation_deputies_list' => 'Türkmenistanyň Mejlisiniň VII çagyrylyşynyň deputatlarynyň sanawy',
+        'district' => 'Saýlaw okrugy',
     ],
 
     'mejlis_committees_page' => [
@@ -328,6 +329,36 @@ return [
                             </p>',
             ],
         ],
-    ]
+    ],
 
+    'alphabet' => '<span data-letter="a" class="letter">A</span>
+                    <span data-letter="b" class="letter">B</span>
+                    <span data-letter="ç" class="letter">Ç</span>
+                    <span data-letter="d" class="letter">D</span>
+                    <span data-letter="e" class="letter">E</span>
+                    <span data-letter="ä" class="letter">Ä</span>
+                    <span data-letter="f" class="letter">F</span>
+                    <span data-letter="g" class="letter">G</span>
+                    <span data-letter="h" class="letter">H</span>
+                    <span data-letter="i" class="letter">I</span>
+                    <span data-letter="j" class="letter">J</span>
+                    <span data-letter="ž" class="letter">Ž</span>
+                    <span data-letter="k" class="letter">K</span>
+                    <span data-letter="l" class="letter">L</span>
+                    <span data-letter="m" class="letter">M</span>
+                    <span data-letter="n" class="letter">N</span>
+                    <span data-letter="ň" class="letter">Ň</span>
+                    <span data-letter="o" class="letter">O</span>
+                    <span data-letter="ö" class="letter">Ö</span>
+                    <span data-letter="p" class="letter">P</span>
+                    <span data-letter="r" class="letter">R</span>
+                    <span data-letter="s" class="letter">S</span>
+                    <span data-letter="ş" class="letter">Ş</span>
+                    <span data-letter="t" class="letter">T</span>
+                    <span data-letter="u" class="letter">U</span>
+                    <span data-letter="ü" class="letter">Ü</span>
+                    <span data-letter="w" class="letter">W</span>
+                    <span data-letter="y" class="letter">Y</span>
+                    <span data-letter="ý" class="letter">Ý</span>
+                    <span data-letter="z" class="letter">Z</span>',
 ];

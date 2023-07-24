@@ -11,7 +11,7 @@ class Sidebar extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public array $linksList, public string $title,) {
+    public function __construct(public array $linksList, public string $title) {
         
     }
 
@@ -20,6 +20,6 @@ class Sidebar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.sidebar',['links_list'=>'aduwghauidhiawd']);
+        return view('components.sidebar');
     }
 }

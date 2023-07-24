@@ -32,6 +32,10 @@
                             font-size: 18px;
                             font-family: 'OpenSansBold', sans-serif;
                             cursor: pointer;
+
+                            &.active {
+                                color: var(--sky_blue);
+                            }
                         }
                     }
 
@@ -57,16 +61,15 @@
                     padding: 10px 20px 20px 20px;
                     margin-top: 25px;
                     background-color: var(--container_background_blue);
+                    row-gap: 25px;
+                    flex-wrap: wrap;
 
-                    .left_column, .right_column{
-                        row-gap: 25px;
-
-                        .deputy_name{
-                            font-size: 16px;
-                            font-family: 'OpenSansSemiBold', sans-serif;
-                            color: var(--pure_black);
-                            cursor: pointer;
-                        }
+                    .deputy_name{
+                        font-size: 16px;
+                        font-family: 'OpenSansSemiBold', sans-serif;
+                        color: var(--pure_black);
+                        width: 49%;
+                        flex-shrink: 0;
                     }
                 }
             }

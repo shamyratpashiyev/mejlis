@@ -6,6 +6,7 @@ use App\Models\Law;
 use App\Models\Lang;
 use App\Models\News;
 use App\Models\Deputy;
+use App\Models\ElectionDistrict;
 use Illuminate\Http\Request;
 use App\Models\MejlisActivity;
 use Illuminate\Support\Facades\Route;
@@ -44,7 +45,8 @@ class SiteController extends Controller
     }
 
     public function convocation(){
-
+        $this->deputies_all = Deputy::get(['id','fullname_' . request()->query('lang'), 'election_district_id']);
+        $this->districts_all = ElectionDistrict::get(['id','name_' . request()->query('lang')]);
         return view('convocation_page', $this->data);
     }
 

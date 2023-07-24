@@ -5,7 +5,7 @@
         
         <div class="nav_buttons_block flex_column">
             @foreach ($linksList as $item)
-                <a href="{{ $item['url'] }}" class="hover_underline">{{ $item['name'] }}</a>
+                <a href="{{ $item['url'] }}" class="hover_underline {{ $item['is_active'] ?? '' }}">{{ $item['name'] }}</a>
             @endforeach
             
         </div>
