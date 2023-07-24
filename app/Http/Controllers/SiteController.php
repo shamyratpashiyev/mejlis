@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Deputy;
+use App\Models\Law;
 use App\Models\Lang;
-use App\Models\MejlisActivity;
 use App\Models\News;
+use App\Models\Deputy;
 use Illuminate\Http\Request;
+use App\Models\MejlisActivity;
 use Illuminate\Support\Facades\Route;
 
 class SiteController extends Controller
@@ -32,6 +33,8 @@ class SiteController extends Controller
         $this->lebap_deputies = Deputy::where('velayat_id', 4)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
         $this->dashoguz_deputies = Deputy::where('velayat_id', 5)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
         $this->balkan_deputies = Deputy::where('velayat_id', 6)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
+
+        $this->laws_4 = Law::orderBy('created_at', 'DESC')->limit(4)->get(['id',"title_{$this->current_lang->code}", 'published_date']);
         return view('index', $this->data);
     }
 
@@ -55,10 +58,10 @@ class SiteController extends Controller
         return view('mejlis_deputies_page', $this->data);
     }
 
-    public function single_deputy(string $id){
-        $this->selected_deputy = Deputy::findOrFail($id)->get(['id', "fullname_" . request()->query('lang'),'biography_' . request()->query('lang'),
-                 'birth_year_' . request()->query('lang'), 'position_' . request()->query('lang'), 'email', 'velayat_id', 'election_district_id'])->first();
-
+    public function single_deputy($id){
+        $this->selected_deputy = Deputy::select(['id', "fullname_" . request()->query('lang'),'biography_' . request()->query('lang'),
+                 'birth_year_' . request()->query('lang'), 'position_' . request()->query('lang'), 'email', 'velayat_id', 'election_district_id'])
+                 ->findOrFail($id);
         return view('single_deputy_page', $this->data);
     }
 
@@ -75,6 +78,11 @@ class SiteController extends Controller
     public function laws(){
 
         return view('laws_page', $this->data);
+    }
+
+    public function single_law($id){
+        $this->selected_law = Law::findOrFail($id);
+        return view('single_law_page', $this->data);
     }
 
     public function mejlis_decrees(){
@@ -145,7 +153,8 @@ class SiteController extends Controller
     }
 
     public function single_activity(string $id){
-        $this->selected_activity = MejlisActivity::findOrFail($id);
+        $this->selected_activity = MejlisActivity::select(['id', "title_" . request()->query('lang'),'description_' . request()->query('lang'),
+                                                    'event_date'])->findOrFail($id);;
         return view('single_activity_page', $this->data);
     }
 

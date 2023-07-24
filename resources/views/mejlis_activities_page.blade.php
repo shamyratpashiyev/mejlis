@@ -301,7 +301,6 @@
     <script>
         $(document).ready(()=>{
             $('.activity_container').on('click', (event)=>{
-                console.log($(event.target).data('href-value'))
                 $(event.target).data('href-value') ? window.location.assign($(event.target).data('href-value')) : window.location.assign($(event.target).parents('.activity_container').data('href-value'));
             })
         })

@@ -255,7 +255,7 @@
     .inner_wrapper{
         width: var(--default_width);
 
-        .title{
+        .section_title{
             font-family: 'OpenSansExtraBold', sans-serif;
             font-size: 30px;
             margin: 0 0 15px 0;
@@ -294,13 +294,13 @@
                         height: 19px;
                     }
 
-                    .content{
+                    .title{
                         font-family: 'OpenSansSemibold', sans-serif;
                         font-size: 16px;
                         margin: 0;
                         text-transform: uppercase;
-                        line-clamp: 7;
-                        -webkit-line-clamp: 7;
+                        line-clamp: 7 !important;
+                        -webkit-line-clamp: 7 !important;
                     }
                 }
 

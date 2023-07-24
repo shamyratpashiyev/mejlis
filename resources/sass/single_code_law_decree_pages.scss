@@ -1,0 +1,49 @@
+.single_code_law_decree_pages{
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0 50px 0;
+
+    .inner_wrapper{
+        width: var(--default_width);
+        row-gap: 50px;
+
+
+        .page_content_block{
+            width: 100%;
+            column-gap: 50px;
+
+            
+            .right_side{
+                row-gap: 35px;
+                color: var(--text_black_default);
+
+                .text_block{
+                    background-color: var(--container_background_blue);
+                    color: var(--text_black_default);
+                    box-sizing: border-box;
+                    padding: 10px 10px 15px 10px;
+                    font-family: 'OpenSansRegular', sans-serif !important;
+
+                    .text_title{
+                        text-transform: uppercase;
+                        margin: 0;
+                        text-align: center;
+                        font-family: 'OpenSansBold', sans-serif !important;
+                        font-size: 25px;
+                        margin-bottom: 25px;
+                    }
+
+                    .text_content{
+                        font-family: 'OpenSansRegular', sans-serif !important;
+                        font-size: 16px !important;
+
+                        p{
+                            margin: 0 !important;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

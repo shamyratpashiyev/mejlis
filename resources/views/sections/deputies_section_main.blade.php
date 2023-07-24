@@ -34,8 +34,8 @@
                             <h4 class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</h4>
                             <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} }}</p>
                         </a>
-                        <hr />
                     @endforeach
+                    <hr />
 
                 </div>
 
@@ -47,8 +47,8 @@
                             <h4 class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</h4>
                             <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} }}</p>
                         </a>
-                        <hr />
                     @endforeach
+                    <hr />
                 </div>
 
                 <div class="region_wrapper" data-region-name="balkan_region">
@@ -59,8 +59,9 @@
                             <h4 class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</h4>
                             <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} }}</p>
                         </a>
-                        <hr />
                     @endforeach
+                    <hr />
+
                 </div>
 
                 <div class="region_wrapper" data-region-name="dashoguz_region">
@@ -71,8 +72,8 @@
                             <h4 class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</h4>
                             <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} }}</p>
                         </a>
-                        <hr />
                     @endforeach
+                    <hr />
 
                 </div>
 
@@ -84,8 +85,8 @@
                             <h4 class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</h4>
                             <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} }}</p>
                         </a>
-                        <hr />
                     @endforeach
+                    <hr />
 
                 </div>
 
@@ -97,8 +98,8 @@
                             <h4 class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</h4>
                             <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} }}</p>
                         </a>
-                        <hr />
                     @endforeach
+                    <hr />
 
                 </div>
 

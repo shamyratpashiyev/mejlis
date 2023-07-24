@@ -1,7 +1,7 @@
-@extends('layout',['title' => __('app.constitutional_law_page.title')])
+@extends('layout',['title' => __('app.laws_page.title')])
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/constitutional_law_page.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/single_code_law_decree_pages.css') }}">
 @endpush
 
 @php
@@ -16,13 +16,14 @@
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
                     ['name' => __('app.layout.legislation'), 'url' => '#'],
-                    ['name' => __('app.constitutional_law_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
+                    ['name' => __('app.laws_page.title'), 'url' => route('laws_page', ['lang'=>$current_lang->code])],
+                    ['name' => $selected_law->{'title_' . $current_lang->code}, 'url' => route(Route::currentRouteName(), ['id'=>$selected_law->id,'lang' => app()->getLocale()])],
     ];
     
 @endphp
 
 @section('content')
-    <div class="constitutional_law_page flex_row">
+    <div class="single_code_law_decree_pages flex_row">
         <div class="inner_wrapper flex_column">
             <x-breadcrumbs :breadcrumbs-array="$breadcrumbs_array" />
 
@@ -31,17 +32,13 @@
                 <x-sidebar :links-list="$links_list" title="{{ __('app.layout.legislation') }}"/>
 
                 <div class="right_side flex_column">
-                    <h3 class="block_title">@lang('app.constitutional_law_page.title')</h3>
 
                     <div class="text_block">
-
-                        <div class="title_block flex_column">
-                            <h4 class="text_title">@lang('app.constitutional_law_page.text_title')</h4>
-                            <h5 class="text_subtitle">@lang('app.constitutional_law_page.text_subtitle')</h5>
-                            <span>@lang('app.constitutional_law_page.reference_title')</span>
-                        </div>
+                        <h4 class="text_title">{{ $selected_law->{'title_' . $current_lang->code} }}</h4>
                         
-                       @lang('app.constitutional_law_page.text')
+                        <div class="text_content">
+                            {!! $selected_law->{'description_' . $current_lang->code} !!} 
+                        </div>
                     </div>
                 </div>
                 
@@ -49,4 +46,12 @@
         </div>
     </div>
     
+    <script>
+        $(document).ready(function (){
+            const breadcrumb = $('.breadcrumbs_row a:last-child')
+            if(breadcrumb.text().length > 100){
+                breadcrumb.text(breadcrumb.text().slice(0, 100) + '...')
+            }
+        })  
+    </script>
 @endsection

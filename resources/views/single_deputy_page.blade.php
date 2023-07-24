@@ -48,19 +48,19 @@
                     </div>
 
                     <div class="key_value_wrapper flex_row">
-                        <span class="key">@lang('app.mejlis_deputies_page.district'):</span>
-                        <div class="value link flex_column" id="election_district_wrapper">
-                            <span class="district_name">{{ $selected_deputy->district->{'name_' . $current_lang->code} }}</span>
-                            <div class="district_borders_text">{!! $selected_deputy->district->{'borders_' . $current_lang->code} !!}</div>
-                        </div>
-                    </div>
-
-                    <div class="key_value_wrapper flex_row">
                         <span class="key">@lang('app.mejlis_deputies_page.committee'):</span>
                         <div class="value flex_column">
                             @foreach ($selected_deputy->committees as $committee)
                                 <p>{{ $committee->{'name_' . $current_lang->code} }}</p>
                             @endforeach
+                        </div>
+                    </div>
+
+                    <div class="key_value_wrapper flex_row">
+                        <span class="key">@lang('app.mejlis_deputies_page.district'):</span>
+                        <div class="value link flex_column" id="election_district_wrapper">
+                            <span class="district_name">{{ $selected_deputy->district->{'name_' . $current_lang->code} }}</span>
+                            <div class="district_borders_text">{!! $selected_deputy->district->{'borders_' . $current_lang->code} !!}</div>
                         </div>
                     </div>
 

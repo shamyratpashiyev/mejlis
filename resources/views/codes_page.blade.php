@@ -28,7 +28,7 @@
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.mejlis_structure') }}"/>
+                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.legislation') }}"/>
 
                 <div class="right_side flex_column">
                     <h2 class="block_title">@lang('app.layout.legislation')</h2>
