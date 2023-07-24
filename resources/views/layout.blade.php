@@ -77,8 +77,8 @@
                     </div>
 
                     <div class="nav_block flex_column">
-                        <a class="hover_underline" href="#">@lang('app.layout.main_page')</a>
-                        <a class="hover_underline" href="#">@lang('app.layout.about_mejlis')</a>
+                        <a class="hover_underline @if(Route::currentRouteNamed(['main_page'])) active @endif" href="#">@lang('app.layout.main_page')</a>
+                        <a class="hover_underline @if(Route::currentRouteNamed(['mejlis_history_page','convocation_page'])) active @endif" href="#">@lang('app.layout.about_mejlis')</a>
                         <a class="hover_underline" href="#">@lang('app.layout.mejlis_structure')</a>
                         <a class="hover_underline" href="#">@lang('app.layout.media')</a>
                         <a class="hover_underline" href="#">@lang('app.layout.international')</a>
@@ -141,11 +141,11 @@
     <div class="lower_header flex_row" id="scroll_anchor">
         <div class="inner_wrapper flex_row">
             <div class="nav_block flex_row">
-                <a class="nav_button_wrapper hover_underline" href="{{ route('main_page',['lang'=>app()->getLocale()]) }}">
+                <a class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed('main_page')) active @endif" href="{{ route('main_page',['lang'=>app()->getLocale()]) }}">
                     <span>@lang('app.layout.main_page')</span>
                 </a>
 
-                <div class="nav_button_wrapper hover_underline">
+                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['mejlis_history_page','convocation_page'])) active @endif">
                     <span>@lang('app.layout.about_mejlis')</span>
 
                     <div class="dropdown_menu flex_column">
@@ -159,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="nav_button_wrapper hover_underline">
+                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['mejlis_committees_page','mejlis_deputies_page'])) active @endif">
                     <span>@lang('app.layout.mejlis_structure')</span>
 
                     <div class="dropdown_menu flex_column">
@@ -172,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="nav_button_wrapper hover_underline">
+                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['codes_page','laws_page','mejlis_decrees_page','constitutional_law_page'])) active @endif">
                     <span>@lang('app.layout.legislation')</span>
 
                     <div class="dropdown_menu flex_column">
@@ -194,7 +194,7 @@
                     </div>
                 </div>
 
-                <div class="nav_button_wrapper hover_underline">
+                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['international_cooperation_page','friendship_group_page', 'news_international_page'])) active @endif">
                     <span>@lang('app.layout.international')</span>
 
                     <div class="dropdown_menu flex_column">
@@ -210,7 +210,7 @@
                     </div>
                 </div>
 
-                <div class="nav_button_wrapper hover_underline">
+                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['news_page','articles_page', 'mejlis_activities_page', 'gallery_page'])) active @endif">
                     <span>@lang('app.layout.headlines')</span>
 
                     <div class="dropdown_menu flex_column">
@@ -229,7 +229,7 @@
                     </div>
                 </div>
 
-                <a href="{{ route('tkm_history_page',['lang'=>app()->getLocale()]) }}" class="nav_button_wrapper hover_underline">
+                <a href="{{ route('tkm_history_page',['lang'=>app()->getLocale()]) }}" class="nav_button_wrapper hover_underline @if(Route::current()->getPrefix() == '/turkmenistan') active @endif">
                     <span>@lang('app.layout.tkm_page')</span>
                 </a>
             </div>

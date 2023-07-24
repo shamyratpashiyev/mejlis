@@ -94,7 +94,7 @@ body {
     background-color: var(--default_white);
     bottom: -5px;
     left: 50%; }
-  .hover_underline:hover::after {
+  .hover_underline:hover::after, .hover_underline.active::after {
     width: 100%;
     left: 0; }
 
