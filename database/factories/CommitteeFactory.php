@@ -17,9 +17,10 @@ class CommitteeFactory extends Factory
     public function definition(): array
     {
         return [
-            'name_tm' => fake()->paragraph(),
-            'name_ru' => fake()->paragraph(),
-            'name_en' => fake()->paragraph()
+            'name_tm' => fake()->paragraph($nbSentences = 1),
+            'name_ru' => fake()->paragraph($nbSentences = 1),
+            'name_en' => fake()->paragraph($nbSentences = 1),
+            'committee_head_id' => fake()->numberBetween(1,50),
         ];
     }
 }

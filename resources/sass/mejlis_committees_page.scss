@@ -23,38 +23,43 @@
                     text-align: center;
                 }
 
+                .committee_head_block{
+                    align-items: center;
+                    margin-bottom: 25px;
+                }
+
                 .committee_members_block{
                     width: 100%;
                     row-gap: 25px;
                     flex-wrap: wrap;
                     justify-content: center;
-                    flex-wrap: wrap-reverse;
+                    flex-wrap: wrap;
                     column-gap: 25px;
+                }
 
-                    .committee_member_container{
-                        width: 351px;
-                        height: 150px;
-                        background-color: var(--container_background_blue);
-                        box-sizing: border-box;
-                        padding: 10px;
-                        align-items: center;
-                        justify-content: center;
-                        row-gap: 10px;
-                        flex-shrink: 0;
+                .committee_member_container{
+                    width: 351px;
+                    height: 150px;
+                    background-color: var(--container_background_blue);
+                    box-sizing: border-box;
+                    padding: 10px;
+                    align-items: center;
+                    justify-content: center;
+                    row-gap: 10px;
+                    flex-shrink: 0;
 
-                        .name{
-                            font-size: 16px;
-                            font-family: 'OpenSansBold', sans-serif;
-                            color: var(--sky_blue);
-                            text-align: center;
-                        }
+                    .name{
+                        font-size: 16px;
+                        font-family: 'OpenSansBold', sans-serif;
+                        color: var(--sky_blue);
+                        text-align: center;
+                    }
 
-                        .description{
-                            font-family: 'OpenSansRegular', sans-serif;
-                            font-size: 14px;
-                            margin: 0;
-                            text-align: center;
-                        }
+                    .position_name{
+                        font-family: 'OpenSansRegular', sans-serif;
+                        font-size: 14px;
+                        margin: 0;
+                        text-align: center;
                     }
                 }
             }
@@ -83,7 +88,7 @@
                         font-size: 16px;
                         box-sizing: border-box;
                         padding: 10px 20px;
-                        cursor: pointer;
+                        color: var(--default_white);
 
                         &.active{
                             background-color: var(--sky_blue_darker);

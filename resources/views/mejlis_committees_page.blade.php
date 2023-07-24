@@ -6,7 +6,7 @@
 
 @php
     $links_list = [
-                    ['name'=>__('app.mejlis_committees_page.title'), 'url' => route('mejlis_committees_page',['lang' => app()->getLocale()])],
+                    ['name'=>__('app.mejlis_committees_page.title'), 'is_active' => 'active', 'url' => route('mejlis_committees_page',['lang' => app()->getLocale()])],
                     ['name'=>__('app.mejlis_deputies_page.title'),'url' => route('mejlis_deputies_page',['lang' => app()->getLocale()])], 
     ];
 
@@ -28,129 +28,33 @@
                 <x-sidebar :links-list="$links_list" title="{{ __('app.layout.mejlis_structure') }}"/>
 
                 <div class="middle_column">
-                    <h3 class="block_title">Adam hukuklaryny we azatlyklaryny goramak baradaky komiteti</h3>
+                    <h3 class="block_title">{{ $selected_committee->{'name_' . $current_lang->code} }}</h3>
+
+                    <div class="committee_head_block flex_column">
+                        <div class="committee_member_container flex_column">
+                            <a href="{{ route('single_deputy_page', ['id'=>$selected_committee->committee_head->id, 'lang'=>app()->getLocale()]) }}" class="name">
+                                {{ $selected_committee->committee_head->{'fullname_' . $current_lang->code} }}
+                            </a>
+                            <p class="position_name">
+                                {{ $selected_committee->committee_head->{'position_' . $current_lang->code} }}
+                            </p>
+                        </div>
+                    </div>
 
                     <div class="committee_members_block flex_row">
+                        @foreach ($selected_committee->deputies as $deputy)
+                            @if($deputy->id != $selected_committee->committee_head_id)
+                                <div class="committee_member_container flex_column">
+                                    <a href="{{ route('single_deputy_page', ['id'=>$deputy->id, 'lang'=>app()->getLocale()]) }}" class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</a>
+                                    <p class="position_name">
+                                        {{ $deputy->{'position_' . $current_lang->code} }}
+                                    </p>
+                                </div>
+                            @endif
+                        @endforeach
 
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Orazmeredow Merdan Artykowiç</span>
-                            <p class="description">
-                                Türkmenistanyň Döwlet energetika institutynyň sanly elektronika we elektrotehnika kafedrasynyň mugallymy
-                            </p>
-                        </div>
                         
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Seýilow Baýly Toýlyýewiç</span>
-                            <p class="description">
-                                Türkmenistanyň Mejlisiniň Adam hukuklaryny we azatlyklaryny goramak baradaky komitetiniň agzasy
-                            </p>
-                        </div>
-
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Mämiýewa Şemşat Gylyçdurdyýewna</span>
-                            <p class="description">
-                                Gumdag şäherçe hassahanasynyň baş lukmanynyň ilkinji medisina-sanitar işleri boýunça orunbasary
-                            </p>
-                        </div>
                         
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Mustakowa Hatyja Muratowna</span>
-                            <p class="description">
-                                Lebap welaýatynyň Türkmenabat şäheriniň 39-njy «Ülker» çagalar bagynyň müdiri
-                            </p>
-                        </div>
-
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Hojaýewa Ogulmaral Gurbansähedowna</span>
-                            <p class="description">
-                                Ahal welaýatynyň Bäherden etrabynyň 2-nji orta mekdebiniň müdiri
-                            </p>
-                        </div>
-                        
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Jumadurdyýew Atajan Isaýewiç</span>
-                            <p class="description">
-                                Lebap welaýat maliýe ykdysady orta hünär okuw mekdebiniň mugallymy
-                            </p>
-                        </div>
-
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Gurbanmyradow Çary Annamyradowiç</span>
-                            <p class="description">
-                                Mary etrap hassahanasynyň 2-nji çagalar bölüminiň bölüm müdiri
-                            </p>
-                        </div>
-                        
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Gylyçmyradowa Jeren Aşyrgeldiýewna</span>
-                            <p class="description">
-                                Daşoguz welaýat inçekesel hassahanasynyň çagalar bölüminiň müdiri
-                            </p>
-                        </div>
-
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Bäşimow Artyk Çaryýewiç</span>
-                            <p class="description">
-                                Mary etrap häkimliginiň Senagat, gurluşyk we beýleki pudaklary bölüminiň arhitektory
-                            </p>
-                        </div>
-                        
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Diwanowa Meňli Abalakowna</span>
-                            <p class="description">
-                                Türkmenistanyň Mejlisiniň Adam hukuklaryny we azatlyklaryny goramak baradaky komitetiniň agzasy
-                            </p>
-                        </div>
-
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Babaýew Kasymguly Gulmyradowiç</span>
-                            <p class="description">
-                                Türkmenistanyň Halk Maslahatynyň Diwanynyň Iş dolandyryjysy
-                            </p>
-                        </div>
-
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Baýrammyradow Begençgeldi Merdanowiç</span>
-                            <p class="description">
-                                Türkmenistanyň Prezidentiniň ýanyndaky Döwlet gullugy akademiýasynyň talyby
-                            </p>
-                        </div>
-
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Amanýazowa Enejan Saparmuhamedowna</span>
-                            <p class="description">
-                                Daşoguz welaýatynyň Daşoguz şäheriniň 39-njy çagalar bakja bagynyň müdiri
-                            </p>
-                        </div>
-
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Babanyýazow Çarygeldi Gurbangeldiýewiç</span>
-                            <p class="description">
-                                Türkmenistanyň Mejlisiniň Daşky gurşawy goramak, tebigatdan peýdalanmak we agrosenagat toplumy baradaky komitetiniň başlygy
-                            </p>
-                        </div>
-
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Akyýewa Çemen Jumamyrat Gyzy</span>
-                            <p class="description">
-                                Türkmenistanyň Mejlisiniň Adam hukuklaryny we azatlyklaryny goramak baradaky komitetiniň agzasy
-                            </p>
-                        </div>
-
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Allakulyýew Erkin Çaryýewiç</span>
-                            <p class="description">
-                                «Lebap» sement zawodynyň Enjamlary bejeriş-ulanyş sehiniň mehaniki ussahanasynyň inžener-konstruktory
-                            </p>
-                        </div>
-
-                        <div class="committee_member_container flex_column">
-                            <span class="name">Eşşäýew Ýusupguly Aşyrgulyýewiç</span>
-                            <p class="description">
-                                Türkmenistanyň Mejlisiniň Adam hukuklaryny we azatlyklaryny goramak baradaky komitetiniň başlygy
-                            </p>
-                        </div>
-
                         
                     </div>
                 </div>
@@ -159,14 +63,9 @@
                     <h3 class="block_title">@lang('app.mejlis_committees_page.mejlis_committees')</h3>
 
                     <div class="buttons_block flex_column">
-                        <span class="committee_name active">Adam hukuklaryny we azatlyklaryny goramak baradaky komiteti</span>
-                        <span class="committee_name">Kada-kanunçylyk baradaky komiteti</span>
-                        <span class="committee_name">Ykdysady meseleler baradaky komiteti</span>
-                        <span class="committee_name">Durmuş syýasaty baradaky komiteti</span>
-                        <span class="committee_name">Ylym, bilim, medeniýet we ýaşlar syýasaty baradaky komiteti</span>
-                        <span class="committee_name">Daşky gurşawy goramak, tebigatdan peýdalanmak we agrosenagat toplumy baradaky komiteti</span>
-                        <span class="committee_name">Halkara we parlamentara ragatnaşyklar baradaky komiteti</span>
-                        <span class="committee_name">Ýerli wekilçilikli häkimiýet we öz-özüňi dolandyryş edaralary bilen işlemek baradaky komiteti</span>
+                        @foreach ($committees_all as $committee)
+                            <a href="{{ route('mejlis_committees_page',['id'=>$committee->id, 'lang'=>app()->getLocale()]) }}" class="committee_name @if($committee->id == $selected_committee->id) active @endif">{{ $committee->{'name_' . $current_lang->code} }}</a>
+                        @endforeach
                     </div>
                 </div>
             </div>

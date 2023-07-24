@@ -16,33 +16,36 @@
           font-family: 'OpenSansExtraBold', sans-serif;
           margin: 0 0 25px 0;
           text-align: center; }
+        .mejlis_committees_page .inner_wrapper .page_content_block .middle_column .committee_head_block {
+          align-items: center;
+          margin-bottom: 25px; }
         .mejlis_committees_page .inner_wrapper .page_content_block .middle_column .committee_members_block {
           width: 100%;
           row-gap: 25px;
           flex-wrap: wrap;
           justify-content: center;
-          flex-wrap: wrap-reverse;
+          flex-wrap: wrap;
           column-gap: 25px; }
-          .mejlis_committees_page .inner_wrapper .page_content_block .middle_column .committee_members_block .committee_member_container {
-            width: 351px;
-            height: 150px;
-            background-color: var(--container_background_blue);
-            box-sizing: border-box;
-            padding: 10px;
-            align-items: center;
-            justify-content: center;
-            row-gap: 10px;
-            flex-shrink: 0; }
-            .mejlis_committees_page .inner_wrapper .page_content_block .middle_column .committee_members_block .committee_member_container .name {
-              font-size: 16px;
-              font-family: 'OpenSansBold', sans-serif;
-              color: var(--sky_blue);
-              text-align: center; }
-            .mejlis_committees_page .inner_wrapper .page_content_block .middle_column .committee_members_block .committee_member_container .description {
-              font-family: 'OpenSansRegular', sans-serif;
-              font-size: 14px;
-              margin: 0;
-              text-align: center; }
+        .mejlis_committees_page .inner_wrapper .page_content_block .middle_column .committee_member_container {
+          width: 351px;
+          height: 150px;
+          background-color: var(--container_background_blue);
+          box-sizing: border-box;
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          row-gap: 10px;
+          flex-shrink: 0; }
+          .mejlis_committees_page .inner_wrapper .page_content_block .middle_column .committee_member_container .name {
+            font-size: 16px;
+            font-family: 'OpenSansBold', sans-serif;
+            color: var(--sky_blue);
+            text-align: center; }
+          .mejlis_committees_page .inner_wrapper .page_content_block .middle_column .committee_member_container .position_name {
+            font-family: 'OpenSansRegular', sans-serif;
+            font-size: 14px;
+            margin: 0;
+            text-align: center; }
       .mejlis_committees_page .inner_wrapper .page_content_block .right_column {
         width: 340px;
         background-color: var(--sky_blue);
@@ -62,6 +65,6 @@
           font-size: 16px;
           box-sizing: border-box;
           padding: 10px 20px;
-          cursor: pointer; }
+          color: var(--default_white); }
           .mejlis_committees_page .inner_wrapper .page_content_block .right_column .buttons_block .committee_name.active {
             background-color: var(--sky_blue_darker); }

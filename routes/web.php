@@ -38,7 +38,7 @@ Route::group(['middleware'=>'localization'],function (){
 
 
     
-    Route::get('/mejlis-committees', [SiteController::class, 'mejlis_committees'])->name('mejlis_committees_page');
+    Route::get('/mejlis-committees/{id?}', [SiteController::class, 'mejlis_committees'])->name('mejlis_committees_page');
     Route::get('/mejlis-deputies', [SiteController::class, 'mejlis_deputies'])->name('mejlis_deputies_page');
     Route::get('/single-deputy/{id}', [SiteController::class, 'single_deputy'])->name('single_deputy_page');
     // Route::get('/bills-discussion', [SiteController::class, 'bills_discussion'])->name('bills_discussion_page');

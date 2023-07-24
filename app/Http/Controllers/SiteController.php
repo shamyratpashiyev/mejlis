@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Committee;
 use App\Models\Law;
 use App\Models\Lang;
 use App\Models\News;
@@ -50,8 +51,9 @@ class SiteController extends Controller
         return view('convocation_page', $this->data);
     }
 
-    public function mejlis_committees(){
-
+    public function mejlis_committees(string $id = '1'){
+        $this->committees_all = Committee::get(['id','name_' . request()->query('lang'), 'committee_head_id']);
+        $this->selected_committee = Committee::select(['id','name_' . request()->query('lang'), 'committee_head_id'])->findOrFail($id);
         return view('mejlis_committees_page', $this->data);
     }
 
