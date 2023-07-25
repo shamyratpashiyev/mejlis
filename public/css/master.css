@@ -289,6 +289,8 @@ a {
     font-family: 'GilroyMedium', sans-serif;
     font-size: 18px;
     color: var(--text_gray_5); }
+    .pagination_row .item.active {
+      color: var(--sky_blue); }
 
 .breadcrumbs_row {
   font-size: 16px;

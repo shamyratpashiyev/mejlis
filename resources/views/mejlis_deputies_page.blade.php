@@ -136,7 +136,7 @@
                 
                 const filtered_list = deputies_list_initial.filter((obj) => {
                     return (selected_letter == '--' || obj[`fullname_${current_lang}`].toLowerCase().startsWith(selected_letter)) //If it starts with selected_letter or the letter isn't selected
-                            &&(selected_velayat_id == '--' || obj.velayat_id == selected_velayat_id)        //If it is velayat_id is equal to selected_velayat_id or velayat isn't selected
+                            &&(selected_velayat_id == '--' || obj.velayat_id == selected_velayat_id)        //If velayat_id is equal to selected_velayat_id or velayat isn't selected
                             &&(selected_district_id == '--' || obj.election_district_id == selected_district_id)
                 })
                 refreshDeputiesList(filtered_list);

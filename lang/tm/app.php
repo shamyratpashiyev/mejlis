@@ -125,7 +125,9 @@ return [
 
     'codes_page' => [
         'title' => 'Kodeksler',
-        
+        'document_name' => 'Hukuk resminamasynyň ady',
+        'choose_year' => 'Ýyl saýlaň',
+        'choose_month' => 'Aý saýlaň',
     ],
 
     'laws_page' => [
@@ -362,4 +364,18 @@ return [
                     <span data-letter="y" class="letter">Y</span>
                     <span data-letter="ý" class="letter">Ý</span>
                     <span data-letter="z" class="letter">Z</span>',
+    
+    'months' => '<option value="1">Ýanwar</option>
+                <option value="2">Fewral</option>
+                <option value="3">Mart</option>
+                <option value="4">Aprel</option>
+                <option value="5">Maý</option>
+                <option value="6">Iýun</option>
+                <option value="7">Iýul</option>
+                <option value="8">Awgust</option>
+                <option value="9">Sentýabr</option>
+                <option value="10">Oktýabr</option>
+                <option value="11">Noýabr</option>
+                <option value="12">Dekabr</option>
+                ',
 ];

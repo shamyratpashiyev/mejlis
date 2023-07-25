@@ -387,6 +387,10 @@ a{
         font-family: 'GilroyMedium', sans-serif;
         font-size: 18px;
         color: var(--text_gray_5);
+
+        &.active{
+            color: var(--sky_blue);
+        }
     }
 }
 

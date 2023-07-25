@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Law;
+use App\Models\Code;
 use App\Models\Lang;
 use App\Models\News;
 use App\Models\Deputy;
@@ -79,9 +80,25 @@ class SiteController extends Controller
     //     return view('bills_discussion_page');
     // }
 
-    public function codes(){
-
+    public function codes($page_num=1){
+        $this->codes_all = Code::get(['id', 'title_' . request()->query('lang'), 'published_date']);
+        $items_per_page = 9;
+        $pages_total = ceil($this->codes_all->count() / $items_per_page);
+        $this->current_page = $page_num;
+        $this->codes_current_page = $this->codes_all->slice(($items_per_page * $page_num) - $items_per_page , $items_per_page);
+        $this->pagination_array = $this->paginate($page_num, $pages_total);
+        $this->prev_page = $page_num > 1 ? $page_num - 1 : 1;
+        $this->next_page = $page_num < $pages_total ? $page_num + 1 : $page_num;
+        if($page_num > $pages_total){
+            return abort(404);
+        }
         return view('codes_page', $this->data);
+    }
+
+    public function single_code($id) {
+        $this->selected_code = Code::select(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang')])
+                                ->findOrFail($id);
+        return view('single_code_page', $this->data);
     }
 
     public function laws(){
@@ -194,5 +211,67 @@ class SiteController extends Controller
     public function tkm_state_holidays(){
 
         return view('turkmenistan.state_holidays_page', $this->data);
+    }
+
+    public function paginate($currentPage, $pagesTotal) {
+        /*
+          I divided the pagination row into three blocks (1 ... 13 14 15 ... 22)
+          It works like this:
+            --If the length of the pages is not long enough, then the separators("...") are not added at all.
+            --If the separator ("...") is present on one side only, the block that has the separator is generated separately
+              and the other block that doesn't have the separator is merged into the middle block.
+            --If the separator is present on both sides, the left and right side blocks are generated separately (with the separator)
+              and the middle block is also generated separately
+        */
+        $leftBlockLength = 1; // Length of the left block(before the "..." separator)
+        $rightBlockLength = 1; // Length of the right block(after the "..." separator)
+        $currentPageOffsets = 2; // The offsets on both sides of the current page
+        $paginationRowLength = $leftBlockLength + ($currentPageOffsets * 2 + 1) + $rightBlockLength + 2; // 2 is for two "..." elements and +1 is for the current_page itself
+        $separator = '...';
+  
+        $currentPage = intval($currentPage);
+        $pagesTotal = intval($pagesTotal);
+        $result = [];
+  
+        $separatorThresholdLeft = $leftBlockLength + 1 + $currentPageOffsets + 1; // Threshold for adding the "..." before the current page (+1 is for "..." and the next one is for the currentPage element itself)
+        $separatorThresholdRight = 1 + $currentPageOffsets + 1 + $rightBlockLength; // Threshold for removing the "..." after the current page (+1 is for the currentPage element itself and the next one is for "...")
+  
+        $leftThresholdCrossed = $currentPage > $separatorThresholdLeft;
+        $rightThresholdCrossed = $pagesTotal - $separatorThresholdRight < $currentPage;
+  
+        if ($pagesTotal <= $paginationRowLength) { // If there is no need to add "..." at all
+          $result = range(1,$pagesTotal); 
+        } else {
+          /* ----------------------------------- Left block -------------------------------- */
+          if (!$leftThresholdCrossed) { // The "..." should not be added
+            $result = range(1, $separatorThresholdLeft + $currentPageOffsets); 
+          } else {
+            for ($i = 1; $i <= $leftBlockLength; $i++) { // Generating the left side block
+              array_push($result, $i);
+            }
+            array_push($result, $separator);
+          }
+  
+          /* -------------------------------------Middle block ------------------------- */
+          if ($leftThresholdCrossed && !$rightThresholdCrossed) { // If the middle block is surrounded by "..." on both sides
+            for ($i = $currentPage - $currentPageOffsets; $i <= $currentPage + $currentPageOffsets; $i++) { // Generating the middle block
+              array_push($result, $i);
+            }
+          }
+  
+          /* --------------------------------------The Right block ----------------------- */
+          if ($rightThresholdCrossed) { // Threshold has been crossed and "..." should not be added
+            for ($i = ($pagesTotal + 1) - ($separatorThresholdRight + $currentPageOffsets); $i <= $pagesTotal; $i++) {
+              array_push($result, $i);
+            }
+          } else { // Threshold has not been crossed and "..." should be added
+            array_push($result,$separator);
+            for ($i = $pagesTotal - $rightBlockLength + 1; $i <= $pagesTotal; $i++) {
+              array_push($result, $i);
+            }
+          }
+        }
+        
+        return $result;
     }
 }

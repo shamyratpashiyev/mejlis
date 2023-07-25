@@ -13,6 +13,6 @@ class CodesSeeder extends Seeder
      */
     public function run(): void
     {
-        Code::factory(20)->create();
+        Code::factory(100)->create();
     }
 }

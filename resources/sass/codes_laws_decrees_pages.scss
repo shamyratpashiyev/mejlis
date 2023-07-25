@@ -66,10 +66,10 @@
                     }
                 }
 
-                .select_row{
+                .search_row{
                     column-gap: 15px;
 
-                    select{
+                    select, input{
                         font-family: 'OpenSansRegular', sans-serif;
                         font-size: 14px;
                         color: var(--text_gray);
@@ -79,14 +79,19 @@
                         box-sizing: border-box;
                         padding: 10px 157px 10px 10px;
                     }
+
+                    input{
+                        padding: 10px 10px 10px 10px;
+                        width: 300px;
+                    }
                 }
 
-                .codes_block{
+                .items_block{
                     flex-wrap: wrap;
                     row-gap: 25px;
                     justify-content: space-between;
                     
-                    .code_container{
+                    .item_container{
                         width: 340px;
                         height: 245px;
                         align-items: center;
@@ -104,12 +109,14 @@
                                 width: 113px;
                                 height: 19px;
                             }
-                            .code_description{
+                            .title{
                                 font-family: 'OpenSansSemiBold', sans-serif;
                                 font-size: 16px;
                                 color: var(--text_black_default);
                                 margin: 0;
                                 text-transform: uppercase;
+                                line-clamp: 7 !important;
+                                -webkit-line-clamp: 7 !important;
                             }
                         }
 
@@ -118,10 +125,10 @@
                         .bottom_row{
                             justify-content: space-between;
                             width: 100%;
+                            font-family: 'OpenSansRegular', sans-serif;
+                            font-size: 14px;
 
                             .date{
-                                font-family: 'OpenSansRegular', sans-serif;
-                                font-size: 14px;
                                 color: var(--text_gray_6);
                             }
 

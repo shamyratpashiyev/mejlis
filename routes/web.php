@@ -42,7 +42,8 @@ Route::group(['middleware'=>'localization'],function (){
     Route::get('/mejlis-deputies', [SiteController::class, 'mejlis_deputies'])->name('mejlis_deputies_page');
     Route::get('/single-deputy/{id}', [SiteController::class, 'single_deputy'])->name('single_deputy_page');
     // Route::get('/bills-discussion', [SiteController::class, 'bills_discussion'])->name('bills_discussion_page');
-    Route::get('/codes', [SiteController::class, 'codes'])->name('codes_page');
+    Route::get('/codes/{page_num?}', [SiteController::class, 'codes'])->name('codes_page');
+    Route::get('/single-code/{id}', [SiteController::class, 'single_code'])->name('single_code_page');
     Route::get('/laws', [SiteController::class, 'laws'])->name('laws_page');
     Route::get('/single-law/{id}', [SiteController::class, 'single_law'])->name('single_law_page');
     Route::get('/mejlis-decrees', [SiteController::class, 'mejlis_decrees'])->name('mejlis_decrees_page');
