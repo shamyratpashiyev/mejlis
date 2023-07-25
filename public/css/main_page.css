@@ -131,6 +131,10 @@
             .deputies_section .inner_wrapper .content_block .map_block .map_wrapper .region_name[data-region-id='ahal_region'] {
               bottom: 45%;
               left: 39%; }
+            .deputies_section .inner_wrapper .content_block .map_block .map_wrapper .region_name#ashgabat_city {
+              color: var(--sky_blue);
+              bottom: 25%;
+              left: 34.4%; }
       .deputies_section .inner_wrapper .content_block .deputies_block_scroll {
         box-sizing: border-box;
         padding: 15px;

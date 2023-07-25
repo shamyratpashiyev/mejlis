@@ -210,7 +210,7 @@ a {
     color: var(--text_black_default);
     font-size: 14px;
     position: relative;
-    overflow-y: scroll; }
+    overflow-y: auto; }
     .deputy_popup_container .popup_content_block .deputy_name {
       font-family: 'OpenSansBold', sans-serif;
       font-size: 16px;

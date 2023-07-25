@@ -11,7 +11,7 @@ class ElectionDistrictPopup extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $name, public string $description,)
+    public function __construct(public string $name, public string $borders,)
     {
         //
     }

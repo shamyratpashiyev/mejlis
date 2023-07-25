@@ -52,6 +52,7 @@
                     .letter{
                         font-family: 'OpenSansBold', sans-serif;
                         font-size: 18px;
+                        cursor: pointer;
                     }
                 }
 
@@ -63,7 +64,7 @@
 
                     .deputy_container{
                         width: 527px;
-                        height: 240px;
+                        min-height: 240px;
                         background-color: var(--container_background_blue);
                         box-sizing: border-box;
                         padding: 20px;
@@ -80,7 +81,6 @@
 
                         .key_value_wrapper{
                             row-gap: 5px;
-                            max-width: 73%;
 
                             .key{
                                 font-family: 'OpenSansBold', sans-serif;

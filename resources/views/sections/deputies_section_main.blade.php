@@ -18,7 +18,7 @@
                     <span class="region_name" data-region-id="lebap_region">@lang('app.main.lebap')</span>
                     <span class="region_name" data-region-id="mary_region">@lang('app.main.mary')</span>
                     <span class="region_name" data-region-id="ahal_region">@lang('app.main.ahal')</span>
-                    <span class="region_name" data-region-id="ashgabat_region">@lang('app.main.ashgabat')</span>
+                    <span class="region_name" id="ashgabat_city" data-region-id="ashgabat_region">@lang('app.main.ashgabat')</span>
                     <span class="region_name" data-region-id="balkan_region">@lang('app.main.balkan')</span>
                 </div>
                 

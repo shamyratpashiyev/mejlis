@@ -281,7 +281,7 @@ a{
         color: var(--text_black_default);
         font-size: 14px;
         position: relative;
-        overflow-y: scroll;
+        overflow-y: auto;
 
         .deputy_name{
             font-family: 'OpenSansBold', sans-serif;

@@ -56,12 +56,13 @@
     </div>
 
     <script>
-        const current_lang = "{{ $current_lang->code }}"
-        const single_deputy_page = "{{ route('single_deputy_page',['id'=>1,'lang'=>$current_lang->code]) }}"
+        
         
         $(document).ready(function (){
             const deputies_list_initial = JSON.parse(`{{ json_encode($deputies_all) }}`.replaceAll('&quot;','"'))
-            console.log(deputies_list_initial)
+            const current_lang = "{{ $current_lang->code }}"
+            const single_deputy_page = "{{ route('single_deputy_page',['id'=>1,'lang'=>$current_lang->code]) }}"
+
             $('.letter').on('click', (event) => {
                 $('.letter').removeClass('active')
                 $(event.target).addClass('active')
@@ -75,17 +76,19 @@
                 const filtered_list = deputies_list_initial.filter(obj => obj.election_district_id == selected_district);
                 refreshDeputiesList(filtered_list);
             })
+
+            function refreshDeputiesList(deputies_list) {
+                $('.deputy_name').remove();
+            
+                deputies_list.forEach((element) => {
+                    $('.deputies_list_block').append(`
+                        <a href="${single_deputy_page.replace('1',element.id)}" class="deputy_name">${element['fullname_' + current_lang]}</a>
+                    `)
+                });
+            }
         })
 
-        function refreshDeputiesList(deputies_list) {
-            $('.deputy_name').remove();
-            
-            deputies_list.forEach((element) => {
-                $('.deputies_list_block').append(`
-                    <a href="${single_deputy_page.replace('1',element.id)}" class="deputy_name">${element['fullname_' + current_lang]}</a>
-                `)
-            });
-        }
+        
     </script>
 
 @endsection

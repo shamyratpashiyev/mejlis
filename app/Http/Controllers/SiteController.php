@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Committee;
 use App\Models\Law;
 use App\Models\Lang;
 use App\Models\News;
 use App\Models\Deputy;
-use App\Models\ElectionDistrict;
+use App\Models\Velayat;
+use App\Models\Committee;
 use Illuminate\Http\Request;
 use App\Models\MejlisActivity;
+use App\Models\ElectionDistrict;
 use Illuminate\Support\Facades\Route;
 
 class SiteController extends Controller
@@ -58,7 +59,11 @@ class SiteController extends Controller
     }
 
     public function mejlis_deputies(){
-
+        $this->deputies_all = Deputy::get(['id','fullname_' . request()->query('lang'),'biography_' . request()->query('lang'),
+                                        'election_district_id', 'velayat_id', 'email']);
+        $this->deputies_json = Deputy::get(['id','fullname_' . request()->query('lang'),'election_district_id', 'velayat_id']);
+        $this->velayats_all = Velayat::get();
+        $this->election_districts_all = ElectionDistrict::get(['id', 'name_' . request()->query('lang')]);
         return view('mejlis_deputies_page', $this->data);
     }
 
