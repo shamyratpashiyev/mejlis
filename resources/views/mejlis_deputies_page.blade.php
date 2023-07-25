@@ -112,27 +112,29 @@
 
             const deputies_list_initial = JSON.parse(`{{ json_encode($deputies_json) }}`.replaceAll('&quot;','"'))
             const current_lang = "{{ $current_lang->code }}"
-            const single_deputy_page = "{{ route('single_deputy_page',['id'=>1,'lang'=>$current_lang->code]) }}"
+            let selected_letter = '--'
+            let selected_velayat_id = '--';
+            let selected_district_id = '--';
 
-            $('.letter').on('click', (event) => {
-                $('.letter').removeClass('active')
-                $(event.target).addClass('active')
-                const selected_letter = $(event.target).data('letter');
-                const filtered_list = deputies_list_initial.filter(obj => obj[`fullname_${current_lang}`].toLowerCase().startsWith(selected_letter));
+            $('.letter, #velayats_select, #districts_select').on('click', (event) => {
+                if($(event.target).hasClass('letter')){
+                    $('.letter').removeClass('active')
+                    $(event.target).addClass('active')
+                    selected_letter = $(event.target).data('letter');
+                } else if(event.target.id == 'velayats_select'){
+                    selected_velayat_id = $(event.target).val();
+                } else if(event.target.id == 'districts_select'){
+                    selected_district_id = $(event.target).val();
+                }
+                
+                const filtered_list = deputies_list_initial.filter((obj) => {
+                    return (selected_letter == '--' || obj[`fullname_${current_lang}`].toLowerCase().startsWith(selected_letter)) //If it starts with selected_letter or the letter isn't selected
+                            &&(selected_velayat_id == '--' || obj.velayat_id == selected_velayat_id)        //If it is velayat_id is equal to selected_velayat_id or velayat isn't selected
+                            &&(selected_district_id == '--' || obj.election_district_id == selected_district_id)
+                })
                 refreshDeputiesList(filtered_list);
             })
 
-            $('#velayats_select').on('change', (event) => {
-                const selected_velayat_id = $(event.target).val();
-                const filtered_list = deputies_list_initial.filter(obj => obj.velayat_id == selected_velayat_id);
-                refreshDeputiesList(filtered_list);
-            })
-
-            $('#districts_select').on('change', (event) => {
-                const selected_district_id = $(event.target).val();
-                const filtered_list = deputies_list_initial.filter(obj => obj.election_district_id == selected_district_id);
-                refreshDeputiesList(filtered_list);
-            })
 
             function refreshDeputiesList(deputies_list) {
                 document.querySelectorAll('.deputy_container').forEach((elem)=>{

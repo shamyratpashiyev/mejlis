@@ -38,6 +38,8 @@
             font-family: 'OpenSansBold', sans-serif;
             font-size: 18px;
             cursor: pointer; }
+            .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .letters_row .letter.active {
+              color: var(--sky_blue); }
         .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .deputies_block {
           width: 100%;
           flex-wrap: wrap;

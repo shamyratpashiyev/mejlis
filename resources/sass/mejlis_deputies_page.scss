@@ -53,6 +53,10 @@
                         font-family: 'OpenSansBold', sans-serif;
                         font-size: 18px;
                         cursor: pointer;
+
+                        &.active{
+                            color: var(--sky_blue);
+                        }
                     }
                 }
 
