@@ -38,6 +38,7 @@
 
                         <div class="select_row">
                             <select>
+                                <option value="--">@lang('app.convocation_page.district')</option>
                                 @foreach ($districts_all as $district)
                                     <option value="{{ $district->id }}">{{ $district->{'name_' . app()->getLocale()} }}</option>
                                 @endforeach
@@ -62,18 +63,29 @@
             const deputies_list_initial = JSON.parse(`{{ json_encode($deputies_all) }}`.replaceAll('&quot;','"'))
             const current_lang = "{{ $current_lang->code }}"
             const single_deputy_page = "{{ route('single_deputy_page',['id'=>1,'lang'=>$current_lang->code]) }}"
+            let selected_letter = '--'
+            let selected_district_id = '--'
+            
+            $('.letter, .select_row select').on('click', (event) => {
+                if($(event.target).hasClass('letter')){
+                    if($(event.target).hasClass('active')){
+                        $('.letter').removeClass('active')
+                        selected_letter = '--'
+                    } else {
+                        $('.letter').removeClass('active')
+                        $(event.target).addClass('active')
+                        selected_letter = $(event.target).data('letter');
+                    }
 
-            $('.letter').on('click', (event) => {
-                $('.letter').removeClass('active')
-                $(event.target).addClass('active')
-                const selected_letter = $(event.target).data('letter');
-                const filtered_list = deputies_list_initial.filter(obj => obj[`fullname_${current_lang}`].toLowerCase().startsWith(selected_letter));
-                refreshDeputiesList(filtered_list);
-            })
-
-            $('.select_row select').on('change', (event) => {
-                const selected_district = $(event.target).val();
-                const filtered_list = deputies_list_initial.filter(obj => obj.election_district_id == selected_district);
+                } else{
+                    selected_district_id = $(event.target).val();
+                }
+                
+                const filtered_list = deputies_list_initial.filter((obj) => {
+                    return (selected_letter == '--' || obj[`fullname_${current_lang}`].toLowerCase().startsWith(selected_letter))   //If fullname starts with selected letter of the letter isn't selected
+                            && (selected_district_id == '--' || obj.election_district_id == selected_district_id)
+                    
+                });
                 refreshDeputiesList(filtered_list);
             })
 

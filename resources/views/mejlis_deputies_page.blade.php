@@ -34,12 +34,14 @@
                         
                         <div class="select_block">
                             <select id="velayats_select">
+                                <option value="--">@lang('app.mejlis_deputies_page.velayat')</option>
                                 @foreach ($velayats_all as $velayat)
                                     <option value="{{ $velayat->id }}">{{ $velayat->{'name_' . app()->getLocale()} }}</option>
                                 @endforeach
                             </select>
 
                             <select id="districts_select">
+                                <option value="--">@lang('app.mejlis_deputies_page.election_district')</option>
                                 @foreach ($election_districts_all as $district)
                                     <option value="{{ $district->id }}">{{ $district->{'name_' . app()->getLocale()} }}</option>
                                 @endforeach
@@ -118,9 +120,14 @@
 
             $('.letter, #velayats_select, #districts_select').on('click', (event) => {
                 if($(event.target).hasClass('letter')){
-                    $('.letter').removeClass('active')
-                    $(event.target).addClass('active')
-                    selected_letter = $(event.target).data('letter');
+                    if($(event.target).hasClass('active')){
+                        $('.letter').removeClass('active')
+                        selected_letter = '--'
+                    } else {
+                        $('.letter').removeClass('active')
+                        $(event.target).addClass('active')
+                        selected_letter = $(event.target).data('letter');
+                    }
                 } else if(event.target.id == 'velayats_select'){
                     selected_velayat_id = $(event.target).val();
                 } else if(event.target.id == 'districts_select'){

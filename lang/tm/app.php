@@ -120,6 +120,7 @@ return [
         'district' => 'Saýlaw okrugy',
         'biography' => 'Terjimehaly',
         'committee' => 'Komiteti',
+        'velayat' => 'Welaýat'
     ],
 
     'codes_page' => [
