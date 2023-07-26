@@ -194,7 +194,7 @@
                     </div>
                 </div>
 
-                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['international_cooperation_page','friendship_group_page', 'news_international_page'])) active @endif">
+                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['international_cooperation_page','single_news_cooperation_page','friendship_group_page', 'news_international_page'])) active @endif">
                     <span>@lang('app.layout.international')</span>
 
                     <div class="dropdown_menu flex_column">

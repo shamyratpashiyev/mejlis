@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 use App\Models\MejlisActivity;
 use App\Models\ElectionDistrict;
 use App\Models\MejlisDecree;
+use App\Models\NewsCooperation;
 use Illuminate\Support\Facades\Route;
 
 class SiteController extends Controller
@@ -154,8 +155,18 @@ class SiteController extends Controller
         return view('contacts_page', $this->data);
     }
 
-    public function international_cooperation(){
-
+    public function international_cooperation($page_num=1){
+        $this->news_all = NewsCooperation::get(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'event_date','image_1']);
+        $items_per_page = 9;
+        $pages_total = ceil($this->news_all->count() / $items_per_page);
+        $this->current_page = $page_num;
+        $this->news_current_page = $this->news_all->slice(($items_per_page * $page_num) - $items_per_page , $items_per_page);
+        $this->pagination_array = $this->paginate($page_num, $pages_total);
+        $this->prev_page = $page_num > 1 ? $page_num - 1 : 1;
+        $this->next_page = $page_num < $pages_total ? $page_num + 1 : $page_num;
+        if($page_num > $pages_total){
+            return abort(404);
+        }
         return view('international_cooperation_page', $this->data);
     }
 
@@ -169,9 +180,11 @@ class SiteController extends Controller
         return view('single_news_international_page', $this->data);
     }
 
-    public function single_item_international(){
-
-        return view('single_item_international_page', $this->data);
+    public function single_news_cooperation($id){
+        $this->selected_news = NewsCooperation::select(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'image_1',
+                                                        'image_2', 'image_3', 'image_4', 'image_5', 'image_6', 'event_date'])
+        ->findOrFail($id);
+        return view('single_news_cooperation_page', $this->data);
     }
 
     public function friendship_group(){
