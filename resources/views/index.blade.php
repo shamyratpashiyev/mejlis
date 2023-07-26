@@ -19,53 +19,57 @@
                 </a>
             </div>
             <div class="grid_block">
+                @if($news_big)
+                    <a href="{{ route('single_news_page', ['lang'=>app()->getLocale(),'id'=>$news_big->id]) }}" class="news_container_big flex_column">
+                        <div class="image_wrapper">
+                            <img src="{{ asset($news_big['image']) }}" alt="">
+                        </div>
+                        <h3 class="title">{{ $news_big['title_' . $current_lang->code] }}</h3>
+                        <div  class="content">
+                            {!! $news_big['description_' . $current_lang->code] !!}
+                        </div>
+                        <span class="date">{{ date('d.m.Y',strtotime($news_big['event_date'])) }}</span>
+                    </a>
+                @endif
 
-                <a href="{{ route('single_news_page', ['lang'=>app()->getLocale(),'id'=>$news_big['id']]) }}" class="news_container_big flex_column">
-                    <div class="image_wrapper">
-                        <img src="{{ asset($news_big['image']) }}" alt="">
-                    </div>
-                    <h3 class="title">{{ $news_big['title_' . $current_lang->code] }}</h3>
-                    <div  class="content">
-                        {!! $news_big['description_' . $current_lang->code] !!}
-                    </div>
-                    <span class="date">{{ date('d.m.Y',strtotime($news_big['event_date'])) }}</span>
-                </a>
-
-                <div class="news_block_scroll flex_column">
-                    @foreach ($news_small as $news)
-                        <a href="{{ route('single_news_page', ['lang'=>app()->getLocale(),'id'=>$news['id']]) }}" class="news_container_small flex_row">
-                            <div class="image_wrapper flex_row">
-                                <img src="{{ asset($news['image']) }}" alt="">
-                            </div>
-                            <div class="content_block flex_column">
-                                <h4 class="title">{{ $news["title_{$current_lang->code}"] }}</h4>
-                                <div class="content">
-                                    {!! $news["description_{$current_lang->code}"] !!}
+                @if ($news_small)
+                    
+                    <div class="news_block_scroll flex_column">
+                        @foreach ($news_small as $news)
+                            <a href="{{ route('single_news_page', ['lang'=>app()->getLocale(),'id'=>$news->id]) }}" class="news_container_small flex_row">
+                                <div class="image_wrapper flex_row">
+                                    <img src="{{ asset($news->image) }}" alt="">
                                 </div>
-                                <span class="date">{{ date('d.m.Y',strtotime($news['event_date'])) }}</span>
-                            </div>
-                        </a>
-                    @endforeach
-                </div>
-
-                <div class="news_row_medium flex_row">
-                    @foreach ($news_medium as $news)
-                        <a href="{{ route('single_news_page', ['lang'=>app()->getLocale(),'id'=>$news['id']]) }}" class="news_container_medium flex_column container_box_shadow">
-                            <div class="image_wrapper">
-                                <img src="{{ asset('img/news_medium_1.jpg') }}" alt="">
-                            </div>
-                            <div class="content_wrapper flex_column">
-                                <h4 class="title">{{ $news["title_{$current_lang->code}"] }}</h4>
-                                <div class="content">
-                                    {!! $news["description_{$current_lang->code}"] !!}
+                                <div class="content_block flex_column">
+                                    <h4 class="title">{{ $news->{'title_' . $current_lang->code} }}</h4>
+                                    <div class="content">
+                                        {!! $news->{'description_' . $current_lang->code} !!}
+                                    </div>
+                                    <span class="date">{{ date('d.m.Y',strtotime($news->event_date)) }}</span>
                                 </div>
-                                <span class="date">{{ date('d.m.Y',strtotime($news['event_date'])) }}</span>
-                            </div>
-                        </a>
-                    @endforeach
+                            </a>
+                        @endforeach
+                    </div>
+                @endif
 
-
-                </div>
+                @if($news_medium)
+                    <div class="news_row_medium flex_row">
+                        @foreach ($news_medium as $news)
+                            <a href="{{ route('single_news_page', ['lang'=>app()->getLocale(),'id'=>$news->id]) }}" class="news_container_medium flex_column container_box_shadow">
+                                <div class="image_wrapper">
+                                    <img src="{{ asset($news->image) }}" alt="">
+                                </div>
+                                <div class="content_wrapper flex_column">
+                                    <h4 class="title">{{ $news->{'title_' . $current_lang->code} }}</h4>
+                                    <div class="content">
+                                        {!! $news->{'description_' . $current_lang->code} !!}
+                                    </div>
+                                    <span class="date">{{ date('d.m.Y',strtotime($news->event_date)) }}</span>
+                                </div>
+                            </a>
+                        @endforeach
+                    </div>
+                @endif
             </div>
         </div>
     </div>

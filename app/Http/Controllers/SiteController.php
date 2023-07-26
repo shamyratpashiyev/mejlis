@@ -26,12 +26,12 @@ class SiteController extends Controller
     }
 
     public function index(){
-        $news = News::orderBy('created_at','desc')->limit(11)->get(['id',"title_{$this->current_lang->code}",
-                                                                "description_{$this->current_lang->code}", 'event_date', 'image'])->toArray();
-        $this->news_big = $news[1];
-        $this->news_small = array_slice($news, 1, 6);
-        $this->news_medium = array_slice($news, 7);
-
+        $news_all = News::orderBy('created_at','desc')->limit(11)->select(['id',"title_{$this->current_lang->code}",
+                                                                "description_{$this->current_lang->code}", 'event_date', 'image'])->get();
+        // dd($news_all);
+        $this->news_big = $news_all->slice(0,1)->first();
+        $this->news_small = $news_all->slice(1,6);
+        $this->news_medium = $news_all->slice(7);
         $this->mejlis_activities = MejlisActivity::orderBy('created_at','desc')->limit(4)->get(['id',"title_{$this->current_lang->code}",
                                     "description_{$this->current_lang->code}", 'event_date']);
 
@@ -207,8 +207,23 @@ class SiteController extends Controller
         return view('friendship_group_page', $this->data);
     }
 
-    public function news(){
+    public function news($page_num=1){
+        $news_all = News::orderBy('created_at','DESC')->get(['id',"title_{$this->current_lang->code}",
+                                "description_{$this->current_lang->code}", 'event_date', 'image']);
 
+        $items_per_page = 19;
+        $pages_total = ceil($news_all->count() / $items_per_page);
+        $this->current_page = $page_num;
+        $news_current_page = $news_all->slice(($items_per_page * $page_num) - $items_per_page , $items_per_page);
+        $this->pagination_array = $this->paginate($page_num, $pages_total);
+        $this->prev_page = $page_num > 1 ? $page_num - 1 : 1;
+        $this->next_page = $page_num < $pages_total ? $page_num + 1 : $page_num;
+        $this->news_big = $news_current_page->slice(0, 1)->first();
+        $this->news_small = $news_current_page->slice(1, 6);
+        $this->news_medium = $news_current_page->slice(7);
+        if($page_num > $pages_total){
+            return abort(404);
+        }
         return view('news_page', $this->data);
     }
 

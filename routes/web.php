@@ -55,7 +55,7 @@ Route::group(['middleware'=>'localization'],function (){
     Route::get('/single-news-international/{id}', [SiteController::class, 'single_news_international'])->name('single_news_international_page');
     Route::get('/single-news-cooperation/{id}', [SiteController::class, 'single_news_cooperation'])->name('single_news_cooperation_page');
     Route::get('/friendship-group/{id?}', [SiteController::class, 'friendship_group'])->name('friendship_group_page');
-    Route::get('/news', [SiteController::class, 'news'])->name('news_page');
+    Route::get('/news/{page_num?}', [SiteController::class, 'news'])->name('news_page');
     Route::get('/single-news/{id}', [SiteController::class, 'single_news'])->name('single_news_page');
     Route::get('/articles', [SiteController::class, 'articles'])->name('articles_page');
     Route::get('/single-article/{id}', [SiteController::class, 'single_article'])->name('single_article_page');
