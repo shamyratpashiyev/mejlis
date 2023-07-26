@@ -70,11 +70,11 @@
                         .bottom_row{
                             justify-content: space-between;
                             align-items: center;
+                            font-family: 'OpenSansRegular', sans-serif;
+                            font-size: 14px;
 
                             .date{
                                 color: var(--text_gray_6);
-                                font-family: 'OpenSansRegular', sans-serif;
-                                font-size: 14px;
                             }
 
                             a{

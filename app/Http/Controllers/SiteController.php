@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\Law;
 use App\Models\Code;
 use App\Models\Lang;
@@ -228,19 +229,33 @@ class SiteController extends Controller
     }
 
     public function single_news($id){
-        $this->selected_news = News::findOrFail($id);
+        $this->selected_news = News::select(['id','title_' . request()->query('lang'), 'description_' . request()->query('lang'),'image','event_date'])
+                                ->findOrFail($id);
         $this->relative_news = News::whereNotIn('id', [$this->selected_news->id])->orderBy('created_at','desc')->limit(4)->get(['id',"title_{$this->current_lang->code}",
                                 "description_{$this->current_lang->code}", 'event_date', 'image']);
         return view('single_news_page',$this->data);
     }
 
-    public function articles(){
+    public function articles($page_num=1){
 
+        $articles_all = Article::orderBy('published_date', 'DESC')->get(['id', 'title_' . request()->query('lang'), 'description_' . request()->query('lang'), 'published_date']);
+        $items_per_page = 9;
+        $pages_total = ceil($articles_all->count() / $items_per_page);
+        $this->current_page = $page_num;
+        $this->articles_current_page = $articles_all->slice(($items_per_page * $page_num) - $items_per_page , $items_per_page);
+        $this->pagination_array = $this->paginate($page_num, $pages_total);
+        $this->prev_page = $page_num > 1 ? $page_num - 1 : 1;
+        $this->next_page = $page_num < $pages_total ? $page_num + 1 : $page_num;
+        if($page_num > $pages_total){
+            return abort(404);
+        }
         return view('articles_page', $this->data);
     }
 
-    public function single_article(){
-
+    public function single_article($id){
+        $this->selected_article = Article::select(['id','title_' . request()->query('lang'), 'description_' . request()->query('lang'),'published_date'])
+                                ->findOrFail($id);
+        
         return view('single_article_page', $this->data);
     }
     

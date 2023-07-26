@@ -38,7 +38,7 @@ class ArticlesController extends Controller
         $article->description_tm = $request->description_tm;
         $article->description_ru = $request->description_ru;
         $article->description_en = $request->description_en;
-        $article->event_date = $request->event_date;
+        $article->published_date = $request->published_date;
 
         $article->save();
 
@@ -75,7 +75,7 @@ class ArticlesController extends Controller
         $selected_article->description_tm = $request->description_tm;
         $selected_article->description_ru = $request->description_ru;
         $selected_article->description_en = $request->description_en;
-        $selected_article->event_date = $request->event_date;
+        $selected_article->published_date = $request->published_date;
 
         $selected_article->save();
         

@@ -17,13 +17,13 @@ class ArticleFactory extends Factory
     public function definition(): array
     {
         return [
-            'title_tm' => fake()->paragraph(),
-            'title_ru' => fake()->paragraph(),
-            'title_en' => fake()->paragraph(),
-            'description_tm' => fake()->text(),
-            'description_ru' => fake()->text(),
-            'description_en' => fake()->text(),
-            'event_date' => fake()->dateTime(),
+            'title_tm' => 'Turkmen_' . fake()->paragraph(),
+            'title_ru' => 'Russian_' . fake()->paragraph(),
+            'title_en' => 'English_' . fake()->paragraph(),
+            'description_tm' => '<p>Turkmen_' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'description_ru' => '<p>Russian_' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'description_en' => '<p>English_' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'published_date' => fake()->dateTime(),
         ];
     }
 }

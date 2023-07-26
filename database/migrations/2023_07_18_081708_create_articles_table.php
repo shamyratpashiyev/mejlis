@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('description_tm');
             $table->text('description_ru');
             $table->text('description_en');
-            $table->timestamp('event_date');
+            $table->timestamp('published_date');
             $table->timestamps();
         });
     }

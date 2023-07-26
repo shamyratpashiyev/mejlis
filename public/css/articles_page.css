@@ -50,11 +50,11 @@
                 -webkit-line-clamp: 8; }
             .articles_page .inner_wrapper .page_content_block .articles_block .articles_row .article_container .bottom_row {
               justify-content: space-between;
-              align-items: center; }
+              align-items: center;
+              font-family: 'OpenSansRegular', sans-serif;
+              font-size: 14px; }
               .articles_page .inner_wrapper .page_content_block .articles_block .articles_row .article_container .bottom_row .date {
-                color: var(--text_gray_6);
-                font-family: 'OpenSansRegular', sans-serif;
-                font-size: 14px; }
+                color: var(--text_gray_6); }
               .articles_page .inner_wrapper .page_content_block .articles_block .articles_row .article_container .bottom_row a {
                 align-items: center;
                 color: var(--sky_blue);
