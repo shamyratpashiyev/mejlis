@@ -78,7 +78,7 @@
 
                     <div class="nav_block flex_column">
                         <a class="hover_underline @if(Route::currentRouteNamed(['main_page'])) active @endif" href="#">@lang('app.layout.main_page')</a>
-                        <a class="hover_underline @if(Route::currentRouteNamed(['mejlis_history_page','convocation_page'])) active @endif" href="#">@lang('app.layout.about_mejlis')</a>
+                        <a class="hover_underline" href="#">@lang('app.layout.about_mejlis')</a>
                         <a class="hover_underline" href="#">@lang('app.layout.mejlis_structure')</a>
                         <a class="hover_underline" href="#">@lang('app.layout.media')</a>
                         <a class="hover_underline" href="#">@lang('app.layout.international')</a>
@@ -159,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['mejlis_committees_page','mejlis_deputies_page'])) active @endif">
+                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['mejlis_committees_page','mejlis_deputies_page','single_deputy_page'])) active @endif">
                     <span>@lang('app.layout.mejlis_structure')</span>
 
                     <div class="dropdown_menu flex_column">
@@ -172,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['codes_page','laws_page','mejlis_decrees_page','constitutional_law_page'])) active @endif">
+                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['codes_page','single_code_page','laws_page','single_law_page','mejlis_decrees_page','single_decree_page','constitutional_law_page'])) active @endif">
                     <span>@lang('app.layout.legislation')</span>
 
                     <div class="dropdown_menu flex_column">

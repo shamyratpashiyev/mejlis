@@ -7,13 +7,13 @@
 @php
     $links_list = [
                     ['name'=>__('app.mejlis_committees_page.title'), 'url' => route('mejlis_committees_page',['lang' => app()->getLocale()])],
-                    ['name'=>__('app.mejlis_deputies_page.title'),'url' => route('mejlis_deputies_page',['lang' => app()->getLocale()])], 
+                    ['name'=>__('app.mejlis_deputies_page.title'), 'is_active'=>'active','url' => route('mejlis_deputies_page',['lang' => app()->getLocale()])], 
     ];
 
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
                     ['name' => __('app.layout.mejlis_structure'), 'url' => '#'],
-                    ['name' => __('app.mejlis_committees_page.title'), 'url' => route('mejlis_committees_page', ['lang' => app()->getLocale()])],
+                    ['name' => __('app.mejlis_deputies_page.title'), 'url' => route('mejlis_deputies_page', ['lang' => app()->getLocale()])],
                     ['name' => $selected_deputy->{'fullname_' . $current_lang->code}, 'url' => route(Route::currentRouteName(), ['id'=>$selected_deputy->id,'lang' => app()->getLocale()]) ],
     ];
     
