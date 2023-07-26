@@ -132,6 +132,9 @@ return [
 
     'laws_page' => [
         'title' => 'Kanunlar',
+        'document_name' => 'Hukuk resminamasynyň ady',
+        'choose_year' => 'Ýyl saýlaň',
+        'choose_month' => 'Aý saýlaň',
     ],
 
     'mejlis_decrees_page' => [

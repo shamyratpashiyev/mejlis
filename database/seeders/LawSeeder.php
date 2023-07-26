@@ -13,6 +13,6 @@ class LawSeeder extends Seeder
      */
     public function run(): void
     {
-        Law::factory(20)->create();
+        Law::factory(100)->create();
     }
 }

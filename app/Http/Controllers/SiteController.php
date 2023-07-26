@@ -101,13 +101,24 @@ class SiteController extends Controller
         return view('single_code_page', $this->data);
     }
 
-    public function laws(){
-
+    public function laws($page_num=1){
+        $this->laws_all = Law::get(['id', 'title_' . request()->query('lang'), 'published_date']);
+        $items_per_page = 9;
+        $pages_total = ceil($this->laws_all->count() / $items_per_page);
+        $this->current_page = $page_num;
+        $this->laws_current_page = $this->laws_all->slice(($items_per_page * $page_num) - $items_per_page , $items_per_page);
+        $this->pagination_array = $this->paginate($page_num, $pages_total);
+        $this->prev_page = $page_num > 1 ? $page_num - 1 : 1;
+        $this->next_page = $page_num < $pages_total ? $page_num + 1 : $page_num;
+        if($page_num > $pages_total){
+            return abort(404);
+        }
         return view('laws_page', $this->data);
     }
 
     public function single_law($id){
-        $this->selected_law = Law::findOrFail($id);
+        $this->selected_law = Law::select(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang')])
+                                ->findOrFail($id);
         return view('single_law_page', $this->data);
     }
 
