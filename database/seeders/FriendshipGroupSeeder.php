@@ -13,6 +13,6 @@ class FriendshipGroupSeeder extends Seeder
      */
     public function run(): void
     {
-        FriendshipGroup::factory(20)->create();
+        FriendshipGroup::factory(10)->create();
     }
 }

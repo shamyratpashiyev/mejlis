@@ -12,6 +12,7 @@ use App\Models\Committee;
 use Illuminate\Http\Request;
 use App\Models\MejlisActivity;
 use App\Models\ElectionDistrict;
+use App\Models\FriendshipGroup;
 use App\Models\MejlisDecree;
 use App\Models\NewsCooperation;
 use App\Models\NewsInternational;
@@ -200,8 +201,9 @@ class SiteController extends Controller
         return view('single_news_cooperation_page', $this->data);
     }
 
-    public function friendship_group(){
-
+    public function friendship_group(string $id = '1'){
+        $this->groups_all = FriendshipGroup::get(['id','title_' . request()->query('lang'),'description_' . request()->query('lang'), 'published_date']);
+        $this->selected_group = FriendshipGroup::select(['id','title_' . request()->query('lang'),'description_' . request()->query('lang'), 'published_date'])->findOrFail($id);
         return view('friendship_group_page', $this->data);
     }
 
