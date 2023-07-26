@@ -51,7 +51,7 @@ Route::group(['middleware'=>'localization'],function (){
     Route::get('/constitutional-law', [SiteController::class, 'constitutional_law'])->name('constitutional_law_page');
     Route::get('/contacts', [SiteController::class, 'contacts'])->name('contacts_page');
     Route::get('/international-cooperation/{page_num?}', [SiteController::class, 'international_cooperation'])->name('international_cooperation_page');
-    Route::get('/news-international', [SiteController::class, 'news_international'])->name('news_international_page');
+    Route::get('/news-international/{page_num?}', [SiteController::class, 'news_international'])->name('news_international_page');
     Route::get('/single-news-international/{id}', [SiteController::class, 'single_news_international'])->name('single_news_international_page');
     Route::get('/single-news-cooperation/{id}', [SiteController::class, 'single_news_cooperation'])->name('single_news_cooperation_page');
     Route::get('/friendship-group', [SiteController::class, 'friendship_group'])->name('friendship_group_page');

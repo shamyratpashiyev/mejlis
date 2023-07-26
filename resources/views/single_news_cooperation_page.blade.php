@@ -27,7 +27,7 @@
 
             <div class="page_content_block flex_row">
 
-                <x-sidebar :links-list="$links_list" title="Halkara"/>
+                <x-sidebar :links-list="$links_list" title="{{ __('app.layout.international') }}"/>
 
                 <div class="news_content_block flex_column">
                     
