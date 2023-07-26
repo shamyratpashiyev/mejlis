@@ -13,6 +13,6 @@ class MejlisDecreeSeeder extends Seeder
      */
     public function run(): void
     {
-        MejlisDecree::factory(20)->create();
+        MejlisDecree::factory(100)->create();
     }
 }

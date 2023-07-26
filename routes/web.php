@@ -46,7 +46,8 @@ Route::group(['middleware'=>'localization'],function (){
     Route::get('/single-code/{id}', [SiteController::class, 'single_code'])->name('single_code_page');
     Route::get('/laws/{page_num?}', [SiteController::class, 'laws'])->name('laws_page');
     Route::get('/single-law/{id}', [SiteController::class, 'single_law'])->name('single_law_page');
-    Route::get('/mejlis-decrees', [SiteController::class, 'mejlis_decrees'])->name('mejlis_decrees_page');
+    Route::get('/mejlis-decrees/{page_num?}', [SiteController::class, 'mejlis_decrees'])->name('mejlis_decrees_page');
+    Route::get('/single-decree/{id}', [SiteController::class, 'single_decree'])->name('single_decree_page');
     Route::get('/constitutional-law', [SiteController::class, 'constitutional_law'])->name('constitutional_law_page');
     Route::get('/contacts', [SiteController::class, 'contacts'])->name('contacts_page');
     Route::get('/international-cooperation', [SiteController::class, 'international_cooperation'])->name('international_cooperation_page');

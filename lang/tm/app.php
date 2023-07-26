@@ -139,6 +139,9 @@ return [
 
     'mejlis_decrees_page' => [
         'title' => 'Mejlisiň kararlary',
+        'document_name' => 'Hukuk resminamasynyň ady',
+        'choose_year' => 'Ýyl saýlaň',
+        'choose_month' => 'Aý saýlaň',
     ],
 
     'constitutional_law_page' => [

@@ -12,6 +12,7 @@ use App\Models\Committee;
 use Illuminate\Http\Request;
 use App\Models\MejlisActivity;
 use App\Models\ElectionDistrict;
+use App\Models\MejlisDecree;
 use Illuminate\Support\Facades\Route;
 
 class SiteController extends Controller
@@ -122,9 +123,25 @@ class SiteController extends Controller
         return view('single_law_page', $this->data);
     }
 
-    public function mejlis_decrees(){
-
+    public function mejlis_decrees($page_num=1){
+        $this->decrees_all = MejlisDecree::get(['id', 'title_' . request()->query('lang'), 'published_date']);
+        $items_per_page = 9;
+        $pages_total = ceil($this->decrees_all->count() / $items_per_page);
+        $this->current_page = $page_num;
+        $this->decrees_current_page = $this->decrees_all->slice(($items_per_page * $page_num) - $items_per_page , $items_per_page);
+        $this->pagination_array = $this->paginate($page_num, $pages_total);
+        $this->prev_page = $page_num > 1 ? $page_num - 1 : 1;
+        $this->next_page = $page_num < $pages_total ? $page_num + 1 : $page_num;
+        if($page_num > $pages_total){
+            return abort(404);
+        }
         return view('mejlis_decrees_page', $this->data);
+    }
+
+    public function single_decree($id){
+        $this->selected_decree = MejlisDecree::select(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang')])
+                                ->findOrFail($id);
+        return view('single_decree_page', $this->data);
     }
 
     public function constitutional_law(){
