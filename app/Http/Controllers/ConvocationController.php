@@ -29,17 +29,11 @@ class ConvocationController extends Controller
     public function update(Request $request, string $id)
     {
         $request->validate([
-            'name_tm' => 'required',
-            'name_ru' => 'required',
-            'name_en' => 'required',
-            'convocation_number' => 'required|numeric',
+            'number' => 'required',
         ]);
 
         $convocation = Convocation::findOrFail($id);
-        $convocation->name_tm = $request->name_tm;
-        $convocation->name_ru = $request->name_ru;
-        $convocation->name_en = $request->name_en;
-        $convocation->convocation_number = $request->convocation_number;
+        $convocation->number = $request->number;
 
         $convocation->save();
 

@@ -14,16 +14,12 @@ return new class extends Migration
     {
         Schema::create('convocations', function (Blueprint $table) {
             $table->id();
-            $table->string('name_tm');
-            $table->string('name_ru');
-            $table->string('name_en');
-            $table->integer('convocation_number');
+            $table->string('number');
             $table->timestamps();
         });
 
         DB::table('convocations')->insert([
-            ['name_tm' => 'Türkmenistanyň Mejlisiniň VII çagyrylyşy', 'name_ru' => 'Седьмой созыв Меджлиса Туркменистана', 
-            'name_en' => 'Seventh convocation of Mejlis of Turkmenistan', 'convocation_number' => 7]
+            ['number' => 'VII']
         ]);
     }
 

@@ -18,7 +18,7 @@ return [
         'legislation' => 'Kanunçylyk',
         'contacts_page' => 'Habarlaşmak üçin',
         'mejlis_history_page' => 'Mejlisiň taryhy',
-        'convocation_page' => 'VII çagyrylyşynyň deputatlarynyň sanawy',
+        'convocation_page' => ':number çagyrylyşynyň deputatlarynyň sanawy',
         'mejlis_committees_page' => 'Mejlis komitetleri',
         'mejlis_deputies_page' => 'Mejlis deputatlary',
         'codes_page' => 'Kodeksler',
@@ -100,8 +100,8 @@ return [
     ],
 
     'convocation_page' => [
-        'title' => 'VII çagyrylyşynyň deputatlarynyň sanawy',
-        'convocation_deputies_list' => 'Türkmenistanyň Mejlisiniň VII çagyrylyşynyň deputatlarynyň sanawy',
+        'title' => ':number çagyrylyşynyň deputatlarynyň sanawy',
+        'convocation_deputies_list' => 'Türkmenistanyň Mejlisiniň :number çagyrylyşynyň deputatlarynyň sanawy',
         'district' => 'Saýlaw okrugy',
     ],
 

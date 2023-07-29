@@ -9,5 +9,5 @@ class Convocation extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name_tm', 'name_ru', 'name_en'];
+    protected $fillable = ['number'];
 }

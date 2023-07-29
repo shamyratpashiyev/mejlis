@@ -1,4 +1,4 @@
-@extends('layout',['title' => __('app.convocation_page.title')])
+@extends('layout',['title' => __('app.convocation_page.title',['number'=>$convocation_number])])
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/convocation_page.css') }}">
@@ -7,13 +7,13 @@
 @php
     $links_list = [
                     ['name'=>__('app.mejlis_history_page.title'), 'url' => route('mejlis_history_page',['lang' => app()->getLocale()])],
-                    ['name'=> __('app.layout.convocation_page'), 'is_active' => 'active', 'url' => route('convocation_page',['lang' => app()->getLocale()])],
+                    ['name'=> __('app.layout.convocation_page',['number'=>$convocation_number]), 'is_active' => 'active', 'url' => route('convocation_page',['lang' => app()->getLocale()])],
     ];
 
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
                     ['name' => __('app.layout.about_mejlis'), 'url' => '#'],
-                    ['name' => __('app.convocation_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
+                    ['name' => __('app.convocation_page.title',['number'=>$convocation_number]), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
     ];
 @endphp
 
@@ -28,7 +28,7 @@
                 <x-sidebar :links-list="$links_list" title="{{ __('app.layout.about_mejlis') }}" />
 
                 <div class="right_side">
-                    <h3 class="block_title">@lang('app.convocation_page.convocation_deputies_list')</h3>
+                    <h3 class="block_title">@lang('app.convocation_page.convocation_deputies_list',['number'=>$convocation_number])</h3>
 
                     <div class="search_block flex_column">
 

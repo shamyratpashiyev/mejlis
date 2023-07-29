@@ -2,20 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Article;
 use App\Models\Law;
 use App\Models\Code;
 use App\Models\Lang;
 use App\Models\News;
 use App\Models\Deputy;
+use App\Models\Article;
 use App\Models\Velayat;
 use App\Models\Committee;
+use App\Models\Convocation;
+use App\Models\MejlisDecree;
 use Illuminate\Http\Request;
 use App\Models\MejlisActivity;
-use App\Models\ElectionDistrict;
 use App\Models\FriendshipGroup;
-use App\Models\MejlisDecree;
 use App\Models\NewsCooperation;
+use App\Models\ElectionDistrict;
 use App\Models\NewsInternational;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,7 @@ class SiteController extends Controller
     public function __construct(){
         $this->active_langs = Lang::where('is_active',true)->get();
         $this->current_lang = Lang::where('code', request()->query('lang'))->first();
+        $this->convocation_number = Convocation::first()->number;
     }
 
     public function index(){

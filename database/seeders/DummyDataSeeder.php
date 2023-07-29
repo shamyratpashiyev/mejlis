@@ -24,17 +24,18 @@ class DummyDataSeeder extends Seeder
      */
     public function run(): void
     {
-        Law::factory(100)->create();
-        FriendshipGroup::factory(10)->create();
+       
+        Article::factory(100)->create();
         MejlisActivity::factory(100)->create();
+        Code::factory(100)->create();
+        Law::factory(100)->create();
         MejlisDecree::factory(100)->create();
+        FriendshipGroup::factory(10)->create();
         News::factory(200)->create();
         NewsCooperation::factory(100)->create();
         NewsInternational::factory(100)->create();
         Deputy::factory(50)->create();
-        DeputyCommittee::factory(50)->create();
         Committee::factory(10)->create();
-        Code::factory(100)->create();
-        Article::factory(100)->create();
+        DeputyCommittee::factory(50)->create();
     }
 }
