@@ -13,7 +13,7 @@
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
                     ['name' => __('app.layout.international'), 'url' => '#'],
-                    ['name' => __('app.international_cooperation_page.title'), 'url' => route('international_cooperation_page', ['lang' => app()->getLocale()])],
+                    ['name' => __('app.news_international_page.title'), 'url' => route('news_international_page', ['lang' => app()->getLocale()])],
                     ['name' => $selected_news->{'title_' . $current_lang->code}, 'url' => request()->fullUrl()],
 
     ];

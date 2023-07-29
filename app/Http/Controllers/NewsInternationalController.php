@@ -103,33 +103,34 @@ class NewsInternationalController extends Controller
         $selected_news->event_date = $request->event_date;
 
         if($request->hasFile('image_1')){
-            $selected_news->image_1 = $request->file('image_1')->store('/uploaded_files/news_inter_img');
             File::delete(public_path() . '/' . $selected_news->image_1);
+            $selected_news->image_1 = $request->file('image_1')->store('/uploaded_files/news_inter_img');
         }
 
         if($request->hasFile('image_2')){
-            $selected_news->image_2 = $request->file('image_2')->store('/uploaded_files/news_inter_img');
             File::delete(public_path() . '/' . $selected_news->image_2);
+            $selected_news->image_2 = $request->file('image_2')->store('/uploaded_files/news_inter_img');
         }
         
         if($request->hasFile('image_3')){
-            $selected_news->image_3 = $request->file('image_3')->store('/uploaded_files/news_inter_img');
             File::delete(public_path() . '/' . $selected_news->image_3);
+            $selected_news->image_3 = $request->file('image_3')->store('/uploaded_files/news_inter_img');
+
         }
         
         if($request->hasFile('image_4')){
-            $selected_news->image_4 = $request->file('image_4')->store('/uploaded_files/news_inter_img');
             File::delete(public_path() . '/' . $selected_news->image_4);
+            $selected_news->image_4 = $request->file('image_4')->store('/uploaded_files/news_inter_img');
         }
 
         if($request->hasFile('image_5')){
-            $selected_news->image_5 = $request->file('image_5')->store('/uploaded_files/news_inter_img');
             File::delete(public_path() . '/' . $selected_news->image_5);
+            $selected_news->image_5 = $request->file('image_5')->store('/uploaded_files/news_inter_img');
         }
 
         if($request->hasFile('image_6')){
-            $selected_news->image_6 = $request->file('image_6')->store('/uploaded_files/news_inter_img');
             File::delete(public_path() . '/' . $selected_news->image_6);
+            $selected_news->image_6 = $request->file('image_6')->store('/uploaded_files/news_inter_img');
         }
 
         $selected_news->save();

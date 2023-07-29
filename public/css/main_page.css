@@ -38,7 +38,7 @@
       row-gap: 35px; }
       .news_section_main .inner_wrapper .grid_block .news_block_scroll {
         row-gap: 25px;
-        overflow-y: scroll; }
+        overflow-y: auto; }
         .news_section_main .inner_wrapper .grid_block .news_block_scroll::-webkit-scrollbar {
           -ms-overflow-style: none;
           /* IE and Edge */

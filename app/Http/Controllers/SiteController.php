@@ -189,7 +189,7 @@ class SiteController extends Controller
     }
 
     public function single_news_international($id){
-        $this->selected_news = NewsCooperation::select(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'image_1',
+        $this->selected_news = NewsInternational::select(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'image_1',
                                                         'image_2', 'image_3', 'image_4', 'image_5', 'image_6', 'event_date'])
         ->findOrFail($id);
         return view('single_news_international_page', $this->data);
@@ -229,8 +229,7 @@ class SiteController extends Controller
     }
 
     public function single_news($id){
-        $this->selected_news = News::select(['id','title_' . request()->query('lang'), 'description_' . request()->query('lang'),'image','event_date'])
-                                ->findOrFail($id);
+        $this->selected_news = News::findOrFail($id);
         $this->relative_news = News::whereNotIn('id', [$this->selected_news->id])->orderBy('created_at','desc')->limit(4)->get(['id',"title_{$this->current_lang->code}",
                                 "description_{$this->current_lang->code}", 'event_date', 'image']);
         return view('single_news_page',$this->data);

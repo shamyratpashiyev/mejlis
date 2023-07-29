@@ -52,7 +52,7 @@
 
             .news_block_scroll{
                 row-gap: 25px;
-                overflow-y: scroll;
+                overflow-y: auto;
                 
                 &::-webkit-scrollbar {
                     -ms-overflow-style: none;  /* IE and Edge */

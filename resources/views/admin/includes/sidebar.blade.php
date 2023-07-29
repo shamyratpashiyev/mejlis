@@ -1,7 +1,7 @@
 <div class="logo">
-    <img src="{{ asset('admins/img/logo-med.svg') }}" alt="">
+    <img src="{{ asset('img/gerb.png') }}" alt="">
     <span>
-        Türkmenistanyň <br> lukmanlarynyň jemgyýetçilik <br> guramasynyň komitet
+        Türkmenistanyň <br> Mejlisi
     </span>
 </div>
 
