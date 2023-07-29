@@ -43,6 +43,9 @@ class DeputyController extends Controller
         $deputy->position_tm = $request->position_tm;
         $deputy->position_ru = $request->position_ru;
         $deputy->position_en = $request->position_en;
+        $deputy->birth_year_tm = $request->birth_year_tm;
+        $deputy->birth_year_ru = $request->birth_year_ru;
+        $deputy->birth_year_en = $request->birth_year_en;
         $deputy->biography_tm = $request->biography_tm;
         $deputy->biography_ru = $request->biography_ru;
         $deputy->biography_en = $request->biography_en;
@@ -88,6 +91,9 @@ class DeputyController extends Controller
         $selected_deputy->position_tm = $request->position_tm;
         $selected_deputy->position_ru = $request->position_ru;
         $selected_deputy->position_en = $request->position_en;
+        $selected_deputy->birth_year_tm = $request->birth_year_tm;
+        $selected_deputy->birth_year_ru = $request->birth_year_ru;
+        $selected_deputy->birth_year_en = $request->birth_year_en;
         $selected_deputy->biography_tm = $request->biography_tm;
         $selected_deputy->biography_ru = $request->biography_ru;
         $selected_deputy->biography_en = $request->biography_en;

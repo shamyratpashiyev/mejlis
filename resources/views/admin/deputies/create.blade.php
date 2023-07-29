@@ -92,6 +92,32 @@
 
         <div class="row">
             <div class="form__item w30">
+                <label class="txt">TM - Год рождения</label>
+                <input value="{{ old('birth_year_tm') }}" type="text" placeholder="" class="inputTxt" name="birth_year_tm">
+                @error('birth_year_tm')
+                    <p class="err">{{ $message }}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">RU - Год рождения</label>
+                <input value="{{ old('birth_year_ru') }}" type="text" placeholder="" class="inputTxt" name="birth_year_ru">
+                @error('birth_year_ru')
+                    <p class="err">{{ $message }}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">EN - Год рождения</label>
+                <input value="{{ old('birth_year_en') }}" type="text" placeholder="" class="inputTxt" name="birth_year_en">
+                @error('birth_year_en')
+                    <p class="err">{{ $message }}</p>
+                @enderror
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form__item w30">
                 <label class="txt">Email</label>
                 <input value="{{ old('email') }}" type="email" placeholder="" class="inputTxt" name="email">
                 @error('email')
