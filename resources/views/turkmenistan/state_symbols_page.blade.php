@@ -70,12 +70,12 @@
                 </div>
 
                 <div class="right_column flex_column">
-                    <a href="#">@lang('app.tkm.president')</a>
+                    {{-- <a href="#">@lang('app.tkm.president')</a> --}}
                     <a href="{{ route('tkm_history_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.history')</a>
                     <a href="{{ route('tkm_area_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.area')</a>
                     <a href="{{ route('tkm_population_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.population')</a>
                     <a href="{{ route('tkm_state_symbols_page',['lang'=>app()->getLocale()]) }}" class="active">@lang('app.tkm.state_symbols')</a>
-                    <a href="#">@lang('app.tkm.constitution',['lang'=>app()->getLocale()])</a>
+                    {{-- <a href="#">@lang('app.tkm.constitution',['lang'=>app()->getLocale()])</a> --}}
                     <a href="{{ route('tkm_state_holidays_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.state_holidays')</a>
                 </div>
             </div>
