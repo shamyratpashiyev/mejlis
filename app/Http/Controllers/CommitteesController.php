@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\CommitteesStore;
-use App\Models\Committee;
 use App\Models\Deputy;
+use App\Models\Committee;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use App\Http\Requests\CommitteesStore;
 
 class CommitteesController extends Controller
 {
@@ -37,8 +38,9 @@ class CommitteesController extends Controller
         $committee->name_ru = $request->name_ru;
         $committee->name_en = $request->name_en;
         $committee->committee_head_id = $request->committee_head_id;
-
         $committee->save();
+
+        $committee->deputies()->sync($request->committee_members_id);
 
         return redirect()->back();
     }
@@ -73,6 +75,7 @@ class CommitteesController extends Controller
         $selected_committee->committee_head_id = $request->committee_head_id;
 
         $selected_committee->save();
+        $selected_committee->deputies()->sync($request->committee_members_id);
 
         return redirect()->back();
     }
