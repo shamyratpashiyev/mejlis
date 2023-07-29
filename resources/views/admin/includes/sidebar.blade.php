@@ -129,7 +129,7 @@
         <span>Избирательные Округи</span>
     </a>
 
-    <a href="#" class="menu__link">
+    <a href="{{ route('settings') }}" class="menu__link @if(Route::currentRouteNamed('settings')) active @endif">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">
             <img class="img2" src="{{ asset('admins/img/ico/setting.svg') }}">

@@ -10,4 +10,5 @@ class Lang extends Model
     use HasFactory;
     
     protected $fillable = ['name','is_active'];
+    public $timestamps = false;
 }
