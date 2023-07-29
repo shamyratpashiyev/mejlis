@@ -16,6 +16,9 @@
             .right_side{
                 row-gap: 35px;
                 color: var(--text_black_default);
+                width: -webkit-fill-available;
+                width: -moz-available;
+                width: -ms-available;
 
                 .text_block{
                     background-color: var(--container_background_blue);

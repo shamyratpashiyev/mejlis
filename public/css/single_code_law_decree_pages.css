@@ -10,7 +10,10 @@
       column-gap: 50px; }
       .single_code_law_decree_pages .inner_wrapper .page_content_block .right_side {
         row-gap: 35px;
-        color: var(--text_black_default); }
+        color: var(--text_black_default);
+        width: -webkit-fill-available;
+        width: -moz-available;
+        width: -ms-available; }
         .single_code_law_decree_pages .inner_wrapper .page_content_block .right_side .text_block {
           background-color: var(--container_background_blue);
           color: var(--text_black_default);

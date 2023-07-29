@@ -9,7 +9,7 @@
                     // ['name'=>'Законопроекты на обсуждение', 'url' => '#'],
                     ['name' => __('app.codes_page.title'),'url' => route('codes_page',['lang' => app()->getLocale()])], 
                     ['name' => __('app.laws_page.title'), 'url' => route('laws_page',['lang' => app()->getLocale()])],
-                    ['name' => __('app.mejlis_decrees_page.title'), 'url' => route('mejlis_decrees_page',['lang' => app()->getLocale()])],
+                    ['name' => __('app.mejlis_decrees_page.title'),'is_active'=>'active', 'url' => route('mejlis_decrees_page',['lang' => app()->getLocale()])],
                     ['name' => __('app.constitutional_law_page.title'), 'url' => route('mejlis_decrees_page',['lang' => app()->getLocale()])],
     ];
 
