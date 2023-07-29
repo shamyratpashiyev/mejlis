@@ -13,6 +13,6 @@ class MejlisActivitySeeder extends Seeder
      */
     public function run(): void
     {
-        MejlisActivity::factory(20)->create();
+        MejlisActivity::factory(100)->create();
     }
 }

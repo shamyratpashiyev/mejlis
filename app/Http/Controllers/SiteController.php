@@ -259,8 +259,18 @@ class SiteController extends Controller
         return view('single_article_page', $this->data);
     }
     
-    public function mejlis_activities(){
-
+    public function mejlis_activities($page_num=1){
+        $activitiess_all = MejlisActivity::orderBy('created_at', 'DESC')->get(['id', 'title_' . request()->query('lang'), 'description_' . request()->query('lang'), 'event_date']);
+        $items_per_page = 9;
+        $pages_total = ceil($activitiess_all->count() / $items_per_page);
+        $this->current_page = $page_num;
+        $this->activities_current_page = $activitiess_all->slice(($items_per_page * $page_num) - $items_per_page , $items_per_page);
+        $this->pagination_array = $this->paginate($page_num, $pages_total);
+        $this->prev_page = $page_num > 1 ? $page_num - 1 : 1;
+        $this->next_page = $page_num < $pages_total ? $page_num + 1 : $page_num;
+        if($page_num > $pages_total){
+            return abort(404);
+        }
         return view('mejlis_activities_page', $this->data);
     }
 
