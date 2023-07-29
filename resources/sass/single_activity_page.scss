@@ -20,6 +20,9 @@
                 padding: 10px 10px 15px 10px;
                 background-color: var(--container_background_blue);
                 row-gap: 25px;
+                width: -webkit-fill-available;
+                width: -moz-available;
+                width: -ms-available;
 
                 .date_row{
                     width: 100%;

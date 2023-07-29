@@ -9,7 +9,7 @@
                     ['name'=>__('app.news_page.title'), 'url' => route('news_page',['lang' => app()->getLocale()])],
                     ['name'=>__('app.articles_page.title'),'url' => route('articles_page',['lang' => app()->getLocale()])], 
                     ['name'=>__('app.mejlis_activities_page.title'), 'url' => route('mejlis_activities_page',['lang' => app()->getLocale()])],
-                    ['name'=>__('app.gallery_page.title'), 'url' => route('gallery_page',['lang' => app()->getLocale()])],
+                    // ['name'=>__('app.gallery_page.title'), 'url' => route('gallery_page',['lang' => app()->getLocale()])],
     ];
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],

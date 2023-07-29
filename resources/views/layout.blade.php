@@ -210,7 +210,7 @@
                     </div>
                 </div>
 
-                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['news_page','articles_page', 'mejlis_activities_page', 'gallery_page'])) active @endif">
+                <div class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed(['news_page','single_news_page','articles_page','single_article_page', 'mejlis_activities_page','single_activity_page', 'gallery_page'])) active @endif">
                     <span>@lang('app.layout.headlines')</span>
 
                     <div class="dropdown_menu flex_column">

@@ -28,7 +28,7 @@ class ArticleStore extends FormRequest
             'description_tm' => 'required',
             'description_ru' => 'required',
             'description_en' => 'required',
-            'event_date' => 'required',
+            'published_date' => 'required',
         ];
     }
 }
