@@ -34,14 +34,14 @@ return [
         'gallery_page' => 'Галерея',
         'tkm_page' => 'Туркменистан',
         'copyright_text' => 'Все права защищены',
-        'footer_text' => "&emsp;&emsp;Türkmenistanyň Mejlisi (Parlamenti) kanun çykaryjy häkimiýeti amala aşyrýan wekilçilikli edaradyr.
+        'footer_text' => "&emsp;&emsp;Меджлис (Парламент) Туркменистана является представительным органом, осуществляющим законодательную власть.
                         <br/><br/>
-                        &emsp;&emsp;Türkmenistanyň Mejlisiniň alyp barýan  köp taraplaýyn işinde esasy wezipesi halklaryň arasynda dostlukly gatnaşyklary 
-                        ösdürmäge ýardam bermek bolan halkara we parlamentara işiniň meseleleri möhüm orun tutýar. Häzirki wagtda 
-                        Türkmenistanyň Mejlisinde dünýäniň onlarça döwletiniň parlamentleri bilen parlamentara dostluk toparlary hereket edýär. 
-                        Türkmenistanyň Mejlisi parlamentara assambleýalaryň birnäçesiniň işine işjeň gatnaşýar. Türkmenistanyň Mejlisi dünýäniň 
-                        abraýly parlamentara guramalary bolan ÝHHG-nyň Parlament Assambleýasynyň we Parlamentara Bileleşiginiň agzasydyr.",
-        'footer_address_value' => 'Aşgabat ş., Garaşsyzlyk şaýoly, 110'
+                        &emsp;&emsp;В многогранной работе Меджлиса Туркменистана, основной задачей которого является содействие развитию дружественных 
+                        отношений между народами, важную роль играют вопросы международной и парламентской работы. В настоящее время в Меджлисе 
+                        действуют депутатские группы дружбы с парламентами десятков стран.Меджлис Туркменистана активно участвует в работе ряда 
+                        парламентских собраний. Меджлис Туркменистана является членом Парламентской ассамблеи и Межпарламентского союза ОБСЕ, 
+                        которые являются авторитетными парламентскими организациями.",
+        'footer_address_value' => 'г. Ашгабат, проспект Независимости, 110'
     ],
 
     'main' => [
@@ -68,35 +68,35 @@ return [
     'mejlis_history_page' => [
         'title' => 'История Меджлиса',
         'text_title' => 'Информация о Меджлисе Туркменистана',
-        'text' => "<p>&emsp;&emsp;&ensp;Türkmenistanda parlamentiň we döwlet-institusional gurluşyň uzak bolmadyk taryhyna ser salanyňda, ýurdumyzda parlamentarizmiň yzygiderli ösýändigine göz ýetirmek bolýar.</p>
+        'text' => "<p>&emsp;&emsp;&ensp;Если посмотреть на новейшую историю парламента и государственно-институционального устройства в Туркменистане, то можно убедиться, что в стране постоянно растет парламентаризм.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Milli parlamentiň kemala gelmegi Türkmenistanyň 1991-nji ýylda döwlet Garaşsyzlygyna eýe bolan döwründen başlandy. Bu Milli parlamentiň däpleriniň peýda bolýan, dünýä parlamentarizminiň tejribesiniň öwrenilýän, bir hukuk giňişliginden başga bir hukuk giňişligine geçilýän döwür boldy.</p>
+                    <p>&emsp;&emsp;&ensp;Формирование национального парламента началось в 1991 году, когда Туркменистан обрел независимость. Это был период зарождения традиций национального парламента, изучения опыта мирового парламентаризма, перехода из одного правового пространства в другое.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmenistan döwlet Garaşsyzlygyna eýe bolmazyndan ozal respublikada kanun çykaryjylyk işi Türkmenistanyň Ýokary Soweti tarapyndan amala aşyrylýardy. Ýokary Sowetiň soňky çagyrylyşyny geçiş döwri hökmünde häsiýetlendirmek bolar. Onuň ygtyýarlyklary 1995-nji ýylyň 1-nji ýanwaryna, ýagny Mejlisiň birinji çagyrylyşynyň saýlawlaryna çenli uzaldyldy.</p>
+                    <p>&emsp;&emsp;&ensp;До обретения Туркменистаном независимости законотворческая работа в республике осуществлялась Верховным Советом Туркменистана. Последний созыв Верховного Совета можно охарактеризовать как переходный период. Его мандат был продлен до 1 января 1995 года, то есть до выборов в Меджлис первого созыва.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmenistanyň Ýokary Sowetiniň nobatdan daşary onunjy sessiýasynda (1991-nji ýylyň 27-nji oktýabrynda) «Türkmenistanyň Garaşsyzlygy we döwlet gurluşynyň esaslary hakynda» Konstitusion kanun kabul edildi. Şol kanunda emele gelen täze şertleri nazara almak bilen, döwlet edaralarynyň ähli ulgamyny, hereket edýän kanunçylygy özgerdip gurmagyň konsepsiýasy beýan edildi.</p>
+                    <p>&emsp;&emsp;&ensp;На десятой внеочередной сессии Верховного Совета Туркменистана (27 октября 1991 года) был принят Конституционный закон «О независимости Туркменистана и основах государственного устройства». С учетом новых условий, созданных этим законом, была описана концепция реформирования всей системы государственных учреждений и действующего законодательства.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmenistanyň 1992-nji ýylyň 18-nji maýynda kabul edilen täze Konstitusiýasy syýasy ulgamy özgertmäge kuwwatly itergi beren möhüm waka boldy. Türkmenistanyň Konstitusiýasynyň kabul edilmegi türkmen halkynyň milli ruhunyň galkynan güni hökmünde taryha girdi. Iňňän uly syýasy ähmiýeti bolan bu resminama döwlet baradaky tejribäni we giň halk köpçüliginiň pikirleri bilen baýlaşan hil taýdan täze maksatlary özünde jemledi.</p>
+                    <p>&emsp;&emsp;&ensp;Принятие 18 мая 1992 года новой Конституции Туркменистана явилось важным событием, придавшим мощный импульс реформированию политической системы. Принятие Конституции Туркменистана вошло в историю как день возрождения национального духа туркменского народа. Этот документ, который имел большое политическое значение, содержал качественно новые цели, обогащенные государственным опытом и общественным мнением.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Garaşsyzlygyň ilkinji ýyllarynda döwletimiziň hukuk binýady ýokdy. Şoňa görä-de, onuň işiniň esasy maksady kanun çykaryjylyk işi boldy. Türkmenistanyň Mejlisi ýurduň ýokary kanun çykaryjy edarasy hökmünde döwlet özygtyýarlylygyny, raýat ylalaşygyny, durmuş taýdan durnuklylygy berkitmäge, jemgyýetde demokratik, durmuş-ykdysady özgertmeleri çuňlaşdyrmaga ýardam edýän kanunlary işläp taýýarlamaga we kabul etmäge uly üns berdi.</p>
+                    <p>&emsp;&emsp;&ensp;В первые годы независимости государство не имело правовой основы. Поэтому, основным направлением его работы была законотворческая работа. Меджлис Туркменистана, как высший законодательный орган страны, уделял большое внимание разработке и принятию законов, способствующих укреплению государственного суверенитета, гражданского согласия, социальной стабильности, углублению демократических, социально-экономических преобразований в обществе.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Şonuň netijesinde milli Parlament Garaşsyz Türkmenistanyň kanunçylyk-hukuk binýadyny ep-esli giňeltdi, ýurdumyzy ösdürmegiň esasy ugurlaryny kesgitledi, halkara resminamalarynyň we onuň ýöriteleşdirilen edaralarynyň Konwensiýalarynyň onlarçasyny tassyklady.</p>
+                    <p>&emsp;&emsp;&ensp;В результате Национальный парламент значительно расширил законодательную базу независимого Туркменистана, определил основные направления развития страны, утвердил десятки международных документов и конвенций его профильных органов.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmenistanyň Konstitusiýasy Garaşsyz döwletiň milli aýratynlygyna we özboluşlylygyna has doly laýyk gelýän täze görnüşdäki häkimiýet hem-de dolandyryş edaralarynyň we olaryň öňünde durýan düýpli uly wezipeleri çözmäge ukyply ulgamyny berkitdi. Ýurdy dolandyrmagyň prezident görnüşi ýola goýuldy. Täze Ministrler Kabineti, ýerlerde bolsa häkimlikler döredildi. Ýerli öz-özüňi dolandyryşyň täzelenen edaralary bolan Geňeşler hereket edip başlady. Dünýä tejribesinde henize çenli bolmadyk hem-de Konstitusiýa arkaly tassyklanylan halk häkimiýetiniň ýokary wekilçilikli edarasy bolan Halk Maslahaty ýurdy dolandyrmagyň hakyky demokratik instituty boldy. Soňra döwlet dolandyryşyny kämilleşdirmegiň ýolunda Halk Maslahatynyň hukuk ýagdaýy birnäçe gezek özgerdildi.</p>
+                    <p>&emsp;&emsp;&ensp;Конституцией Туркменистана установлена ​​система институтов власти и управления нового типа, наиболее полно отвечающая национальным особенностям и самобытности независимого государства, способная решать стоящие перед ними важнейшие задачи. Была установлена ​​президентская форма правления. Были созданы новый Кабинет министров и органы местного самоуправления. Начали функционировать Советы, обновленные институты местного самоуправления. Народный Совет, еще не существовавший в мировом опыте высокопредставительный орган народной власти, утвержденный Конституцией, стал подлинно демократическим институтом управления страной. В дальнейшем правовой статус Народного Совета несколько раз реформировался на пути совершенствования государственного управления.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Ýurdumyzyň parlamentiniň hukuk ýagdaýy düýpli üýtgedildi. Ol Mejlis diýlip atlandyryldy we oňa Konstitusiýany we kanunlary kabul etmek hem-de üýtgetmek, Prezidentiň, Mejlisiň, halk wekilleriniň saýlawlaryny bellemek, Ministrler Kabinetiniň maksatnamasyny makullamak, Türkmenistanyň Döwlet býujetini we onuň ýerine ýetirilişi baradaky hasabaty tassyklamak we başga-da döwlet ähmiýetli ençeme meseleler boýunça aýratyn ygtyýarlyklar berildi.</p>
+                    <p>&emsp;&emsp;&ensp;Принципиально изменен правовой статус парламента страны. Он назывался Меджлис и отвечал за принятие и изменение Конституции и законов, проведение выборов Президента, Меджлиса и народных представителей, утверждение программы Кабинета Министров, утверждение Государственного бюджета Туркменистана и отчета о его исполнении и многие другие вопросы, имеющие особое государственное значение.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Konstitusiýa laýyklykda, Mejlis (Parlament) Türkmenistanyň hemişelik hereket edýän kanun çykaryjy edarasyna öwrüldi. Ol saýlawçylarynyň sany, takmynan deňeçer bolan okruglar boýunça saýlanylan deputatlaryň 50-sinden ybaratdy.</p>
+                    <p>&emsp;&emsp;&ensp;Согласно Конституции постоянно действующим законодательным органом Туркменистана стал Меджлис (Парламент). В число этих выборщиков входило 50 депутатов, избранных примерно в равных округах.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmenistanda taryhy nukdaýnazardan gysga döwrüň içinde jemgyýetiň we döwletiň durmuşynyň ähli çygyrlaryndaky gatnaşyklary düzgünleşdirýän kanunlar kabul edildi. Şonuň ýaly-da dünýäniň kanunçylyk işinde bar bolan, esasy hukuk düşünjelerini we pudaklaryny özünde jemleýän pugta kanunçylyk binýady döredildi. Dünýäniň syýasy, ykdysady we hukuk giňişligine biziň ýurdumyzyň işjeň goşulyşmagy türkmen hukuk ylmynda bank, salgyt, gümrük, ekologiýa we kanunçylygyň beýleki görnüşleri ýaly täze ugurlaryň ýüze çykmagyny şertlendirdi. Şol bir wagtda halkara işlerinde Türkmenistanyň işjeň ugry, diplomatik işde onuň deňi-taýy bolmadyk göreldesi halkara hukuk meselelerine garamakda we hukuk taýdan düşünmekde, şeýle hem halkara hukuk kadalarynyň milli kanunçylyga ornaşdyrylmagynda düýpgöter täze çemeleşmeleri kemala getirmäge mümkinçilik berdi.</p>
+                    <p>&emsp;&emsp;&ensp;За исторически короткий срок в Туркменистане были приняты законы, регулирующие отношения во всех сферах жизни общества и государства. Кроме того, была создана мощная законодательная база, включающая в себя основные правовые концепции и направления мировой юридической работы. Активное вовлечение нашей страны в политическое, экономическое и правовое пространство мира обусловило появление в туркменской юридической науке новых направлений, таких как банковское, налоговое, таможенное, экологическое и других видов законодательства. В то же время активное направление Туркменистана в международных делах, его несравнимый пример в дипломатической работе позволили сформировать совершенно новые подходы в рассмотрении вопросов международного права и правопонимания, а также во внедрении международно-правовых норм в национальное законодательство.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Mejlisiň işi Türkmenistanyň Konstitusiýasyna we «Türkmenistanyň Mejlisi hakynda» Kanuna laýyklykda amala aşyrylyp başlandy. Ol meseleleriň erkin ara alnyp maslahatlaşylmagyna we bilelikde çözülmegine, Mejlisiň döredýän düzümleriniň hem-de saýlanylan wezipeli adamlarynyň jogapkärçiligine, hasabatlylygyna, aýanlyga, jemgyýetçilik pikiriniň hemişe hasaba alynmagyna esaslanýar.</p>
+                    <p>&emsp;&emsp;&ensp;Работа Меджлиса стала осуществляться в соответствии с Конституцией Туркменистана и Законом «О Меджлисе Туркменистана». Он основан на свободном обсуждении и совместном решении вопросов, ответственности, подотчетности, прозрачности и учете общественного мнения членов Парламента и выборных должностных лиц.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmen parlamentiniň birinji çagyrylyşynyň düzümine 50 deputat saýlanyldy. Deputatlaryň 9-sy (18 göterimi) aýal-gyzlardy.</p>
+                    <p>&emsp;&emsp;&ensp;В первый созыв туркменского парламента избраны 50 депутатов. Девять депутатов (18 процентов) были женщинами.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Mejlisiň birinji çagyrylyşynda bäş sany komitet, ýagny Jemlenen kanunçylyk baradaky, Hukuk meseleleri baradaky, Ylym, bilim, we medeniýet baradaky, Ykdysadyýet we durmuş syýasaty baradaky, Halkara we parlamentara aragatnaşyklar baradaky komitetler hereket etdi.</p>
+                    <p>&emsp;&emsp;&ensp;В парламенте первого созыва действовали пять комитетов: комитеты по сводному законодательству, комитеты по правовым вопросам, комитеты по науке, образованию и культуре, комитеты по экономике и жизненной политике, комитеты по международным и парламентским связям.</p>
                     <br/>
-                    <p>&emsp;&emsp;&ensp;Parlamentiň ikinji çagyrylyşynyň deputatlarynyň saýlawlary 1999-njy ýylyň dekabrynda, üçünji çagyrylyşynyň saýlawlary 2004-nji ýylyň dekabrynda, dördünji çagyrylyşynyň saýlawlary 2008-nji ýylyň dekabrynda, bäşinji çagyrylyşynyň saýlawlary 2013-nji ýylyň dekabrynda, altynjy çagyrylyşynyň saýlawlary möhletinden öň, 2018-nji ýylyň mart aýynda geçirildi. Mejlisiň dördünji çagyrylyşyndan başlap deputatlaryň sany 125 adamdan ybarat bolup, olaryň ygtyýarlyk möhleti 5 ýyla deň boldy. Parlamentde häzirki wagtda ýurdumyzda hereket edýän üç sany syýasy partiýa ‒ Türkmenistanyň Demokratik partiýasy, Türkmenistanyň Agrar partiýasy we Türkmenistanyň Senagatçylar hem-de telekeçiler partiýasy şeýle hem raýatlaryň toparlary tarapyndan hödürlenilen we saýlanylan deputatlar wekilçilik edýärler.</p>",
+                    <p>&emsp;&emsp;&ensp;Выборы депутатов Парламента второго созыва состоялись в декабре 1999 г., выборы третьего созыва состоялись в декабре 2004 г., выборы четвертого созыва состоялись в декабре 2008 г., выборы пятого созыва состоялись в декабрь 2013 г., досрочные выборы шестого созыва состоялись в марте 2018 г . С четвертого созыва парламента количество депутатов насчитывало 125 человек, а срок их полномочий равнялся 5 годам. В парламенте представлены три действующие в стране политические партии – Демократическая партия Туркменистана, Аграрная партия Туркменистана и Партия промышленников и предпринимателей Туркменистана, а также депутаты, выдвигаемые и избираемые группами граждан.</p>",
     ],
 
     'convocation_page' => [
@@ -145,42 +145,42 @@ return [
     ],
 
     'constitutional_law_page' => [
-        'title' => 'Konstitusion kanuny',
-        'text_title' => 'TÜRKMENISTANYŇ KONSTITUSION KANUNY',
-        'text_subtitle' => 'Türkmenistanyň Konstitusiýasyny rejelenen görnüşde tassyklamak hakynda',
-        'reference_title' => '(Türkmenistanyň Mejlisiniň Maglumatlary, 2016 ý., № 3, 131-nji madda)',
+        'title' => 'Конституционный закон',
+        'text_title' => 'КОНСТИТУЦИОННЫЙ ЗАКОН ТУРКМЕНИСТАНА',
+        'text_subtitle' => 'Об утверждении Конституции Туркменистана в измененном порядке',
+        'reference_title' => '(Информация Меджлиса Туркменистана, 2016 г., № 3, статья 131)',
         'text' => " <p>
-                        &emsp;&emsp;Berkarar döwletimiziň bagtyýarlyk döwründe Türkmenistanyň Prezidentiniň ýurdumyzyň her bir raýatynyň, ähli halkynyň jana-jan bähbitlerine laýyk gelýän parasatly syýasatyny durmuşa geçirmek ugrunda çekilýän zähmet eziz Diýarymyzy ajaýyp zähmet ýeňişlerine, belent sepgitlere ýetirdi. <br><br>
+                        &emsp;&emsp;В период расцвета нашего суверенного государства, упорная работа Президента Туркменистана по реализации разумной политики, отвечающей жизненным интересам каждого гражданина страны, привела нашу Родину к великим трудовым победам и свершениям. <br><br>
                     </p>
                     <p>
-                        &emsp;&emsp;Mähriban Watanymyzyň ykdysadyýetinde häzirkizaman bazar gatnaşyklaryna geçilmeginiň we raýat jemgyýetiniň gymmatlyklarynyň durmuşa ornaşdyrylmagynyň, Türkmenistany ykdysady, syýasy we medeni-durmuş taýdan ösdürmek boýunça gazanylýan üstünlikleriň gözbaşynda ýurdumyzda alnyp barylýan syýasatyň, amala aşyrylýan belent işleriň durýanlygyny duýmak buýsançlydyr.<br><br>
+                        &emsp;&emsp;Мы можем с гордостью ощущать, что политика осуществляемый в нашей стране является основой перехода экономики нашей любимой Родины к современным рыночным отношениям и внедрение ценностей гражданского общества, достижений в экономическом, политическом и культурном развитии Туркменистана.<br><br>
                     </p>
                     <p>
-                        &emsp;&emsp;Watana, halka hyzmat etmegiň belent nusgasyny görkezip, eziz Diýarymyzyň aýdyň geljegi we halkymyzyň eşretli durmuşy ugrunda alnyp barylýan, her bir raýatyň asuda, abadan we bagtyýar durmuşda ýaşamagyny üpjün edýän parasatly syýasaty durmuşa geçirmäge goşant goşmak, Watan üçin, halk üçin zähmet çekmegiň we döretmegiň iň gowy nusgalygyny gündelik işiň bilen subut etmek mukaddes işdir.<br><br>
+                        &emsp;&emsp;Внести вклад в осуществление мудрой политики который обеспечивает светлое будущее нашей любимой Родины и благополучную жизнь нашего народа, мирную и счастливую жизнь каждого гражданина показывая высокий пример служения Родине и народу, доказывать каждодневным трудом что это является лучшим примером труда за Родину и народ — святое дело.<br><br>
                     </p>
                     <p>
-                        &emsp;&emsp;Türkmenistanyň Prezidentiniň ýurdumyzyň ösüşiniň täze tapgyrynda yglan eden Garaşsyz, hemişelik Bitarap Watanymyzyň jemgyýetçilik we döwlet-syýasy gurluşyny kämilleşdirmek, bazar ykdysadyýetine doly geçmek baradaky belent özgertmeleriniň konstitusion hukuk esaslaryny üpjün etmek, ýurdumyzda amala aşyrylýan durmuş, ykdysady özgertmeleriniň depgininiň ýokarlanmagyna we geriminiň giňelmegine ýardam etmek, Türkmenistanyň döwlet we jemgyýetçilik durmuşynda demokratiýany mundan beýläk hem ösdürmek, döwlet häkimiýet edaralarynyň işini has-da kämilleşdirmek maksady bilen, Türkmenistanyň Mejlisi tarapyndan Türkmenistanyň Konstitusiýasyna üýtgetmeler we goşmaçalar girizip, ony rejelenen görnüşde tassyklamak boýunça Türkmenistanyň döwlet häkimiýet edaralaryndan, jemgyýetçilik birleşiklerinden, raýatlardan gelip gowşan teklipleriň esasynda umumylaşdyrylyp taýýarlanan we Türkmenistanyň Konstitusiýasyny kämilleşdirmek boýunça Kontitusion toparynda ara alnyp maslahatlaşylyp, Türkmenistanyň Ýaşulularynyň maslahatynyň garamagyna hödürlenen teklipleri nazara alyp, Türkmenistanyň Konstitusiýasynyň 63-nji maddasyna laýyklykda:<br><br>
+                        &emsp;&emsp;Согласно статье 63 Конституции Туркменистана, принимая во внимание рекомендации Меджлиса Туркменистана представленные на рассмотрение Совета старейшин Туркменистана о внесении изменений и дополнений в Конституцию Туркменистана и ее планируемое утверждение на основе предложений, поступивших от органов государственной власти, общественных объединений и граждан Туркменистана и обсужденных в Конституционной группе по совершенствованию Конституции Туркменистана с целью совершенствования общественного и государственно-политического устройства провозглашенной Президентом Туркменистана независимой, постоянно нейтральной Родины на новом этапе развития страны, обеспечения конституционно-правовой основы для великих реформ по полному переходу к рыночной экономике, способствования увеличению темпов и расширению социально-экономических реформ, проводимых в стране, дальнейшего развития демократии в государственной и общественной жизни Туркменистана и дальнейшего совершенствования работы органов государственной власти.<br><br>
                     </p>
                     <p>
-                        &emsp;&emsp; <strong>1-nji madda.</strong> Türkmenistanyň Konstitusiýasyny kämilleşdirmek boýunça Konstitusion toparynyň Türkmenistanyň Konstitusiýasyna üýtgetmeler we goşmaçalar girizip, ony rejelenen görnüşde tassyklamak hakynda tekliplerini doly makullamaly. <br><br>
-                        &emsp;&emsp;<strong>2-nji madda.</strong> Türkmenistanyň Konstitusiýasyna üýtgetmeler we goşmaçalar girizip, ony rejelenen görnüşde tassyklamaly (goşulýar).<br><br>
-                        &emsp;&emsp;<strong>3-nji madda.</strong> Şu Konstitusion kanun kabul edilen pursadyndan güýje girýär.<br><br>
-                        &emsp;&emsp; <strong>Türkmenistanyň Prezidenti</strong><br><br>
-                        &emsp;&emsp; <strong>Gurbanguly Berdimuhamedow</strong><br><br>
-                        &emsp;&emsp;Aşgabat şäheri.<br><br>
-                        &emsp;&emsp;2016-njy ýylyň 14-nji sentýabry.<br><br>
+                        &emsp;&emsp;<strong>Статья 1.</strong> Рекомендации Конституционной комиссии по совершенствованию Конституции Туркменистана о внесении изменений и дополнений в Конституцию Туркменистана и утверждении ее в намеченном виде следует полностью одобрить.<br><br>
+                        &emsp;&emsp;<strong>Статья 2.</strong> Следует внести изменения и дополнения в Конституцию Туркменистана и утвердить (вносятся) в данном виде.<br><br>
+                        &emsp;&emsp;<strong>Статья 3.</strong> Этот Конституционный закон вступает в силу с момента ее принятия.<br><br>
+                        &emsp;&emsp; <strong>Президент Туркменистана</strong><br><br>
+                        &emsp;&emsp; <strong>Гурбангулы Бердымухамедов</strong><br><br>
+                        &emsp;&emsp;город Ашгабат.<br><br>
+                        &emsp;&emsp;14 сентября 2016 года.<br><br>
                         &emsp;&emsp;№ 448-V.<br><br>
-                        &emsp;&emsp;TÜRKMENISTANYŇ KONSTITUSIÝASY<br><br>
-                        &emsp;&emsp;(rejelenen görnüşi)<br><br>
-                        &emsp;&emsp;(09.10.2017 ý. № 617-V, 25.09.2020 ý.№ 297-VI Türkmenistanyň Konstitusionkanunlary esasynda girizilen goşmaçalar we üýtgetmeler bilen)<br><br>
-                        &emsp;&emsp;Biz, Türkmenistanyň halky,<br><br>
-                        &emsp;&emsp;öz ykbalymyzy kesgitlemäge bolan mizemez hukugymyza esaslanyp,<br><br>
-                        &emsp;&emsp;Watanymyzyň häzirki we geljekki ykbaly üçin jogapkärligimizden ugur alyp,<br><br>
-                        &emsp;&emsp;ata-babalarymyzyň agzybir, parahat we oňşukly ýaşamagy ündän wesýetlerine wepalylygymyzy we umumadamzat gymmatlyklaryna ygrarlylygymyzy beýan edip,<br><br>
-                        &emsp;&emsp;milli gymmatlyklarymyzy we bähbitlerimizi gorap saklamagy, Türkmenistanyň garaşsyzlygyny, özygtyýarlylygyny, dünýä bileleşigi tarapyndan ykrar edilen hemişelik bitaraplyk hukuk ýagdaýyny pugtalandyrmagy maksat edinip,<br><br>
-                        &emsp;&emsp;adamyň we raýatyň hukuklaryny we azatlyklaryny kepillendirip,<br><br>
-                        &emsp;&emsp;jemgyýetde asudalygy we agzybirligi üpjün etmäge, halk häkimiýetiniň hem-de demokratik, hukuk, dünýewi döwletiň esaslaryny berkarar etmäge çalşyp,<br><br>
-                        &emsp;&emsp;Türkmenistanyň Esasy Kanunyny – şu Konstitusiýany kabul edýäris.<br><br>
+                        &emsp;&emsp;КОНСТИТУЦИЯ ТУРКМЕНИСТАНА<br><br>
+                        &emsp;&emsp;(Отредактированная версия)<br><br>
+                        &emsp;&emsp;(09.10.2017 г. № 617-V, 25.09.2020 г.№ 297-VI С дополнениями и изменениями, внесенными на основании Конституционных законов Туркменистана<br><br>
+                        &emsp;&emsp;Мы, народ Туркменистана,<br><br>
+                        &emsp;&emsp;на основе нашего неотъемлемого права на самоопределение,<br><br>
+                        &emsp;&emsp;исходя из нашей ответственности за текущую и грядущую судьбу нашей Родины,<br><br>
+                        &emsp;&emsp;выражая нашу верность воле наших предков жить в единстве, мире и согласии и нашу приверженность ценностям человечества,<br><br>
+                        &emsp;&emsp;стремясь сохранить наши национальные ценности и интересы, укрепить независимость, суверенитет Туркменистана, правовой статус постоянного нейтралитета, признанный мировым сообществом,<br><br>
+                        &emsp;&emsp;гарантируя права и свободы человека и гражданина,<br><br>
+                        &emsp;&emsp;стремясь обеспечивать мир и единство в обществе, укреплять основы народной власти и демократического, правового, светского государства,<br><br>
+                        &emsp;&emsp;мы принимаем Основной Закон Туркменистана – эту Конституцию.<br><br>
                     </p>",
 
     ],
@@ -226,150 +226,154 @@ return [
         'state_holidays' => 'Государственные праздники и дни траура',
 
         'history_page' => [
-            'title' => 'Türkmenistanyň Taryhy',
-            'text_title' => 'Taryhy',
+            'title' => 'История Туркменистана',
+            'text_title' => 'История',
             'text' => " <p>
-                            &emsp;&emsp;Türkmenistan 1991-nji ýylyň 27-nji oktýabrynda Garaşsyz döwlet boldy we şondan bäri bu sene ýurtda Garaşsyzlyk güni hökmünde bellenilýär. 1995-nji ýylyň 12-nji dekabrynda 185 döwletiň biragyzdan goldamagy bilen, Birleşen Milletler Guramasynyň Baş Assambleýasynyň Rezolýusiýasy bilen hemişelik Bitarap döwlet diýlip ykrar edildi. Häzirki wagtda Türkmenistan 142 döwlet bilen diplomatik gatnaşyklary ýola goýdy.
+                            &emsp;&emsp;уркменистан стал независимым государством 27 октября 1991 года, и с тех пор эта дата отмечается в стране как День независимости. 12 декабря 1995 года при единодушной поддержке 185 стран резолюцией Генеральной Ассамблеи ООН он был признан постоянным нейтральным государством. В настоящее время Туркменистан установил дипломатические отношения со 142 странами.
                         </p>",
         ],
 
         'area_page' => [
-            'title' => 'Türkmenistanyň Meýdany',
-            'text_title' => 'Meýdany',
+            'title' => 'Площадь Туркменистана',
+            'text_title' => 'Площадь',
             'text' => " <p>
-                            &emsp;&emsp;Türkmenistan– Merkezi Aziýanyň bäş ýurdunyň biri bolup, onuň meýdany boýunça olaryň arasynda ikinji orny eýeleýär, ýagny Türkmenistanyň tutýan meýdany 491,21 müň km2 deňdir.
+                            &emsp;&emsp;Туркменистан входит в пятерку стран Центральной Азии, и занимает среди них второе место по площади, то есть площадь Туркменистана равна 491,21 тыс. км2.
                         </p>
                         <p>
-                            &emsp;&emsp;Onuň günbatardan gündogara 1100 km. we demirgazykdan günorta 650 km. uzaýar.
+                            &emsp;&emsp;Его протяженность с запада на восток 1100 км. и 650 км с севера на юг. это становится длиннее.
                         </p>
                         <p>
-                            &emsp;&emsp;Türkmenistan demirgazykda Gazagystan Respublikasy, demirgazyk–gündogarda we gündogarda Özbegistan Respublikasy bilen, günorta-gündogarda Owganystan Yslam Respublikasy bilen, günortada Eýran Yslam Respublikasy bilen serhetleşýär. Şeýle hem günbatarda Hazar deňzi tebigy serhedi bolmak bilen Azerbaýjan Respublikasy bilen hem serhetleşýär.
+                            &emsp;&emsp;Туркменистан граничит с Республикой Казахстан на севере, Республикой Узбекистан на северо-востоке и востоке, Исламской Республикой Афганистан на юго-востоке и Исламской Республикой Иран на юге. На западе Каспийское море является естественной границей и граничит с Азербайджанской Республикой.
                         </p>",
         ],
 
         'population_page' => [
-            'title' => 'Türkmenistanyň Ilaty',
-            'text_title' => 'Ilaty',
+            'title' => 'Население Туркменистана',
+            'text_title' => 'Население',
             'text' => " <p>
-                            &emsp;&emsp;Türkmenistanyň ilaty 6,2 mln. adamdan gowrakdyr. Türkmenistan — köp milletli döwletdir. Ýurtda 100-den gowrak milletleriň we halkyýetleriň wekilleri ýaşaýarlar.
+                            &emsp;&emsp;Население Туркменистана составляет более 6,2 миллиона человек. Туркменистан – многонациональное государство. В стране проживают представители более 100 наций и народов.
                         </p>",
         ],
 
         'state_holidays_page' => [
-            'title' => 'Türkmenistanyň Döwlet baýramçylyklary we matam günleri',
-            'text_title' => 'Döwlet baýramçylyklary we matam günleri',
+            'title' => 'Государственные праздники и траурные дни Туркменистана',
+            'text_title' => 'Государственные праздники и траурные дни',
             'text' => ' <p>
-                            &emsp;&emsp; <strong>Döwletiň esasy döwlet we milli baýramçylyklary : </strong><br><br>
-                            &emsp;&emsp;Täze ýyl — 1-nji ýanwar; <br>
-                            &emsp;&emsp;Döwlet Baýdagynyň güni — 19-njy fewral; <br>
-                            &emsp;&emsp;Halkara zenanlar güni — 8-nji mart; <br>
-                            &emsp;&emsp;Milli bahar baýramy (Nowruz) — 21-22-nji mart; <br>
-                            &emsp;&emsp;Ýeňiş güni — 9-njy maý; <br>
-                            &emsp;&emsp;Konstitusiýa güni we Galkynyş, Agzybirlik we Magtymguly Pyragynyň şygryýet güni — 18-nji maý; <br>
-                            &emsp;&emsp;Türkmenistanyň Garaşsyzlyk güni — 27-28-nji oktýabr; <br>
-                            &emsp;&emsp;Türkmenistanyň milli baýramy — Bitaraplyk güni — 12-nji dekabr. <br>
+                            &emsp;&emsp; <strong>Главные государственные и национальные праздники государства: </strong><br><br>
+                            &emsp;&emsp;Новый год - 1 января; <br>
+                            &emsp;&emsp;День государственного флага - 19 февраля; <br>
+                            &emsp;&emsp;Международный женский день - 8 марта; <br>
+                            &emsp;&emsp;Национальный праздник весны (Новруз) - 21-22 марта; <br>
+                            &emsp;&emsp;День Победы - 9 мая; <br>
+                            &emsp;&emsp;День Конституции и День Возрождения, единства и поэзии Махтумкули Фраги - 18 мая; <br>
+                            &emsp;&emsp;День независимости Туркменистана - 27-28 октября; <br>
+                            &emsp;&emsp;Национальный праздник Туркменистана – День Нейтралитета – 12 декабря. <br>
                         </p>
                         <br>
                         <p style="color: var(--sky_blue); text-align:justify; font-weight: bold;">
                             &emsp;&emsp; 
-                            Her ýyl bellenilip geçilýän Gurban baýramynyň we Oraza baýramynyň seneleri Türkmenistanyň Prezidentiniň namalaryna laýyklykda kesgitlenilýär.
+                            Даты проведения ежегодных Курбан Байрам и Ораза Байрам определяются указами Президента Туркменистана.
                         </p>
                         <br>
                         <p>
-                            &emsp;&emsp; <strong> Matam günleri:</strong><br>
-                            &emsp;&emsp; Milli ýatlama güni — 6-njy oktýabr.
+                            &emsp;&emsp; <strong> Дни траура:</strong><br>
+                            &emsp;&emsp; Национальный день памяти - 6 октября.
                         </p>',
         ],
 
         'state_symbols_page' => [
-            'title' => 'Türkmenistanyň Döwlet nyşanlary',
+            'title' => 'Государственные символы Туркменистана',
 
             'flag' => [
-                'title' => 'Türkmenistanyň dowlet baýdagy',
+                'title' => 'Государственный флаг Туркменистана',
                 'text' => ' <p>
-                                &emsp;&emsp;Türkmenistanyň Döwlet baýdagy milletiň agzybirliginiň we Garaşsyzlygynyň hem-de döwlet Bitaraplygynyň nyşanydyr.
+                                &emsp;&emsp;Государственный флаг Туркменистана является символом национального единства и независимости, а также государственного нейтралитета.
                             </p>
                             <p>
-                                &emsp;&emsp;2008-nji ýylyň 29-njy iýunynda Aşgabat şäherinde Ginnesiň Bütindünýä rekordlar kitabyna girizilen dünýäde iň belent 133 metrlik flagştokda uzynlygy 52,5 we ini 35 metre, agramy bolsa 420 kilograma barabar ägirt uly Döwlet baýdagy dikeldildi.
+                                &emsp;&emsp;29 июня 2008 года в Ашхабаде на самом высоком в мире флагштоке высотой 133 метра был восстановлен огромный национальный флаг длиной 52,5 метра и шириной 35 метров и весом 420 килограммов, который был внесен в Книгу мировые рекордов Гиннесса.
                             </p>',
             ],
 
             'emblem' => [
-                'title' => 'Türkmenistanyň döwlet tugrasy',
+                'title' => 'Государственный герб Туркменистана',
                 'text' => ' <p>
-                                &emsp;&emsp;Türkmenistanyň döwlet häkimiýetiniň nyşany hökmünde türkmen halkynyň nesilbaşylary Beýik Oguzhan Türkmeniň we kuwwatly döwletleri döreden hem-de adamzadyň ösüşine düýpli täsirini ýetiren Beýik seljuklaryň gadymy medeni mirasyny özünde jemlän Türkmenistanyň Döwlet TugrasyTürkmenistanyň Döwlet häkimiýetiniň nyşanydyr.
+                                &emsp;&emsp;Являясь символом государственной власти Туркменистана, Государственный герб Туркменистана, содержащая древнее культурное наследие великих туркмен-огузов, предков туркменского народа, и Великих Сельджуков, создавших могущественные государства и оказавших значительное влияние на развития человечества, является символом государственной власти Туркменистана.
                             </p>',
             ],
 
             'anthem_desc' => [
-                'title' => 'Garaşsyz, baky bitarap Türkmenistanyň döwlet senasy',
+                'title' => 'Государственный гимн независимого, постоянно нейтрального Туркменистана',
                 'text' => ' <p>
-                                &emsp;&emsp;Türkmenistanyň Döwlet senasy garaşsyz, bitarap Türkmenistanyň döwlet nyşanydyr we ol türkmen milletiniň agzybirligini hem-de jebisligini janlandyryp görkezýär.
+                                &emsp;&emsp;Государственный гимн Туркменистана является государственным символом независимого, нейтрального Туркменистана, символизирует единство и целостность туркменского народа.
                             </p>
                             <p>
-                                &emsp;&emsp;Türkmenistanyň Döwlet senasynyň şu Kanuny bozmak bilen ýerine ýetirilmegi ýa-da peýdalanylmagy, şeýle hem Türkmenistanyň Döwlet senasynyň hormatynyň gaçyrylmagy Türkmenistanyň kanunçylygyna laýyklykda jogapkärçilige eltýär.
+                                &emsp;&emsp;Исполнение либо использование Государственного гимна Туркменистана в нарушение этого Закона, а также глумление над Государственным гимном Туркменистана влекут за собой ответственность в соответствии с законодательством Туркменистана.
                             </p>',
             ],
 
             'anthem' => [
-                'title' => 'Türkmenistanyň döwlet senasy',
+                'title' => 'Государственный гимн Туркменистана',
                 'text' => ' <p>
-                                Janym gurban saňa, erkana ýurdum, <br>
-                                Mert pederleň ruhy bardyr köňülde.<br>
-                                Bitarap, garaşsyz topragyň nurdur,<br>
-                                Baýdagyň belentdir dünýäň öňünde.<br>
+                                Жизнь отдать я готов за родимый очаг, -<br>
+                                Духом предков отважных славны сыны,<br>
+                                Земля моя свята. В мире реет мой флаг –<br>
+                                Символ великой нейтральной страны!<br>
                                 <br>                 
-                                Gaýtalama:<br>
-                                Halkyň guran Baky beýik binasy,<br>
-                                Berkarar döwletim, jigerim-janym.<br>
-                                Başlaryň täji sen, diller senasy,<br>
-                                Dünýä dursun, sen dur, Türkmenistanym!<br>
+                                Повтор:<br>
+                                Великое создание Народа,<br>
+                                Держава родная, суверенный край,<br>
+                                Туркменистан – светоч и песня души,<br>
+                                Во веки веков ты живи, процветай!<br>
                                 <br>
-                                Gardaşdyr tireler, amandyr iller,<br>
-                                Owal-ahyr birdir biziň ganymyz.<br>
-                                Harasatlar almaz, syndyrmaz siller,<br>
-                                Nesiller döş gerip gorar şanymyz.<br>
+                                Един мой народ, и по жилам племен<br>
+                                Течет предков кровь – нетленная весть,<br>
+                                Не страшны нам бури, невзгоды времен,<br>
+                                Сохраним и умножим славу и честь!<br>
                                 <br>
-                                Gaýtalama:<br>
-                                Halkyň guran Baky beýik binasy,<br>
-                                Berkarar döwletim, jigerim-janym.<br>
-                                Başlaryň täji sen, diller senasy,<br>
-                                Dünýä dursun, sen dur, Türkmenistanym!<br>
+                                Повтор:<br>
+                                Великое создание Народа,<br>
+                                Держава родная, суверенный край,<br>
+                                Туркменистан – светоч и песня души,<br>
+                                Во веки веков ты живи, процветай!<br>
                             </p>',
             ],
         ],
     ],
 
-    'alphabet' => '<span data-letter="a" class="letter">A</span>
-                    <span data-letter="b" class="letter">B</span>
-                    <span data-letter="ç" class="letter">Ç</span>
-                    <span data-letter="d" class="letter">D</span>
-                    <span data-letter="e" class="letter">E</span>
-                    <span data-letter="ä" class="letter">Ä</span>
-                    <span data-letter="f" class="letter">F</span>
-                    <span data-letter="g" class="letter">G</span>
-                    <span data-letter="h" class="letter">H</span>
-                    <span data-letter="i" class="letter">I</span>
-                    <span data-letter="j" class="letter">J</span>
-                    <span data-letter="ž" class="letter">Ž</span>
-                    <span data-letter="k" class="letter">K</span>
-                    <span data-letter="l" class="letter">L</span>
-                    <span data-letter="m" class="letter">M</span>
-                    <span data-letter="n" class="letter">N</span>
-                    <span data-letter="ň" class="letter">Ň</span>
-                    <span data-letter="o" class="letter">O</span>
-                    <span data-letter="ö" class="letter">Ö</span>
-                    <span data-letter="p" class="letter">P</span>
-                    <span data-letter="r" class="letter">R</span>
-                    <span data-letter="s" class="letter">S</span>
-                    <span data-letter="ş" class="letter">Ş</span>
-                    <span data-letter="t" class="letter">T</span>
-                    <span data-letter="u" class="letter">U</span>
-                    <span data-letter="ü" class="letter">Ü</span>
-                    <span data-letter="w" class="letter">W</span>
-                    <span data-letter="y" class="letter">Y</span>
-                    <span data-letter="ý" class="letter">Ý</span>
-                    <span data-letter="z" class="letter">Z</span>',
+    'alphabet' => '<span data-letter="а" class="letter">A</span>
+                   <span data-letter="б" class="letter">B</span>
+                   <span data-letter="в" class="letter">V</span>
+                   <span data-letter="г" class="letter">G</span>
+                   <span data-letter="д" class="letter">D</span>
+                   <span data-letter="е" class="letter">E</span>
+                   <span data-letter="ё" class="letter">Ё</span>
+                   <span data-letter="ж" class="letter">Ж</span>
+                   <span data-letter="з" class="letter">Z</span>
+                   <span data-letter="и" class="letter">I</span>
+                   <span data-letter="й" class="letter">J</span>
+                   <span data-letter="к" class="letter">K</span>
+                   <span data-letter="л" class="letter">L</span>
+                   <span data-letter="м" class="letter">M</span>
+                   <span data-letter="н" class="letter">N</span>
+                   <span data-letter="о" class="letter">O</span>
+                   <span data-letter="п" class="letter">P</span>
+                   <span data-letter="р" class="letter">R</span>
+                   <span data-letter="с" class="letter">S</span>
+                   <span data-letter="т" class="letter">T</span>
+                   <span data-letter="у" class="letter">U</span>
+                   <span data-letter="ф" class="letter">F</span>
+                   <span data-letter="х" class="letter">H</span>
+                   <span data-letter="ц" class="letter">Ц</span>
+                   <span data-letter="ч" class="letter">Ч</span>
+                   <span data-letter="ш" class="letter">Ш</span>
+                   <span data-letter="щ" class="letter">Щ</span>
+                   <span data-letter="ъ" class="letter">Ъ</span>
+                   <span data-letter="ы" class="letter">Ы</span>
+                   <span data-letter="ь" class="letter">Ь</span>
+                   <span data-letter="э" class="letter">Э</span>
+                   <span data-letter="ю" class="letter">Ю</span>
+                   <span data-letter="я" class="letter">Я</span>
+                    ',
     
     'months' => '<option value="1">Январь</option>
                 <option value="2">Февраль</option>
