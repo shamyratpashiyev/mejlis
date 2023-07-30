@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('title_tm', 1000);
             $table->string('title_ru', 1000);
             $table->string('title_en', 1000);
-            $table->text('description_tm');
-            $table->text('description_ru');
-            $table->text('description_en');
+            $table->mediumText('description_tm');
+            $table->mediumText('description_ru');
+            $table->mediumText('description_en');
             $table->timestamp('published_date');
             $table->timestamps();
         });
