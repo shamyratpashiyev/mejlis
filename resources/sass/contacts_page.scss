@@ -47,6 +47,11 @@
                                 width: 24px;
                                 height: 24px;
                             }
+
+                            span{
+                                font-family: 'OpenSansRegular', sans-serif;
+                                font-size: 16px;
+                            }
                         }
                     }
 
@@ -54,6 +59,7 @@
                         width: 50%;
                         row-gap: 18px;
                         justify-content: center;
+                        color: var(--text_black_default);
 
                         .title{
                             font-family: 'OpenSansBold', sans-serif;
@@ -64,6 +70,8 @@
 
                         span{
                             text-align: center;
+                            font-family: 'OpenSansRegular', sans-serif;
+                            font-size: 16px;
                         }
                     }
                 }

@@ -340,6 +340,14 @@ return [
         ],
     ],
 
+    'contacts_page' => [
+        'title' => 'Контакты',
+        'working_hours' => 'Режим работы',
+        'mon_friday' => 'Пн-Пт 9:00 - 18:00',
+        'saturday' => 'Суббота 9:00 - 13:00',
+        'break' => 'Перерыв 13:00 - 14:00'
+    ],
+
     'alphabet' => '<span data-letter="а" class="letter">A</span>
                    <span data-letter="б" class="letter">B</span>
                    <span data-letter="в" class="letter">V</span>

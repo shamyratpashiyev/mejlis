@@ -35,17 +35,23 @@
               .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row .left_cell .contact_row_wrapper svg {
                 width: 24px;
                 height: 24px; }
+              .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row .left_cell .contact_row_wrapper span {
+                font-family: 'OpenSansRegular', sans-serif;
+                font-size: 16px; }
           .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row .right_cell {
             width: 50%;
             row-gap: 18px;
-            justify-content: center; }
+            justify-content: center;
+            color: var(--text_black_default); }
             .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row .right_cell .title {
               font-family: 'OpenSansBold', sans-serif;
               font-size: 16px;
               margin: 0;
               text-align: center; }
             .contacts_page .inner_wrapper .contacts_row .contacts_wrapper .content_row .right_cell span {
-              text-align: center; }
+              text-align: center;
+              font-family: 'OpenSansRegular', sans-serif;
+              font-size: 16px; }
       .contacts_page .inner_wrapper .contacts_row .map_wrapper {
         width: 623px;
         height: 364px; }

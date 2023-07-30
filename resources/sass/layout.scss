@@ -170,6 +170,7 @@
                     font-size: 70px;
                     color: var(--default_white);
                     margin: 0;
+                    text-align: center;
                 }
 
                 .info{
@@ -282,7 +283,63 @@
                         color: var(--default_white);
                         font-family: 'OpenSansSemibold', sans-serif;
                         font-size: 20px;
+                    }
 
+                    .nav_button_wrapper{
+                        text-decoration: none;
+                        cursor: pointer;
+                        box-sizing: border-box;
+                        position: relative;
+                        color: var(--default_white);
+                        justify-content: center;
+        
+                        span{
+                            font-family: 'OpenSansSemiBold', sans-serif;
+                            font-size: 20px;
+                            
+                        }
+        
+                        .dropdown_menu{
+                            display: none;
+                            position: absolute;
+                            top: calc(100% + 5px);
+                            background-color: var(--sky_blue);
+                            box-sizing: border-box;
+                            padding: 20px 15px;
+                            width: max-content;
+                            max-width: 300px;
+                            row-gap: 20px;
+                            border-top: 1px solid var(--default_white);
+                            z-index: 11;
+        
+                            .item_wrapper{
+                                width: max-content;
+                                max-width: 100%;
+        
+                                a{
+                                    text-decoration: none;
+                                    font-family: 'OpenSansRegular', sans-serif;
+                                    font-size: 16px;
+                                    color: inherit;
+                                }
+                            }
+        
+                            &:hover{
+                                display: flex;
+                            }
+                        }
+        
+                        // &::after{
+                        //     bottom: 0px !important;
+                        // }
+        
+                        &:hover {
+        
+                            .dropdown_menu{
+                                display: flex;
+        
+                            }
+                        }
                     }
                 }
 

@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <a href="{{ route('contacts_page') }}" class="link_row flex_row">
+        <a href="{{ route('contacts_page',['lang'=>app()->getLocale()]) }}" class="link_row flex_row">
             <span>@lang('app.layout.contacts_page')</span>
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12.5" cy="12" r="10" stroke="#28303F" stroke-width="1.5"/>

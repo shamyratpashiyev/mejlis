@@ -338,6 +338,15 @@ return [
                             </p>',
             ],
         ],
+
+    ],
+
+    'contacts_page' => [
+        'title' => 'Habarlaşmak üçin',
+        'working_hours' => 'Iş wagty',
+        'mon_friday' => 'Duşenbe-Anna 9:00 - 18:00',
+        'saturday' => 'Şenbe 9:00 - 13:00',
+        'break' => 'Arakesme 13:00 - 14:00'
     ],
 
     'alphabet' => '<span data-letter="a" class="letter">A</span>

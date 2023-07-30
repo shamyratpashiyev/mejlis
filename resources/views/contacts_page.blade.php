@@ -1,21 +1,26 @@
-@extends('layout')
+@extends('layout',['title' => __('app.layout.contacts_page')])
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/contacts_page.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main_page.css') }}">
 @endpush
 
+@php
+    $breadcrumbs_array = [
+                    ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
+                    ['name' => __('app.layout.contacts_page'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
+    ];
+@endphp
+
 @section('content')
     <div class="contacts_page flex_row">
         <div class="inner_wrapper flex_column">
-            <div class="breadcrumbs_row">
-                <span>Baş sahypa</span> / Kanunçylyk / Kodeksler
-            </div>
+            <x-breadcrumbs :breadcrumbs-array="$breadcrumbs_array" />
 
             <div class="contacts_row flex_row">
 
                 <div class="contacts_wrapper flex_column">
-                    <h3 class="title">Habarlaşmak üçin</h3>
+                    <h3 class="title">@lang('app.contacts_page.title')</h3>
 
                     <div class="content_row flex_row">
                         <div class="left_cell flex_column">
@@ -25,7 +30,7 @@
                                     <path d="M18.5 9.58301C18.5 12.8967 14.5 17.583 12.5 17.583C10.5 17.583 6.5 12.8967 6.5 9.58301C6.5 6.2693 9.18629 3.58301 12.5 3.58301C15.8137 3.58301 18.5 6.2693 18.5 9.58301Z" stroke="black"/>
                                     <path d="M15.5003 15.583H16.6268C17.814 15.583 18.9397 16.1103 19.6997 17.0223L20.7667 18.3026C21.8522 19.6053 20.9259 21.583 19.2303 21.583H5.77042C4.07475 21.583 3.14844 19.6053 4.23398 18.3026L5.30096 17.0223C6.06093 16.1103 7.18672 15.583 8.37384 15.583H9.50034" stroke="black" stroke-linejoin="round"/>
                                 </svg>
-                                <span>Aşgabat ş., Garaşsyzlyk şaýoly, 110</span>
+                                <span>@lang('app.layout.footer_address_value')</span>
                             </p>
             
                             <a class="contact_row_wrapper flex_row" href="mailto:info@mejlis.gov.tm">
@@ -51,10 +56,10 @@
                         </div>
 
                         <div class="right_cell flex_column">
-                            <span class="title">Режим работы</span>
-                            <span>Пн-Пт 9:00 - 18:00</span>
-                            <span>Суббота 9:00 - 13:00</span>
-                            <span>Перерыв 13:00 - 14:00</span>
+                            <span class="title">@lang('app.contacts_page.working_hours')</span>
+                            <span>@lang('app.contacts_page.mon_friday')</span>
+                            <span>@lang('app.contacts_page.saturday')</span>
+                            <span>@lang('app.contacts_page.break')</span>
                         </div>
                     </div>
 

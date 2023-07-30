@@ -108,7 +108,8 @@
           font-family: 'RalewayExtraBold', sans-serif;
           font-size: 70px;
           color: var(--default_white);
-          margin: 0; }
+          margin: 0;
+          text-align: center; }
         .upper_header .main .content .inner_wrapper .info {
           font-size: 25px;
           font-family: 'RalewayBold', sans-serif;
@@ -190,6 +191,40 @@
             color: var(--default_white);
             font-family: 'OpenSansSemibold', sans-serif;
             font-size: 20px; }
+          .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper {
+            text-decoration: none;
+            cursor: pointer;
+            box-sizing: border-box;
+            position: relative;
+            color: var(--default_white);
+            justify-content: center; }
+            .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper span {
+              font-family: 'OpenSansSemiBold', sans-serif;
+              font-size: 20px; }
+            .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu {
+              display: none;
+              position: absolute;
+              top: calc(100% + 5px);
+              background-color: var(--sky_blue);
+              box-sizing: border-box;
+              padding: 20px 15px;
+              width: max-content;
+              max-width: 300px;
+              row-gap: 20px;
+              border-top: 1px solid var(--default_white);
+              z-index: 11; }
+              .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu .item_wrapper {
+                width: max-content;
+                max-width: 100%; }
+                .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu .item_wrapper a {
+                  text-decoration: none;
+                  font-family: 'OpenSansRegular', sans-serif;
+                  font-size: 16px;
+                  color: inherit; }
+              .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu:hover {
+                display: flex; }
+            .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper:hover .dropdown_menu {
+              display: flex; }
         .upper_header .main .hamburger_menu .inner_wrapper .lang_block {
           margin-bottom: 15px;
           width: 100%;
