@@ -57,12 +57,12 @@
                         @foreach ($deputies_all as $deputy)
                             <div class="deputy_container flex_column" data-deputy-id="{{ $deputy->id }}" data-href-value="{{ route('single_deputy_page', ['id'=>$deputy->id, 'lang' => app()->getLocale()]) }}">
                                 <span class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</span>
-                                <x-deputy-popup name="{{ $deputy->{'fullname_' . $current_lang->code} }}" district="{{ $deputy->district->{'name_' . $current_lang->code} }}" :bio="$deputy->{'biography_' . $current_lang->code}" />
+                                <x-deputy-popup name="{{ $deputy->{'fullname_' . $current_lang->code} }}" district="{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}" :bio="$deputy->{'biography_' . $current_lang->code}" />
 
                                 <div class="key_value_wrapper flex_column">
                                     <span class="key election_district">@lang('app.mejlis_deputies_page.election_district'):</span>
-                                    <span class="value">{{ $deputy->district->{'name_' . $current_lang->code} }}</span>
-                                    <x-election-district-popup name="{{ $deputy->district->{'name_' . $current_lang->code} }}" :borders="$deputy->district->{'borders_' . $current_lang->code}"/>
+                                    <span class="value">{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}</span>
+                                    <x-election-district-popup name="{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}" :borders="$deputy->district->{'borders_' . $current_lang->code} ?? ''"/>
                                 </div>
 
                                 <div class="key_value_wrapper flex_column">

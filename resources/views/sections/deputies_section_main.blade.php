@@ -32,7 +32,7 @@
                         <hr />
                         <a href="{{ route('single_deputy_page', ['id'=>$deputy->id,'lang' => app()->getLocale()]) }}" class="deputy_wrapper">
                             <h4 class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</h4>
-                            <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} }}</p>
+                            <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}</p>
                         </a>
                     @endforeach
                     <hr />
@@ -45,7 +45,7 @@
                         <hr />
                         <a href="{{ route('single_deputy_page', ['id'=>$deputy->id,'lang' => app()->getLocale()]) }}" class="deputy_wrapper">
                             <h4 class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</h4>
-                            <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} }}</p>
+                            <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}</p>
                         </a>
                     @endforeach
                     <hr />
@@ -70,7 +70,7 @@
                         <hr />
                         <a href="{{ route('single_deputy_page', ['id'=>$deputy->id,'lang' => app()->getLocale()]) }}" class="deputy_wrapper">
                             <h4 class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</h4>
-                            <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} }}</p>
+                            <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}</p>
                         </a>
                     @endforeach
                     <hr />
@@ -83,7 +83,7 @@
                         <hr />
                         <a href="{{ route('single_deputy_page', ['id'=>$deputy->id,'lang' => app()->getLocale()]) }}" class="deputy_wrapper">
                             <h4 class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</h4>
-                            <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} }}</p>
+                            <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}</p>
                         </a>
                     @endforeach
                     <hr />
@@ -96,7 +96,7 @@
                         <hr />
                         <a href="{{ route('single_deputy_page', ['id'=>$deputy->id,'lang' => app()->getLocale()]) }}" class="deputy_wrapper">
                             <h4 class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</h4>
-                            <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} }}</p>
+                            <p class="district">{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}</p>
                         </a>
                     @endforeach
                     <hr />
