@@ -7,22 +7,26 @@
     <title>{{ $title }}</title>
     <link rel="stylesheet" href="{{ asset('css/master.css') }}">
     <link rel="stylesheet" href="{{ asset('css/layout.css') }}">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ asset('css/owl_slider/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl_slider/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slick/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slick/slick-theme.css') }}">
     @stack('styles')
     <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/slick.min.js') }}"></script>
     
 </head>
 <body>
     <div class="upper_header">
         <div class="main flex_column">
-            <div class="slider">
+            <div class="banner_slider">
                 <img class="background_image" src="{{ asset('img/header_main.jpg') }}" alt="">
+                <img class="background_image" src="{{ asset('img/header_main_2.jpg') }}" alt="">
             </div>
             <div class="topbar flex_row">
-                <a href="#" class="logo_wrapper flex_row">
-                    <img class="logo_img" src="{{ asset('/img/logo.svg') }}" alt="">
+                <a href="{{ route('main_page',app()->getLocale()) }}" class="logo_wrapper flex_row">
+                    <img class="logo_img" src="{{ asset('/img/gerb.png') }}" alt="">
                     <span class="logo_text">@lang('app.layout.logo_main')</span>
                 </a>
 
@@ -356,6 +360,27 @@
     <script>
         $(document).ready(()=>{
 
+            $(".banner_slider").slick({
+                arrows: false,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 6000,
+                speed: 1000,
+                pauseOnFocuse: false,
+                pauseOnHover: false,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true
+            });
+
+            // $(".banner_slider").owlCarousel({
+            //     autoplay:true,
+            //     autoplayTimeout:2000,
+            //     autoplayHoverPause:false,
+            //     items:1,
+            //     loop:true,
+            //     nav:false,
+            // });
             $('.hamburger_button_wrapper').click((e) => {
                 $('.hamburger_menu').toggleClass('active');
                 $('.upper_header').toggleClass('blur');
