@@ -19,66 +19,66 @@
 
         <div class="content_block owl-carousel flex_row" id="websites_block">
 
-            <a href="#" class="website_container flex_column">
+            <a href="https://mlsp.gov.tm" class="website_container flex_column">
                 <img class="icon" src="{{ asset('icons/website_logo_1.svg') }}" alt="">
                 <h3 class="content">
-                    Türkmenistanyň Zähmet we ilaty durmuş taýdan goramak ministrligi
+                    @lang('app.websites_section.labour_ministry')
                 </h3>
             </a>
 
-            <a href="#" class="website_container flex_column">
+            <a href="https://www.mincom.gov.tm" class="website_container flex_column">
                 <img class="icon" src="{{ asset('icons/website_logo_2.svg') }}" alt="">
                 <h3 class="content">
-                    «TÜRKMENARAGATNAŞYK» agentligi
+                    @lang('app.websites_section.turkmencom')
                 </h3>
             </a>
 
-            <a href="#" class="website_container flex_column">
+            <a href="https://mfa.gov.tm" class="website_container flex_column">
                 <img class="icon" src="{{ asset('icons/website_logo_3.svg') }}" alt="">
                 <h3 class="content">
-                    Türkmenistanyň Daşary işler ministrligi
+                    @lang('app.websites_section.foreign_ministry')
                 </h3>
             </a>
 
-            <a href="#" class="website_container flex_column">
+            <a href="https://www.tgymj.gov.tm" class="website_container flex_column">
                 <img class="icon" src="{{ asset('icons/website_logo_4.svg') }}" alt="">
                 <h3 class="content">
-                    Türkmenistanyň Gyzyl Ýarymaý Milli jemgyýeti
+                    @lang('app.websites_section.red_crescent')
                 </h3>
             </a>
 
-            <a href="#" class="website_container flex_column">
+            <a href="https://www.saglykhm.gov.tm" class="website_container flex_column">
                 <img class="icon" src="{{ asset('icons/website_logo_5.svg') }}" alt="">
                 <h3 class="content">
-                    Türkmenistanyň Saglygy goraýyş we derman senagaty ministrligi
+                    @lang('app.websites_section.healthcare_ministry')
                 </h3>
             </a>
 
-            <a href="#" class="website_container flex_column">
+            <a href="https://mlsp.gov.tm" class="website_container flex_column">
                 <img class="icon" src="{{ asset('icons/website_logo_1.svg') }}" alt="">
                 <h3 class="content">
-                    Türkmenistanyň Zähmet we ilaty durmuş taýdan goramak ministrligi
+                    @lang('app.websites_section.labour_ministry')
                 </h3>
             </a>
 
-            <a href="#" class="website_container flex_column">
+            <a href="https://www.mincom.gov.tm" class="website_container flex_column">
                 <img class="icon" src="{{ asset('icons/website_logo_2.svg') }}" alt="">
                 <h3 class="content">
-                    «TÜRKMENARAGATNAŞYK» agentligi
+                    @lang('app.websites_section.turkmencom')
                 </h3>
             </a>
 
-            <a href="#" class="website_container flex_column">
+            <a href="https://www.tgymj.gov.tm" class="website_container flex_column">
                 <img class="icon" src="{{ asset('icons/website_logo_4.svg') }}" alt="">
                 <h3 class="content">
-                    Türkmenistanyň Gyzyl Ýarymaý Milli jemgyýeti
+                    @lang('app.websites_section.red_crescent')
                 </h3>
             </a>
 
-            <a href="#" class="website_container flex_column">
+            <a href="https://mlsp.gov.tm" class="website_container flex_column">
                 <img class="icon" src="{{ asset('icons/website_logo_1.svg') }}" alt="">
                 <h3 class="content">
-                    Türkmenistanyň Zähmet we ilaty durmuş taýdan goramak ministrligi
+                    @lang('app.websites_section.labour_ministry')
                 </h3>
             </a>
         </div>

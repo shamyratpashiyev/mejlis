@@ -348,6 +348,14 @@ return [
         'break' => 'Перерыв 13:00 - 14:00'
     ],
 
+    'websites_section' => [
+        'labour_ministry' => 'Министерство труда и социальной защиты населения Туркменистана',
+        'turkmencom' => 'Агентство «ТУРКМЕНАРАГАТНАШЫК»',
+        'foreign_ministry' => 'Министерство иностранных дел Туркменистана',
+        'red_crescent' => 'Национальное общество Красного Полумесяца Туркменистана',
+        'healthcare_ministry' => 'Министерство здравоохранения и медицинской промышленности Туркменистана',
+    ],
+
     'alphabet' => '<span data-letter="а" class="letter">A</span>
                    <span data-letter="б" class="letter">B</span>
                    <span data-letter="в" class="letter">V</span>

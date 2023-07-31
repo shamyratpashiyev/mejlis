@@ -349,6 +349,14 @@ return [
         'break' => 'Arakesme 13:00 - 14:00'
     ],
 
+    'websites_section' => [
+        'labour_ministry' => 'Türkmenistanyň Zähmet we ilaty durmuş taýdan goramak ministrligi',
+        'turkmencom' => '«TÜRKMENARAGATNAŞYK» agentligi',
+        'foreign_ministry' => 'Türkmenistanyň Daşary işler ministrligi',
+        'red_crescent' => 'Türkmenistanyň Gyzyl Ýarymaý Milli jemgyýeti',
+        'healthcare_ministry' => 'Türkmenistanyň Saglygy goraýyş we derman senagaty ministrligi',
+    ],
+
     'alphabet' => '<span data-letter="a" class="letter">A</span>
                     <span data-letter="b" class="letter">B</span>
                     <span data-letter="ç" class="letter">Ç</span>
