@@ -8,10 +8,11 @@
     left: 0;
     top: 0;
     height: 100%;
-    width: 0;
-    backdrop-filter: blur(5px); }
+    width: 0; }
   .upper_header.blur .blur_effect {
     width: 100%; }
+  .upper_header.blur .main .slider .background_image {
+    filter: blur(3px); }
   .upper_header.blur .main .content {
     display: none; }
   .upper_header.hidden {
@@ -29,6 +30,7 @@
       position: absolute;
       z-index: -11; }
       .upper_header .main .slider .background_image {
+        transition: all 0.2s ease-in;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -197,13 +199,16 @@
             box-sizing: border-box;
             position: relative;
             color: var(--default_white);
-            justify-content: center; }
+            justify-content: center;
+            overflow-y: hidden;
+            justify-content: flex-start;
+            align-items: center;
+            transition: all 0.3s ease-in; }
             .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper span {
               font-family: 'OpenSansSemiBold', sans-serif;
-              font-size: 20px; }
+              font-size: 19px; }
             .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu {
               display: none;
-              position: absolute;
               top: calc(100% + 5px);
               background-color: var(--sky_blue);
               box-sizing: border-box;
@@ -211,8 +216,7 @@
               width: max-content;
               max-width: 300px;
               row-gap: 20px;
-              border-top: 1px solid var(--default_white);
-              z-index: 11; }
+              border-top: 1px solid var(--default_white); }
               .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu .item_wrapper {
                 width: max-content;
                 max-width: 100%; }
@@ -221,10 +225,6 @@
                   font-family: 'OpenSansRegular', sans-serif;
                   font-size: 16px;
                   color: inherit; }
-              .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu:hover {
-                display: flex; }
-            .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper:hover .dropdown_menu {
-              display: flex; }
         .upper_header .main .hamburger_menu .inner_wrapper .lang_block {
           margin-bottom: 15px;
           width: 100%;

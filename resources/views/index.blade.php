@@ -188,6 +188,8 @@ $(window).on('scroll',(event)=> {
 
     if($(window).scrollTop() > 5 && scroll_dir == 'down') {
         $('.upper_header').addClass('hidden')
+        $('.active').removeClass('active')
+
     }  else if($(window).scrollTop() == 0 && scroll_dir == 'up'){
         $('.upper_header').removeClass('hidden')
         scroll_dir = 'down'
