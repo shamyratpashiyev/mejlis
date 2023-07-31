@@ -35,7 +35,7 @@ return [
         'tkm_page' => 'Türkmenistan',
         'copyright_text' => 'Ähli hukuklar goralan',
         'footer_text' => "&emsp;&emsp;Türkmenistanyň Mejlisi (Parlamenti) kanun çykaryjy häkimiýeti amala aşyrýan wekilçilikli edaradyr.
-                        <br/><br/>
+                        <br/>
                         &emsp;&emsp;Türkmenistanyň Mejlisiniň alyp barýan  köp taraplaýyn işinde esasy wezipesi halklaryň arasynda dostlukly gatnaşyklary 
                         ösdürmäge ýardam bermek bolan halkara we parlamentara işiniň meseleleri möhüm orun tutýar. Häzirki wagtda 
                         Türkmenistanyň Mejlisinde dünýäniň onlarça döwletiniň parlamentleri bilen parlamentara dostluk toparlary hereket edýär. 
