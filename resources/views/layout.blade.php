@@ -373,14 +373,6 @@
                 variableWidth: true
             });
 
-            // $(".banner_slider").owlCarousel({
-            //     autoplay:true,
-            //     autoplayTimeout:2000,
-            //     autoplayHoverPause:false,
-            //     items:1,
-            //     loop:true,
-            //     nav:false,
-            // });
             $('.hamburger_button_wrapper').click((e) => {
                 $('.hamburger_menu').toggleClass('active');
                 $('.upper_header').toggleClass('blur');
