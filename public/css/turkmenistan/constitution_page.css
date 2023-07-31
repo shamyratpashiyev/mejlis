@@ -1,0 +1,43 @@
+.tkm_constitution_page {
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0 50px 0; }
+  .tkm_constitution_page .inner_wrapper {
+    width: var(--default_width);
+    row-gap: 50px; }
+    .tkm_constitution_page .inner_wrapper .page_content_block {
+      width: 100%;
+      justify-content: space-between; }
+      .tkm_constitution_page .inner_wrapper .page_content_block .sidebar_container .nav_block {
+        display: none; }
+      .tkm_constitution_page .inner_wrapper .page_content_block .middle_column {
+        width: 747px;
+        box-sizing: border-box;
+        padding: 10px 20px 35px 20px;
+        background-color: var(--container_background_blue);
+        height: max-content; }
+        .tkm_constitution_page .inner_wrapper .page_content_block .middle_column .block_title {
+          font-family: 'OpenSansExtraBold', sans-serif;
+          font-size: 25px;
+          margin: 0 0 25px 0;
+          text-align: center; }
+        .tkm_constitution_page .inner_wrapper .page_content_block .middle_column p {
+          margin: 0;
+          font-family: 'OpenSansRegular', sans-serif !important;
+          font-size: 16px !important; }
+      .tkm_constitution_page .inner_wrapper .page_content_block .right_column {
+        width: 340px;
+        box-sizing: border-box;
+        padding: 10px 10px 20px 10px;
+        background-color: var(--sky_blue);
+        height: max-content; }
+        .tkm_constitution_page .inner_wrapper .page_content_block .right_column a {
+          font-family: 'OpenSansRegular', sans-serif;
+          font-size: 16px;
+          color: var(--default_white);
+          box-sizing: border-box;
+          padding: 10px 10px 10px 0;
+          transition: 0.2s all ease-in; }
+          .tkm_constitution_page .inner_wrapper .page_content_block .right_column a.active {
+            padding: 10px 10px 10px 10px;
+            background-color: var(--sky_blue_darker); }

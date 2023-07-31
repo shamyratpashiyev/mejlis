@@ -312,9 +312,7 @@
         
                         .dropdown_menu{
                             display: none;
-                            // position: absolute;
                             top: calc(100% + 5px);
-                            background-color: var(--sky_blue);
                             box-sizing: border-box;
                             padding: 20px 15px;
                             width: max-content;
@@ -333,23 +331,9 @@
                                     color: inherit;
                                 }
                             }
-        
-                            // &:hover{
-                            //     display: flex;
-                            // }
+    
                         }
         
-                        // &::after{
-                        //     bottom: 0px !important;
-                        // }
-        
-                        // &:hover {
-        
-                        //     .dropdown_menu{
-                        //         display: flex;
-        
-                        //     }
-                        // }
                     }
                 }
 

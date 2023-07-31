@@ -210,7 +210,6 @@
             .upper_header .main .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu {
               display: none;
               top: calc(100% + 5px);
-              background-color: var(--sky_blue);
               box-sizing: border-box;
               padding: 20px 15px;
               width: max-content;

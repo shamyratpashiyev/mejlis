@@ -64,6 +64,7 @@ Route::group(['middleware'=>'localization'],function (){
     Route::get('/gallery', [SiteController::class, 'gallery'])->name('gallery_page');
 
     Route::group(['prefix' => 'turkmenistan'],function (){
+        Route::get('/constitution', [SiteController::class, 'tkm_constitution'])->name('tkm_constitution_page');
         Route::get('/history', [SiteController::class, 'tkm_history'])->name('tkm_history_page');
         Route::get('/area', [SiteController::class, 'tkm_area'])->name('tkm_area_page');
         Route::get('/population', [SiteController::class, 'tkm_population'])->name('tkm_population_page');

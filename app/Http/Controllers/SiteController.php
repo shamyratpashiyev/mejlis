@@ -310,6 +310,11 @@ class SiteController extends Controller
         return view('turkmenistan.state_holidays_page', $this->data);
     }
 
+    public function tkm_constitution(){
+
+        return view('turkmenistan.constitution_page', $this->data);
+    }
+
     public function paginate($currentPage, $pagesTotal) {
         /*
           I divided the pagination row into three blocks (1 ... 13 14 15 ... 22)
