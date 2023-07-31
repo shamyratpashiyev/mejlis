@@ -7,7 +7,7 @@
 @php
     $links_list = [
                     ['name'=>__('app.mejlis_history_page.title'), 'is_active' => 'active', 'url' => route('mejlis_history_page',['lang' => app()->getLocale()])],
-                    ['name'=> __('app.layout.convocation_page'), 'url' => route('convocation_page',['lang' => app()->getLocale()])], 
+                    ['name'=> __('app.layout.convocation_page',['number'=>$convocation_number]), 'url' => route('convocation_page',['lang' => app()->getLocale()])], 
     ];
     
     $breadcrumbs_array = [
