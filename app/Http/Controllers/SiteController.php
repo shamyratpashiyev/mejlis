@@ -55,23 +55,23 @@ class SiteController extends Controller
     }
 
     public function convocation(){
-        $this->deputies_all = Deputy::get(['id','fullname_' . request()->query('lang'), 'election_district_id']);
-        $this->districts_all = ElectionDistrict::get(['id','name_' . request()->query('lang')]);
+        $this->deputies_all = Deputy::orderBy('created_at','desc')->get(['id','fullname_' . request()->query('lang'), 'election_district_id']);
+        $this->districts_all = ElectionDistrict::orderBy('created_at','desc')->get(['id','name_' . request()->query('lang')]);
         return view('convocation_page', $this->data);
     }
 
     public function mejlis_committees(string $id = '1'){
-        $this->committees_all = Committee::get(['id','name_' . request()->query('lang'), 'committee_head_id']);
+        $this->committees_all = Committee::orderBy('created_at','desc')->get(['id','name_' . request()->query('lang'), 'committee_head_id']);
         $this->selected_committee = Committee::select(['id','name_' . request()->query('lang'), 'committee_head_id'])->findOrFail($id);
         return view('mejlis_committees_page', $this->data);
     }
 
     public function mejlis_deputies(){
-        $this->deputies_all = Deputy::get(['id','fullname_' . request()->query('lang'),'biography_' . request()->query('lang'),
+        $this->deputies_all = Deputy::orderBy('created_at','desc')->get(['id','fullname_' . request()->query('lang'),'biography_' . request()->query('lang'),
                                         'election_district_id', 'velayat_id', 'email']);
         $this->deputies_json = Deputy::get(['id','fullname_' . request()->query('lang'),'election_district_id', 'velayat_id']);
         $this->velayats_all = Velayat::get();
-        $this->election_districts_all = ElectionDistrict::get(['id', 'name_' . request()->query('lang')]);
+        $this->election_districts_all = ElectionDistrict::orderBy('created_at','desc')->get(['id', 'name_' . request()->query('lang')]);
         return view('mejlis_deputies_page', $this->data);
     }
 
@@ -88,7 +88,7 @@ class SiteController extends Controller
     // }
 
     public function codes($page_num=1){
-        $this->codes_all = Code::get(['id', 'title_' . request()->query('lang'), 'published_date']);
+        $this->codes_all = Code::orderBy('created_at','desc')->get(['id', 'title_' . request()->query('lang'), 'published_date']);
         $items_per_page = 9;
         $pages_total = ceil($this->codes_all->count() / $items_per_page);
         $this->current_page = $page_num;
@@ -109,7 +109,7 @@ class SiteController extends Controller
     }
 
     public function laws($page_num=1){
-        $this->laws_all = Law::get(['id', 'title_' . request()->query('lang'), 'published_date']);
+        $this->laws_all = Law::orderBy('created_at','desc')->get(['id', 'title_' . request()->query('lang'), 'published_date']);
         $items_per_page = 9;
         $pages_total = ceil($this->laws_all->count() / $items_per_page);
         $this->current_page = $page_num;
@@ -130,7 +130,7 @@ class SiteController extends Controller
     }
 
     public function mejlis_decrees($page_num=1){
-        $this->decrees_all = MejlisDecree::get(['id', 'title_' . request()->query('lang'), 'published_date']);
+        $this->decrees_all = MejlisDecree::orderBy('created_at','desc')->get(['id', 'title_' . request()->query('lang'), 'published_date']);
         $items_per_page = 9;
         $pages_total = ceil($this->decrees_all->count() / $items_per_page);
         $this->current_page = $page_num;
@@ -161,7 +161,7 @@ class SiteController extends Controller
     }
 
     public function international_cooperation($page_num=1){
-        $this->news_all = NewsCooperation::get(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'event_date','image_1']);
+        $this->news_all = NewsCooperation::orderBy('created_at','desc')->get(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'event_date','image_1']);
         $items_per_page = 9;
         $pages_total = ceil($this->news_all->count() / $items_per_page);
         $this->current_page = $page_num;
@@ -176,7 +176,7 @@ class SiteController extends Controller
     }
 
     public function news_international($page_num=1){
-        $this->news_all = NewsInternational::get(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'event_date','image_1']);
+        $this->news_all = NewsInternational::orderBy('created_at','desc')->get(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'event_date','image_1']);
         $items_per_page = 9;
         $pages_total = ceil($this->news_all->count() / $items_per_page);
         $this->current_page = $page_num;
@@ -205,7 +205,7 @@ class SiteController extends Controller
     }
 
     public function friendship_group(string $id = '1'){
-        $this->groups_all = FriendshipGroup::get(['id','title_' . request()->query('lang'),'description_' . request()->query('lang'), 'published_date']);
+        $this->groups_all = FriendshipGroup::orderBy('created_at','desc')->get(['id','title_' . request()->query('lang'),'description_' . request()->query('lang'), 'published_date']);
         $this->selected_group = FriendshipGroup::select(['id','title_' . request()->query('lang'),'description_' . request()->query('lang'), 'published_date'])->findOrFail($id);
         return view('friendship_group_page', $this->data);
     }
@@ -239,7 +239,7 @@ class SiteController extends Controller
 
     public function articles($page_num=1){
 
-        $articles_all = Article::orderBy('published_date', 'DESC')->get(['id', 'title_' . request()->query('lang'), 'description_' . request()->query('lang'), 'published_date']);
+        $articles_all = Article::orderBy('created_at', 'DESC')->get(['id', 'title_' . request()->query('lang'), 'description_' . request()->query('lang'), 'published_date']);
         $items_per_page = 9;
         $pages_total = ceil($articles_all->count() / $items_per_page);
         $this->current_page = $page_num;

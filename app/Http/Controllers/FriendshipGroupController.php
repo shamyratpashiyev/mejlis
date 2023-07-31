@@ -13,7 +13,7 @@ class FriendshipGroupController extends Controller
      */
     public function index()
     {
-        $groups_all = FriendshipGroup::get();
+        $groups_all = FriendshipGroup::orderBy('created_at','DESC')->get();
         return view('admin.friendship_groups.index', ['groups_all' => $groups_all]);
     }
 

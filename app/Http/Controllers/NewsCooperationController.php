@@ -14,7 +14,7 @@ class NewsCooperationController extends Controller
      */
     public function index()
     {
-        $news_all = NewsCooperation::get();
+        $news_all = NewsCooperation::orderBy('created_at','DESC')->get();
 
         return view('admin.news_coop.index', ['news_all' => $news_all]);
     }

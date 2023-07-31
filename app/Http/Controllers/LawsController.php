@@ -13,7 +13,7 @@ class LawsController extends Controller
      */
     public function index()
     {
-        $laws_all = Law::get();
+        $laws_all = Law::orderBy('created_at','DESC')->get();
         return view('admin.laws.index', ['laws_all' => $laws_all]);
     }
 

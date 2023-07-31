@@ -10,7 +10,7 @@ class ElectionDistrictController extends Controller
 {
     public function index()
     {
-        $districts_all = ElectionDistrict::get();
+        $districts_all = ElectionDistrict::orderBy('created_at','DESC')->get();
         return view('admin.election_districts.index', ['districts_all' => $districts_all]);
     }
 

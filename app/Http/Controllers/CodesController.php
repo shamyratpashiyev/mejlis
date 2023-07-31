@@ -13,7 +13,7 @@ class CodesController extends Controller
      */
     public function index()
     {
-        $codes_all = Code::get();
+        $codes_all = Code::orderBy('created_at','DESC')->get();
         return view('admin.codes.index', ['codes_all' => $codes_all]);
     }
 

@@ -13,7 +13,7 @@ class MejlisActivitiesController extends Controller
      */
     public function index()
     {
-        $activities_all = MejlisActivity::get();
+        $activities_all = MejlisActivity::orderBy('created_at','DESC')->get();
         return view('admin.mejlis_activities.index', ['activities_all' => $activities_all]);
     }
 

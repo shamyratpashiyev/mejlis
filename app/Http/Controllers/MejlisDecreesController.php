@@ -13,7 +13,7 @@ class MejlisDecreesController extends Controller
      */
     public function index()
     {
-        $decrees_all = MejlisDecree::get();
+        $decrees_all = MejlisDecree::orderBy('created_at','DESC')->get();
         return view('admin.mejlis_decrees.index', ['decrees_all' => $decrees_all]);
     }
 

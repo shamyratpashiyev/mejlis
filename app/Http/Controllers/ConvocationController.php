@@ -12,7 +12,7 @@ class ConvocationController extends Controller
      */
     public function index()
     {
-        $convocations_all = Convocation::get();
+        $convocations_all = Convocation::orderBy('created_at','DESC')->get();
         return view('admin.convocations.index', ['convocations_all' => $convocations_all]);
     }
 

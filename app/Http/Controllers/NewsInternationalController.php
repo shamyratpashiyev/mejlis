@@ -14,7 +14,7 @@ class NewsInternationalController extends Controller
      */
     public function index()
     {
-        $news_all = NewsInternational::get();
+        $news_all = NewsInternational::orderBy('created_at','DESC')->get();
 
         return view('admin.news_inter.index', ['news_all' => $news_all]);
     }
