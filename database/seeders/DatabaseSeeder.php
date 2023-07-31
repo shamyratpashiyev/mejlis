@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
         
         $this->call([
             ElectionDistrictSeeder::class,
-            DummyDataSeeder::class,
+            // DummyDataSeeder::class,
             AdminSeeder::class,
         ]);
     }
