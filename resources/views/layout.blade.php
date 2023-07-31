@@ -310,7 +310,7 @@
 
                 <h4 class="title">@lang('app.layout.logo_title')</h4>
                 <p class="description">@lang('app.layout.logo_description')</p>
-                <span class="copyright_text">2023 @lang('app.layout.copyright_text')</span>
+                <span class="copyright_text">{{ date('Y') }} @lang('app.layout.copyright_text')</span>
             </a>
 
             <div class="middle_column flex_column">
