@@ -186,7 +186,7 @@
             text-align: center; }
         .upper_header .main .hamburger_menu .inner_wrapper .nav_block {
           align-items: center;
-          row-gap: 35px;
+          row-gap: 30px;
           width: 100%; }
           .upper_header .main .hamburger_menu .inner_wrapper .nav_block a {
             text-decoration: none;
