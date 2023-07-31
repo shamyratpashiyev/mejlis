@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="nav_block flex_column">
-                        <a class="hover_underline @if(Route::currentRouteNamed(['main_page'])) active @endif" href="#">@lang('app.layout.main_page')</a>
+                        <a class="hover_underline @if(Route::currentRouteNamed(['main_page'])) active @endif" href="{{ route('main_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.main_page')</a>
                         <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['mejlis_history_page','convocation_page'])) active @endif" data-id="1">
                             <span>@lang('app.layout.about_mejlis')</span>
         
@@ -303,7 +303,7 @@
     <footer class="flex_row">
         <div class="inner_wrapper flex_row">
 
-            <a href="#" class="left_column flex_column">
+            <a href="{{ route('main_page',['lang'=>app()->getLocale()]) }}" class="left_column flex_column">
                 <div class="image_wrapper">
                     <img src="{{ asset('img/mejlis_building.svg') }}" alt="">
                 </div>
