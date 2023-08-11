@@ -65,35 +65,79 @@ return [
     'mejlis_history_page' => [
         'title' => 'Mejlisiň taryhy',
         'text_title' => 'Türkmenistanyň Mejlisi hakynda Maglumat',
-        'text' => "<p>&emsp;&emsp;&ensp;Türkmenistanda parlamentiň we döwlet-institusional gurluşyň uzak bolmadyk taryhyna ser salanyňda, ýurdumyzda parlamentarizmiň yzygiderli ösýändigine göz ýetirmek bolýar.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Milli parlamentiň kemala gelmegi Türkmenistanyň 1991-nji ýylda döwlet Garaşsyzlygyna eýe bolan döwründen başlandy. Bu Milli parlamentiň däpleriniň peýda bolýan, dünýä parlamentarizminiň tejribesiniň öwrenilýän, bir hukuk giňişliginden başga bir hukuk giňişligine geçilýän döwür boldy.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmenistan döwlet Garaşsyzlygyna eýe bolmazyndan ozal respublikada kanun çykaryjylyk işi Türkmenistanyň Ýokary Soweti tarapyndan amala aşyrylýardy. Ýokary Sowetiň soňky çagyrylyşyny geçiş döwri hökmünde häsiýetlendirmek bolar. Onuň ygtyýarlyklary 1995-nji ýylyň 1-nji ýanwaryna, ýagny Mejlisiň birinji çagyrylyşynyň saýlawlaryna çenli uzaldyldy.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmenistanyň Ýokary Sowetiniň nobatdan daşary onunjy sessiýasynda (1991-nji ýylyň 27-nji oktýabrynda) «Türkmenistanyň Garaşsyzlygy we döwlet gurluşynyň esaslary hakynda» Konstitusion kanun kabul edildi. Şol kanunda emele gelen täze şertleri nazara almak bilen, döwlet edaralarynyň ähli ulgamyny, hereket edýän kanunçylygy özgerdip gurmagyň konsepsiýasy beýan edildi.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmenistanyň 1992-nji ýylyň 18-nji maýynda kabul edilen täze Konstitusiýasy syýasy ulgamy özgertmäge kuwwatly itergi beren möhüm waka boldy. Türkmenistanyň Konstitusiýasynyň kabul edilmegi türkmen halkynyň milli ruhunyň galkynan güni hökmünde taryha girdi. Iňňän uly syýasy ähmiýeti bolan bu resminama döwlet baradaky tejribäni we giň halk köpçüliginiň pikirleri bilen baýlaşan hil taýdan täze maksatlary özünde jemledi.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Garaşsyzlygyň ilkinji ýyllarynda döwletimiziň hukuk binýady ýokdy. Şoňa görä-de, onuň işiniň esasy maksady kanun çykaryjylyk işi boldy. Türkmenistanyň Mejlisi ýurduň ýokary kanun çykaryjy edarasy hökmünde döwlet özygtyýarlylygyny, raýat ylalaşygyny, durmuş taýdan durnuklylygy berkitmäge, jemgyýetde demokratik, durmuş-ykdysady özgertmeleri çuňlaşdyrmaga ýardam edýän kanunlary işläp taýýarlamaga we kabul etmäge uly üns berdi.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Şonuň netijesinde milli Parlament Garaşsyz Türkmenistanyň kanunçylyk-hukuk binýadyny ep-esli giňeltdi, ýurdumyzy ösdürmegiň esasy ugurlaryny kesgitledi, halkara resminamalarynyň we onuň ýöriteleşdirilen edaralarynyň Konwensiýalarynyň onlarçasyny tassyklady.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmenistanyň Konstitusiýasy Garaşsyz döwletiň milli aýratynlygyna we özboluşlylygyna has doly laýyk gelýän täze görnüşdäki häkimiýet hem-de dolandyryş edaralarynyň we olaryň öňünde durýan düýpli uly wezipeleri çözmäge ukyply ulgamyny berkitdi. Ýurdy dolandyrmagyň prezident görnüşi ýola goýuldy. Täze Ministrler Kabineti, ýerlerde bolsa häkimlikler döredildi. Ýerli öz-özüňi dolandyryşyň täzelenen edaralary bolan Geňeşler hereket edip başlady. Dünýä tejribesinde henize çenli bolmadyk hem-de Konstitusiýa arkaly tassyklanylan halk häkimiýetiniň ýokary wekilçilikli edarasy bolan Halk Maslahaty ýurdy dolandyrmagyň hakyky demokratik instituty boldy. Soňra döwlet dolandyryşyny kämilleşdirmegiň ýolunda Halk Maslahatynyň hukuk ýagdaýy birnäçe gezek özgerdildi.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Ýurdumyzyň parlamentiniň hukuk ýagdaýy düýpli üýtgedildi. Ol Mejlis diýlip atlandyryldy we oňa Konstitusiýany we kanunlary kabul etmek hem-de üýtgetmek, Prezidentiň, Mejlisiň, halk wekilleriniň saýlawlaryny bellemek, Ministrler Kabinetiniň maksatnamasyny makullamak, Türkmenistanyň Döwlet býujetini we onuň ýerine ýetirilişi baradaky hasabaty tassyklamak we başga-da döwlet ähmiýetli ençeme meseleler boýunça aýratyn ygtyýarlyklar berildi.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Konstitusiýa laýyklykda, Mejlis (Parlament) Türkmenistanyň hemişelik hereket edýän kanun çykaryjy edarasyna öwrüldi. Ol saýlawçylarynyň sany, takmynan deňeçer bolan okruglar boýunça saýlanylan deputatlaryň 50-sinden ybaratdy.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmenistanda taryhy nukdaýnazardan gysga döwrüň içinde jemgyýetiň we döwletiň durmuşynyň ähli çygyrlaryndaky gatnaşyklary düzgünleşdirýän kanunlar kabul edildi. Şonuň ýaly-da dünýäniň kanunçylyk işinde bar bolan, esasy hukuk düşünjelerini we pudaklaryny özünde jemleýän pugta kanunçylyk binýady döredildi. Dünýäniň syýasy, ykdysady we hukuk giňişligine biziň ýurdumyzyň işjeň goşulyşmagy türkmen hukuk ylmynda bank, salgyt, gümrük, ekologiýa we kanunçylygyň beýleki görnüşleri ýaly täze ugurlaryň ýüze çykmagyny şertlendirdi. Şol bir wagtda halkara işlerinde Türkmenistanyň işjeň ugry, diplomatik işde onuň deňi-taýy bolmadyk göreldesi halkara hukuk meselelerine garamakda we hukuk taýdan düşünmekde, şeýle hem halkara hukuk kadalarynyň milli kanunçylyga ornaşdyrylmagynda düýpgöter täze çemeleşmeleri kemala getirmäge mümkinçilik berdi.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Mejlisiň işi Türkmenistanyň Konstitusiýasyna we «Türkmenistanyň Mejlisi hakynda» Kanuna laýyklykda amala aşyrylyp başlandy. Ol meseleleriň erkin ara alnyp maslahatlaşylmagyna we bilelikde çözülmegine, Mejlisiň döredýän düzümleriniň hem-de saýlanylan wezipeli adamlarynyň jogapkärçiligine, hasabatlylygyna, aýanlyga, jemgyýetçilik pikiriniň hemişe hasaba alynmagyna esaslanýar.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Türkmen parlamentiniň birinji çagyrylyşynyň düzümine 50 deputat saýlanyldy. Deputatlaryň 9-sy (18 göterimi) aýal-gyzlardy.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Mejlisiň birinji çagyrylyşynda bäş sany komitet, ýagny Jemlenen kanunçylyk baradaky, Hukuk meseleleri baradaky, Ylym, bilim, we medeniýet baradaky, Ykdysadyýet we durmuş syýasaty baradaky, Halkara we parlamentara aragatnaşyklar baradaky komitetler hereket etdi.</p>
-                    <br/>
-                    <p>&emsp;&emsp;&ensp;Parlamentiň ikinji çagyrylyşynyň deputatlarynyň saýlawlary 1999-njy ýylyň dekabrynda, üçünji çagyrylyşynyň saýlawlary 2004-nji ýylyň dekabrynda, dördünji çagyrylyşynyň saýlawlary 2008-nji ýylyň dekabrynda, bäşinji çagyrylyşynyň saýlawlary 2013-nji ýylyň dekabrynda, altynjy çagyrylyşynyň saýlawlary möhletinden öň, 2018-nji ýylyň mart aýynda geçirildi. Mejlisiň dördünji çagyrylyşyndan başlap deputatlaryň sany 125 adamdan ybarat bolup, olaryň ygtyýarlyk möhleti 5 ýyla deň boldy. Parlamentde häzirki wagtda ýurdumyzda hereket edýän üç sany syýasy partiýa ‒ Türkmenistanyň Demokratik partiýasy, Türkmenistanyň Agrar partiýasy we Türkmenistanyň Senagatçylar hem-de telekeçiler partiýasy şeýle hem raýatlaryň toparlary tarapyndan hödürlenilen we saýlanylan deputatlar wekilçilik edýärler.</p>",
+        'text' => '<p style="font-weight: bold; text-align:center">Umumy maglumat</p>
+        <br />
+        <p>
+            &emsp;&emsp;&emsp;Türkmenistanyň Mejlisi (Parlamenti) kanun çykaryjy häkimiýeti amala aşyrýan wekilçilikli edaradyr.
+            Türkmenistanyň Mejlisiniň işi Türkmenistanyň Konstitusiýasyna, hem-de Türkmenistanyň Mejlisiniň (mundan beýläk Mejlis) işini düzgünleşdirýän Türkmenistanyň beýleki kadalaşdyryjy hukuk namalaryna laýyklykda amala aşyrylýar.
+            Mejlis saýlaw okruglary boýunça saýlanylýan 125 deputatdan ybaratdyr. Deputatlar 5 ýyl möhlet bilen saýlanylýar. 
+            Saýlawlar gününe çenli ýigrimi bäş ýaşy dolan we soňky on ýylyň dowamynda Türkmenistanda hemişelik ýaşaýan Türkmenistanyň raýaty Mejlisiň deputatlygyna saýlanyp bilner.
+            Türkmenistanyň Mejlisiniň deputatlarynyň  soňky (ýedinji çagyrylyş) saýlawlary 2023-nji ýylyň 26-njy martynda geçirildi.
+        </p>
+        <br />
+        <p style="font-weight: bold; text-align:center">Mejlisiň we onuň düzümleriniň işiniň guralyşy</p>
+        <br />
+        <p>
+            &emsp;&emsp;&emsp;Mejlis öz işini maslahat görnüşinde amala aşyrýar.
+            Mejlisiň maslahaty zerurlyga görä, ýöne ýylda azyndan iki gezek Mejlisiň Başlygy tarapyndan çagyrylýar.
+            Mejlisiň nobatdan daşary maslahaty Türkmenistanyň Prezidentiniň başlangyjy bilen ýa-da Mejlisiň deputatlarynyň umumy sanynyň azyndan üçden bir böleginiň teklibi boýunça çagyrylyp bilner.
+            Mejlisiň maslahatyna Mejlisiň Dessurynda bellenilen tertipde döwlet edaralarynyň, jemgyýetçilik birleşikleriniň, ylmy edaralaryň, köpçülikleýin habar beriş serişdeleriniň wekilleri, şeýle hem beýleki adamlar gatnaşyp bilerler.
+            Türkmenistanyň Prezidentiniň we Türkmenistanyň Halk Maslahatynyň Başlygynyň Mejlisiň ähli maslahatlaryna gatnaşmaga hukugy bardyr.
+            Türkmenistanyň Ministrler Kabinetiniň Başlygynyň Orunbasarlary Mejlisiň ähli maslahatlaryna gatnaşyp bilerler.
+            Mejlisiň maslahatyny guramagyň we geçirmegiň tertibi Mejlisiň Dessury bilen kesgitlenilýär.
+        </p>
+        <p>Mejlisde 8 komitet hereket edýär:</p>
+        <ul style="list-style: decimal;">
+            <li>Adam hukuklaryny we azatlyklaryny goramak baradaky komitet;</li>
+            <li>Kada-kanunçylyk baradaky komitet;</li>
+            <li>Ylym, bilim medeniýet we ýaşlar syýasaty baradaky komitet;</li>
+            <li>Ykdysady meseleler baradaky komitet;</li>
+            <li>Durmuş syýasaty baradaky komitet;</li>
+            <li>Halkara we parlamentara aragatnaşyklar baradaky komitet;</li>
+            <li>Daşky gurşawy goramak, tebigatdan peýdalanmak we agrosenagat toplumy baradaky komitet;</li>
+            <li>Ýerli wekilçilikli häkimiýet we öz-özüňi dolandyryş edaralary bilen işlemek baradaky komitet.</li>
+        </ul>
+        
+        <br/>
+        <p style="font-weight: bold; text-align:center">Mejlisiň ygtyýarlyklary</p>
+        <br/>
+
+        <p>
+            &emsp;&emsp;&emsp;- Konstitusiýany we kanunlary kabul etmek, olara üýtgetmeler we goşmaçalar girizmek, olaryň ýerine ýetirilişine gözegçiligi we olara resmi düşündiriş bermegi amala aşyrmak;
+        </p>
+        <p>
+            &emsp;&emsp;&emsp;- Türkmenistanyň Prezidenti tarapyndan kabul edilen kanunlary tassyklamak barada meselä hökmany garamak;
+        </p>
+        <p>
+            &emsp;&emsp;&emsp;- Türkmenistanyň Ministrler Kabinetiniň işiniň maksatnamasyny makullamak barada meselä garamak;
+        </p>
+        <p>
+            &emsp;&emsp;&emsp;- Türkmenistanyň Döwlet býujetini we onuň ýerine ýetirilişi hakynda hasabaty tassyklamak barada meselelere garamak;
+        </p>
+        <p>
+            &emsp;&emsp;&emsp;- Döwletiň içeri we daşary syýasatynyň esasy ugurlaryna hem-de ýurdy syýasy, ykdysady, durmuş we medeni taýdan ösdürmegiň maksatnamalaryna garamak;
+        </p>
+        <p>
+            &emsp;&emsp;&emsp;- Ählihalk sala salşyklaryny geçirmek hakynda meseleleri çözmek;
+        </p>
+        <p>
+            &emsp;&emsp;&emsp;- Türkmenistanyň Prezidentiniň, Mejlisiň deputatlarynyň, welaýat, etrap we şäher halk maslahatlarynyň we Geňeşleriň agzalarynyň saýlawlaryny bellemek we kanunçylykda göz öňünde tutulan beýleki ygtyýarlyklar.
+        </p>
+
+        <br/>
+        <p style="font-weight: bold; text-align:center">Deputatlaryň ygtyýarlyklary</p>
+        <br/>
+        
+        <p>
+            &emsp;&emsp;&emsp;Mejlisiň täze çagyrylyşynyň deputatlarynyň ygtyýarlyklary Mejlisiň täze çagyrylyşynyň birinji maslahatynda ykrar edilýär.
+            Mejlisiň öňki çagyrylyşynyň deputatlary Mejlisiň täze çagyrylyşynyň birinji maslahaty açylýança öz ygtyýarlyklaryny saklaýarlar.
+            Deputatlar halkyň doly ygtyýarly wekilleri bolmak bilen, Mejlisde olaryň işini üpjün edýän ähli hukuklara eýedirler.
+            Kanunlary we gaýry kadalaşdyryjy hukuk namalaryny taýýarlamak, garamak,kabul etmek we olaryň ýerine ýetirilişine gözegçilik etmek baradaky işler Mejlisiň deputatynyň işiniň esasy ugrudyr.
+            Döwlet Mejlisiň deputatyna onuň öz ygtyýarlyklaryny päsgelçiliksiz we netijeli amala aşyrmagy üçin ähli şertleriň döredilmegini, olaryň hukuklarynyň we azatlyklarynyň, janynyň, at-abraýynyň we mertebesiniň goralmagyny, şeýle hem şahsy eldegrilmesizligini kepillendirýär.
+            Mejlisiň deputatynyň hukuklaryna, janyna, at-abraýyna, mertebesine we azatlygyna, şahsy eldegrilmesizligine hyýanat edilmegi Türkmenistanyň kanunçylygynda bellenen jogapkärçilige eltýär.
+            Mejlisiň deputaty şol bir wagtyň özünde Türkmenistanyň Ministrler Kabinetiniň agzasy, häkim, arçyn, kazy, prokuror wezipesini eýeläp bilmez.
+            Mejlisiň deputaty görkezilen wezipeleriň birine bellenilen ýa-da saýlanylan ýagdaýynda, şol wezipä bellenilen ýa-da saýlanylan wagtyndan onuň deputatlyk ygtyýarlyklary ýatyrylan diýlip hasap edilýär.
+        </p>',
     ],
 
     'convocation_page' => [
