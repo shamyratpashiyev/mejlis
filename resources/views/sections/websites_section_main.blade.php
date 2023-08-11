@@ -19,17 +19,17 @@
 
         <div class="content_block owl-carousel flex_row" id="websites_block">
 
-            <a href="https://mlsp.gov.tm" class="website_container flex_column">
-                <img class="icon" src="{{ asset('icons/website_logo_1.svg') }}" alt="">
+            <a href="https://maslahat.gov.tm/" class="website_container flex_column">
+                <img class="icon" src="{{ asset('icons/website_logo_2.svg') }}" alt="">
                 <h3 class="content">
-                    @lang('app.websites_section.labour_ministry')
+                    @lang('app.websites_section.halk_maslahaty')
                 </h3>
             </a>
 
-            <a href="https://www.mincom.gov.tm" class="website_container flex_column">
-                <img class="icon" src="{{ asset('icons/website_logo_2.svg') }}" alt="">
+            <a href="https://minjust.gov.tm" class="website_container flex_column">
+                <img class="icon" src="{{ asset('icons/justice_min.png') }}" alt="">
                 <h3 class="content">
-                    @lang('app.websites_section.turkmencom')
+                    @lang('app.websites_section.min_of_justice')
                 </h3>
             </a>
 
@@ -40,10 +40,45 @@
                 </h3>
             </a>
 
-            <a href="https://www.tgymj.gov.tm" class="website_container flex_column">
-                <img class="icon" src="{{ asset('icons/website_logo_4.svg') }}" alt="">
+            <a href="https://court.gov.tm" class="website_container flex_column">
+                <img class="icon" src="{{ asset('icons/supreme_court.png') }}" alt="">
                 <h3 class="content">
-                    @lang('app.websites_section.red_crescent')
+                    @lang('app.websites_section.supreme_court')
+                </h3>
+            </a>
+
+            <a href="https://bp.gov.tm" class="website_container flex_column">
+                <img class="icon" src="{{ asset('icons/prosecutors.png') }}" alt="">
+                <h3 class="content">
+                    @lang('app.websites_section.prosecutors')
+                </h3>
+            </a>
+
+            <a href="https://science.gov.tm" class="website_container flex_column">
+                <img class="icon" src="{{ asset('icons/website_logo_2.svg') }}" alt="">
+                <h3 class="content">
+                    @lang('app.websites_section.academy')
+                </h3>
+            </a>
+
+            <a href="https://education.gov.tm" class="website_container flex_column">
+                <img class="icon" src="{{ asset('icons/website_logo_2.svg') }}" alt="">
+                <h3 class="content">
+                    @lang('app.websites_section.education')
+                </h3>
+            </a>
+
+            <a href="https://fineconomic.gov.tm" class="website_container flex_column">
+                <img class="icon" src="{{ asset('icons/website_logo_2.svg') }}" alt="">
+                <h3 class="content">
+                    @lang('app.websites_section.finance')
+                </h3>
+            </a>
+
+            <a href="https://mlsp.gov.tm" class="website_container flex_column">
+                <img class="icon" src="{{ asset('icons/website_logo_1.svg') }}" alt="">
+                <h3 class="content">
+                    @lang('app.websites_section.labour_ministry')
                 </h3>
             </a>
 
@@ -51,34 +86,6 @@
                 <img class="icon" src="{{ asset('icons/website_logo_5.svg') }}" alt="">
                 <h3 class="content">
                     @lang('app.websites_section.healthcare_ministry')
-                </h3>
-            </a>
-
-            <a href="https://mlsp.gov.tm" class="website_container flex_column">
-                <img class="icon" src="{{ asset('icons/website_logo_1.svg') }}" alt="">
-                <h3 class="content">
-                    @lang('app.websites_section.labour_ministry')
-                </h3>
-            </a>
-
-            <a href="https://www.mincom.gov.tm" class="website_container flex_column">
-                <img class="icon" src="{{ asset('icons/website_logo_2.svg') }}" alt="">
-                <h3 class="content">
-                    @lang('app.websites_section.turkmencom')
-                </h3>
-            </a>
-
-            <a href="https://www.tgymj.gov.tm" class="website_container flex_column">
-                <img class="icon" src="{{ asset('icons/website_logo_4.svg') }}" alt="">
-                <h3 class="content">
-                    @lang('app.websites_section.red_crescent')
-                </h3>
-            </a>
-
-            <a href="https://mlsp.gov.tm" class="website_container flex_column">
-                <img class="icon" src="{{ asset('icons/website_logo_1.svg') }}" alt="">
-                <h3 class="content">
-                    @lang('app.websites_section.labour_ministry')
                 </h3>
             </a>
         </div>
@@ -90,7 +97,7 @@
 <script>
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
-            autoplay:true,
+            autoplay:false,
             autoplayTimeout:2000,
             autoplayHoverPause:false,
             items:5,

@@ -360,10 +360,15 @@ return [
 
     'websites_section' => [
         'labour_ministry' => 'Türkmenistanyň Zähmet we ilaty durmuş taýdan goramak ministrligi',
-        'turkmencom' => '«TÜRKMENARAGATNAŞYK» agentligi',
         'foreign_ministry' => 'Türkmenistanyň Daşary işler ministrligi',
-        'red_crescent' => 'Türkmenistanyň Gyzyl Ýarymaý Milli jemgyýeti',
         'healthcare_ministry' => 'Türkmenistanyň Saglygy goraýyş we derman senagaty ministrligi',
+        'halk_maslahaty' => 'Türkmenistanyň Halk Maslahaty',
+        'min_of_justice' => 'Türkmenistanyň Adalat Ministrligi',
+        'supreme_court' => 'Türkmenistanyň Ýokary Kazyýeti',
+        'prosecutors' => 'Türkmenistanyň Baş Prokuraturasy',
+        'academy' => 'Türkmenistanyň Ylymlar Akademiýasy',
+        'education' => 'Türkmenistanyň Bilim Ministrligi',
+        'finance' => 'Türkmenistanyň Maliýe we Ykdysadyýet Ministrligi',
     ],
 
     'alphabet' => '<span data-letter="a" class="letter">A</span>

@@ -262,8 +262,10 @@
         color: var(--text_black_default);
         flex-shrink: 0; }
         .websites_section .inner_wrapper .content_block .website_container .icon {
-          width: 90px;
-          height: 90px; }
+          width: max-content;
+          height: max-content;
+          max-width: 90px;
+          max-height: 90px; }
         .websites_section .inner_wrapper .content_block .website_container .content {
           font-family: 'OpenSansMedium', sans-serif;
           font-size: 14px;

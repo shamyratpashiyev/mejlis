@@ -394,8 +394,10 @@
                 flex-shrink: 0;
 
                 .icon{
-                    width: 90px;
-                    height: 90px;
+                    width: max-content;
+                    height: max-content;
+                    max-width: 90px;
+                    max-height: 90px;
                 }
 
                 .content{
