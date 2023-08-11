@@ -43,11 +43,6 @@
                     </div>
 
                     <div class="key_value_wrapper flex_row">
-                        <span class="key">@lang('app.mejlis_deputies_page.email'):</span>
-                        <a href="mailto:info@mejlis.gov.tm" class="value link">{{ $selected_deputy->email }}</a>
-                    </div>
-
-                    <div class="key_value_wrapper flex_row">
                         <span class="key">@lang('app.mejlis_deputies_page.committee'):</span>
                         <div class="value flex_column">
                             @foreach ($selected_deputy->committees as $committee)

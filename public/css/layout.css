@@ -353,11 +353,13 @@ footer {
         font-family: 'OpenSansExtraBold', sans-serif;
         font-size: 18px;
         margin: 0 0 19px 0;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        text-align: center; }
       footer .inner_wrapper .middle_column .description {
         font-family: 'OpenSansRegular', sans-serif;
         font-size: 16px;
-        margin: 0; }
+        margin: 0;
+        text-align: justify; }
     footer .inner_wrapper .right_column {
       width: 255px;
       height: 100%;
