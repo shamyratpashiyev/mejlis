@@ -156,14 +156,14 @@
 
 <script>
 const window_height = window.innerHeight
-let scroll_dir = 'down'
-$('.upper_header').css('display', 'block')
+// let scroll_dir = 'down'
+// $('.upper_header').css('display', 'block')
 
 $(document).ready(() => {
 
-    if($(window).scrollTop() > 5) {
-        $('.upper_header').addClass('hidden')
-    }
+    // if($(window).scrollTop() > 5) {
+    //     $('.upper_header').addClass('hidden')
+    // }
     $('.legislation_container').on('click', (event)=>{
         if($(event.target).data('href-value')){
             window.location.assign($(event.target).data('href-value'))
@@ -180,23 +180,23 @@ $(document).ready(() => {
         }
     })
 })
-$(window).on('scroll',(event)=> {
+// $(window).on('scroll',(event)=> {
 
-    if($(window).scrollTop() > 150){
-        scroll_dir = 'up'
-    }
+//     if($(window).scrollTop() > 150){
+//         scroll_dir = 'up'
+//     }
 
-    if($(window).scrollTop() > 5 && scroll_dir == 'down') {
-        $('.upper_header').addClass('hidden')
-        $('.upper_header .active').removeClass('active')
-        $('.upper_header.blur').removeClass('blur')
+//     if($(window).scrollTop() > 5 && scroll_dir == 'down') {
+//         $('.upper_header').addClass('hidden')
+//         $('.upper_header .active').removeClass('active')
+//         $('.upper_header.blur').removeClass('blur')
 
-    }  else if($(window).scrollTop() == 0 && scroll_dir == 'up'){
-        $('.upper_header').removeClass('hidden')
-        scroll_dir = 'down'
-    }
+//     }  else if($(window).scrollTop() == 0 && scroll_dir == 'up'){
+//         $('.upper_header').removeClass('hidden')
+//         scroll_dir = 'down'
+//     }
 
-});
+// });
 
 </script>
 @endsection

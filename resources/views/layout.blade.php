@@ -360,28 +360,28 @@
     <script>
         $(document).ready(()=>{
 
-            $(".banner_slider").slick({
-                arrows: false,
-                adaptiveHeight: true,
-                autoplay: true,
-                autoplaySpeed: 6000,
-                speed: 1000,
-                pauseOnFocuse: false,
-                pauseOnHover: false,
-                slidesToShow: 1,
-                centerMode: true,
-                variableWidth: true
-            });
+            // $(".banner_slider").slick({
+            //     arrows: false,
+            //     adaptiveHeight: true,
+            //     autoplay: true,
+            //     autoplaySpeed: 6000,
+            //     speed: 1000,
+            //     pauseOnFocuse: false,
+            //     pauseOnHover: false,
+            //     slidesToShow: 1,
+            //     centerMode: true,
+            //     variableWidth: true
+            // });
 
-            $('.hamburger_button_wrapper').click((e) => {
-                $('.hamburger_menu').toggleClass('active');
-                $('.upper_header').toggleClass('blur');
-            })
+            // $('.hamburger_button_wrapper').click((e) => {
+            //     $('.hamburger_menu').toggleClass('active');
+            //     $('.upper_header').toggleClass('blur');
+            // })
 
-            $('.blur_effect').on('click',()=>{
-                $('.hamburger_menu').removeClass('active');
-                $('.upper_header').removeClass('blur');
-            })
+            // $('.blur_effect').on('click',()=>{
+            //     $('.hamburger_menu').removeClass('active');
+            //     $('.upper_header').removeClass('blur');
+            // })
 
             $('body').on('click',(e) => {
                 if($(e.target).hasClass('lang_wrapper') || $(e.target).parents().hasClass('lang_wrapper')){
