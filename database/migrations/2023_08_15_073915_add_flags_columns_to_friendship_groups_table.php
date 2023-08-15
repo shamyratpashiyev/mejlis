@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('friendship_groups', function (Blueprint $table) {
-            $table->string('flag_1',500);
-            $table->string('flag_2',500);
+            $table->string('flag_1',500)->nullable();
+            $table->string('flag_2',500)->nullable();
         });
     }
 
