@@ -28,6 +28,8 @@ class FriendshipGroupsStore extends FormRequest
             'description_tm' => 'required',
             'description_ru' => 'required',
             'description_en' => 'required',
+            'flag_1' => 'required',
+            'flag_2' => 'required',
             'published_date' => 'required|date'
         ];
     }

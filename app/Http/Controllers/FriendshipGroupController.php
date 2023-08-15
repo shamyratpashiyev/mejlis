@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\FriendshipGroupsStore;
-use App\Models\FriendshipGroup;
 use Illuminate\Http\Request;
+use App\Models\FriendshipGroup;
+use Illuminate\Support\Facades\File;
+use App\Http\Requests\FriendshipGroupsStore;
 
 class FriendshipGroupController extends Controller
 {
@@ -39,6 +40,13 @@ class FriendshipGroupController extends Controller
         $group->description_en = $request->description_en;
         $group->published_date = $request->published_date;
 
+        if($request->hasFile('flag_1')){
+            $group->flag_1 = $request->file('flag_1')->store('/uploaded_files/friendship_group');
+        }
+        if($request->hasFile('flag_2')){
+            $group->flag_2 = $request->file('flag_2')->store('/uploaded_files/friendship_group');
+        }
+
         $group->save();
 
         return redirect()->back();
@@ -65,8 +73,18 @@ class FriendshipGroupController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(FriendshipGroupsStore $request, string $id)
+    public function update(Request $request, string $id)
     {
+        $request->validate([
+            'title_tm' => 'required',
+            'title_ru' => 'required',
+            'title_en' => 'required',
+            'description_tm' => 'required',
+            'description_ru' => 'required',
+            'description_en' => 'required',
+            'published_date' => 'required|date'
+        ]);
+
         $group = FriendshipGroup::findOrFail($id);
         $group->title_tm = $request->title_tm;
         $group->title_ru = $request->title_ru;
@@ -76,9 +94,19 @@ class FriendshipGroupController extends Controller
         $group->description_en = $request->description_en;
         $group->published_date = $request->published_date;
 
+        if($request->hasFile('flag_1')){
+            File::delete(public_path() . '/' . $group->flag_1);
+            $group->flag_1 = $request->file('flag_1')->store('/uploaded_files/friendship_group');
+        }
+
+        if($request->hasFile('flag_2')){
+            File::delete(public_path() . '/' . $group->flag_2);
+            $group->flag_2 = $request->file('flag_2')->store('/uploaded_files/friendship_group');
+        }
+        
         $group->save();
 
-        return redirect()->back();
+        return redirect()->route('friendship_groups.index');
     }
 
     /**
@@ -86,7 +114,10 @@ class FriendshipGroupController extends Controller
      */
     public function destroy(string $id)
     {
-        FriendshipGroup::findOrFail($id)->delete();
+        $selected_group = FriendshipGroup::findOrFail($id);
+        File::delete(public_path() . '/' . $selected_group->flag_1);
+        File::delete(public_path() . '/' . $selected_group->flag_2);
+        $selected_group->delete();
         return redirect(route('friendship_groups.index'));
     }
 }

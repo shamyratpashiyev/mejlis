@@ -23,6 +23,8 @@ class FriendshipGroupFactory extends Factory
             'description_tm' => '<p>Turkmen_' . fake()->realText($maxNbChars = 5000) . '</p>',
             'description_ru' => '<p>Russian_' . fake()->realText($maxNbChars = 5000) . '</p>',
             'description_en' => '<p>English_' . fake()->realText($maxNbChars = 5000) . '</p>',
+            'flag_1' => 'img/flag_' . fake()->numberBetween(1,5) . '.png',
+            'flag_2' => 'img/flag_' . fake()->numberBetween(1,5) . '.png',
             'published_date' => fake()->dateTime(),
         ];
     }

@@ -108,7 +108,50 @@
                     <p class="err">{{ $message }}</p>
                 @enderror
             </div>
+            <div class="form__item alignBot w30" style="row-gap: 20px">
+                <div class="file__box">
+                    <label for="file-3" class="file">
+                        Прикрепить файл
+                        <img src="{{ asset('admins/img/ico/link.svg') }}">
+                    </label>
+                    <input type="file" id="file-3" class="inputFile" accept="image/png, image/jpg, image/jpeg" name="flag_1">
+                    <!-- HELP -->
+                    <div class="help">
+                        <div class="help__icon">?</div>
+                        <div class="help__content">
+                            <span><b>Название:</b> Флаг 1</span>
+                            <span><b>Формат:</b> jpeg, jpg, png</span>
+                            <span><b>Размер:</b> 235 x 137px</span>
+                            <span><b>Соотношение сторон:</b> 3/2</span>
+                        </div>
+                    </div>
+                    @error('flag_1')
+                        <p class="err">{{ $message }}</p>
+                    @enderror
+                </div>
 
+                <div class="file__box">
+                    <label for="file-4" class="file">
+                        Прикрепить файл
+                        <img src="{{ asset('admins/img/ico/link.svg') }}">
+                    </label>
+                    <input type="file" id="file-4" class="inputFile" accept="image/png, image/jpg, image/jpeg" name="flag_2">
+                    <!-- HELP -->
+                    <div class="help">
+                        <div class="help__icon">?</div>
+                        <div class="help__content">
+                            <span><b>Название:</b> Флаг 2</span>
+                            <span><b>Формат:</b> jpeg, jpg, png</span>
+                            <span><b>Размер:</b> 235 x 137px</span>
+                            <span><b>Соотношение сторон:</b> 3/2</span>
+                        </div>
+                    </div>
+                    @error('flag_2')
+                        <p class="err">{{ $message }}</p>
+                    @enderror
+                </div>
+            </div>
+            
         </div>
 
         <!-- ROW  -->

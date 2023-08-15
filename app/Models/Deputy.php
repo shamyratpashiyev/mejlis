@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Velayat;
 use App\Models\Committee;
+use App\Models\FriendshipGroup;
 use App\Models\ElectionDistrict;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -25,5 +26,9 @@ class Deputy extends Model
 
     public function velayat(){
         return $this->belongsTo(Velayat::class, 'velayat_id');
+    }
+
+    public function friendship_groups(){
+        return $this->belongsToMany(FriendshipGroup::class, 'friendship_group_deputies_pivot','deputy_id', 'friendship_group_id');
     }
 }

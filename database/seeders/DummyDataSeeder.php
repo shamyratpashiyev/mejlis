@@ -15,6 +15,8 @@ use App\Models\FriendshipGroup;
 use App\Models\NewsCooperation;
 use Illuminate\Database\Seeder;
 use App\Models\NewsInternational;
+use App\Models\FriendshipGroupDeputy;
+use Database\Factories\FriendshipGroupDeputyFactory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DummyDataSeeder extends Seeder
@@ -37,5 +39,6 @@ class DummyDataSeeder extends Seeder
         Deputy::factory(50)->create();
         Committee::factory(10)->create();
         DeputyCommittee::factory(50)->create();
+        FriendshipGroupDeputy::factory(50)->create();
     }
 }

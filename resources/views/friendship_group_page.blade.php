@@ -32,6 +32,27 @@
                         @lang('app.friendship_group_page.title_full')
                     </div>
 
+                    <div class="flags_block flex_column">
+                        <div class="images_row flex_row">
+                            <img src="{{ asset($selected_group->flag_1) }}" alt="">
+                            <img src="{{ asset($selected_group->flag_2) }}" alt="">
+                        </div>
+                        <p class="group_name">
+                            {{ $selected_group->{'title_' . $current_lang->code} }}
+                        </p>
+                    </div>
+
+                    <div class="group_members_block flex_row">
+                        @foreach ($selected_group->members as $deputy)
+                            <div class="group_member_container flex_column">
+                                <a href="{{ route('single_deputy_page', ['id'=>$deputy->id, 'lang'=>app()->getLocale()]) }}" class="name">{{ $deputy->{'fullname_' . $current_lang->code} }}</a>
+                                <p class="position_name">
+                                    {{ $deputy->{'position_' . $current_lang->code} }}
+                                </p>
+                            </div>
+                        @endforeach
+                    </div>
+
                     <div class="text_block">
                         <h4 class="text_title">{{ $selected_group->{'title_' . $current_lang->code} }}</h4>
                         

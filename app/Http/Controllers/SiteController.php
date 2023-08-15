@@ -206,7 +206,8 @@ class SiteController extends Controller
 
     public function friendship_group(string $id = '1'){
         $this->groups_all = FriendshipGroup::orderBy('created_at','desc')->get(['id','title_' . request()->query('lang'),'description_' . request()->query('lang'), 'published_date']);
-        $this->selected_group = FriendshipGroup::select(['id','title_' . request()->query('lang'),'description_' . request()->query('lang'), 'published_date'])->findOrFail($id);
+        $this->selected_group = FriendshipGroup::select(['id','title_' . request()->query('lang'),'description_' . request()->query('lang'),
+                                 'published_date', 'flag_1', 'flag_2'])->findOrFail($id);
         return view('friendship_group_page', $this->data);
     }
 
