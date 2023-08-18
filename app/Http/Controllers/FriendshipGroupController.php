@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Deputy;
 use Illuminate\Http\Request;
 use App\Models\FriendshipGroup;
 use Illuminate\Support\Facades\File;
@@ -23,7 +24,8 @@ class FriendshipGroupController extends Controller
      */
     public function create()
     {
-        return view('admin.friendship_groups.create');
+        $deputies_all = Deputy::get();
+        return view('admin.friendship_groups.create',['deputies_all' => $deputies_all]);
     }
 
     /**
@@ -48,6 +50,7 @@ class FriendshipGroupController extends Controller
         }
 
         $group->save();
+        $group->members()->sync($request->group_members_id);
 
         return redirect()->back();
     }
@@ -65,9 +68,10 @@ class FriendshipGroupController extends Controller
      */
     public function edit(string $id)
     {
+        $deputies_all = Deputy::get();
         $selected_group = FriendshipGroup::findOrFail($id);
 
-        return view('admin.friendship_groups.edit',['selected_group' => $selected_group]);
+        return view('admin.friendship_groups.edit',['selected_group' => $selected_group, 'deputies_all' => $deputies_all]);
     }
 
     /**
@@ -105,6 +109,7 @@ class FriendshipGroupController extends Controller
         }
         
         $group->save();
+        $group->members()->sync($request->group_members_id);
 
         return redirect()->route('friendship_groups.index');
     }

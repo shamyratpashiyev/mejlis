@@ -100,6 +100,18 @@
                     <p class="err">{{$message}}</p>
                 @enderror
             </div>
+
+            <div class="form__item w30">
+                <label class="txt">Члены комитета</label>
+                <select name="group_members_id[]" id="" multiple size="10" style="height: max-content">
+                    @foreach ($deputies_all as $deputy)
+                        <option value="{{ $deputy->id }}" @if(in_array($deputy->id, $selected_group->members->pluck('id')->toArray())) selected @endif>{{ $deputy->fullname_tm }}</option>
+                    @endforeach
+                </select>
+                @error('name')
+                    <p class="err">{{ $message }}</p>
+                @enderror
+            </div>
         </div>
 
         <!-- ROW  -->
