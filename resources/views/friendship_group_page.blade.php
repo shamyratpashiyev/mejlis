@@ -28,9 +28,9 @@
                 <x-sidebar :links-list="$links_list" title="{{ __('app.layout.international') }}"/>
 
                 <div class="middle_column flex_column">
-                    <div class="block_title">
+                    {{-- <div class="block_title">
                         @lang('app.friendship_group_page.title_full')
-                    </div>
+                    </div> --}}
 
                     <div class="flags_block flex_column">
                         <div class="images_row flex_row">
@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="text_block">
-                        <h4 class="text_title">{{ $selected_group->{'title_' . $current_lang->code} }}</h4>
+                        {{-- <h4 class="text_title">{{ $selected_group->{'title_' . $current_lang->code} }}</h4> --}}
                         
                         <div class="text_content">
                             {!! $selected_group->{'description_' . app()->getLocale()} !!}
