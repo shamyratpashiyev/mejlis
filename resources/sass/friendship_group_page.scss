@@ -15,6 +15,8 @@
             .middle_column{
                 color: var(--text_black_default);
                 width: 729px;
+                background-color: var(--container_background_blue);
+                padding-top: 25px;
                 
                 .block_title{
                     font-family: 'OpenSansExtraBold',sans-serif;
@@ -80,7 +82,7 @@
                 }
 
                 .text_block{
-                    background-color: var(--container_background_blue);
+                    
                     box-sizing: border-box;
                     padding: 10px 10px 15px 10px;
 

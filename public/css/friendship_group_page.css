@@ -10,7 +10,9 @@
       column-gap: 80px; }
       .friendship_group_page .inner_wrapper .page_content_block .middle_column {
         color: var(--text_black_default);
-        width: 729px; }
+        width: 729px;
+        background-color: var(--container_background_blue);
+        padding-top: 25px; }
         .friendship_group_page .inner_wrapper .page_content_block .middle_column .block_title {
           font-family: 'OpenSansExtraBold',sans-serif;
           font-size: 25px;
@@ -57,7 +59,6 @@
               margin: 0;
               text-align: center; }
         .friendship_group_page .inner_wrapper .page_content_block .middle_column .text_block {
-          background-color: var(--container_background_blue);
           box-sizing: border-box;
           padding: 10px 10px 15px 10px; }
           .friendship_group_page .inner_wrapper .page_content_block .middle_column .text_block .text_title {
