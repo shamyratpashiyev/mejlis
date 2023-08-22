@@ -18,162 +18,7 @@
     
 </head>
 <body>
-    <div class="upper_header">
-        <div class="main flex_column">
-            <div class="banner_slider">
-                <img class="background_image" src="{{ asset('img/header_main.jpg') }}" alt="">
-                <img class="background_image" src="{{ asset('img/header_main_2.jpg') }}" alt="">
-            </div>
-            <div class="topbar flex_row">
-                <a href="{{ route('main_page',app()->getLocale()) }}" class="logo_wrapper flex_row">
-                    <img class="logo_img" src="{{ asset('/img/gerb.png') }}" alt="">
-                    <span class="logo_text">@lang('app.layout.logo_main')</span>
-                </a>
-
-                <div class="lang_hamburger_wrapper flex_row">
-                    <div class="lang_wrapper flex_row">
-                        <svg class="globe" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 11C21 16.5228 16.5228 21 11 21M21 11C21 5.47715 16.5228 1 11 1M21 11C21 9.34315 16.5228 8 11 8C5.47715 8 1 9.34315 1 11M21 11C21 12.6569 16.5228 14 11 14C5.47715 14 1 12.6569 1 11M11 21C5.47715 21 1 16.5228 1 11M11 21C13.2091 21 15 16.5228 15 11C15 5.47715 13.2091 1 11 1M11 21C8.79086 21 7 16.5228 7 11C7 5.47715 8.79086 1 11 1M1 11C1 5.47715 5.47715 1 11 1" stroke="white" stroke-width="1.5"/>
-                        </svg>
-                            
-                        <span class="current_lang">{{ $current_lang->label }}</span>
-                        <svg class="chevron_down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 10L12 14L17 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                            
-                        <div class="lang_menu flex_column">
-                            @foreach ($active_langs as $lang)
-                                @if ($lang->code != app()->getLocale())
-                                    <a class="lang_item" href="{{ request()->url() }}?lang={{ $lang->code }}">{{ $lang->label }}</a>
-                                @endif
-                            @endforeach
-                        </div>
-                    </div>
-
-                    <div class="hamburger_button_wrapper flex_column" id="hamburger_button">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content flex_row">
-                <div class="inner_wrapper flex_column">
-                    <img class="building_img" src="{{ asset('img/mejlis_building.svg') }}" alt="">
-                    <hr/>
-                    <p class="title">@lang('app.layout.logo_title')</p>
-                    <span class="info">@lang('app.layout.logo_description')</span>
-                </div>
-            </div>
-
-            <div class="blur_effect">
-            </div>
-
-            <div class="hamburger_menu flex_column">
-                <div class="hamburger_button_wrapper">
-                    <span class="hamburger_button"></span>
-                </div>
-                <div class="inner_wrapper flex_column">
-                    <div class="top_block flex_column">
-                        <img class="building_img" src="{{ asset('img/mejlis_building.svg') }}" alt="">
-                        <hr/>
-                        <p class="title">@lang('app.layout.logo_title')</p>
-                        <span class="info">@lang('app.layout.logo_description')</span>
-                    </div>
-
-                    <div class="nav_block flex_column">
-                        <a class="hover_underline @if(Route::currentRouteNamed(['main_page'])) active @endif" href="{{ route('main_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.main_page')</a>
-                        <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['mejlis_history_page','convocation_page'])) active @endif" data-id="1">
-                            <span>@lang('app.layout.about_mejlis')</span>
-        
-                            <div class="dropdown_menu hamburger flex_column">
-                                <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('mejlis_history_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_history_page')</a>
-                                </div>
-                                <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('convocation_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.convocation_page',['number'=>$convocation_number])</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['mejlis_committees_page','mejlis_deputies_page','single_deputy_page'])) active @endif" data-id="2">
-                            <span>@lang('app.layout.mejlis_structure')</span>
-        
-                            <div class="dropdown_menu hamburger flex_column">
-                                <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('mejlis_committees_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_committees_page')</a>
-                                </div>
-                                <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('mejlis_deputies_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_deputies_page')</a>
-                                </div>
-                            </div>
-                        </div>
-                        {{-- <a class="hover_underline" href="#">@lang('app.layout.media')</a> --}}
-                        <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['international_cooperation_page','single_news_cooperation_page','friendship_group_page', 'news_international_page','single_news_international_page'])) active @endif" data-id="3">
-                            <span>@lang('app.layout.international')</span>
-        
-                            <div class="dropdown_menu hamburger flex_column">
-                                <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('international_cooperation_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.international_cooperation_page')</a>
-                                </div>
-                                <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('friendship_group_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.friendship_groups_page')</a>
-                                </div>
-                                <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('news_international_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_page')</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['codes_page','single_code_page','laws_page','single_law_page','mejlis_decrees_page','single_decree_page','constitutional_law_page'])) active @endif" data-id="4">
-                            <span>@lang('app.layout.legislation')</span>
-        
-                            <div class="dropdown_menu hamburger flex_column">
-                                {{-- <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('bills_discussion_page') }}">Законопроекты на обсуждение</a>
-                                </div> --}}
-                                <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('codes_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.codes_page')</a>
-                                </div>
-                                <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('laws_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.laws_page')</a>
-                                </div>
-                                <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('mejlis_decrees_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_decrees_page')</a>
-                                </div>
-                                <div class="item_wrapper hover_underline">
-                                    <a href="{{ route('constitutional_law_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.constitutional_law_page')</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="hover_underline" href="{{ route('contacts_page',['lang' => app()->getLocale()]) }}">@lang('app.layout.contacts_page')</a>
-                    </div>
-
-                    <div class="lang_block flex_row">
-
-                        <div class="lang_wrapper flex_row">
-                            <svg class="globe" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 11C21 16.5228 16.5228 21 11 21M21 11C21 5.47715 16.5228 1 11 1M21 11C21 9.34315 16.5228 8 11 8C5.47715 8 1 9.34315 1 11M21 11C21 12.6569 16.5228 14 11 14C5.47715 14 1 12.6569 1 11M11 21C5.47715 21 1 16.5228 1 11M11 21C13.2091 21 15 16.5228 15 11C15 5.47715 13.2091 1 11 1M11 21C8.79086 21 7 16.5228 7 11C7 5.47715 8.79086 1 11 1M1 11C1 5.47715 5.47715 1 11 1" stroke="white" stroke-width="1.5"/>
-                            </svg>
-                                
-                            <span class="current_lang">{{ $current_lang->label }}</span>
-                            <svg class="chevron_down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 10L12 14L17 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                                
-                            <div class="lang_menu flex_column">
-                                @foreach ($active_langs as $lang)
-                                    @if ($lang->code != app()->getLocale())
-                                        <a class="lang_item" href="{{ request()->url() }}?lang={{ $lang->code }}">{{ $lang->label }}</a>
-                                    @endif
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="middle_header flex_row">
+    <div class="top_header flex_row">
         <div class="inner_wrapper flex_column">
             <img src="{{ asset('img/mejlis_building.svg') }}" alt="">
             <h3 class="logo_text">@lang('app.layout.logo_title')</h3>
@@ -199,7 +44,7 @@
         </div>
     </div>
 
-    <div class="lower_header flex_row" id="scroll_anchor">
+    <div class="bottom_header flex_row">
         <div class="inner_wrapper flex_row">
             <div class="nav_block flex_row">
                 <a class="nav_button_wrapper hover_underline @if(Route::currentRouteNamed('main_page')) active @endif" href="{{ route('main_page',['lang'=>app()->getLocale()]) }}">
@@ -294,7 +139,112 @@
                     <span>@lang('app.layout.tkm_page')</span>
                 </a>
             </div>
-            
+            <div class="hamburger_button flex_column">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hamburger_menu flex_column">
+        <div class="hamburger_close_button">
+            <span></span>
+        </div>
+        <div class="inner_wrapper flex_column">
+            <div class="top_block flex_column">
+                <img class="building_img" src="{{ asset('img/mejlis_building.svg') }}" alt="">
+                <hr/>
+                <p class="title">@lang('app.layout.logo_title')</p>
+                {{-- <span class="info">@lang('app.layout.logo_description')</span> --}}
+            </div>
+
+            <div class="nav_block flex_column">
+                <a class="hover_underline @if(Route::currentRouteNamed(['main_page'])) active @endif" href="{{ route('main_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.main_page')</a>
+                <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['mejlis_history_page','convocation_page'])) active @endif" data-id="1">
+                    <span>@lang('app.layout.about_mejlis')</span>
+
+                    <div class="dropdown_menu hamburger flex_column">
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('mejlis_history_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_history_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('convocation_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.convocation_page',['number'=>$convocation_number])</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['mejlis_committees_page','mejlis_deputies_page','single_deputy_page'])) active @endif" data-id="2">
+                    <span>@lang('app.layout.mejlis_structure')</span>
+
+                    <div class="dropdown_menu hamburger flex_column">
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('mejlis_committees_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_committees_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('mejlis_deputies_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_deputies_page')</a>
+                        </div>
+                    </div>
+                </div>
+                {{-- <a class="hover_underline" href="#">@lang('app.layout.media')</a> --}}
+                <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['international_cooperation_page','single_news_cooperation_page','friendship_group_page', 'news_international_page','single_news_international_page'])) active @endif" data-id="3">
+                    <span>@lang('app.layout.international')</span>
+
+                    <div class="dropdown_menu hamburger flex_column">
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('international_cooperation_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.international_cooperation_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('friendship_group_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.friendship_groups_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('news_international_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_page')</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['codes_page','single_code_page','laws_page','single_law_page','mejlis_decrees_page','single_decree_page','constitutional_law_page'])) active @endif" data-id="4">
+                    <span>@lang('app.layout.legislation')</span>
+
+                    <div class="dropdown_menu hamburger flex_column">
+                        {{-- <div class="item_wrapper hover_underline">
+                            <a href="{{ route('bills_discussion_page') }}">Законопроекты на обсуждение</a>
+                        </div> --}}
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('codes_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.codes_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('laws_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.laws_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('mejlis_decrees_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_decrees_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('constitutional_law_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.constitutional_law_page')</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="hover_underline" href="{{ route('contacts_page',['lang' => app()->getLocale()]) }}">@lang('app.layout.contacts_page')</a>
+            </div>
+
+            <div class="lang_block flex_row">
+
+                <div class="lang_wrapper flex_row">
+                    <svg class="globe" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 11C21 16.5228 16.5228 21 11 21M21 11C21 5.47715 16.5228 1 11 1M21 11C21 9.34315 16.5228 8 11 8C5.47715 8 1 9.34315 1 11M21 11C21 12.6569 16.5228 14 11 14C5.47715 14 1 12.6569 1 11M11 21C5.47715 21 1 16.5228 1 11M11 21C13.2091 21 15 16.5228 15 11C15 5.47715 13.2091 1 11 1M11 21C8.79086 21 7 16.5228 7 11C7 5.47715 8.79086 1 11 1M1 11C1 5.47715 5.47715 1 11 1" stroke="white" stroke-width="1.5"/>
+                    </svg>
+                        
+                    <span class="current_lang">{{ $current_lang->label }}</span>
+                    <svg class="chevron_down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 14L17 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                        
+                    <div class="lang_menu flex_column">
+                        @foreach ($active_langs as $lang)
+                            @if ($lang->code != app()->getLocale())
+                                <a class="lang_item" href="{{ request()->url() }}?lang={{ $lang->code }}">{{ $lang->label }}</a>
+                            @endif
+                        @endforeach
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -373,10 +323,14 @@
             //     variableWidth: true
             // });
 
-            // $('.hamburger_button_wrapper').click((e) => {
-            //     $('.hamburger_menu').toggleClass('active');
-            //     $('.upper_header').toggleClass('blur');
-            // })
+            $('.hamburger_button').click((e) => {
+                $('.hamburger_menu').addClass('active');
+                // $('.upper_header').toggleClass('blur');
+            })
+
+            $('.hamburger_close_button').on('click',(e) => {
+                $('.hamburger_menu').removeClass('active');
+            })
 
             // $('.blur_effect').on('click',()=>{
             //     $('.hamburger_menu').removeClass('active');

@@ -58,6 +58,9 @@ body {
   --text_gray_5: #565E63;
   --text_gray_6: #4D4D4D;
   --pure_black: #000; }
+  @media (max-width: 1500px) {
+    body {
+      --default_width: 95vw; } }
 
 .title, .content {
   line-clamp: 3;
