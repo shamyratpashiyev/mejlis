@@ -412,28 +412,28 @@ return [
     ],
 
     'alphabet' => '<span data-letter="а" class="letter">A</span>
-                   <span data-letter="б" class="letter">B</span>
-                   <span data-letter="в" class="letter">V</span>
-                   <span data-letter="г" class="letter">G</span>
-                   <span data-letter="д" class="letter">D</span>
-                   <span data-letter="е" class="letter">E</span>
+                   <span data-letter="б" class="letter">Б</span>
+                   <span data-letter="в" class="letter">В</span>
+                   <span data-letter="г" class="letter">Г</span>
+                   <span data-letter="д" class="letter">Д</span>
+                   <span data-letter="е" class="letter">Е</span>
                    <span data-letter="ё" class="letter">Ё</span>
                    <span data-letter="ж" class="letter">Ж</span>
-                   <span data-letter="з" class="letter">Z</span>
-                   <span data-letter="и" class="letter">I</span>
-                   <span data-letter="й" class="letter">J</span>
-                   <span data-letter="к" class="letter">K</span>
-                   <span data-letter="л" class="letter">L</span>
-                   <span data-letter="м" class="letter">M</span>
-                   <span data-letter="н" class="letter">N</span>
-                   <span data-letter="о" class="letter">O</span>
-                   <span data-letter="п" class="letter">P</span>
-                   <span data-letter="р" class="letter">R</span>
-                   <span data-letter="с" class="letter">S</span>
-                   <span data-letter="т" class="letter">T</span>
-                   <span data-letter="у" class="letter">U</span>
-                   <span data-letter="ф" class="letter">F</span>
-                   <span data-letter="х" class="letter">H</span>
+                   <span data-letter="з" class="letter">З</span>
+                   <span data-letter="и" class="letter">И</span>
+                   <span data-letter="й" class="letter">Й</span>
+                   <span data-letter="к" class="letter">К</span>
+                   <span data-letter="л" class="letter">Л</span>
+                   <span data-letter="м" class="letter">М</span>
+                   <span data-letter="н" class="letter">Н</span>
+                   <span data-letter="о" class="letter">О</span>
+                   <span data-letter="п" class="letter">П</span>
+                   <span data-letter="р" class="letter">Р</span>
+                   <span data-letter="с" class="letter">С</span>
+                   <span data-letter="т" class="letter">Т</span>
+                   <span data-letter="у" class="letter">У</span>
+                   <span data-letter="ф" class="letter">Ф</span>
+                   <span data-letter="х" class="letter">Х</span>
                    <span data-letter="ц" class="letter">Ц</span>
                    <span data-letter="ч" class="letter">Ч</span>
                    <span data-letter="ш" class="letter">Ш</span>
