@@ -258,20 +258,20 @@
                     <img src="{{ asset('img/mejlis_building.svg') }}" alt="">
                 </div>
 
-                <h4 class="title">@lang('app.layout.logo_title')</h4>
-                <p class="description">@lang('app.layout.logo_description')</p>
+                <h4 class="column_title">@lang('app.layout.logo_title')</h4>
+                <p class="column_description">@lang('app.layout.logo_description')</p>
                 <span class="copyright_text">{{ date('Y') }} @lang('app.layout.copyright_text')</span>
             </a>
 
             <div class="middle_column flex_column">
-                <h3 class="title">@lang('app.layout.about_mejlis')</h3>
-                <p class="description">
-                    @lang('app.layout.footer_text')
+                <h3 class="column_title">@lang('app.layout.about_mejlis')</h3>
+                <p class="column_description">
+                    &emsp;&emsp;@lang('app.layout.footer_text')
                 </p>
             </div>
 
             <div class="right_column flex_column">
-                <a href="{{ route('contacts_page',['lang'=>app()->getLocale()]) }}" class="title">@lang('app.layout.contacts_page')</a>
+                <a href="{{ route('contacts_page',['lang'=>app()->getLocale()]) }}" class="column_title">@lang('app.layout.contacts_page')</a>
                 <p class="flex_row contact_row_wrapper">
                     <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z" stroke="white"/>

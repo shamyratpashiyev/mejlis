@@ -97,12 +97,30 @@
 <script>
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
-            autoplay:false,
+            autoplay:true,
             autoplayTimeout:2000,
             autoplayHoverPause:false,
-            items:5,
             loop:true,
             nav:false,
+            // center: true,
+            responsiveClass:true,
+            responsive:{
+                1500:{
+                    items:5,
+                },
+                1160:{
+                    items: 4,
+                },
+                870:{
+                    items: 3,
+                },
+                580: {
+                    items: 2,
+                },
+                320: {
+                    items: 1,
+                }
+            }
         });
         
         const arrow_left = $('.buttons_block .arrow_left') 
