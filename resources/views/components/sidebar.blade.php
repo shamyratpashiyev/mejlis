@@ -82,6 +82,13 @@
             }
             if(nav_block.css('opacity') == '0'){
                 nav_block.css('height', `0px`);
+                
+                $('body').click((event)=>{
+                if( (!$(event.target).hasClass('ellipsis_button') && !$(event.target).parents().hasClass('ellipsis_button')) &&
+                    (!$(event.target).hasClass('sidebar_container') && !$(event.target).parents().hasClass('sidebar_container')) ){
+                    hide_nav_block();
+                }
+            })
             }
             
             ellipsis.on('click', ()=>{
@@ -92,12 +99,7 @@
                 }
             })
 
-            $('body').click((event)=>{
-                if( (!$(event.target).hasClass('ellipsis_button') && !$(event.target).parents().hasClass('ellipsis_button')) &&
-                    (!$(event.target).hasClass('sidebar_container') && !$(event.target).parents().hasClass('sidebar_container')) ){
-                    hide_nav_block();
-                }
-            })
+            
 
         });
 

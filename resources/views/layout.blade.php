@@ -310,7 +310,6 @@
     <script>
         $(document).ready(()=>{
 
-
             $('.hamburger_button').click((e) => {
                 $('.hamburger_menu').addClass('active');
             })
