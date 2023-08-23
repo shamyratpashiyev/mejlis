@@ -30,3 +30,10 @@
             font-family: 'OpenSansRegular', sans-serif !important;
             color: var(--text_black_default) !important;
             margin: 0; }
+  @media (max-width: 899px) {
+    .mejlis_history_page .inner_wrapper .page_content_block {
+      column-gap: 25px; }
+      .mejlis_history_page .inner_wrapper .page_content_block .right_side .block_title {
+        font-size: 25px; }
+      .mejlis_history_page .inner_wrapper .page_content_block .right_side .text_block .text_title {
+        font-size: 21px !important; } }

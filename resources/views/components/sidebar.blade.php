@@ -5,7 +5,7 @@
         
         <div class="nav_buttons_block flex_column">
             @foreach ($linksList as $item)
-                <a href="{{ $item['url'] }}" class="hover_underline {{ $item['is_active'] ?? '' }}">{{ $item['name'] }}</a>
+                <a href="{{ $item['url'] }}" class="hover_underline {{ $item['is_active'] ?? '' }}">{!! $item['name'] !!}</a>
             @endforeach
             
         </div>
@@ -53,5 +53,53 @@
             </svg>
         </a>
     </div>
+
+    <svg class="ellipsis_button" fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.75 16c0 2.071-1.679 3.75-3.75 3.75s-3.75-1.679-3.75-3.75c0-2.071 1.679-3.75 3.75-3.75s3.75 1.679 3.75 3.75zM19.75 27c0 2.071-1.679 3.75-3.75 3.75s-3.75-1.679-3.75-3.75c0-2.071 1.679-3.75 3.75-3.75s3.75 1.679 3.75 3.75zM19.75 5c0 2.071-1.679 3.75-3.75 3.75s-3.75-1.679-3.75-3.75c0-2.071 1.679-3.75 3.75-3.75s3.75 1.679 3.75 3.75z"></path>
+    </svg>
     
 </div>
+
+<script>
+    
+    $(document).ready(function() {
+
+        setTimeout(() => {
+            const nav_block = $('.sidebar_container .nav_block');
+            const nav_block_height = nav_block.outerHeight();
+            const nav_block_width = nav_block.outerWidth();
+            const ellipsis = $('.ellipsis_button');
+
+            const show_nav_block = ()=>{
+                nav_block.addClass('active');
+                ellipsis.addClass('active');
+                nav_block.css('height', `${nav_block_height}px`);
+            }
+            const hide_nav_block = ()=>{
+                nav_block.removeClass('active');
+                ellipsis.removeClass('active');
+                nav_block.css('height', `0px`);
+            }
+            if(nav_block.css('opacity') == '0'){
+                nav_block.css('height', `0px`);
+            }
+            
+            ellipsis.on('click', ()=>{
+                if (nav_block.hasClass('active')){
+                    hide_nav_block();
+                } else {
+                    show_nav_block();
+                }
+            })
+
+            $('body').click((event)=>{
+                if( (!$(event.target).hasClass('ellipsis_button') && !$(event.target).parents().hasClass('ellipsis_button')) &&
+                    (!$(event.target).hasClass('sidebar_container') && !$(event.target).parents().hasClass('sidebar_container')) ){
+                    hide_nav_block();
+                }
+            })
+
+        }, 500);
+
+    })
+</script>

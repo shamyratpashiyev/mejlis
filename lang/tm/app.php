@@ -18,7 +18,7 @@ return [
         'legislation' => 'Kanunçylyk',
         'contacts_page' => 'Habarlaşmak üçin',
         'mejlis_history_page' => 'Mejlisiň taryhy',
-        'convocation_page' => ':number çagyrylyşynyň deputatlarynyň sanawy',
+        'convocation_page' => ':number çagyrylyşynyň deputatlarynyň<br> sanawy',
         'mejlis_committees_page' => 'Mejlis komitetleri',
         'mejlis_deputies_page' => 'Mejlis deputatlary',
         'codes_page' => 'Kodeksler',

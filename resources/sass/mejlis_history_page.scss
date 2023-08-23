@@ -45,4 +45,27 @@
             }
         }
     }
+
+    @media(max-width: 899px) {
+        .inner_wrapper{
+
+            .page_content_block{
+                column-gap: 25px;
+
+                .right_side{
+
+                    .block_title{
+                        font-size: 25px;
+                    }
+
+                    .text_block{
+
+                        .text_title{
+                            font-size: 21px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -205,11 +205,14 @@ a{
         box-sizing: border-box;
         padding: 20px;
         row-gap: 15px;
+        height: max-content;
 
         .title{
             font-family: 'OpenSansExtraBold', sans-serif;
             font-size: 18px;
             margin: 0;
+            flex-shrink: 0;
+            white-space: nowrap;
         }
 
         .nav_buttons_block{
@@ -221,6 +224,7 @@ a{
                 color: var(--default_white);
                 width: max-content;
                 max-width: 100%;
+                white-space: nowrap;
             }
         }
     }
@@ -256,6 +260,46 @@ a{
             align-items: center;
             font-family: 'OpenSansBold', sans-serif;
             font-size: 14px;
+        }
+    }
+
+    .ellipsis_button{
+        width: 20px;
+        height: 20px;
+        display: none;
+        
+        &.active{
+            fill: var(--default_white);
+        }
+    }
+
+    @media(max-width: 999px){
+        width: max-content;
+        position: relative;
+
+        .nav_block{
+            position: absolute;
+            transition: all 0.3s ease-in;
+            width: 0px;
+            height: max-content;
+            opacity: 0;
+            top: -9px;
+            left: 0;
+
+            &.active{
+                width: 290px;
+                opacity: 1;
+            }
+        }
+
+        .contacts_block{
+            display: none;
+        }
+
+        .ellipsis_button{
+            display: block;
+            position: absolute;
+            top: 0;
         }
     }
 }
