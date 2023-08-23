@@ -27,6 +27,7 @@
 
                     .letters_row{
                         column-gap: 15px;
+                        flex-wrap: wrap;
 
                         .letter{
                             font-size: 18px;
@@ -70,6 +71,89 @@
                         color: var(--pure_black);
                         width: 49%;
                         flex-shrink: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1400px){
+        .inner_wrapper{
+
+            .page_content_block{
+
+                .right_side{
+                    width: -webkit-fill-available;
+                    width: -moz-available;
+                    width: -ms-available;
+
+                    // .deputies_list_block{
+                    //     width: -webkit-fill-available;
+                    //     width: -moz-available;
+                    //     width: -ms-available;
+                    // }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1140px) {
+        .inner_wrapper{
+
+            .page_content_block{
+
+                .right_side{
+
+                    .deputies_list_block{
+                        width: -webkit-fill-available;
+                        width: -moz-available;
+                        width: -ms-available;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 999px) {
+        .inner_wrapper{
+
+            .page_content_block{
+                column-gap: 20px;
+            }
+        }
+    }
+
+    @media(max-width: 600px) {
+        .inner_wrapper{
+
+            .page_content_block{
+                column-gap: 20px;
+
+                .right_side{
+
+                    .block_title{
+                        font-size: 21px;
+                    }
+
+                    .search_block{
+
+                        .letters_row{
+
+                            .letter{
+                                font-size: 16px;
+                            }
+                        }
+
+                        .select_row{
+
+                            select{
+                                padding: 10px;
+                            }
+                        } 
+                    }
+
+                    .deputies_list_block{
+                        flex-direction: column;
                     }
                 }
             }

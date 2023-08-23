@@ -18,7 +18,8 @@
           row-gap: 25px;
           color: var(--text_gray_3); }
           .convocation_page .inner_wrapper .page_content_block .right_side .search_block .letters_row {
-            column-gap: 15px; }
+            column-gap: 15px;
+            flex-wrap: wrap; }
             .convocation_page .inner_wrapper .page_content_block .right_side .search_block .letters_row .letter {
               font-size: 18px;
               font-family: 'OpenSansBold', sans-serif;
@@ -49,3 +50,27 @@
             color: var(--pure_black);
             width: 49%;
             flex-shrink: 0; }
+  @media (max-width: 1400px) {
+    .convocation_page .inner_wrapper .page_content_block .right_side {
+      width: -webkit-fill-available;
+      width: -moz-available;
+      width: -ms-available; } }
+  @media (max-width: 1140px) {
+    .convocation_page .inner_wrapper .page_content_block .right_side .deputies_list_block {
+      width: -webkit-fill-available;
+      width: -moz-available;
+      width: -ms-available; } }
+  @media (max-width: 999px) {
+    .convocation_page .inner_wrapper .page_content_block {
+      column-gap: 20px; } }
+  @media (max-width: 600px) {
+    .convocation_page .inner_wrapper .page_content_block {
+      column-gap: 20px; }
+      .convocation_page .inner_wrapper .page_content_block .right_side .block_title {
+        font-size: 21px; }
+      .convocation_page .inner_wrapper .page_content_block .right_side .search_block .letters_row .letter {
+        font-size: 16px; }
+      .convocation_page .inner_wrapper .page_content_block .right_side .search_block .select_row select {
+        padding: 10px; }
+      .convocation_page .inner_wrapper .page_content_block .right_side .deputies_list_block {
+        flex-direction: column; } }

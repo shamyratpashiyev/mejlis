@@ -445,6 +445,7 @@ a{
 .breadcrumbs_row{
     font-size: 16px;
     font-family: 'OpenSansRegular', sans-serif;
+    overflow: hidden;
     
     a, span{
         color: var(--text_gray_2);

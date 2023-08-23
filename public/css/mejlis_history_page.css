@@ -9,7 +9,10 @@
       width: 100%;
       column-gap: 50px; }
       .mejlis_history_page .inner_wrapper .page_content_block .right_side {
-        color: var(--text_black_default); }
+        color: var(--text_black_default);
+        width: -webkit-fill-available;
+        width: -ms-available;
+        width: -moz-available; }
         .mejlis_history_page .inner_wrapper .page_content_block .right_side .block_title {
           font-size: 30px;
           font-family: 'OpenSansExtraBold', sans-serif;

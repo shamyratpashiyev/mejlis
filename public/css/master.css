@@ -328,7 +328,8 @@ a {
 
 .breadcrumbs_row {
   font-size: 16px;
-  font-family: 'OpenSansRegular', sans-serif; }
+  font-family: 'OpenSansRegular', sans-serif;
+  overflow: hidden; }
   .breadcrumbs_row a, .breadcrumbs_row span {
     color: var(--text_gray_2); }
   .breadcrumbs_row .main_page {
