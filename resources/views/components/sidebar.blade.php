@@ -63,8 +63,8 @@
 <script>
     
     $(document).ready(function() {
-
-        setTimeout(() => {
+        
+        document.fonts.ready.then(() => {   //It is triggered when the fonts are loaded completely
             const nav_block = $('.sidebar_container .nav_block');
             const nav_block_height = nav_block.outerHeight();
             const nav_block_width = nav_block.outerWidth();
@@ -99,7 +99,7 @@
                 }
             })
 
-        }, 500);
+        });
 
     })
 </script>

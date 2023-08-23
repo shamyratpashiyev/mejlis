@@ -197,7 +197,8 @@ a {
   .sidebar_container .ellipsis_button {
     width: 20px;
     height: 20px;
-    display: none; }
+    display: none;
+    cursor: pointer; }
     .sidebar_container .ellipsis_button.active {
       fill: var(--default_white); }
   @media (max-width: 999px) {
