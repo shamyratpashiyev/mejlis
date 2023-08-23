@@ -211,7 +211,6 @@
           width: max-content;
           max-width: 300px;
           row-gap: 20px;
-          border-top: 1px solid var(--default_white);
           align-items: center; }
           .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu .item_wrapper {
             width: max-content;
@@ -221,6 +220,8 @@
               font-family: 'OpenSansRegular', sans-serif;
               font-size: 16px;
               color: inherit; }
+        .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper.active span {
+          border-bottom: 1px solid var(--default_white); }
     .hamburger_menu .inner_wrapper .lang_block {
       margin-bottom: 15px;
       width: 100%;

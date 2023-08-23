@@ -310,32 +310,14 @@
     <script>
         $(document).ready(()=>{
 
-            // $(".banner_slider").slick({
-            //     arrows: false,
-            //     adaptiveHeight: true,
-            //     autoplay: true,
-            //     autoplaySpeed: 6000,
-            //     speed: 1000,
-            //     pauseOnFocuse: false,
-            //     pauseOnHover: false,
-            //     slidesToShow: 1,
-            //     centerMode: true,
-            //     variableWidth: true
-            // });
 
             $('.hamburger_button').click((e) => {
                 $('.hamburger_menu').addClass('active');
-                // $('.upper_header').toggleClass('blur');
             })
 
             $('.hamburger_close_button').on('click',(e) => {
                 $('.hamburger_menu').removeClass('active');
             })
-
-            // $('.blur_effect').on('click',()=>{
-            //     $('.hamburger_menu').removeClass('active');
-            //     $('.upper_header').removeClass('blur');
-            // })
 
             $('body').on('click',(e) => {
                 if($(e.target).hasClass('lang_wrapper') || $(e.target).parents().hasClass('lang_wrapper')){
@@ -346,42 +328,43 @@
             })
 
             
-            const nav_button_wrapper = $('.hamburger_menu .nav_button_wrapper');
-            const hamburger_dropdown_menu = $('.dropdown_menu.hamburger');
+            document.fonts.ready.then(()=>{
+                const nav_button_wrapper = $('.hamburger_menu .nav_button_wrapper');
+                const hamburger_dropdown_menu = $('.dropdown_menu.hamburger');
 
 
-            let nav_buttons_initial_height = ['']
-            let dropdown_menus_height = ['']
+                let nav_buttons_initial_height = ['']
+                let dropdown_menus_height = ['']
 
-            nav_button_wrapper.css('height', nav_button_wrapper.outerHeight())
-            hamburger_dropdown_menu.css('display', 'flex');
+                nav_button_wrapper.css('height', `${nav_button_wrapper.outerHeight() + 1}px`)
+                hamburger_dropdown_menu.css('display', 'flex');
 
-            hamburger_dropdown_menu.each((index,elem)=>{
-                dropdown_menus_height.push($(elem).outerHeight())
-            })          //Getting the heights of dropdown menus (each one of them can have different height)
-                  
-            nav_button_wrapper.each((index,elem)=>{
-                nav_buttons_initial_height.push( parseInt($(elem).outerHeight()) )
-            })              //Getting the heights of nav_buttons (each one of them can have different height)
-            
+                hamburger_dropdown_menu.each((index,elem)=>{
+                    dropdown_menus_height.push($(elem).outerHeight())
+                })          //Getting the heights of dropdown menus (each one of them can have different height)
+                    
+                nav_button_wrapper.each((index,elem)=>{
+                    nav_buttons_initial_height.push( parseInt($(elem).outerHeight()) )
+                })              //Getting the heights of nav_buttons (each one of them can have different height)
+                
 
-            nav_button_wrapper.on('click',(event)=>{
-                const target = $(event.target).hasClass('.hamburger_menu') ? $(event.target) : $(event.target).parents('.hamburger_menu .nav_button_wrapper')
+                nav_button_wrapper.on('click',(event)=>{
+                    const target = $(event.target).hasClass('.hamburger_menu') ? $(event.target) : $(event.target).parents('.hamburger_menu .nav_button_wrapper')
 
-                if(target.hasClass('active')){
-                    target.removeClass('active')
-                    target.css('height', nav_buttons_initial_height[target.data('id')] + 'px')
-                } else {
-                    nav_button_wrapper.removeClass('active')
-                    nav_button_wrapper.each((index,elem)=>{
-                        $(elem).css('height', nav_buttons_initial_height[$(elem).data('id')] + 'px')
-                    })
+                    if(target.hasClass('extended')){
+                        target.removeClass('extended')
+                        target.css('height', nav_buttons_initial_height[target.data('id')] + 'px')
+                    } else {
+                        nav_button_wrapper.removeClass('extended')
+                        nav_button_wrapper.each((index,elem)=>{
+                            $(elem).css('height', nav_buttons_initial_height[$(elem).data('id')] + 'px')
+                        })
 
-                    target.css('height', (nav_buttons_initial_height[target.data('id')] + dropdown_menus_height[target.data('id')]) + 'px')
-                    target.addClass('active')
+                        target.css('height', (nav_buttons_initial_height[target.data('id')] + dropdown_menus_height[target.data('id')]) + 'px')
+                        target.addClass('extended')
 
-                }
-               
+                    }
+                })
             })
 
         })

@@ -263,7 +263,6 @@
         }
 
         .nav_block{
-
             align-items: center;
             row-gap: 30px;
             width: 100%;
@@ -301,7 +300,7 @@
                     width: max-content;
                     max-width: 300px;
                     row-gap: 20px;
-                    border-top: 1px solid var(--default_white);
+                    // border-top: 1px solid var(--default_white);
                     align-items: center;
 
                     .item_wrapper{
@@ -318,7 +317,14 @@
 
                 }
 
+                &.active{
+                    span{
+                        border-bottom: 1px solid var(--default_white);
+                    }
+                }
+
             }
+
         }
 
         .lang_block{
