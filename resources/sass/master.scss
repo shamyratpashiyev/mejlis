@@ -326,6 +326,7 @@ a{
         row-gap: 10px !important;
         max-height: 50vh !important;
         max-width: 95vw !important;
+        transition: all 0.3s ease-in;
 
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -378,7 +379,6 @@ a{
         position: absolute;
 
         .inner_wrapper{
-            transition: all 0.3s ease-in;
             width: 0px !important;
             height: max-content;
             opacity: 0;
@@ -514,6 +514,7 @@ a{
     justify-content: center;
     margin-top: 37px;
     width: 100%;
+    flex-wrap: wrap;
 
     svg{
         width: 24px;

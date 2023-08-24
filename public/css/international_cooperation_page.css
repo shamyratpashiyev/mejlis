@@ -7,7 +7,8 @@
     row-gap: 50px; }
     .international_cooperation_page .inner_wrapper .page_content_block {
       width: 100%;
-      column-gap: 70px; }
+      column-gap: 70px;
+      position: relative; }
       .international_cooperation_page .inner_wrapper .page_content_block .right_side {
         row-gap: 25px; }
         .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container {
@@ -15,23 +16,25 @@
           height: 265px;
           justify-content: space-between; }
           .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block {
-            width: 512px;
+            width: 56.3%;
             color: var(--text_black_default);
             justify-content: center; }
             .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .title {
               font-family: 'OpenSansSemibold', sans-serif;
               font-size: 16px;
               margin: 0 0 13px 0; }
-            .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .content {
-              font-family: 'OpenSansRegular', sans-serif;
-              font-size: 14px;
-              margin: 0 0 8px 0; }
+            .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .content, .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .content * {
+              font-family: 'OpenSansRegular', sans-serif !important;
+              font-size: 14px !important;
+              margin: 0 !important;
+              font-weight: normal !important; }
             .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .date {
               font-family: 'OpenSansRegular', sans-serif;
               font-size: 12px;
-              color: var(--text_gray); }
+              color: var(--text_gray);
+              margin-top: 8px; }
           .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .image_wrapper {
-            width: 400px;
+            width: 43.2%;
             height: 100%; }
             .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .image_wrapper img {
               width: 100%;
@@ -40,3 +43,43 @@
               object-position: center; }
     .international_cooperation_page .inner_wrapper .pagination_row {
       margin-top: 0; }
+  @media (max-width: 1400px) {
+    .international_cooperation_page .inner_wrapper .page_content_block {
+      column-gap: 40px; }
+      .international_cooperation_page .inner_wrapper .page_content_block .right_side {
+        width: -webkit-fill-available;
+        width: -moz-available;
+        width: -ms-available;
+        row-gap: 30px; }
+        .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container {
+          width: 100%;
+          height: max-content; }
+          .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .image_wrapper {
+            align-items: center; }
+            .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .image_wrapper img {
+              height: max-content;
+              object-fit: unset; } }
+  @media (max-width: 999px) {
+    .international_cooperation_page .inner_wrapper .page_content_block {
+      column-gap: 40px; }
+      .international_cooperation_page .inner_wrapper .page_content_block .right_side {
+        box-sizing: border-box;
+        padding: 0 0 0 25px; } }
+  @media (max-width: 600px) {
+    .international_cooperation_page .inner_wrapper .page_content_block {
+      column-gap: 40px; }
+      .international_cooperation_page .inner_wrapper .page_content_block .right_side {
+        box-sizing: border-box;
+        padding: 0 0 0 25px; }
+        .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container {
+          flex-direction: column;
+          row-gap: 10px; }
+          .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .image_wrapper {
+            order: 1;
+            width: 100%; }
+          .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block {
+            row-gap: 7px;
+            order: 2;
+            width: 100%; }
+            .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .title, .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .content, .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .date {
+              margin: 0; } }

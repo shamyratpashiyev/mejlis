@@ -243,6 +243,7 @@ a {
     row-gap: 10px !important;
     max-height: 50vh !important;
     max-width: 95vw !important;
+    transition: all 0.3s ease-in;
     -ms-overflow-style: none;
     scrollbar-width: none; }
     .sidebar_right .inner_wrapper .block_title {
@@ -275,7 +276,6 @@ a {
       position: relative;
       position: absolute; }
       .sidebar_right .inner_wrapper {
-        transition: all 0.3s ease-in;
         width: 0px !important;
         height: max-content;
         opacity: 0;
@@ -378,7 +378,8 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 37px;
-  width: 100%; }
+  width: 100%;
+  flex-wrap: wrap; }
   .pagination_row svg {
     width: 24px;
     height: 24px; }
