@@ -11,6 +11,7 @@
         .page_content_block{
             width: 100%;
             column-gap: 50px;
+            position: relative;
 
             .right_side{
                 color: var(--text_black_default);
@@ -49,13 +50,16 @@
         }
     }
 
-    @media(max-width: 899px) {
+    @media(max-width: 999px) {
         .inner_wrapper{
 
             .page_content_block{
                 column-gap: 25px;
 
                 .right_side{
+                    box-sizing: border-box;
+                    padding-left: 25px;
+                    padding-right: 10px;
 
                     .block_title{
                         font-size: 25px;

@@ -11,6 +11,7 @@
         .page_content_block{
             width: 100%;
             column-gap: 50px;
+            position: relative;
 
             .right_side{
                 color: var(--text_black_default);
@@ -118,7 +119,12 @@
         .inner_wrapper{
 
             .page_content_block{
-                column-gap: 20px;
+                
+                .right_side{
+                    box-sizing: border-box;
+                    padding-left: 25px;
+                    padding-right: 10px;
+                }
             }
         }
     }
@@ -127,7 +133,6 @@
         .inner_wrapper{
 
             .page_content_block{
-                column-gap: 20px;
 
                 .right_side{
 
@@ -154,6 +159,10 @@
 
                     .deputies_list_block{
                         flex-direction: column;
+
+                        .deputy_name{
+                            width: unset;
+                        }
                     }
                 }
             }

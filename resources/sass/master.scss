@@ -194,7 +194,7 @@ a{
     }
 }
 
-.sidebar_container{
+.sidebar_left{
     width: 290px;
     row-gap: 40px;
     flex-shrink: 0;
@@ -276,7 +276,8 @@ a{
 
     @media(max-width: 999px){
         width: max-content;
-        position: relative;
+        position: absolute;
+        left: 0;
 
         .nav_block{
             position: absolute;
@@ -286,6 +287,7 @@ a{
             opacity: 0;
             top: -9px;
             left: 0;
+            max-width: 95vw !important;
 
             &.active{
                 width: 290px;
@@ -301,6 +303,96 @@ a{
             display: block;
             position: absolute;
             top: 0;
+        }
+    }
+}
+
+.sidebar_right{
+    width: 340px;
+    height: 50vh;
+    box-sizing: border-box;
+    padding: 20px 0 10px 0;
+    row-gap: 10px;
+    flex-shrink: 0;
+    background-color: var(--sky_blue);
+    right: 0;
+    height: max-content;
+    top: -10px;
+
+    .inner_wrapper{
+        width: 100% !important;
+        color: var(--default_white);
+        overflow: auto;
+        row-gap: 10px !important;
+        max-height: 50vh !important;
+        max-width: 95vw !important;
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        .block_title{
+            font-family: 'OpenSansExtraBold', sans-serif;
+            font-size: 18px;
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0 20px;
+        }
+
+        .buttons_block{
+
+            .committee_name{
+                font-family: 'OpenSansRegular', sans-serif;
+                font-size: 16px;
+                box-sizing: border-box;
+                padding: 10px 20px;
+                color: var(--default_white);
+
+                &.active{
+                    background-color: var(--sky_blue_darker);
+                }
+            }
+        }
+
+        // &::-webkit-scrollbar{
+        //     display: none;
+        // } 
+    }
+
+    .ellipsis_button{
+        width: 20px;
+        height: 20px;
+        display: none;
+        cursor: pointer;
+        top: 10px;
+        right: 0;
+        position: absolute;
+        
+        &.active{
+            fill: var(--default_white);
+        }
+    }
+
+    @media(max-width: 1075px){
+        width: max-content;
+        position: relative;
+        position: absolute;
+
+        .inner_wrapper{
+            transition: all 0.3s ease-in;
+            width: 0px !important;
+            height: max-content;
+            opacity: 0;
+            top: -9px;
+            right: 0;
+
+            &.active{
+                width: 340px !important;
+                opacity: 1;
+            }
+        }
+
+        .ellipsis_button{
+            display: block;
         }
     }
 }

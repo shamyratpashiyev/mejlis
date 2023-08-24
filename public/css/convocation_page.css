@@ -7,7 +7,8 @@
     row-gap: 50px; }
     .convocation_page .inner_wrapper .page_content_block {
       width: 100%;
-      column-gap: 50px; }
+      column-gap: 50px;
+      position: relative; }
       .convocation_page .inner_wrapper .page_content_block .right_side {
         color: var(--text_black_default); }
         .convocation_page .inner_wrapper .page_content_block .right_side .block_title {
@@ -61,16 +62,18 @@
       width: -moz-available;
       width: -ms-available; } }
   @media (max-width: 999px) {
-    .convocation_page .inner_wrapper .page_content_block {
-      column-gap: 20px; } }
+    .convocation_page .inner_wrapper .page_content_block .right_side {
+      box-sizing: border-box;
+      padding-left: 25px;
+      padding-right: 10px; } }
   @media (max-width: 600px) {
-    .convocation_page .inner_wrapper .page_content_block {
-      column-gap: 20px; }
-      .convocation_page .inner_wrapper .page_content_block .right_side .block_title {
-        font-size: 21px; }
-      .convocation_page .inner_wrapper .page_content_block .right_side .search_block .letters_row .letter {
-        font-size: 16px; }
-      .convocation_page .inner_wrapper .page_content_block .right_side .search_block .select_row select {
-        padding: 10px; }
-      .convocation_page .inner_wrapper .page_content_block .right_side .deputies_list_block {
-        flex-direction: column; } }
+    .convocation_page .inner_wrapper .page_content_block .right_side .block_title {
+      font-size: 21px; }
+    .convocation_page .inner_wrapper .page_content_block .right_side .search_block .letters_row .letter {
+      font-size: 16px; }
+    .convocation_page .inner_wrapper .page_content_block .right_side .search_block .select_row select {
+      padding: 10px; }
+    .convocation_page .inner_wrapper .page_content_block .right_side .deputies_list_block {
+      flex-direction: column; }
+      .convocation_page .inner_wrapper .page_content_block .right_side .deputies_list_block .deputy_name {
+        width: unset; } }

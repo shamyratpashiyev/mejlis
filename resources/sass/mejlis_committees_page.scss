@@ -11,10 +11,15 @@
         .page_content_block{
             width: 100%;
             justify-content: space-between;
+            position: relative;
+            column-gap: 20px;
 
             .middle_column{
                 color: var(--text_black_default);
-                width: 728px;
+                max-width: 728px;
+                width: -webkit-fill-available;
+                width: -moz-available;
+                width: -ms-available;
 
                 .block_title{
                     font-size: 25px;
@@ -38,8 +43,11 @@
                 }
 
                 .committee_member_container{
-                    width: 351px;
-                    height: 150px;
+                    max-width: 351px;
+                    width: -webkit-fill-available;
+                    width: -moz-available;
+                    width: -ms-available;
+                    min-height: 150px;
                     background-color: var(--container_background_blue);
                     box-sizing: border-box;
                     padding: 10px;
@@ -63,36 +71,34 @@
                     }
                 }
             }
+        }
+    }
 
-            .right_column{
-                width: 340px;
-                background-color: var(--sky_blue);
-                height: max-content;
-                color: var(--default_white);
-                box-sizing: border-box;
-                padding: 20px 0 10px 0;
-                row-gap: 10px;
+    @media(max-width: 1075px){
 
-                .block_title{
-                    font-family: 'OpenSansExtraBold', sans-serif;
-                    font-size: 18px;
-                    margin: 0;
+        .inner_wrapper{
+
+            .page_content_block{
+                justify-content: center;
+                column-gap: 0;
+
+                .middle_column{
                     box-sizing: border-box;
-                    padding: 0 20px;
+                    padding: 0 25px;
                 }
+            }
+        }
+    }
 
-                .buttons_block{
+    @media(max-width: 600px){
+        .inner_wrapper{
 
-                    .committee_name{
-                        font-family: 'OpenSansRegular', sans-serif;
-                        font-size: 16px;
-                        box-sizing: border-box;
-                        padding: 10px 20px;
-                        color: var(--default_white);
+            .page_content_block{
 
-                        &.active{
-                            background-color: var(--sky_blue_darker);
-                        }
+                .middle_column{
+
+                    .block_title{
+                        font-size: 22px;
                     }
                 }
             }

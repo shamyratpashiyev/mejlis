@@ -59,15 +59,7 @@
                     </div>
                 </div>
 
-                <div class="right_column flex_column">
-                    <h3 class="block_title">@lang('app.mejlis_committees_page.mejlis_committees')</h3>
-
-                    <div class="buttons_block flex_column">
-                        @foreach ($committees_all as $committee)
-                            <a href="{{ route('mejlis_committees_page',['id'=>$committee->id, 'lang'=>app()->getLocale()]) }}" class="committee_name @if($committee->id == $selected_committee->id) active @endif">{{ $committee->{'name_' . $current_lang->code} }}</a>
-                        @endforeach
-                    </div>
-                </div>
+                <x-sidebar-right :title="__('app.mejlis_committees_page.mejlis_committees')" :items-list="$committees_all" :current-item-id="$selected_committee->id"/>
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<div class="sidebar_container flex_column">
+<div class="sidebar_left flex_column">
 
     <div class="nav_block flex_column">
         <h3 class="title">{{ $title }}</h3>
@@ -65,10 +65,10 @@
     $(document).ready(function() {
         
         document.fonts.ready.then(() => {   //It is triggered when the fonts are loaded completely
-            const nav_block = $('.sidebar_container .nav_block');
+            const nav_block = $('.sidebar_left .nav_block');
             const nav_block_height = nav_block.outerHeight();
             const nav_block_width = nav_block.outerWidth();
-            const ellipsis = $('.ellipsis_button');
+            const ellipsis = $('.sidebar_left .ellipsis_button');
 
             const show_nav_block = ()=>{
                 nav_block.addClass('active');
@@ -84,8 +84,8 @@
                 nav_block.css('height', `0px`);
                 
                 $('body').click((event)=>{
-                if( (!$(event.target).hasClass('ellipsis_button') && !$(event.target).parents().hasClass('ellipsis_button')) &&
-                    (!$(event.target).hasClass('sidebar_container') && !$(event.target).parents().hasClass('sidebar_container')) ){
+                if( (!$(event.target).hasClass('ellipsis_button') && !$(event.target).parents('.sidebar_left').hasClass('ellipsis_button')) &&
+                    (!$(event.target).hasClass('sidebar_left') && !$(event.target).parents().hasClass('sidebar_left')) ){
                     hide_nav_block();
                 }
             })
