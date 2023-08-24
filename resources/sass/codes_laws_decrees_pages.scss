@@ -11,6 +11,8 @@
         .page_content_block{
             width: 100%;
             column-gap: 80px;
+            position: relative;
+            position: relative;
 
             .right_side{
                 color: var(--text_black_default);
@@ -24,18 +26,23 @@
                     font-size: 30px;
                     margin: 0;
                     text-transform: uppercase;
+                    line-height: 1;
                 }
 
                 .nav_buttons_row{
                     justify-content: space-between;
+                    flex-wrap: wrap;
+                    column-gap: 15px;
+                    row-gap: 15px;
 
                     .button_container{
-                        width: 340px;
+                        width: 31.7%;
                         height: 160px;
                         background-color: var(--container_background_blue);
                         align-items: center;
                         justify-content: center;
                         color: var(--text_black_default);
+                        min-width: 270px;
 
                         svg{
                             fill: var(--sky_blue);
@@ -50,6 +57,7 @@
                             font-family: 'OpenSansBold', sans-serif;
                             font-size: 25px;
                             text-transform: uppercase;
+                            text-align: center;
                         }
 
                         &.active{
@@ -68,6 +76,8 @@
 
                 .search_row{
                     column-gap: 15px;
+                    row-gap: 15px;
+                    flex-wrap: wrap;
 
                     select, input{
                         font-family: 'OpenSansRegular', sans-serif;
@@ -89,10 +99,12 @@
                 .items_block{
                     flex-wrap: wrap;
                     row-gap: 25px;
-                    justify-content: space-between;
+                    column-gap: 25px;
+                    justify-content: space-evenly;
                     
                     .item_container{
-                        width: 340px;
+                        max-width: 340px;
+                        width: 85vw;
                         height: 245px;
                         align-items: center;
                         justify-content: space-between;
@@ -152,5 +164,60 @@
             }
             
         }
+    }
+
+    @media(max-width: 1400px){
+        .inner_wrapper{
+
+            .page_content_block{
+                column-gap: 50px;
+
+                .right_side{
+
+                    .nav_buttons_row{
+                        justify-content: space-around;
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media(max-width: 999px) {
+        .inner_wrapper{
+
+            .page_content_block{
+                column-gap: 50px;
+
+                .right_side{
+                    box-sizing: border-box;
+                    padding: 0 0 0 25px;
+
+                    .block_title{
+                        font-size: 25px;
+                    }
+
+                    .nav_buttons_row{
+                        display: none;
+                    }
+
+                    .search_row{
+
+                        input{
+                            width: 245px;
+                        }
+
+                        select{
+                            padding: 10px 75px 10px 10px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media(max-width: 600px) {
+
     }
 }
