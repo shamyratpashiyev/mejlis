@@ -32,7 +32,7 @@
                     <div class="title_row flex_row">
                         <h3 class="title">@lang('app.mejlis_deputies_page.deputies')</h3>
                         
-                        <div class="select_block">
+                        <div class="select_block flex_row">
                             <select id="velayats_select">
                                 <option value="--">@lang('app.mejlis_deputies_page.velayat')</option>
                                 @foreach ($velayats_all as $velayat)
