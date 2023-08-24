@@ -1,11 +1,13 @@
 <div class="sidebar_right flex_column">
     <div class="inner_wrapper flex_column">
-        <h3 class="block_title">@lang('app.mejlis_committees_page.mejlis_committees')</h3>
+        @if($title)
+            <h3 class="block_title">{{ $title }}</h3>
+        @endif
 
         <div class="buttons_block flex_column">
             @foreach ($itemsList as $item)
-                <a href="{{ route('mejlis_committees_page',['id'=>$item->id, 'lang'=>app()->getLocale()]) }}" class="committee_name @if($item->id == $currentItemId) active @endif">
-                    {{ $item->{'name_' . app()->getLocale()} }}
+                <a href="{{ route($routeName,['id'=>$item->id, 'lang'=>app()->getLocale()]) }}" class="item_name @if($item->id == $currentItemId) active @endif">
+                    {{ $item->{'name_' . app()->getLocale()} ?? $item->{'title_' . app()->getLocale()} }}
                 </a>
             @endforeach
         </div>

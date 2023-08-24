@@ -74,17 +74,17 @@
         }
     }
 
-    @media(max-width: 1075px){
+    @media(max-width: 1400px){
 
         .inner_wrapper{
 
             .page_content_block{
-                justify-content: center;
                 column-gap: 0;
-
+                
                 .middle_column{
                     box-sizing: border-box;
                     padding: 0 25px;
+                    max-width: unset;
                 }
             }
         }

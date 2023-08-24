@@ -59,7 +59,8 @@
                     </div>
                 </div>
 
-                <x-sidebar-right :title="__('app.mejlis_committees_page.mejlis_committees')" :items-list="$committees_all" :current-item-id="$selected_committee->id"/>
+                <x-sidebar-right :title="__('app.mejlis_committees_page.mejlis_committees')" :items-list="$committees_all" 
+                    :current-item-id="$selected_committee->id" routeName="mejlis_committees_page"/>
             </div>
         </div>
     </div>

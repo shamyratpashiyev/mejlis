@@ -341,7 +341,7 @@ a{
 
         .buttons_block{
 
-            .committee_name{
+            .item_name{
                 font-family: 'OpenSansRegular', sans-serif;
                 font-size: 16px;
                 box-sizing: border-box;
@@ -373,7 +373,7 @@ a{
         }
     }
 
-    @media(max-width: 1075px){
+    @media(max-width: 1400px){
         width: max-content;
         position: relative;
         position: absolute;

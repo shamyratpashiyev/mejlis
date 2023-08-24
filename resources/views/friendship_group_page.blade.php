@@ -62,11 +62,7 @@
                     </div>
                 </div>
 
-                <div class="right_column flex_column">
-                    @foreach ($groups_all as $group)
-                        <a href="{{ route('friendship_group_page',['id'=>$group->id, 'lang'=>app()->getLocale()]) }}" class="item @if($group->id == $selected_group->id) active @endif">{{ $group->{'title_' . $current_lang->code} }}</a>
-                    @endforeach
-                </div>
+                <x-sidebar-right title="" :items-list="$groups_all" :current-item-id="$selected_group->id" route-name="friendship_group_page"/>
             </div>
         </div>
     </div>

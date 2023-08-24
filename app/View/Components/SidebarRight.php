@@ -11,7 +11,7 @@ class SidebarRight extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public object $itemsList, public int $currentItemId, public string $title)
+    public function __construct(public object $itemsList, public int $currentItemId, public string $title, public string $routeName)
     {
         //
     }

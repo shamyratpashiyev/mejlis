@@ -7,7 +7,8 @@
     row-gap: 50px; }
     .friendship_group_page .inner_wrapper .page_content_block {
       width: 100%;
-      column-gap: 80px; }
+      column-gap: 80px;
+      position: relative; }
       .friendship_group_page .inner_wrapper .page_content_block .middle_column {
         color: var(--text_black_default);
         width: 729px;
@@ -40,7 +41,8 @@
           margin: 0 0 40px 0; }
           .friendship_group_page .inner_wrapper .page_content_block .middle_column .group_members_block .group_member_container {
             width: 49%;
-            height: 150px;
+            max-width: 321px;
+            min-height: 150px;
             background-color: var(--container_background_blue);
             box-sizing: border-box;
             padding: 10px;
@@ -88,3 +90,32 @@
             background-color: var(--sky_blue_darker); }
     .friendship_group_page .inner_wrapper .pagination_row {
       margin-top: 0; }
+  @media (max-width: 1400px) {
+    .friendship_group_page .inner_wrapper .page_content_block {
+      column-gap: 0; }
+      .friendship_group_page .inner_wrapper .page_content_block .middle_column {
+        width: -webkit-fill-available;
+        width: -moz-available;
+        width: -ms-available;
+        margin: 0 25px; }
+        .friendship_group_page .inner_wrapper .page_content_block .middle_column .flags_block .images_row {
+          justify-content: space-evenly; }
+        .friendship_group_page .inner_wrapper .page_content_block .middle_column .group_members_block {
+          justify-content: space-evenly; } }
+  @media (max-width: 600px) {
+    .friendship_group_page .inner_wrapper .page_content_block .middle_column .flags_block {
+      box-sizing: border-box;
+      padding: 0 10px; }
+      .friendship_group_page .inner_wrapper .page_content_block .middle_column .flags_block .images_row {
+        justify-content: space-between;
+        column-gap: 0;
+        align-items: center; }
+        .friendship_group_page .inner_wrapper .page_content_block .middle_column .flags_block .images_row img {
+          width: 49%;
+          height: max-content; }
+    .friendship_group_page .inner_wrapper .page_content_block .middle_column .group_members_block {
+      flex-direction: column;
+      align-items: center; }
+      .friendship_group_page .inner_wrapper .page_content_block .middle_column .group_members_block .group_member_container {
+        max-width: unset;
+        width: 95%; } }

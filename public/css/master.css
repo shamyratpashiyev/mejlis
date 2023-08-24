@@ -252,13 +252,13 @@ a {
       margin: 0;
       box-sizing: border-box;
       padding: 0 20px; }
-    .sidebar_right .inner_wrapper .buttons_block .committee_name {
+    .sidebar_right .inner_wrapper .buttons_block .item_name {
       font-family: 'OpenSansRegular', sans-serif;
       font-size: 16px;
       box-sizing: border-box;
       padding: 10px 20px;
       color: var(--default_white); }
-      .sidebar_right .inner_wrapper .buttons_block .committee_name.active {
+      .sidebar_right .inner_wrapper .buttons_block .item_name.active {
         background-color: var(--sky_blue_darker); }
   .sidebar_right .ellipsis_button {
     width: 20px;
@@ -270,7 +270,7 @@ a {
     position: absolute; }
     .sidebar_right .ellipsis_button.active {
       fill: var(--default_white); }
-  @media (max-width: 1075px) {
+  @media (max-width: 1400px) {
     .sidebar_right {
       width: max-content;
       position: relative;
