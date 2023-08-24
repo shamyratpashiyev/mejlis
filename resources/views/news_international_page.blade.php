@@ -38,7 +38,7 @@
                                 <span class="date">{{ date('d.m.Y', strtotime($news->event_date)) }}</span>
                             </div>
 
-                            <div class="image_wrapper">
+                            <div class="image_wrapper flex_row">
                                 <img src="{{ asset($news->image_1) }}" alt="">
                             </div>
                         </a>
