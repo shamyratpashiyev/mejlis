@@ -7,7 +7,8 @@
     row-gap: 50px; }
     .constitutional_law_page .inner_wrapper .page_content_block {
       width: 100%;
-      column-gap: 50px; }
+      column-gap: 50px;
+      position: relative; }
       .constitutional_law_page .inner_wrapper .page_content_block .right_side {
         row-gap: 35px;
         color: var(--text_black_default); }
@@ -39,3 +40,9 @@
             font-family: 'OpenSansRegular', sans-serif !important;
             font-size: 16px !important;
             margin: 0 !important; }
+  @media (max-width: 999px) {
+    .constitutional_law_page .inner_wrapper .page_content_block .right_side {
+      box-sizing: border-box;
+      padding: 0 0 0 25px; }
+      .constitutional_law_page .inner_wrapper .page_content_block .right_side .block_title {
+        font-size: 25px; } }

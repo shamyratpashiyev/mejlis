@@ -9,18 +9,21 @@
   z-index: 101;
   position: relative; }
   .top_header .inner_wrapper {
-    align-items: center;
     justify-content: space-between;
     position: relative;
     width: var(--default_width);
-    row-gap: 10px; }
-    .top_header .inner_wrapper img {
-      height: 87.5px;
-      width: 263px; }
-    .top_header .inner_wrapper .logo_text {
-      font-family: 'OpenSansExtraBold', sans-serif;
-      font-size: 20px;
-      margin: 0; }
+    align-items: center; }
+    .top_header .inner_wrapper .logo_wrapper {
+      row-gap: 10px;
+      align-items: center; }
+      .top_header .inner_wrapper .logo_wrapper img {
+        height: 87.5px;
+        width: 263px; }
+      .top_header .inner_wrapper .logo_wrapper .logo_text {
+        font-family: 'OpenSansExtraBold', sans-serif;
+        font-size: 20px;
+        margin: 0;
+        color: var(--text_black_default); }
     .top_header .inner_wrapper .lang_wrapper {
       position: absolute;
       right: 0;

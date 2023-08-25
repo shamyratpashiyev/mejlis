@@ -20,8 +20,10 @@
 <body>
     <div class="top_header flex_row">
         <div class="inner_wrapper flex_column">
-            <img src="{{ asset('img/mejlis_building.svg') }}" alt="">
-            <h3 class="logo_text">@lang('app.layout.logo_title')</h3>
+            <a href="{{ route('main_page',['lang'=>app()->getLocale()]) }}" class="logo_wrapper flex_column">
+                <img src="{{ asset('img/mejlis_building.svg') }}" alt="">
+                <h3 class="logo_text">@lang('app.layout.logo_title')</h3>
+            </a>
 
             <div class="lang_wrapper flex_row">
                 <svg class="globe" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">

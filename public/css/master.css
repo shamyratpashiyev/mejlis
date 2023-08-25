@@ -214,16 +214,19 @@ a {
         opacity: 0;
         top: -9px;
         left: 0;
-        max-width: 95vw !important; }
+        max-width: 95vw !important;
+        z-index: -1; }
         .sidebar_left .nav_block.active {
           width: 290px;
-          opacity: 1; }
+          opacity: 1;
+          z-index: 90; }
       .sidebar_left .contacts_block {
         display: none; }
       .sidebar_left .ellipsis_button {
         display: block;
         position: absolute;
-        top: 0; } }
+        top: 0;
+        z-index: 90; } }
 
 .sidebar_right {
   width: 340px;
@@ -235,7 +238,8 @@ a {
   background-color: var(--sky_blue);
   right: 0;
   height: max-content;
-  top: -10px; }
+  top: -10px;
+  z-index: 91; }
   .sidebar_right .inner_wrapper {
     width: 100% !important;
     color: var(--default_white);
@@ -280,12 +284,14 @@ a {
         height: max-content;
         opacity: 0;
         top: -9px;
-        right: 0; }
+        right: 0;
+        z-index: -2; }
         .sidebar_right .inner_wrapper.active {
           width: 340px !important;
           opacity: 1; }
       .sidebar_right .ellipsis_button {
-        display: block; } }
+        display: block;
+        z-index: 91; } }
 
 .deputy_popup_container {
   position: fixed;
@@ -418,11 +424,12 @@ a {
     font-family: 'OpenSansBold', sans-serif;
     color: var(--text_black_default);
     margin: 0; }
-  .news_container_big .content {
-    font-size: 14px;
-    font-family: 'OpenSansRegular', sans-serif;
-    color: var(--text_black_default);
-    margin: 0; }
+  .news_container_big .content, .news_container_big .content * {
+    font-size: 14px !important;
+    font-family: 'OpenSansRegular', sans-serif !important;
+    font-weight: normal !important;
+    color: var(--text_black_default) !important;
+    margin: 0 !important; }
   .news_container_big .date {
     font-size: 12px;
     font-family: 'OpenSansRegular', sans-serif;
@@ -431,7 +438,11 @@ a {
     .news_container_big {
       height: max-content; }
       .news_container_big .image_wrapper {
-        height: max-content; } }
+        height: max-content; }
+      .news_container_big .title {
+        margin: 0 0 7px 0; }
+      .news_container_big .date {
+        margin: 7px 0 0 0; } }
 
 .news_container_medium {
   width: 340px;

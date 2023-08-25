@@ -43,7 +43,8 @@
         grid-column-start: 1;
         grid-column-end: 3;
         justify-content: space-between;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        row-gap: 25px; }
   @media (max-width: 1480px) {
     .news_section_main .inner_wrapper .grid_block {
       grid-template-columns: 46.45% 50.75%; }
