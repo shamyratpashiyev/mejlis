@@ -11,6 +11,7 @@
         .page_content_block{
             width: 100%;
             justify-content: space-between;
+            position: relative;
 
             .sidebar_container{
 
@@ -93,5 +94,46 @@
             }
         }
 
+    }
+
+    @media(max-width: 1400px) {
+
+        .inner_wrapper{
+
+            .page_content_block{
+                justify-content: flex-start;
+
+                .middle_column{
+                    width: -webkit-fill-available;
+                    width: -moz-available;
+                    width: -ms-available;
+                    max-width: unset;
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 600px) {
+        .inner_wrapper{
+
+            .page_content_block{
+                justify-content: flex-start;
+
+                .middle_column{
+                   
+                    .symbol_container{
+
+                        .image_wrapper{
+
+                            img{
+                                width: 95%;
+                                height: max-content;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

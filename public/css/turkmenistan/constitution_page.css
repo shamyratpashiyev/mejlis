@@ -7,7 +7,8 @@
     row-gap: 50px; }
     .tkm_constitution_page .inner_wrapper .page_content_block {
       width: 100%;
-      justify-content: space-between; }
+      justify-content: space-between;
+      position: relative; }
       .tkm_constitution_page .inner_wrapper .page_content_block .sidebar_container .nav_block {
         display: none; }
       .tkm_constitution_page .inner_wrapper .page_content_block .middle_column {
@@ -41,3 +42,12 @@
           .tkm_constitution_page .inner_wrapper .page_content_block .right_column a.active {
             padding: 10px 10px 10px 10px;
             background-color: var(--sky_blue_darker); }
+  @media (max-width: 1400px) {
+    .tkm_constitution_page .inner_wrapper .page_content_block {
+      justify-content: flex-start; }
+      .tkm_constitution_page .inner_wrapper .page_content_block .middle_column {
+        width: -webkit-fill-available;
+        width: -moz-available;
+        width: -ms-available;
+        max-width: unset;
+        margin-right: 25px; } }

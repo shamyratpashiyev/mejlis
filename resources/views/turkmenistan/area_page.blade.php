@@ -5,13 +5,21 @@
 @endpush
 
 @php
-    $links_list = [
-                    ['name'=>'--', 'url' => '#'],
-    ];
+    $links_list = [];
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
                     ['name' => __('app.tkm.area_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
     ];
+
+    $sidebar_right = [
+                    (object)['id' => '1','routeName'=>'tkm_history_page','name_tm' => __('app.tkm.history'),'name_ru' => __('app.tkm.history'),'name_en' => __('app.tkm.history')],
+                    (object)['id' => '2','routeName'=>'tkm_area_page','name_tm' => __('app.tkm.area'),'name_ru' => __('app.tkm.area'),'name_en' => __('app.tkm.area')],
+                    (object)['id' => '3','routeName'=>'tkm_population_page','name_tm' => __('app.tkm.population'),'name_ru' => __('app.tkm.population'),'name_en' => __('app.tkm.population')],
+                    (object)['id' => '4','routeName'=>'tkm_state_symbols_page','name_tm' => __('app.tkm.state_symbols'),'name_ru' => __('app.tkm.state_symbols'),'name_en' => __('app.tkm.state_symbols')],
+                    (object)['id' => '5','routeName'=>'tkm_constitution_page','name_tm' => __('app.tkm.constitution'),'name_ru' => __('app.tkm.constitution'),'name_en' => __('app.tkm.constitution')],
+                    (object)['id' => '6','routeName'=>'tkm_state_holidays_page','name_tm' => __('app.tkm.state_holidays'),'name_ru' => __('app.tkm.state_holidays'),'name_en' => __('app.tkm.state_holidays')],
+    ];
+    $sidebar_right = (object) $sidebar_right;
     
 @endphp
 
@@ -30,15 +38,8 @@
                     @lang('app.tkm.area_page.text')
                 </div>
 
-                <div class="right_column flex_column">
-                    {{-- <a href="#">@lang('app.tkm.president')</a> --}}
-                    <a href="{{ route('tkm_history_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.history')</a>
-                    <a href="{{ route('tkm_area_page',['lang'=>app()->getLocale()]) }}" class="active">@lang('app.tkm.area')</a>
-                    <a href="{{ route('tkm_population_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.population')</a>
-                    <a href="{{ route('tkm_state_symbols_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.state_symbols')</a>
-                    <a href="{{ route('tkm_constitution_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.constitution',['lang'=>app()->getLocale()])</a> 
-                    <a href="{{ route('tkm_state_holidays_page',['lang'=>app()->getLocale()]) }}">@lang('app.tkm.state_holidays')</a>
-                </div>
+                <x-sidebar-right title="" :items-list="$sidebar_right" 
+                    current-item-id="2" :routeName="0"/>
             </div>
         </div>
     </div>
