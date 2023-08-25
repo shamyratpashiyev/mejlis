@@ -14,7 +14,7 @@
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
                     ['name' => __('app.layout.headlines'), 'url' => '#'],
-                    ['name' => __('app.mejlis_activities_page.title'), 'url' => route('mejlis_activities_page', ['lang' => app()->getLocale()])],
+                    ['name' => __('app.layout.mejlis_activities_page'), 'url' => route('mejlis_activities_page', ['lang' => app()->getLocale()])],
                     ['name' => $selected_activity->{'title_' . $current_lang->code}, 'url' => route(Route::currentRouteName(), ['id' => $selected_activity->id,'lang' => app()->getLocale()])],
     ];
 @endphp
