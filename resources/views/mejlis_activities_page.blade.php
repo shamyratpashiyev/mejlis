@@ -14,7 +14,7 @@
     $breadcrumbs_array = [
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
                     ['name' => __('app.layout.headlines'), 'url' => '#'],
-                    ['name' => __('app.mejlis_activities_page.title'), 'url' => request()->fullUrl()],
+                    ['name' => __('app.layout.mejlis_activities_page'), 'url' => request()->fullUrl()],
     ];
 @endphp
 

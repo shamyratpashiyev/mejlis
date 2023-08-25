@@ -249,7 +249,7 @@ return [
     ],
 
     'mejlis_activities_page' => [
-        'title' => 'Türkmenistanyň mejlisinde alnyp barylýan işler',
+        'title' => 'Türkmenistanyň mejlisinde alnyp<br/> barylýan işler',
         'title_short' => 'MEJLISDE ALNYP BARYLÝAN IŞLER'
     ],
 

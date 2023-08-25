@@ -745,7 +745,8 @@ a{
 }
 
 .activity_container{
-    width: 340px;
+    max-width: 340px;
+    width: 86vw;
     height: 311px;
     align-items: center;
     justify-content: space-between;
