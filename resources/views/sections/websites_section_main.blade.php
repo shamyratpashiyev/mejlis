@@ -102,7 +102,8 @@
             autoplayHoverPause:false,
             loop:true,
             nav:false,
-            // center: true,
+            center: true,
+            // autoWidth: true,
             responsiveClass:true,
             responsive:{
                 1500:{
@@ -118,6 +119,7 @@
                     items: 2,
                 },
                 320: {
+                    autoWidth: true,
                     items: 1,
                 }
             }
