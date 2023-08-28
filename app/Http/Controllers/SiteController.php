@@ -60,9 +60,15 @@ class SiteController extends Controller
         return view('convocation_page', $this->data);
     }
 
-    public function mejlis_committees(string $id = '1'){
-        $this->committees_all = Committee::orderBy('created_at','desc')->get(['id','name_' . request()->query('lang'), 'committee_head_id']);
-        $this->selected_committee = Committee::select(['id','name_' . request()->query('lang'), 'committee_head_id'])->findOrFail($id);
+    public function mejlis_committees(string $id = '0'){
+        $locale = request()->query('lang');
+        $this->committees_all = Committee::orderBy('created_at','desc')->get(['id','name_' . $locale, 'committee_head_id']);
+        
+        if($id){
+            $this->selected_committee = Committee::select(['id','name_' . $locale, 'committee_head_id'])->findOrFail($id);
+        } else {
+            $this->selected_committee = Committee::orderBy('created_at','DESC')->select(['id','name_' . $locale, 'committee_head_id'])->firstOrFail();
+        }
         return view('mejlis_committees_page', $this->data);
     }
 
@@ -204,13 +210,19 @@ class SiteController extends Controller
         return view('single_news_cooperation_page', $this->data);
     }
 
-    public function friendship_group(string $id = '1'){
+    public function friendship_group(string $id = '0'){
         $locale = request()->query('lang');
-        $this->groups_all = FriendshipGroup::orderBy('created_at','desc')->get(['id','title_' . $locale,'description_' . $locale,
+        $this->groups_all = FriendshipGroup::orderBy('published_date','desc')->get(['id','title_' . $locale,'description_' . $locale,
                                     'country_1_' . $locale,'country_2_' . $locale, 'published_date']);
-        $this->selected_group = FriendshipGroup::select(['id','title_' . $locale,'description_' . $locale,
+        if($id){
+            $this->selected_group = FriendshipGroup::select(['id','title_' . $locale,'description_' . $locale,
+                'published_date', 'flag_1', 'flag_2','country_1_' . $locale,'country_2_' . $locale])
+                ->findOrFail($id);
+        } else {
+            $this->selected_group = FriendshipGroup::orderBy('published_date','desc')->select(['id','title_' . $locale,'description_' . $locale,
                                  'published_date', 'flag_1', 'flag_2','country_1_' . $locale,'country_2_' . $locale])
-                                 ->findOrFail($id);
+                                 ->firstOrFail();
+        }
         return view('friendship_group_page', $this->data);
     }
 
