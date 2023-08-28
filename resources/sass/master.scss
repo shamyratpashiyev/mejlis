@@ -362,6 +362,10 @@ a{
         &::-webkit-scrollbar{
             display: none;
         } 
+
+        &.turkmenistan_pages{
+            max-height: 274px !important;
+        }
     }
 
     .ellipsis_button{

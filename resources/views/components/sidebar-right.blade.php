@@ -1,5 +1,5 @@
 <div class="sidebar_right flex_column">
-    <div class="inner_wrapper flex_column">
+    <div class="inner_wrapper flex_column {{ $classes }}">
         @if($title)
             <h3 class="block_title">{{ $title }}</h3>
         @endif

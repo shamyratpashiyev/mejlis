@@ -39,7 +39,7 @@
                 </div>
 
                 <x-sidebar-right title="" :items-list="$sidebar_right" 
-                    current-item-id="3" :routeName="0"/>
+                    current-item-id="3" :routeName="0" classes="turkmenistan_pages"/>
             </div>
         </div>
     </div>

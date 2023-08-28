@@ -84,9 +84,6 @@
                     <span>@lang('app.layout.legislation')</span>
 
                     <div class="dropdown_menu flex_column">
-                        {{-- <div class="item_wrapper hover_underline">
-                            <a href="{{ route('bills_discussion_page') }}">Законопроекты на обсуждение</a>
-                        </div> --}}
                         <div class="item_wrapper hover_underline">
                             <a href="{{ route('codes_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.codes_page')</a>
                         </div>
@@ -161,6 +158,7 @@
 
             <div class="nav_block flex_column">
                 <a class="hover_underline @if(Route::currentRouteNamed(['main_page'])) active @endif" href="{{ route('main_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.main_page')</a>
+
                 <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['mejlis_history_page','convocation_page'])) active @endif" data-id="1">
                     <span>@lang('app.layout.about_mejlis')</span>
 
@@ -174,6 +172,7 @@
                         
                     </div>
                 </div>
+
                 <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['mejlis_committees_page','mejlis_deputies_page','single_deputy_page'])) active @endif" data-id="2">
                     <span>@lang('app.layout.mejlis_structure')</span>
 
@@ -186,23 +185,8 @@
                         </div>
                     </div>
                 </div>
-                {{-- <a class="hover_underline" href="#">@lang('app.layout.media')</a> --}}
-                <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['international_cooperation_page','single_news_cooperation_page','friendship_group_page', 'news_international_page','single_news_international_page'])) active @endif" data-id="3">
-                    <span>@lang('app.layout.international')</span>
 
-                    <div class="dropdown_menu hamburger flex_column">
-                        <div class="item_wrapper hover_underline">
-                            <a href="{{ route('international_cooperation_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.international_cooperation_page')</a>
-                        </div>
-                        <div class="item_wrapper hover_underline">
-                            <a href="{{ route('friendship_group_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.friendship_groups_page')</a>
-                        </div>
-                        <div class="item_wrapper hover_underline">
-                            <a href="{{ route('news_international_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_page')</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['codes_page','single_code_page','laws_page','single_law_page','mejlis_decrees_page','single_decree_page','constitutional_law_page'])) active @endif" data-id="4">
+                <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['codes_page','single_code_page','laws_page','single_law_page','mejlis_decrees_page','single_decree_page','constitutional_law_page'])) active @endif" data-id="3">
                     <span>@lang('app.layout.legislation')</span>
 
                     <div class="dropdown_menu hamburger flex_column">
@@ -223,6 +207,46 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['international_cooperation_page','single_news_cooperation_page','friendship_group_page', 'news_international_page','single_news_international_page'])) active @endif" data-id="4">
+                    <span>@lang('app.layout.international')</span>
+
+                    <div class="dropdown_menu hamburger flex_column">
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('international_cooperation_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.international_cooperation_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('friendship_group_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.friendship_groups_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('news_international_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_page')</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav_button_wrapper flex_column @if(Route::currentRouteNamed(['news_page','single_news_page','articles_page','single_article_page', 'mejlis_activities_page','single_activity_page', 'gallery_page'])) active @endif" data-id="5">
+                    <span>@lang('app.layout.headlines')</span>
+
+                    <div class="dropdown_menu hamburger flex_column">
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('news_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('articles_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.articles_page')</a>
+                        </div>
+                        <div class="item_wrapper hover_underline">
+                            <a href="{{ route('mejlis_activities_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.mejlis_activities_page')</a>
+                        </div>
+                        {{-- <div class="item_wrapper hover_underline">
+                            <a href="{{ route('gallery_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.gallery_page')</a>
+                        </div> --}}
+                    </div>
+                </div>
+
+                <a href="{{ route('tkm_history_page',['lang'=>app()->getLocale()]) }}" class="nav_button_wrapper hover_underline @if(Route::current()->getPrefix() == '/turkmenistan') active @endif">
+                    <span>@lang('app.layout.tkm_page')</span>
+                </a>
+
                 <a class="hover_underline" href="{{ route('contacts_page',['lang' => app()->getLocale()]) }}">@lang('app.layout.contacts_page')</a>
             </div>
 

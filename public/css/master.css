@@ -266,6 +266,8 @@ a {
         background-color: var(--sky_blue_darker); }
     .sidebar_right .inner_wrapper::-webkit-scrollbar {
       display: none; }
+    .sidebar_right .inner_wrapper.turkmenistan_pages {
+      max-height: 274px !important; }
   .sidebar_right .ellipsis_button {
     width: 20px;
     height: 20px;

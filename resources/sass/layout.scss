@@ -188,7 +188,7 @@
     width: 50vw;
     height: 100vh;
     box-sizing: border-box;
-    padding: 40px 0 66px 0;
+    padding: 10px 0 66px 0;
     background-image: linear-gradient(to right, var(--gradient_background_1) , var(--gradient_background_2));
     transition: 0.55s all ease-in !important;
     align-items: center;
@@ -247,7 +247,7 @@
                 border: none;
                 height: 2px;
                 background-color: var(--default_white);
-                margin: 25px 0;
+                margin: 10px 0;
             }
 
             .title{
@@ -269,7 +269,7 @@
 
         .nav_block{
             align-items: center;
-            row-gap: 30px;
+            row-gap: 20px;
             width: 100%;
 
             a{
@@ -304,7 +304,7 @@
                     padding: 20px 15px;
                     width: max-content;
                     max-width: 300px;
-                    row-gap: 20px;
+                    row-gap: 15px;
                     // border-top: 1px solid var(--default_white);
                     align-items: center;
 
@@ -368,6 +368,7 @@
 
         .hamburger_close_button{
             left: 4vw;
+            top: 20px;
         }
     }
 }

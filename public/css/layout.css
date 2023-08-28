@@ -125,7 +125,7 @@
   width: 50vw;
   height: 100vh;
   box-sizing: border-box;
-  padding: 40px 0 66px 0;
+  padding: 10px 0 66px 0;
   background-image: linear-gradient(to right, var(--gradient_background_1), var(--gradient_background_2));
   transition: 0.55s all ease-in !important;
   align-items: center;
@@ -170,7 +170,7 @@
         border: none;
         height: 2px;
         background-color: var(--default_white);
-        margin: 25px 0; }
+        margin: 10px 0; }
       .hamburger_menu .inner_wrapper .top_block .title {
         font-family: 'RalewayExtraBold', sans-serif;
         font-size: 25px;
@@ -185,7 +185,7 @@
         text-align: center; }
     .hamburger_menu .inner_wrapper .nav_block {
       align-items: center;
-      row-gap: 30px;
+      row-gap: 20px;
       width: 100%; }
       .hamburger_menu .inner_wrapper .nav_block a {
         text-decoration: none;
@@ -213,7 +213,7 @@
           padding: 20px 15px;
           width: max-content;
           max-width: 300px;
-          row-gap: 20px;
+          row-gap: 15px;
           align-items: center; }
           .hamburger_menu .inner_wrapper .nav_block .nav_button_wrapper .dropdown_menu .item_wrapper {
             width: max-content;
@@ -244,7 +244,8 @@
       .hamburger_menu .inner_wrapper .top_block .building_img {
         width: 95vw; }
       .hamburger_menu .hamburger_close_button {
-        left: 4vw; } }
+        left: 4vw;
+        top: 20px; } }
 
 footer {
   width: 100%;
