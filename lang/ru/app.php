@@ -59,7 +59,7 @@ return [
         'dashoguz_region' => 'Дашогузский велаят',
         'lebap_region' => 'Лебапский велаят',
         'mary_region' => 'Марыйский велаят',
-        'legislation_section' => 'Законодательство',
+        'legislation_section' => 'Принятые законы',
         'websites_section' => 'Веб сайты',
     ],
 

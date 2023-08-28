@@ -43,9 +43,12 @@
                         justify-content: center;
                         color: var(--text_black_default);
                         min-width: 270px;
+                        row-gap: 5px;
 
                         svg{
                             fill: var(--sky_blue);
+                            width: 92px;
+                            height: 92px;
 
                             path, circle{
                                 fill: inherit;

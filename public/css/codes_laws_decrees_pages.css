@@ -34,9 +34,12 @@
             align-items: center;
             justify-content: center;
             color: var(--text_black_default);
-            min-width: 270px; }
+            min-width: 270px;
+            row-gap: 5px; }
             .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .nav_buttons_row .button_container svg {
-              fill: var(--sky_blue); }
+              fill: var(--sky_blue);
+              width: 92px;
+              height: 92px; }
               .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .nav_buttons_row .button_container svg path, .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .nav_buttons_row .button_container svg circle {
                 fill: inherit;
                 stroke: inherit; }

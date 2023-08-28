@@ -58,7 +58,7 @@ return [
         'dashoguz_region' => 'Daşoguz welaýaty',
         'lebap_region' => 'Lebap welaýaty',
         'mary_region' => 'Mary welaýaty',
-        'legislation_section' => 'Kanunçylyk',
+        'legislation_section' => 'Soňky kabul edilen kanunlar',
         'websites_section' => 'Web Saýtlar',
     ],
 
