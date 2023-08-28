@@ -359,9 +359,9 @@ a{
             }
         }
 
-        // &::-webkit-scrollbar{
-        //     display: none;
-        // } 
+        &::-webkit-scrollbar{
+            display: none;
+        } 
     }
 
     .ellipsis_button{

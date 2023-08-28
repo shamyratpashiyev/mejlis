@@ -205,9 +205,12 @@ class SiteController extends Controller
     }
 
     public function friendship_group(string $id = '1'){
-        $this->groups_all = FriendshipGroup::orderBy('created_at','desc')->get(['id','title_' . request()->query('lang'),'description_' . request()->query('lang'), 'published_date']);
-        $this->selected_group = FriendshipGroup::select(['id','title_' . request()->query('lang'),'description_' . request()->query('lang'),
-                                 'published_date', 'flag_1', 'flag_2'])->findOrFail($id);
+        $locale = request()->query('lang');
+        $this->groups_all = FriendshipGroup::orderBy('created_at','desc')->get(['id','title_' . $locale,'description_' . $locale,
+                                    'country_1_' . $locale,'country_2_' . $locale, 'published_date']);
+        $this->selected_group = FriendshipGroup::select(['id','title_' . $locale,'description_' . $locale,
+                                 'published_date', 'flag_1', 'flag_2','country_1_' . $locale,'country_2_' . $locale])
+                                 ->findOrFail($id);
         return view('friendship_group_page', $this->data);
     }
 

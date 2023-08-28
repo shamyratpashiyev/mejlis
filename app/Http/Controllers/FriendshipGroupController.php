@@ -40,6 +40,12 @@ class FriendshipGroupController extends Controller
         $group->description_tm = $request->description_tm;
         $group->description_ru = $request->description_ru;
         $group->description_en = $request->description_en;
+        $group->country_1_tm = $request->country_1_tm;
+        $group->country_1_ru = $request->country_1_ru;
+        $group->country_1_en = $request->country_1_en;
+        $group->country_2_tm = $request->country_2_tm;
+        $group->country_2_ru = $request->country_2_ru;
+        $group->country_2_en = $request->country_2_en;
         $group->published_date = $request->published_date;
 
         if($request->hasFile('flag_1')){
@@ -86,6 +92,12 @@ class FriendshipGroupController extends Controller
             'description_tm' => 'required',
             'description_ru' => 'required',
             'description_en' => 'required',
+            'country_1_tm' => 'required',
+            'country_1_ru' => 'required',
+            'country_1_en' => 'required',
+            'country_2_tm' => 'required',
+            'country_2_ru' => 'required',
+            'country_2_en' => 'required',
             'published_date' => 'required|date'
         ]);
 
@@ -96,6 +108,12 @@ class FriendshipGroupController extends Controller
         $group->description_tm = $request->description_tm;
         $group->description_ru = $request->description_ru;
         $group->description_en = $request->description_en;
+        $group->country_1_tm = $request->country_1_tm;
+        $group->country_1_ru = $request->country_1_ru;
+        $group->country_1_en = $request->country_1_en;
+        $group->country_2_tm = $request->country_2_tm;
+        $group->country_2_ru = $request->country_2_ru;
+        $group->country_2_en = $request->country_2_en;
         $group->published_date = $request->published_date;
 
         if($request->hasFile('flag_1')){

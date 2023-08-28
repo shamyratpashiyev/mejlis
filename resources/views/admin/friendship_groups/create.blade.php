@@ -110,6 +110,60 @@
             </div>
         </div>
 
+        <div class="row">
+            <!-- form__item -->
+            <div class="form__item w30">
+                <label class="txt">ТМ - Страна-1</label>
+                <input value="{{ old('country_1_tm') }}" type="text" placeholder="" class="inputTxt" name="country_1_tm">
+                @error('country_1_tm')
+                    <p class="err">{{$message}}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">RU - Страна-1</label>
+                <input value="{{ old('country_1_ru') }}" type="text" placeholder="" class="inputTxt" name="country_1_ru">
+                @error('country_1_ru')
+                    <p class="err">{{$message}}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">EN - Страна-1</label>
+                <input value="{{ old('country_1_en') }}" type="text" placeholder="" class="inputTxt" name="country_1_en">
+                @error('country_1_en')
+                    <p class="err">{{$message}}</p>
+                @enderror
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- form__item -->
+            <div class="form__item w30">
+                <label class="txt">ТМ - Страна-2</label>
+                <input value="{{ old('country_2_tm') }}" type="text" placeholder="" class="inputTxt" name="country_2_tm">
+                @error('country_2_tm')
+                    <p class="err">{{$message}}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">RU - Страна-2</label>
+                <input value="{{ old('country_2_ru') }}" type="text" placeholder="" class="inputTxt" name="country_2_ru">
+                @error('country_2_ru')
+                    <p class="err">{{$message}}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">EN - Страна-2</label>
+                <input value="{{ old('country_2_en') }}" type="text" placeholder="" class="inputTxt" name="country_2_en">
+                @error('country_2_en')
+                    <p class="err">{{$message}}</p>
+                @enderror
+            </div>
+        </div>
+
         <!-- ROW  -->
         <div class="row">
             <!-- form__item -->

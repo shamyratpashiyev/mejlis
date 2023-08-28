@@ -102,7 +102,7 @@
             </div>
 
             <div class="form__item w30">
-                <label class="txt">Члены комитета</label>
+                <label class="txt">Члены группы</label>
                 <select name="group_members_id[]" id="" multiple size="10" style="height: max-content">
                     @foreach ($deputies_all as $deputy)
                         <option value="{{ $deputy->id }}" @if(in_array($deputy->id, $selected_group->members->pluck('id')->toArray())) selected @endif>{{ $deputy->fullname_tm }}</option>
@@ -110,6 +110,60 @@
                 </select>
                 @error('name')
                     <p class="err">{{ $message }}</p>
+                @enderror
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- form__item -->
+            <div class="form__item w30">
+                <label class="txt">ТМ - Страна-1</label>
+                <input value="{{ $selected_group->country_1_tm }}" type="text" placeholder="" class="inputTxt" name="country_1_tm">
+                @error('country_1_tm')
+                    <p class="err">{{$message}}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">RU - Страна-1</label>
+                <input value="{{ $selected_group->country_1_ru }}" type="text" placeholder="" class="inputTxt" name="country_1_ru">
+                @error('country_1_ru')
+                    <p class="err">{{$message}}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">EN - Страна-1</label>
+                <input value="{{ $selected_group->country_1_en }}" type="text" placeholder="" class="inputTxt" name="country_1_en">
+                @error('country_1_en')
+                    <p class="err">{{$message}}</p>
+                @enderror
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- form__item -->
+            <div class="form__item w30">
+                <label class="txt">ТМ - Страна-2</label>
+                <input value="{{ $selected_group->country_2_tm }}" type="text" placeholder="" class="inputTxt" name="country_2_tm">
+                @error('country_2_tm')
+                    <p class="err">{{$message}}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">RU - Страна-2</label>
+                <input value="{{ $selected_group->country_2_ru }}" type="text" placeholder="" class="inputTxt" name="country_2_ru">
+                @error('country_2_ru')
+                    <p class="err">{{$message}}</p>
+                @enderror
+            </div>
+
+            <div class="form__item w30">
+                <label class="txt">EN - Страна-2</label>
+                <input value="{{ $selected_group->country_2_en }}" type="text" placeholder="" class="inputTxt" name="country_2_en">
+                @error('country_2_en')
+                    <p class="err">{{$message}}</p>
                 @enderror
             </div>
         </div>

@@ -6,9 +6,11 @@
 
         <div class="buttons_block flex_column">
             @foreach ($itemsList as $item)
-                <a href="{{ $routeName ? route(($routeName),['id'=>$item->id, 'lang'=>app()->getLocale()]) : route(($item->routeName),['lang'=>app()->getLocale()]) }}" 
+                <a href="{{ $routeName ? route($routeName,['id'=>$item->id, 'lang'=>app()->getLocale()]) : route($item->routeName,['lang'=>app()->getLocale()]) }}" 
                     class="item_name @if($item->id == $currentItemId) active @endif">
-                    {{ $item->{'name_' . app()->getLocale()} ?? $item->{'title_' . app()->getLocale()} }}
+                    {{ $item->{'name_' . app()->getLocale()} 
+                    ?? 
+                    $item->{'country_1_' . app()->getLocale()} . ' - ' . $item->{'country_2_' . app()->getLocale()} }}
                 </a>
             @endforeach
         </div>

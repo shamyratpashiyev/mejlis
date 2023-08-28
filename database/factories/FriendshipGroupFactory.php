@@ -25,6 +25,12 @@ class FriendshipGroupFactory extends Factory
             'description_en' => '<p>English_' . fake()->realText($maxNbChars = 5000) . '</p>',
             'flag_1' => 'img/flag_' . fake()->numberBetween(1,5) . '.png',
             'flag_2' => 'img/flag_' . fake()->numberBetween(1,5) . '.png',
+            'country_1_tm' => fake()->country() . '_tm',
+            'country_1_ru' => fake()->country() . '_ru',
+            'country_1_en' => fake()->country() . '_en',
+            'country_2_tm' => fake()->country() . '_tm',
+            'country_2_ru' => fake()->country() . '_ru',
+            'country_2_en' => fake()->country() . '_en',
             'published_date' => fake()->dateTime(),
         ];
     }
