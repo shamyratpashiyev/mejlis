@@ -19,8 +19,10 @@
                 align-items: center;
 
                 .images_wrapper{
-                    width: 886px;
-                    height: 503.5px;
+                    max-width: 886px;
+                    max-height: 503.5px;
+                    width: 82.85%;
+                    height: max-content;
                     justify-content: space-between;
 
                     .image_big{

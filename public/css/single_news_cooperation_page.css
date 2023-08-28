@@ -14,8 +14,10 @@
         width: 1070px;
         align-items: center; }
         .single_news_cooperation_page .inner_wrapper .page_content_block .news_content_block .images_wrapper {
-          width: 886px;
-          height: 503.5px;
+          max-width: 886px;
+          max-height: 503.5px;
+          width: 82.85%;
+          height: max-content;
           justify-content: space-between; }
           .single_news_cooperation_page .inner_wrapper .page_content_block .news_content_block .images_wrapper .image_big {
             width: 85.6%;

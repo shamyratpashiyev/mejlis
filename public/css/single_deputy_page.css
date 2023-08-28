@@ -7,7 +7,8 @@
     row-gap: 35px; }
     .single_deputy_page .inner_wrapper .page_content_block {
       width: 100%;
-      column-gap: 75px; }
+      column-gap: 75px;
+      position: relative; }
       .single_deputy_page .inner_wrapper .page_content_block .right_block {
         width: 619px;
         row-gap: 25px; }
@@ -40,3 +41,10 @@
             .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper #election_district_wrapper .district_borders_text, .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper #election_district_wrapper .deputy_bio_text, .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper #deputy_bio_wrapper .district_borders_text, .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper #deputy_bio_wrapper .deputy_bio_text {
               display: none;
               color: var(--text_black_default); }
+  @media (max-width: 999px) {
+    .single_deputy_page .inner_wrapper .page_content_block .right_block {
+      box-sizing: border-box;
+      padding: 0 0 0 25px; } }
+  @media (max-width: 600px) {
+    .single_deputy_page .inner_wrapper .page_content_block .right_block .name {
+      font-size: 23px; } }
