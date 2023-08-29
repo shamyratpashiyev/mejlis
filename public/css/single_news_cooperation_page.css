@@ -56,9 +56,11 @@
     .single_news_cooperation_page .inner_wrapper .page_content_block {
       column-gap: 40px; } }
   @media (max-width: 999px) {
+    .single_news_cooperation_page .inner_wrapper .page_content_block .sidebar_left {
+      top: -35px; }
     .single_news_cooperation_page .inner_wrapper .page_content_block .news_content_block {
       box-sizing: border-box;
-      padding: 0 0 0 25px; }
+      padding: 0 10px; }
       .single_news_cooperation_page .inner_wrapper .page_content_block .news_content_block .news_title {
         font-size: 21px; }
       .single_news_cooperation_page .inner_wrapper .page_content_block .news_content_block .date_row .date {

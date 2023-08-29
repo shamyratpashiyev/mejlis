@@ -142,12 +142,13 @@
                     width: -webkit-fill-available;
                     width: -moz-available;
                     width: -ms-available;
-                    // box-sizing: border-box;
-                    margin: 0 25px;
+                    padding: 0 10px;
 
                     .flags_block{
 
                         .images_row{
+                            box-sizing: border-box;
+                            padding: 0 15px;
                             justify-content: space-evenly;
                         }
                     }

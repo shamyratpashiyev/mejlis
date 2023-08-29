@@ -34,7 +34,6 @@
             .single_code_law_decree_pages .inner_wrapper .page_content_block .right_side .text_block .text_content p {
               margin: 0 !important; }
   @media (max-width: 999px) {
-    .single_code_law_decree_pages .inner_wrapper .page_content_block .right_side {
-      margin: 0 0 0 25px; }
-      .single_code_law_decree_pages .inner_wrapper .page_content_block .right_side .text_block .text_title {
-        font-size: 21px; } }
+    .single_code_law_decree_pages .inner_wrapper .page_content_block .right_side .text_block .text_title {
+      font-size: 21px;
+      padding-left: 15px; } }

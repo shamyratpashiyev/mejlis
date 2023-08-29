@@ -70,6 +70,7 @@
   @media (max-width: 999px) {
     .articles_page .inner_wrapper .page_content_block .articles_block {
       box-sizing: border-box;
-      padding: 0 0 0 25px; }
+      padding: 0 10px; }
       .articles_page .inner_wrapper .page_content_block .articles_block .block_title {
-        font-size: 25px; } }
+        font-size: 25px;
+        padding-left: 15px; } }

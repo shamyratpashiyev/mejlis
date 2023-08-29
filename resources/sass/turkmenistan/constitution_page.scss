@@ -79,7 +79,10 @@
                     width: -moz-available;
                     width: -ms-available;
                     max-width: unset;
-                    margin-right: 25px;
+
+                    .block_title{
+                        padding-right: 15px;
+                    }
                 }
             }
         }

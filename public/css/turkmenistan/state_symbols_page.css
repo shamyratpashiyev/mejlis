@@ -68,8 +68,9 @@
         width: -webkit-fill-available;
         width: -moz-available;
         width: -ms-available;
-        max-width: unset;
-        margin-right: 25px; } }
+        max-width: unset; }
+        .tkm_state_symbols_page .inner_wrapper .page_content_block .middle_column .symbol_container:first-child .block_title {
+          padding-right: 15px; } }
   @media (max-width: 600px) {
     .tkm_state_symbols_page .inner_wrapper .page_content_block {
       justify-content: flex-start; }

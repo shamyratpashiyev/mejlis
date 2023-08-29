@@ -62,24 +62,23 @@
   @media (max-width: 999px) {
     .news_international_page .inner_wrapper .page_content_block {
       column-gap: 40px; }
+      .news_international_page .inner_wrapper .page_content_block .sidebar_left {
+        top: -35px; }
       .news_international_page .inner_wrapper .page_content_block .right_side {
         box-sizing: border-box;
-        padding: 0 0 0 25px; } }
+        padding: 0 10px; } }
   @media (max-width: 600px) {
     .news_international_page .inner_wrapper .page_content_block {
       column-gap: 40px; }
-      .news_international_page .inner_wrapper .page_content_block .right_side {
-        box-sizing: border-box;
-        padding: 0 0 0 25px; }
-        .news_international_page .inner_wrapper .page_content_block .right_side .news_container {
-          flex-direction: column;
-          row-gap: 10px; }
-          .news_international_page .inner_wrapper .page_content_block .right_side .news_container .image_wrapper {
-            order: 1;
-            width: 100%; }
-          .news_international_page .inner_wrapper .page_content_block .right_side .news_container .text_block {
-            row-gap: 7px;
-            order: 2;
-            width: 100%; }
-            .news_international_page .inner_wrapper .page_content_block .right_side .news_container .text_block .title, .news_international_page .inner_wrapper .page_content_block .right_side .news_container .text_block .content, .news_international_page .inner_wrapper .page_content_block .right_side .news_container .text_block .date {
-              margin: 0; } }
+      .news_international_page .inner_wrapper .page_content_block .right_side .news_container {
+        flex-direction: column;
+        row-gap: 10px; }
+        .news_international_page .inner_wrapper .page_content_block .right_side .news_container .image_wrapper {
+          order: 1;
+          width: 100%; }
+        .news_international_page .inner_wrapper .page_content_block .right_side .news_container .text_block {
+          row-gap: 7px;
+          order: 2;
+          width: 100%; }
+          .news_international_page .inner_wrapper .page_content_block .right_side .news_container .text_block .title, .news_international_page .inner_wrapper .page_content_block .right_side .news_container .text_block .content, .news_international_page .inner_wrapper .page_content_block .right_side .news_container .text_block .date {
+            margin: 0; } }

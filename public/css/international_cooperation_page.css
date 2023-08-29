@@ -62,24 +62,23 @@
   @media (max-width: 999px) {
     .international_cooperation_page .inner_wrapper .page_content_block {
       column-gap: 40px; }
+      .international_cooperation_page .inner_wrapper .page_content_block .sidebar_left {
+        top: -35px; }
       .international_cooperation_page .inner_wrapper .page_content_block .right_side {
         box-sizing: border-box;
-        padding: 0 0 0 25px; } }
+        padding: 0 10px; } }
   @media (max-width: 600px) {
     .international_cooperation_page .inner_wrapper .page_content_block {
       column-gap: 40px; }
-      .international_cooperation_page .inner_wrapper .page_content_block .right_side {
-        box-sizing: border-box;
-        padding: 0 0 0 25px; }
-        .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container {
-          flex-direction: column;
-          row-gap: 10px; }
-          .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .image_wrapper {
-            order: 1;
-            width: 100%; }
-          .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block {
-            row-gap: 7px;
-            order: 2;
-            width: 100%; }
-            .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .title, .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .content, .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .date {
-              margin: 0; } }
+      .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container {
+        flex-direction: column;
+        row-gap: 10px; }
+        .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .image_wrapper {
+          order: 1;
+          width: 100%; }
+        .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block {
+          row-gap: 7px;
+          order: 2;
+          width: 100%; }
+          .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .title, .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .content, .international_cooperation_page .inner_wrapper .page_content_block .right_side .item_container .text_block .date {
+            margin: 0; } }

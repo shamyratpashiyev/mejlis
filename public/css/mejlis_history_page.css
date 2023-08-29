@@ -39,9 +39,9 @@
       column-gap: 25px; }
       .mejlis_history_page .inner_wrapper .page_content_block .right_side {
         box-sizing: border-box;
-        padding-left: 25px;
-        padding-right: 10px; }
+        padding: 0 10px; }
         .mejlis_history_page .inner_wrapper .page_content_block .right_side .block_title {
-          font-size: 25px; }
+          font-size: 25px;
+          margin-left: 15px; }
         .mejlis_history_page .inner_wrapper .page_content_block .right_side .text_block .text_title {
           font-size: 21px !important; } }

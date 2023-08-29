@@ -57,7 +57,10 @@
                     width: -moz-available;
                     width: -ms-available;
                     max-width: unset;
-                    margin-right: 25px;
+
+                    .column_title{
+                        padding-right: 15px;
+                    }
                 }
             }
         }

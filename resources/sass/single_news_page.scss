@@ -169,10 +169,15 @@
         .inner_wrapper{
 
             .page_content_block{
+                margin-top: 20px;
+
+                .sidebar_left{
+                    top: -35px;
+                }
 
                 .news_content_block{
                     box-sizing: border-box;
-                    padding: 0 0 0 25px;
+                    padding: 0 10px;
                 }
             }
         }

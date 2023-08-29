@@ -79,7 +79,9 @@
   @media (max-width: 999px) {
     .mejlis_deputies_page .inner_wrapper .page_content_block .right_block {
       box-sizing: border-box;
-      padding: 0 10px 0 25px; } }
+      padding: 0 10px; }
+      .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .title_row .title {
+        padding: 0 0 0 15px; } }
   @media (max-width: 600px) {
     .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .deputies_block .deputy_container {
       width: 100%; }

@@ -58,9 +58,11 @@
     .mejlis_committees_page .inner_wrapper .page_content_block {
       column-gap: 0; }
       .mejlis_committees_page .inner_wrapper .page_content_block .middle_column {
+        max-width: unset;
         box-sizing: border-box;
-        padding: 0 25px;
-        max-width: unset; } }
+        padding: 0 10px; }
+        .mejlis_committees_page .inner_wrapper .page_content_block .middle_column .block_title {
+          padding: 0 15px; } }
   @media (max-width: 600px) {
     .mejlis_committees_page .inner_wrapper .page_content_block .middle_column .block_title {
       font-size: 22px; } }

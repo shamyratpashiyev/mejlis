@@ -43,6 +43,7 @@
   @media (max-width: 999px) {
     .constitutional_law_page .inner_wrapper .page_content_block .right_side {
       box-sizing: border-box;
-      padding: 0 0 0 25px; }
+      padding: 0 10px; }
       .constitutional_law_page .inner_wrapper .page_content_block .right_side .block_title {
+        margin-left: 15px;
         font-size: 25px; } }

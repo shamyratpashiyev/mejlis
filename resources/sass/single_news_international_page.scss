@@ -98,9 +98,13 @@
 
             .page_content_block{
 
+                .sidebar_left{
+                    top: -35px;
+                }
+
                 .news_content_block{
                     box-sizing: border-box;
-                    padding: 0 0 0 25px;
+                    padding: 0 10px;
 
                     .news_title{
                         font-size: 21px;

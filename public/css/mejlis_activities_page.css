@@ -29,6 +29,7 @@
   @media (max-width: 999px) {
     .mejlis_activities_page .inner_wrapper .page_content_block .activities_block {
       box-sizing: border-box;
-      padding: 0 0 0 25px; }
+      padding: 0 10px; }
       .mejlis_activities_page .inner_wrapper .page_content_block .activities_block .block_title {
-        font-size: 25px; } }
+        font-size: 25px;
+        padding-left: 15px; } }

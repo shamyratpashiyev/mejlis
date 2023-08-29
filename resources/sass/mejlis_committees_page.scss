@@ -82,9 +82,13 @@
                 column-gap: 0;
                 
                 .middle_column{
-                    box-sizing: border-box;
-                    padding: 0 25px;
                     max-width: unset;
+                    box-sizing: border-box;
+                    padding: 0 10px;
+
+                    .block_title{
+                        padding: 0 15px;
+                    }
                 }
             }
         }

@@ -44,7 +44,9 @@
   @media (max-width: 999px) {
     .single_deputy_page .inner_wrapper .page_content_block .right_block {
       box-sizing: border-box;
-      padding: 0 0 0 25px; } }
+      padding: 0 10px; }
+      .single_deputy_page .inner_wrapper .page_content_block .right_block .name {
+        padding-left: 15px; } }
   @media (max-width: 600px) {
     .single_deputy_page .inner_wrapper .page_content_block .right_block .name {
       font-size: 23px; } }

@@ -97,8 +97,10 @@
         width: -webkit-fill-available;
         width: -moz-available;
         width: -ms-available;
-        margin: 0 25px; }
+        padding: 0 10px; }
         .friendship_group_page .inner_wrapper .page_content_block .middle_column .flags_block .images_row {
+          box-sizing: border-box;
+          padding: 0 15px;
           justify-content: space-evenly; }
         .friendship_group_page .inner_wrapper .page_content_block .middle_column .group_members_block {
           justify-content: space-evenly; } }

@@ -35,5 +35,6 @@
         width: -webkit-fill-available;
         width: -moz-available;
         width: -ms-available;
-        max-width: unset;
-        margin-right: 25px; } }
+        max-width: unset; }
+        .tkm_history_page .inner_wrapper .page_content_block .middle_column .column_title {
+          padding-right: 25px; } }
