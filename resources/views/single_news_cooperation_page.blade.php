@@ -36,11 +36,11 @@
 
                         <div class="small_images_wrapper flex_column">
                             
-                            @if($selected_news->image_2)<img src="{{ asset($selected_news->image_2) }}" alt="" class="image_small">@endif
-                            @if($selected_news->image_3)<img src="{{ asset($selected_news->image_3) }}" alt="" class="image_small">@endif
-                            @if($selected_news->image_4)<img src="{{ asset($selected_news->image_4) }}" alt="" class="image_small">@endif
-                            @if($selected_news->image_5)<img src="{{ asset($selected_news->image_5) }}" alt="" class="image_small">@endif
-                            @if($selected_news->image_6)<img src="{{ asset($selected_news->image_6) }}" alt="" class="image_small">@endif
+                            @if($selected_news->image_2)<img src="{{ asset($selected_news->image_2) }}" id="1" alt="News image" class="image_small">@endif
+                            @if($selected_news->image_3)<img src="{{ asset($selected_news->image_3) }}" id="2" alt="News image" class="image_small">@endif
+                            @if($selected_news->image_4)<img src="{{ asset($selected_news->image_4) }}" id="3" alt="News image" class="image_small">@endif
+                            @if($selected_news->image_5)<img src="{{ asset($selected_news->image_5) }}" id="4" alt="News image" class="image_small">@endif
+                            @if($selected_news->image_6)<img src="{{ asset($selected_news->image_6) }}" id="5" alt="News image" class="image_small">@endif
                         </div>
                     </div>
 
@@ -71,5 +71,42 @@
             if(breadcrumb.text().length > 100){
                 breadcrumb.text(breadcrumb.text().slice(0, 100) + '...')
             }
+
+        $(document).ready(function(){
+            $('.image_small').on('click',(event) => {
+                const transition_time = 500;
+
+                const target = $(event.target);
+                const target_src = target.attr('src');
+                const main_image = $('.image_big');
+                const main_image_src = main_image.attr('src');
+                target.css('transition', `all ${transition_time}ms ease-in-out`);
+                
+                switch(target.attr('id')){
+                    case '1':
+                        target.css('transform', 'translate(-380%,250%) scale(6)');
+                        break;
+                    case '2':
+                        target.css('transform', 'translate(-380%,128%) scale(6)');
+                        break;
+                    case '3':
+                        target.css('transform', 'translate(-380%,0%) scale(6)');
+                        break;
+                    case '4':
+                        target.css('transform', 'translate(-380%,-128%) scale(6)');
+                        break;
+                    case '5':
+                        target.css('transform', 'translate(-380%,-250%) scale(6)');
+                        break;
+                }
+                
+                setTimeout(() => {
+                    main_image.attr('src', target_src);
+                    target.attr('src', main_image_src);
+                    target.css('transition', 'none');
+                    target.css('transform', 'none');
+                }, transition_time);
+            })
+        })
     </script>
 @endsection
