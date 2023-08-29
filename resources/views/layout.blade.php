@@ -160,7 +160,12 @@
                 <a class="hover_underline @if(Route::currentRouteNamed(['main_page'])) active @endif" href="{{ route('main_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.main_page')</a>
 
                 <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['mejlis_history_page','convocation_page'])) active @endif" data-id="1">
-                    <span>@lang('app.layout.about_mejlis')</span>
+                    <div class="button_name_wrapper flex_row">
+                        <span>@lang('app.layout.about_mejlis')</span>
+                        <svg class="chevron_down" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
 
                     <div class="dropdown_menu hamburger flex_column">
                         <div class="item_wrapper hover_underline">
@@ -174,7 +179,12 @@
                 </div>
 
                 <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['mejlis_committees_page','mejlis_deputies_page','single_deputy_page'])) active @endif" data-id="2">
-                    <span>@lang('app.layout.mejlis_structure')</span>
+                    <div class="button_name_wrapper flex_row">
+                        <span>@lang('app.layout.mejlis_structure')</span>
+                        <svg class="chevron_down" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
 
                     <div class="dropdown_menu hamburger flex_column">
                         <div class="item_wrapper hover_underline">
@@ -187,7 +197,13 @@
                 </div>
 
                 <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['codes_page','single_code_page','laws_page','single_law_page','mejlis_decrees_page','single_decree_page','constitutional_law_page'])) active @endif" data-id="3">
-                    <span>@lang('app.layout.legislation')</span>
+                    
+                    <div class="button_name_wrapper flex_row">
+                        <span>@lang('app.layout.legislation')</span>
+                        <svg class="chevron_down" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
 
                     <div class="dropdown_menu hamburger flex_column">
                         {{-- <div class="item_wrapper hover_underline">
@@ -209,7 +225,13 @@
                 </div>
                 
                 <div class="nav_button_wrapper flex_column  @if(Route::currentRouteNamed(['international_cooperation_page','single_news_cooperation_page','friendship_group_page', 'news_international_page','single_news_international_page'])) active @endif" data-id="4">
-                    <span>@lang('app.layout.international')</span>
+                    
+                    <div class="button_name_wrapper flex_row">
+                        <span>@lang('app.layout.international')</span>
+                        <svg class="chevron_down" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
 
                     <div class="dropdown_menu hamburger flex_column">
                         <div class="item_wrapper hover_underline">
@@ -225,7 +247,13 @@
                 </div>
 
                 <div class="nav_button_wrapper flex_column @if(Route::currentRouteNamed(['news_page','single_news_page','articles_page','single_article_page', 'mejlis_activities_page','single_activity_page', 'gallery_page'])) active @endif" data-id="5">
-                    <span>@lang('app.layout.headlines')</span>
+                    
+                    <div class="button_name_wrapper flex_row">
+                        <span>@lang('app.layout.headlines')</span>
+                        <svg class="chevron_down" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
 
                     <div class="dropdown_menu hamburger flex_column">
                         <div class="item_wrapper hover_underline">
