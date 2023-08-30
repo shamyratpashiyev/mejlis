@@ -78,6 +78,9 @@ Route::get('/login', [AdminController::class, 'login'])->name('login');
 Route::post('/login', [AdminController::class, 'login_post'])->name('login_post');
 
 Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
+    Route::get('/', function(){
+        return redirect()->route('news.index');
+    });
     Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
     Route::resource('news', NewsController::class);
     Route::resource('news_inter', NewsInternationalController::class);

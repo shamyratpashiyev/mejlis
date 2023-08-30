@@ -124,7 +124,7 @@
             <!-- form__item -->
             <div class="form__item w15">
                 <label class="txt">Дата начало</label>
-                <input type="datetime-local" class="inputDate" name="date_start" value="{{ $adblocks->date_start }}">
+                <input type="date" class="inputDate" name="date_start" value="{{ $adblocks->date_start }}">
                 @error('date_start')
                 <p>{{$message}}</p>
                 @enderror
@@ -133,7 +133,7 @@
             <!-- form__item -->
             <div class="form__item w15">
                 <label class="txt">Дата окончания</label>
-                <input type="datetime-local" class="inputDate" name="date_end" value="{{ $adblocks->date_end }}">
+                <input type="date" class="inputDate" name="date_end" value="{{ $adblocks->date_end }}">
                 @error('date_end')
                 <p>{{$message}}</p>
                 @enderror

@@ -169,7 +169,7 @@
             <!-- form__item -->
             <div class="form__item w15">
                 <label class="txt">Дата Публикации</label>
-                <input type="datetime-local" class="inputDate" name="published_date">
+                <input type="date" class="inputDate" name="published_date">
                 @error('event_date')
                     <p class="err">{{ $message }}</p>
                 @enderror

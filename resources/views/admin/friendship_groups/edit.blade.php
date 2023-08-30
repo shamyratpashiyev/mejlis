@@ -173,7 +173,7 @@
             <!-- form__item -->
             <div class="form__item w15">
                 <label class="txt">Дата Публикации</label>
-                <input type="datetime-local" class="inputDate" name="published_date" value="{{ $selected_group->published_date }}">
+                <input type="date" class="inputDate" name="published_date" value="{{ $selected_group->published_date }}">
                 @error('date')
                     <p class="err">{{ $message }}</p>
                 @enderror
