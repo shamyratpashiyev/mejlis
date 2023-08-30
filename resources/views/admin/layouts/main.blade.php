@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap&_v=20230211214539" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
     <script src="{{ asset('js/jquery.min.js') }}"></script>
+ 
+    <link rel="stylesheet" href="{{ asset('css/choices/choices.min.css') }}" />
+    <script src="{{ asset('js/choices.min.js') }}"></script>
+
     <title>Админ панель</title>
 
 </head>
@@ -44,6 +48,11 @@
     <script src="{{ asset('admins/js/jquery.min.js?_v=20230211214539') }}"></script>
     <script src="{{ asset('admins/js/ckeditor.js?_v=20230211214539') }}"></script>
     <script src="{{ asset('admins/js/admin.js') }}"></script>
+    <script>
+        const choices = new Choices($('select[multiple]')[0],{placeholder: true,placeholderValue: "Выбрать",loadingText: 'Загрузка...',
+                                                            noChoicesText: 'Данных нет',
+                                                            itemSelectText: 'Нажмите чтобы выбрать',});
+    </script>
 </body>
 
 </html>
