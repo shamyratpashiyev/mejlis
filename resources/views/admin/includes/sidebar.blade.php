@@ -8,14 +8,6 @@
 
 <nav class="menu">
 
-    <a href="{{ route('admin_main') }}" class="menu__link {{ (Route::currentRouteName() == 'admin_main' ? 'active' : '') }}">
-        <div class="icon">
-            <img class="img1" src="{{ asset('admins/img/ico/dark-home.svg') }}">
-            <img class="img2" src="{{ asset('admins/img/ico/home.svg') }}">
-        </div>
-        <span>Главная страница </span>
-    </a>
-
     <div class="menu__link">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-edit.svg') }}">

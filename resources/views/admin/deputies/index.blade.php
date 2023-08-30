@@ -39,8 +39,8 @@
         <div class="name">
             <div class="w5">№</div>
             <div class="w35">Название</div>
-            <div class="w35">Описание</div>
-            <div class="date w15">Дата</div>
+            <div class="w35">Должность</div>
+            <div class="date w15">Год Рождения</div>
         </div>
 
         <div class="boxButton w5a5">
@@ -55,9 +55,9 @@
                 <div class="w5">{{ $deputy->id }}</div>
                 <div class="w35">{{ $deputy->fullname_tm }}</div>
                 <div class="w35">
-                    {{-- {!! $deputy->description_tm !!} --}}
+                    {{ $deputy->position_tm }}
                 </div>
-                <div class="date w15">$deputy->event_date </div>
+                <div class="date w15">{{ $deputy->birth_year_tm }}</div>
             </div>
 
             <div class="item__button w5a5">

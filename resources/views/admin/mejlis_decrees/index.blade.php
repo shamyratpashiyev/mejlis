@@ -57,7 +57,7 @@
                 <div class="w35">
                     {!! $decree->description_tm !!}
                 </div>
-                <div class="date w15">{{ $decree->event_date }}</div>
+                <div class="date w15">{{ $decree->published_date }}</div>
             </div>
 
             <div class="item__button w5a5">

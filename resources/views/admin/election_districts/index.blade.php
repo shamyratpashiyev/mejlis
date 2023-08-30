@@ -39,8 +39,8 @@
         <div class="name">
             <div class="w5">№</div>
             <div class="w35">Название</div>
-            <div class="w35">Описание</div>
-            <div class="date w15">Дата</div>
+            <div class="w35">Границы</div>
+            <div class="date w15">Дата создания</div>
         </div>
 
         <div class="boxButton w5a5">
@@ -55,9 +55,9 @@
                 <div class="w5">{{ $district->id }}</div>
                 <div class="w35">{{ $district->name_tm }}</div>
                 <div class="w35">
-                    {{-- {!! $district->description_tm !!} --}}
+                    {!! $district->borders_tm !!}
                 </div>
-                <div class="date w15">$district->event_date </div>
+                <div class="date w15">{{ $district->created_at }} </div>
             </div>
 
             <div class="item__button w5a5">

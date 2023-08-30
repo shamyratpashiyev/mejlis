@@ -43,7 +43,7 @@
             <input type="checkbox" name="en" id="en_checkbox" class="settingsCheckbox lang_checkbox" @if($en->is_active) checked @endif >
         </div>
 
-        <div class="blue__border"></div>
+        {{-- <div class="blue__border"></div>
 
         <div class="title">
             <h1 class="title">Счетчик</h1>
@@ -53,7 +53,7 @@
             <span class="label counter">Счетчик статистики</span>
             <label for="counter_checkbox" class="checkbox__label counter_checkbox_label"></label>
             <input type="checkbox" name="counter" id="counter_checkbox" class="settingsCheckbox" >
-        </div>
+        </div> --}}
 
         {{-- <div class="form__button">
             <input type="submit" value="Сохранить">

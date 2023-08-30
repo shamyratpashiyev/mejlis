@@ -39,8 +39,8 @@
         <div class="name">
             <div class="w5">№</div>
             <div class="w35">Название</div>
-            <div class="w35">Описание</div>
-            <div class="date w15">Дата</div>
+            <div class="w35">Глава</div>
+            <div class="date w15">Дата создания</div>
         </div>
 
         <div class="boxButton w5a5">
@@ -55,9 +55,9 @@
                 <div class="w5">{{ $committee->id }}</div>
                 <div class="w35">{{ $committee->name_tm }}</div>
                 <div class="w35">
-                    {{-- {!! $committee->description_tm !!} --}}
+                    {{ $committee->committee_head->fullname_tm }}
                 </div>
-                <div class="date w15">$committee->event_date </div>
+                <div class="date w15">{{ $committee->created_at }} </div>
             </div>
 
             <div class="item__button w5a5">

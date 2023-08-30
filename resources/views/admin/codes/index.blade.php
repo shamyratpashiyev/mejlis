@@ -57,7 +57,7 @@
                 <div class="w35">
                     {!! $code->description_tm !!}
                 </div>
-                <div class="date w15">{{ $code->event_date }}</div>
+                <div class="date w15">{{ $code->published_date }}</div>
             </div>
 
             <div class="item__button w5a5">
