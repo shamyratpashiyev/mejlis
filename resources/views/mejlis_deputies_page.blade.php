@@ -65,10 +65,10 @@
                                     <x-election-district-popup name="{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}" :borders="$deputy->district->{'borders_' . $current_lang->code} ?? ''"/>
                                 </div>
 
-                                <div class="key_value_wrapper flex_column">
+                                {{-- <div class="key_value_wrapper flex_column">
                                     <span class="key">E-mail:</span>
                                     <span class="value">{{ $deputy->email }} </span>
-                                </div>
+                                </div> --}}
 
                                 <div class="key_value_wrapper flex_column">
                                     <span class="key">@lang('app.mejlis_deputies_page.committee'):</span>
