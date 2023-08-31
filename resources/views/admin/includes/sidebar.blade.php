@@ -41,6 +41,23 @@
         <span>Международное соотрудничество</span>
     </a>
 
+    <div class="menu__link">
+        <div class="icon">
+            <img class="img1" src="{{ asset('admins/img/ico/dark-edit.svg') }}">
+            <img class="img2" src="{{ asset('admins/img/ico/edit.svg') }}">
+        </div>
+        <span>Туркменистан</span>
+    </div>
+
+
+    <a href="{{ route('tkm_history.index') }}" class="menu__link ml ">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>История</span>
+    </a>
+
     <a href="{{ route('articles.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'articles.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">
