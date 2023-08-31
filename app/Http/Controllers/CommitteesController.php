@@ -77,7 +77,7 @@ class CommitteesController extends Controller
         $selected_committee->save();
         $selected_committee->deputies()->sync($request->committee_members_id);
 
-        return redirect()->back();
+        return redirect()->route('committees.index');
     }
 
     /**

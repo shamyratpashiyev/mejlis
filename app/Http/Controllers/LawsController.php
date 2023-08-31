@@ -78,7 +78,7 @@ class LawsController extends Controller
 
         $law->save();
 
-        return redirect()->back();
+        return redirect()->route('laws.index');
     }
 
     /**

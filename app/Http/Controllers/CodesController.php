@@ -78,7 +78,7 @@ class CodesController extends Controller
 
         $code->save();
 
-        return redirect()->back();
+        return redirect()->route('codes.index');
     }
 
     /**

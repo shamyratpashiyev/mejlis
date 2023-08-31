@@ -37,7 +37,7 @@ class ConvocationController extends Controller
 
         $convocation->save();
 
-        return redirect()->back();
+        return redirect()->route('convocations.index');
     }
 
 }

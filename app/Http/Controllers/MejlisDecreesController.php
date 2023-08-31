@@ -78,7 +78,7 @@ class MejlisDecreesController extends Controller
 
         $decree->save();
 
-        return redirect()->back();
+        return redirect()->route('mejlis_decrees.index');
     }
 
     /**

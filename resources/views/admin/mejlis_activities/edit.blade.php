@@ -107,7 +107,7 @@
             <!-- form__item -->
             <div class="form__item w15">
                 <label class="txt">Дата</label>
-                <input type="date" class="inputDate" name="event_date" value="{{ $selected_mejlis_activity->event_date }}">
+                <input type="date" class="inputDate" name="event_date" value="{{ date('Y-m-d',strtotime($selected_mejlis_activity->event_date)) }}">
                 @error('date')
                     <p class="err">{{ $message }}</p>
                 @enderror

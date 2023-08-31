@@ -102,7 +102,7 @@ class DeputyController extends Controller
 
         $selected_deputy->save();
 
-        return redirect()->back();
+        return redirect()->route('deputies.index');
     }
 
     /**
