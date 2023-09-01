@@ -19,12 +19,19 @@
           max-height: 503.5px;
           width: 82.85%;
           height: max-content;
-          justify-content: space-between; }
+          justify-content: space-between;
+          column-gap: 5px; }
           .single_news_international_page .inner_wrapper .page_content_block .news_content_block .images_wrapper .image_big {
-            width: 85.6%;
-            height: 100%; }
+            width: -webkit-fill-available;
+            width: -moz-available;
+            width: -ms-available;
+            min-width: 85.6%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center; }
           .single_news_international_page .inner_wrapper .page_content_block .news_content_block .images_wrapper .small_images_wrapper {
-            width: 13.2%;
+            max-width: 13.2%;
+            width: max-content;
             justify-content: center;
             height: 100%;
             row-gap: 15px; }

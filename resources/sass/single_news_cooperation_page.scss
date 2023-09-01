@@ -25,14 +25,21 @@
                     width: 82.85%;
                     height: max-content;
                     justify-content: space-between;
+                    column-gap: 5px;
 
                     .image_big{
-                        width: 85.6%;
+                        width: -webkit-fill-available;
+                        width: -moz-available;
+                        width: -ms-available;
+                        min-width: 85.6%;
                         height: 100%;
+                        object-fit: cover;
+                        object-position: center;
                     }
 
                     .small_images_wrapper{
-                        width: 13.2%;
+                        max-width: 13.2%;
+                        width: max-content;
                         justify-content: center;
                         height: 100%;
                         row-gap: 15px;

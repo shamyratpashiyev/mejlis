@@ -61,6 +61,8 @@ body {
   @media (max-width: 1500px) {
     body {
       --default_width: 95vw; } }
+  body * {
+    word-wrap: break-word; }
 
 .title, .content {
   line-clamp: 3;

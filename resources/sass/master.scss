@@ -77,6 +77,10 @@ body {
     @media(max-width: 1500px){
         --default_width: 95vw;
     }
+
+    *{
+        word-wrap: break-word;
+    }
 }
 
 .title, .content {
