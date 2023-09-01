@@ -58,6 +58,14 @@
         <span>История</span>
     </a>
 
+    <a href="{{ route('tkm_area.index') }}" class="menu__link ml ">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>Площадь</span>
+    </a>
+
     <a href="{{ route('articles.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'articles.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1" src="{{ asset('admins/img/ico/dark-setting.svg') }}">

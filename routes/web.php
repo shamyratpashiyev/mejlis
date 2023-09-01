@@ -18,6 +18,7 @@ use App\Http\Controllers\NewsCooperationController;
 use App\Http\Controllers\MejlisActivitiesController;
 use App\Http\Controllers\MejlisDecreesController;
 use App\Http\Controllers\NewsInternationalController;
+use App\Http\Controllers\TkmAreaController;
 use App\Http\Controllers\TkmHistoryController;
 use App\Models\FriendshipGroup;
 
@@ -97,6 +98,7 @@ Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::resource('friendship_groups', FriendshipGroupController::class);
     Route::resource('election_districts', ElectionDistrictController::class);
     Route::resource('tkm_history', TkmHistoryController::class);
+    Route::resource('tkm_area', TkmAreaController::class);
     Route::get('/settings',[AdminController::class, 'settings'])->name('settings');
     Route::post('/langs-update',[AdminController::class, 'langs_update'])->name('langs_update');
 });
