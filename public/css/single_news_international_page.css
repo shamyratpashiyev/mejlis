@@ -45,7 +45,7 @@
             position: absolute; }
           .single_news_international_page .inner_wrapper .page_content_block .news_content_block .date_row .date {
             width: 100%;
-            text-align: end;
+            text-align: start;
             font-family: 'OpenSansRegular', sans-serif;
             font-size: 18px; }
         .single_news_international_page .inner_wrapper .page_content_block .news_content_block .news_title {

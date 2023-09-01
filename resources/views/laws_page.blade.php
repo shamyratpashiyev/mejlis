@@ -219,10 +219,6 @@
                 });
             }
 
-            $('.item_container').click(function(event) {
-                const target = $(event.target).hasClass('item_container') ? $(event.target) : $(event.target).parents('.item_container')
-                window.location.assign(target.data('href-value'))
-            });
         })
 
         function goto(url=''){

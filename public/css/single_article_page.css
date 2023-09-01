@@ -30,7 +30,7 @@
             position: absolute; }
           .single_article_page .inner_wrapper .page_content_block .article_content_block .date_row .date {
             position: absolute;
-            right: 10px;
+            left: 10px;
             font-family: 'OpenSansRegular', sans-serif;
             font-size: 18px; }
         .single_article_page .inner_wrapper .page_content_block .article_content_block .text_block .text_title {

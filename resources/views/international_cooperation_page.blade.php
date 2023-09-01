@@ -29,7 +29,7 @@
 
                 <div class="right_side flex_column">
                     @foreach ($news_current_page as $news)
-                        <a href="{{ route('single_news_cooperation_page',['id'=>$news->id,'lang'=>app()->getLocale()]) }}" class="item_container flex_row">
+                        <a href="{{ route('single_news_cooperation_page',['id'=>$news->id,'lang'=>app()->getLocale()]) }}" class="news_container flex_row">
                             <div class="text_block flex_column">
                                 <h3 class="title">{{ $news->{'title_' . app()->getLocale()} }}</h3>
                                 <div class="content">

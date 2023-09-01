@@ -20,9 +20,10 @@
                     width: 928px;
                     height: 265px;
                     justify-content: space-between;
+                    column-gap: 20px;
 
                     .text_block{
-                        width: 56.3%;
+                        width: 55%;
                         color: var(--text_black_default);
                         justify-content: center;
 
@@ -50,7 +51,7 @@
                     }
 
                     .image_wrapper{
-                        width: 43.2%;
+                        width: 43%;
                         height: 100%;
 
                         img{

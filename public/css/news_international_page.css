@@ -14,9 +14,10 @@
         .news_international_page .inner_wrapper .page_content_block .right_side .news_container {
           width: 928px;
           height: 265px;
-          justify-content: space-between; }
+          justify-content: space-between;
+          column-gap: 20px; }
           .news_international_page .inner_wrapper .page_content_block .right_side .news_container .text_block {
-            width: 56.3%;
+            width: 55%;
             color: var(--text_black_default);
             justify-content: center; }
             .news_international_page .inner_wrapper .page_content_block .right_side .news_container .text_block .title {
@@ -34,7 +35,7 @@
               color: var(--text_gray);
               margin-top: 8px; }
           .news_international_page .inner_wrapper .page_content_block .right_side .news_container .image_wrapper {
-            width: 43.2%;
+            width: 43%;
             height: 100%; }
             .news_international_page .inner_wrapper .page_content_block .right_side .news_container .image_wrapper img {
               width: 100%;
