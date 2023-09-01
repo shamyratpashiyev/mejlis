@@ -102,9 +102,10 @@
             autoplayHoverPause:false,
             loop:true,
             nav:false,
-            center: false,
+            center: true,
             autoWidth: true,
-            responsiveClass:true,
+            responsiveClass:false,
+            margin: 20,
             responsive:{
                 1500:{
                     items:5,
@@ -138,10 +139,3 @@
        
     })
 </script>
-
-<style>
-    .owl-carousel .owl-stage{
-        display: flex;
-        column-gap: 20px;
-    }
-</style>
