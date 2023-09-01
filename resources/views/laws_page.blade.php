@@ -100,7 +100,7 @@
 
                     <div class="items_block flex_row">
                         @foreach ($laws_current_page as $law)
-                            <div class="item_container flex_column">
+                            <div class="item_container flex_column" onclick="goto('{{ route('single_law_page',['id' => $law->id, 'lang'=>app()->getLocale()]) }}')">
                                 <div class="top_block flex_column">
                                     <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <line x1="4" y1="10" x2="44" y2="10" stroke="#EEB816"/>
@@ -191,7 +191,7 @@
 
                 items_list.forEach((element) => {
                     $('.items_block').prepend(`
-                        <div class="item_container flex_column">
+                        <div class="item_container flex_column" onclick="goto('${single_law_route.replace('1',element.id)}')">
                             <div class="top_block flex_column">
                                 <svg class="icon" width="117" height="21" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <line x1="4" y1="10" x2="44" y2="10" stroke="#EEB816"/>
@@ -218,7 +218,16 @@
                     `)
                 });
             }
+
+            $('.item_container').click(function(event) {
+                const target = $(event.target).hasClass('item_container') ? $(event.target) : $(event.target).parents('.item_container')
+                window.location.assign(target.data('href-value'))
+            });
         })
+
+        function goto(url=''){
+                url ? window.location.assign(url) : ''
+            }
     </script>
     
 @endsection

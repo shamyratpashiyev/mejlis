@@ -84,7 +84,8 @@
             box-sizing: border-box;
             padding: 10px 15px;
             box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
-            flex-shrink: 0; }
+            flex-shrink: 0;
+            cursor: pointer; }
             .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .items_block .item_container .top_block {
               align-items: center;
               row-gap: 13px; }
@@ -113,6 +114,10 @@
                 .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .items_block .item_container .bottom_row a::after {
                   background-color: var(--sky_blue);
                   bottom: 0; }
+            .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .items_block .item_container:hover a.hover_underline::after {
+              background-color: var(--sky_blue);
+              width: 100%;
+              left: 0; }
           .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .items_block .pagination_row {
             margin: 0; }
   @media (max-width: 1400px) {

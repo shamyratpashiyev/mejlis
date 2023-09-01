@@ -91,6 +91,15 @@
                                 }
                             }
                         }
+
+                        &:hover{
+
+                            a.hover_underline::after{
+                                background-color: var(--sky_blue);
+                                width: 100%;
+                                left: 0;
+                            }
+                        }
                     }
                 }
             }

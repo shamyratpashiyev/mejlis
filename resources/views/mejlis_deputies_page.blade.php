@@ -61,7 +61,7 @@
 
                                 <div class="key_value_wrapper flex_column">
                                     <span class="key election_district">@lang('app.mejlis_deputies_page.election_district'):</span>
-                                    <span class="value">{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}</span>
+                                    <span class="value election_district">{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}</span>
                                     <x-election-district-popup name="{{ $deputy->district->{'name_' . $current_lang->code} ?? '' }}" :borders="$deputy->district->{'borders_' . $current_lang->code} ?? ''"/>
                                 </div>
 
@@ -87,7 +87,6 @@
     </div>
     <script>
         $(document).ready(function () {
-            let href_value = ''
 
             $('.deputy_container, .deputy_container > .name, .deputy_container .election_district').on('click', (event) => {
                 if($(event.target).hasClass('name')){   //if the deputy_name is clicked
@@ -98,11 +97,11 @@
 
                 } else if($(event.target).parents().hasClass('deputy_popup_container') || $(event.target).parents().hasClass('district_popup_container')){
 
-                } else {
-                    href_value = $(event.target).data('href-value')  //if the block itself is the event target
-                    ? $(event.target).data('href-value') 
-                    : $(event.target).parent().data('href-value') ?? $(event.target).parent().parent().data('href-value') //else if first child or second child is the event target
-                    window.location.assign(href_value)
+                } else if($(event.target).hasClass('deputy_popup_container') || $(event.target).hasClass('district_popup_container')){ 
+                    $(event.target).removeClass('active');
+                }else {
+                   const target = $(event.target).hasClass('deputy_container') ? $(event.target) : $(event.target).parents('.deputy_container');
+                    window.location.assign(target.data('href-value'))
                 }
                 
             })

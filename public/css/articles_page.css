@@ -65,6 +65,10 @@
                 .articles_page .inner_wrapper .page_content_block .articles_block .articles_row .article_container .bottom_row a::after {
                   background-color: var(--sky_blue);
                   bottom: 0; }
+            .articles_page .inner_wrapper .page_content_block .articles_block .articles_row .article_container:hover a.hover_underline::after {
+              background-color: var(--sky_blue);
+              width: 100%;
+              left: 0; }
     .articles_page .inner_wrapper .pagination_row {
       margin-top: 35px; }
   @media (max-width: 999px) {
