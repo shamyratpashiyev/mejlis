@@ -94,6 +94,11 @@
                     .name{
                         font-size: 23px;
                     }
+
+                    .key_value_wrapper{
+                        flex-direction: column;
+                        row-gap: 15px;
+                    }
                 }
             }
         }

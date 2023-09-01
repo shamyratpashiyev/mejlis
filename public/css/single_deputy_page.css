@@ -49,4 +49,7 @@
         padding-left: 15px; } }
   @media (max-width: 600px) {
     .single_deputy_page .inner_wrapper .page_content_block .right_block .name {
-      font-size: 23px; } }
+      font-size: 23px; }
+    .single_deputy_page .inner_wrapper .page_content_block .right_block .key_value_wrapper {
+      flex-direction: column;
+      row-gap: 15px; } }
