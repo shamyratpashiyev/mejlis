@@ -52,8 +52,8 @@
         .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .deputies_block {
           width: 100%;
           flex-wrap: wrap;
-          justify-content: space-between;
-          row-gap: 25px; }
+          justify-content: space-around;
+          gap: 21px; }
           .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .deputies_block .deputy_container {
             width: 527px;
             min-height: 240px;
@@ -61,7 +61,6 @@
             box-sizing: border-box;
             padding: 20px;
             row-gap: 10px;
-            flex-shrink: 0;
             cursor: pointer; }
             .mejlis_deputies_page .inner_wrapper .page_content_block .right_block .deputies_block .deputy_container .name {
               font-size: 16px;

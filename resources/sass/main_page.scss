@@ -86,7 +86,7 @@
         .inner_wrapper{
 
             .grid_block{
-                grid-template-columns: 75% 0%;
+                grid-template-columns: 81% 0%;
                 justify-content: center;
                 align-items: center;
 
@@ -96,8 +96,9 @@
                 }
 
                 .news_row_medium{
-                    justify-content: space-evenly;
-                    gap: 25px;
+                    justify-content: space-around;
+                    row-gap: 20px;
+                    column-gap: 7px;
 
                     .news_container_medium:nth-child(4){
                         display: flex;
@@ -170,7 +171,7 @@
         .inner_wrapper{
 
             .activities_row{
-                gap: 36px;
+                gap: 43px;
 
                 .activity_container:last-child{
                     display: flex;

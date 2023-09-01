@@ -80,6 +80,10 @@
 
             .page_content_block{
                 column-gap: 0;
+
+                .sidebar_left{
+                    top: -35px;
+                }
                 
                 .middle_column{
                     max-width: unset;
@@ -89,6 +93,10 @@
                     .block_title{
                         padding: 0 15px;
                     }
+                }
+
+                .sidebar_right{
+                    top: -45px;
                 }
             }
         }
