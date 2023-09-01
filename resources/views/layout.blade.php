@@ -405,19 +405,36 @@
                     const target = $(event.target).hasClass('.hamburger_menu') ? $(event.target) : $(event.target).parents('.hamburger_menu .nav_button_wrapper')
 
                     if(target.hasClass('extended')){
-                        target.removeClass('extended')
-                        target.css('height', nav_buttons_initial_height[target.data('id')] + 'px')
+                        collapseNavButton(target)
                     } else {
-                        nav_button_wrapper.removeClass('extended')
-                        nav_button_wrapper.each((index,elem)=>{
-                            $(elem).css('height', nav_buttons_initial_height[$(elem).data('id')] + 'px')
-                        })
-
-                        target.css('height', (nav_buttons_initial_height[target.data('id')] + dropdown_menus_height[target.data('id')]) + 'px')
-                        target.addClass('extended')
-
+                        extendNavButton(target);
                     }
                 })
+
+                $('body').on('click',(e) => {
+                    if($('.hamburger_menu').hasClass('active')){    //collapses nav_button when anything other than nav_button is clicked
+                        if(!$(e.target).hasClass('nav_button_wrapper') && !$(e.target).parents().hasClass('nav_button_wrapper')){
+                            collapseNavButton($('.nav_button_wrapper.extended'));
+                        }
+                    }
+                })
+
+                function extendNavButton(target){
+                    nav_button_wrapper.removeClass('extended')
+                    nav_button_wrapper.each((index,elem)=>{
+                        $(elem).css('height', nav_buttons_initial_height[$(elem).data('id')] + 'px')
+                    })
+
+                    target.css('height', (nav_buttons_initial_height[target.data('id')] + dropdown_menus_height[target.data('id')]) + 'px')
+                    target.addClass('extended')
+                }
+
+                function collapseNavButton(target){
+                    target.removeClass('extended')
+                    target.css('height', nav_buttons_initial_height[target.data('id')] + 'px')
+                }
+
+
             })
 
         })
