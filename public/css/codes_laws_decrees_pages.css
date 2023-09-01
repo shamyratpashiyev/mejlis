@@ -38,8 +38,8 @@
             row-gap: 5px; }
             .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .nav_buttons_row .button_container svg {
               fill: var(--sky_blue);
-              width: 92px;
-              height: 92px; }
+              width: 60px;
+              height: 60px; }
               .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .nav_buttons_row .button_container svg path, .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .nav_buttons_row .button_container svg circle {
                 fill: inherit;
                 stroke: inherit; }
@@ -66,7 +66,7 @@
             border: 1px solid var(--text_gray_4);
             background-color: var(--default_white);
             box-sizing: border-box;
-            padding: 10px 157px 10px 10px; }
+            padding: 10px 146px 10px 10px; }
           .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .search_row input {
             padding: 10px 10px 10px 10px;
             width: 300px; }
@@ -139,4 +139,5 @@
         .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .search_row input {
           width: 245px; }
         .codes_laws_decrees_pages .inner_wrapper .page_content_block .right_side .search_row select {
-          padding: 10px 75px 10px 10px; } }
+          padding: 10px;
+          width: 245px; } }

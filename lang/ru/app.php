@@ -169,21 +169,21 @@ return [
         'title' => 'Кодексы',
         'document_name' => 'Название правового документа',
         'choose_year' => 'Выберите год',
-        'choose_month' => 'Выбериите месяц',
+        'choose_month' => 'Выберите месяц',
     ],
 
     'laws_page' => [
         'title' => 'Законы',
         'document_name' => 'Название правового документа',
         'choose_year' => 'Выберите год',
-        'choose_month' => 'Выбериите месяц',
+        'choose_month' => 'Выберите месяц',
     ],
 
     'mejlis_decrees_page' => [
         'title' => 'Постановления Меджлиса',
         'document_name' => 'Название правового документа',
         'choose_year' => 'Выберите год',
-        'choose_month' => 'Выбериите месяц',
+        'choose_month' => 'Выберите месяц',
     ],
 
     'constitutional_law_page' => [

@@ -47,8 +47,8 @@
 
                         svg{
                             fill: var(--sky_blue);
-                            width: 92px;
-                            height: 92px;
+                            width: 60px;
+                            height: 60px;
 
                             path, circle{
                                 fill: inherit;
@@ -90,7 +90,7 @@
                         border: 1px solid var(--text_gray_4);
                         background-color: var(--default_white);
                         box-sizing: border-box;
-                        padding: 10px 157px 10px 10px;
+                        padding: 10px 146px 10px 10px;
                     }
 
                     input{
@@ -219,7 +219,8 @@
                         }
 
                         select{
-                            padding: 10px 75px 10px 10px;
+                            padding: 10px;
+                            width: 245px;
                         }
                     }
                 }
