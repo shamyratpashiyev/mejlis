@@ -35,13 +35,13 @@ class SiteController extends Controller
     }
 
     public function index(){
-        $news_all = News::orderBy('created_at','desc')->limit(11)->select(['id',"title_{$this->current_lang->code}",
+        $news_all = News::orderBy('event_date','desc')->limit(11)->select(['id',"title_{$this->current_lang->code}",
                                                                 "description_{$this->current_lang->code}", 'event_date', 'image'])->get();
         // dd($news_all);
         $this->news_big = $news_all->slice(0,1)->first();
         $this->news_small = $news_all->slice(1,6);
         $this->news_medium = $news_all->slice(7);
-        $this->mejlis_activities = MejlisActivity::orderBy('created_at','desc')->limit(4)->get(['id',"title_{$this->current_lang->code}",
+        $this->mejlis_activities = MejlisActivity::orderBy('event_date','desc')->limit(4)->get(['id',"title_{$this->current_lang->code}",
                                     "description_{$this->current_lang->code}", 'event_date']);
 
         $this->ashgabat_deputies = Deputy::where('velayat_id', 1)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
@@ -51,7 +51,7 @@ class SiteController extends Controller
         $this->dashoguz_deputies = Deputy::where('velayat_id', 5)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
         $this->balkan_deputies = Deputy::where('velayat_id', 6)->get(['id',"fullname_{$this->current_lang->code}",'election_district_id']);
 
-        $this->laws_4 = Law::orderBy('created_at', 'DESC')->limit(4)->get(['id',"title_{$this->current_lang->code}", 'published_date']);
+        $this->laws_4 = Law::orderBy('published_date', 'DESC')->limit(4)->get(['id',"title_{$this->current_lang->code}", 'published_date']);
         return view('index', $this->data);
     }
 
@@ -100,7 +100,7 @@ class SiteController extends Controller
     // }
 
     public function codes($page_num=1){
-        $this->codes_all = Code::orderBy('created_at','desc')->get(['id', 'title_' . request()->query('lang'), 'published_date']);
+        $this->codes_all = Code::orderBy('published_date','desc')->get(['id', 'title_' . request()->query('lang'), 'published_date']);
         $items_per_page = 9;
         $pages_total = ceil($this->codes_all->count() / $items_per_page);
         $this->current_page = $page_num;
@@ -121,7 +121,7 @@ class SiteController extends Controller
     }
 
     public function laws($page_num=1){
-        $this->laws_all = Law::orderBy('created_at','desc')->get(['id', 'title_' . request()->query('lang'), 'published_date']);
+        $this->laws_all = Law::orderBy('published_date','desc')->get(['id', 'title_' . request()->query('lang'), 'published_date']);
         $items_per_page = 9;
         $pages_total = ceil($this->laws_all->count() / $items_per_page);
         $this->current_page = $page_num;
@@ -142,7 +142,7 @@ class SiteController extends Controller
     }
 
     public function mejlis_decrees($page_num=1){
-        $this->decrees_all = MejlisDecree::orderBy('created_at','desc')->get(['id', 'title_' . request()->query('lang'), 'published_date']);
+        $this->decrees_all = MejlisDecree::orderBy('published_date','desc')->get(['id', 'title_' . request()->query('lang'), 'published_date']);
         $items_per_page = 9;
         $pages_total = ceil($this->decrees_all->count() / $items_per_page);
         $this->current_page = $page_num;
@@ -173,7 +173,7 @@ class SiteController extends Controller
     }
 
     public function international_cooperation($page_num=1){
-        $this->news_all = NewsCooperation::orderBy('created_at','desc')->get(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'event_date','image_1']);
+        $this->news_all = NewsCooperation::orderBy('event_date','desc')->get(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'event_date','image_1']);
         $items_per_page = 9;
         $pages_total = ceil($this->news_all->count() / $items_per_page);
         $this->current_page = $page_num;
@@ -188,7 +188,7 @@ class SiteController extends Controller
     }
 
     public function news_international($page_num=1){
-        $this->news_all = NewsInternational::orderBy('created_at','desc')->get(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'event_date','image_1']);
+        $this->news_all = NewsInternational::orderBy('event_date','desc')->get(['id','title_'.request()->query('lang'), 'description_'.request()->query('lang'),'event_date','image_1']);
         $items_per_page = 9;
         $pages_total = ceil($this->news_all->count() / $items_per_page);
         $this->current_page = $page_num;
@@ -233,7 +233,7 @@ class SiteController extends Controller
     }
 
     public function news($page_num=1){
-        $news_all = News::orderBy('created_at','DESC')->get(['id',"title_{$this->current_lang->code}",
+        $news_all = News::orderBy('event_date','DESC')->get(['id',"title_{$this->current_lang->code}",
                                 "description_{$this->current_lang->code}", 'event_date', 'image']);
 
         $items_per_page = 19;
@@ -254,14 +254,14 @@ class SiteController extends Controller
 
     public function single_news($id){
         $this->selected_news = News::findOrFail($id);
-        $this->relative_news = News::whereNotIn('id', [$this->selected_news->id])->orderBy('created_at','desc')->limit(4)->get(['id',"title_{$this->current_lang->code}",
+        $this->relative_news = News::whereNotIn('id', [$this->selected_news->id])->orderBy('event_date','desc')->limit(4)->get(['id',"title_{$this->current_lang->code}",
                                 "description_{$this->current_lang->code}", 'event_date', 'image']);
         return view('single_news_page',$this->data);
     }
 
     public function articles($page_num=1){
 
-        $articles_all = Article::orderBy('created_at', 'DESC')->get(['id', 'title_' . request()->query('lang'), 'description_' . request()->query('lang'), 'published_date']);
+        $articles_all = Article::orderBy('published_date', 'DESC')->get(['id', 'title_' . request()->query('lang'), 'description_' . request()->query('lang'), 'published_date']);
         $items_per_page = 9;
         $pages_total = ceil($articles_all->count() / $items_per_page);
         $this->current_page = $page_num;
@@ -283,7 +283,7 @@ class SiteController extends Controller
     }
     
     public function mejlis_activities($page_num=1){
-        $activitiess_all = MejlisActivity::orderBy('created_at', 'DESC')->get(['id', 'title_' . request()->query('lang'), 'description_' . request()->query('lang'), 'event_date']);
+        $activitiess_all = MejlisActivity::orderBy('event_date', 'DESC')->get(['id', 'title_' . request()->query('lang'), 'description_' . request()->query('lang'), 'event_date']);
         $items_per_page = 9;
         $pages_total = ceil($activitiess_all->count() / $items_per_page);
         $this->current_page = $page_num;
