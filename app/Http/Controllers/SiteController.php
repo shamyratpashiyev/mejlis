@@ -218,7 +218,7 @@ class SiteController extends Controller
 
     public function friendship_group(string $id = '0'){
         $locale = request()->query('lang');
-        $this->groups_all = FriendshipGroup::orderBy('published_date','desc')->get(['id','title_' . $locale,'description_' . $locale,
+        $this->groups_all = FriendshipGroup::orderBy('country_2_' . $locale,'ASC')->get(['id','title_' . $locale,'description_' . $locale,
                                     'country_1_' . $locale,'country_2_' . $locale, 'published_date']);
         if($id){
             $this->selected_group = FriendshipGroup::select(['id','title_' . $locale,'description_' . $locale,
