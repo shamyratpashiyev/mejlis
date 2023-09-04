@@ -8,7 +8,7 @@
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
     <div>
-        История
+        Население
     </div>
 </div>
 
@@ -19,7 +19,7 @@
 
 <div class="content">
     <div class="title">
-        <h1 class="title">История</h1>
+        <h1 class="title">Население</h1>
 
 
         
@@ -44,20 +44,20 @@
 
     <div class="content__list">
         <!-- list__item -->
-        @foreach($histories_all as $history )
+        @foreach($populations_all as $population )
 
             <div class="list__item">
                 <div class="item__txt">
-                    <div class="w5">{{ $history->id }}</div>
-                    <div class="w35"> {{ $history->title_tm }} </div>
+                    <div class="w5">{{ $population->id }}</div>
+                    <div class="w35"> {{ $population->title_tm }} </div>
                     <div class="w35">
-                        {!! $history->content_tm !!}
+                        {!! $population->content_tm !!}
                     </div>
-                    <div class="date w15"> {{ $history->event_date }} </div>
+                    <div class="date w15"> {{ $population->event_date }} </div>
                 </div>
 
                 <div class="item__button w5a5">
-                    <a href="{{ route('tkm_history.edit', $history->id) }}">
+                    <a href="{{ route('tkm_population.edit', $population->id) }}">
                         <img src="{{ asset('admins/img/ico/edit_v2.svg') }}">
                     </a>
 

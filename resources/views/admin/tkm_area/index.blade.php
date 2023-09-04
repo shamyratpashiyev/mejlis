@@ -8,7 +8,7 @@
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
     <div>
-        Новости
+        Площадь
     </div>
 </div>
 
@@ -19,7 +19,7 @@
 
 <div class="content">
     <div class="title">
-        <h1 class="title">Новости</h1>
+        <h1 class="title">Площадь</h1>
 
 
         
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="item__button w5a5">
-                    <a href="{{ route('tkm_history.edit', $area->id) }}">
+                    <a href="{{ route('tkm_area.edit', $area->id) }}">
                         <img src="{{ asset('admins/img/ico/edit_v2.svg') }}">
                     </a>
 

@@ -10,7 +10,7 @@
 
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
-    <a href="{{ route('tkm_area.index') }}">
+    <a href="{{ route('tkm_constitution.index') }}">
         Новости
     </a>
 
@@ -36,7 +36,7 @@
         <h1 class="title">Изменение Новости</h1>
     </div>
 
-    <form action="{{ route('tkm_area.update', $selected_area->id) }}" method="POST" class="edit__form" enctype="multipart/form-data">
+    <form action="{{ route('tkm_constitution.update', $selected_constitution->id) }}" method="POST" class="edit__form" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <!-- ROW  -->
@@ -44,7 +44,7 @@
             <!-- form__item -->
             <div class="form__item w30">
                 <label class="txt">TM - Заголовок</label>
-                <input type="text" class="inputTxt" name="title_tm" value="{{ $selected_area->title_tm }}">
+                <input type="text" class="inputTxt" name="title_tm" value="{{ $selected_constitution->title_tm }}">
                 @error('title_tm')
                     <p class="err">{{ $message }}</p>
                 @enderror
@@ -53,7 +53,7 @@
             <!-- form__item -->
             <div class="form__item w30">
                 <label class="txt">RU - Заголовок</label>
-                <input type="text" class="inputTxt" name="title_ru" value="{{ $selected_area->title_ru }}">
+                <input type="text" class="inputTxt" name="title_ru" value="{{ $selected_constitution->title_ru }}">
                 @error('title_ru')
                     <p class="err">{{$message}}</p>
                 @enderror
@@ -62,7 +62,7 @@
             <!-- form__item -->
             <div class="form__item w30">
                 <label class="txt">EN - Заголовок</label>
-                <input type="text" class="inputTxt" name="title_en" value="{{$selected_area->title_en}}">
+                <input type="text" class="inputTxt" name="title_en" value="{{$selected_constitution->title_en}}">
                 @error('title_en')
                     <p class="err">{{$message}}</p>
                 @enderror
@@ -74,7 +74,7 @@
             <!-- form__item -->
             <div class="form__item w45">
                 <label class="txt">TM - описание</label>
-                <textarea id="editor-10" name="content_tm">{{$selected_area->content_tm}}</textarea>
+                <textarea id="editor-10" name="content_tm">{{$selected_constitution->content_tm}}</textarea>
                 @error('content_tm')
                     <p class="err">{{ $message }}</p>
                 @enderror
@@ -83,7 +83,7 @@
             <!-- form__item -->
             <div class="form__item w45">
                 <label class="txt">RU - описание</label>
-                <textarea id="editor-11" name="content_ru">{{ $selected_area->content_ru }}</textarea>
+                <textarea id="editor-11" name="content_ru">{{ $selected_constitution->content_ru }}</textarea>
                 @error('content_ru')
                     <p class="err">{{ $message }}</p>
                 @enderror
@@ -95,7 +95,7 @@
             <!-- form__item -->
             <div class="form__item w45">
                 <label class="txt">EN - описание</label>
-                <textarea id="editor-12" name="content_en">{{ $selected_area->content_en }}</textarea>
+                <textarea id="editor-12" name="content_en">{{ $selected_constitution->content_en }}</textarea>
                 @error('content_en')
                     <p class="err">{{$message}}</p>
                 @enderror
@@ -108,7 +108,7 @@
             <!-- form__button -->
             <div class="form__button">
                 <input type="submit" value="Сохранить">
-                <a href="{{ route('tkm_area.index') }}">Отмена</a>
+                <a href="{{ route('tkm_constitution.index') }}">Отмена</a>
             </div>
         </div>
     </form>

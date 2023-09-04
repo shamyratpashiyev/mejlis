@@ -5,9 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TkmArea extends Model
+class TkmStateHolidays extends Model
 {
     use HasFactory;
-
-    public $table = "tkm_area";
 }

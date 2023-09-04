@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tkm_history', function (Blueprint $table) {
+        Schema::create('tkm_state_holidays', function (Blueprint $table) {
             $table->id();
             $table->string('title_tm',500);
             $table->string('title_ru',500);
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tkm_histories');
+        Schema::dropIfExists('tkm_state_holidays');
     }
 };

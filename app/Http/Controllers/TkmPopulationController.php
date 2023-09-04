@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TkmArea;
+use App\Models\TkmPopulation;
 use Illuminate\Http\Request;
 
-class TkmAreaController extends Controller
+class TkmPopulationController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $areas_all = TkmArea::get();
+        $populations_all = TkmPopulation::get();
 
-        return view('admin.tkm_area.index',['areas_all' => $areas_all]);
+        return view('admin.tkm_population.index',['populations_all' => $populations_all]);
     }
 
     /**
@@ -46,9 +46,9 @@ class TkmAreaController extends Controller
      */
     public function edit(string $id)
     {
-        $selected_area = TkmArea::firstOrFail();
+        $selected_population = TkmPopulation::firstOrFail();
 
-        return view('admin.tkm_area.edit',['selected_area' => $selected_area]);
+        return view('admin.tkm_population.edit',['selected_population' => $selected_population]);
     }
 
     /**
@@ -65,16 +65,16 @@ class TkmAreaController extends Controller
             'content_en' => 'required',
         ]);
 
-        $selected_area = TkmArea::findOrFail($id);
-        $selected_area->title_tm = $request->title_tm;
-        $selected_area->title_ru = $request->title_ru;
-        $selected_area->title_en = $request->title_en;
-        $selected_area->content_tm = $request->content_tm;
-        $selected_area->content_ru = $request->content_ru;
-        $selected_area->content_en = $request->content_en;
-        $selected_area->save();
+        $selected_population = TkmPopulation::findOrFail($id);
+        $selected_population->title_tm = $request->title_tm;
+        $selected_population->title_ru = $request->title_ru;
+        $selected_population->title_en = $request->title_en;
+        $selected_population->content_tm = $request->content_tm;
+        $selected_population->content_ru = $request->content_ru;
+        $selected_population->content_en = $request->content_en;
+        $selected_population->save();
 
-        return redirect()->route('tkm_area.index');
+        return redirect()->route('tkm_population.index');
     }
 
     /**

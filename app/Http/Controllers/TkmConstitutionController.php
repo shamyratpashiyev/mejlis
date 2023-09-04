@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TkmArea;
+use App\Models\TkmConstitution;
 use Illuminate\Http\Request;
 
-class TkmAreaController extends Controller
+class TkmConstitutionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $areas_all = TkmArea::get();
+        $constitutions_all = TkmConstitution::get();
 
-        return view('admin.tkm_area.index',['areas_all' => $areas_all]);
+        return view('admin.tkm_constitution.index',['constitutions_all' => $constitutions_all]);
     }
 
     /**
@@ -46,9 +46,9 @@ class TkmAreaController extends Controller
      */
     public function edit(string $id)
     {
-        $selected_area = TkmArea::firstOrFail();
+        $selected_constitution = TkmConstitution::firstOrFail();
 
-        return view('admin.tkm_area.edit',['selected_area' => $selected_area]);
+        return view('admin.tkm_constitution.edit',['selected_constitution' => $selected_constitution]);
     }
 
     /**
@@ -65,16 +65,16 @@ class TkmAreaController extends Controller
             'content_en' => 'required',
         ]);
 
-        $selected_area = TkmArea::findOrFail($id);
-        $selected_area->title_tm = $request->title_tm;
-        $selected_area->title_ru = $request->title_ru;
-        $selected_area->title_en = $request->title_en;
-        $selected_area->content_tm = $request->content_tm;
-        $selected_area->content_ru = $request->content_ru;
-        $selected_area->content_en = $request->content_en;
-        $selected_area->save();
+        $selected_constitution = TkmConstitution::findOrFail($id);
+        $selected_constitution->title_tm = $request->title_tm;
+        $selected_constitution->title_ru = $request->title_ru;
+        $selected_constitution->title_en = $request->title_en;
+        $selected_constitution->content_tm = $request->content_tm;
+        $selected_constitution->content_ru = $request->content_ru;
+        $selected_constitution->content_en = $request->content_en;
+        $selected_constitution->save();
 
-        return redirect()->route('tkm_area.index');
+        return redirect()->route('tkm_constitution.index');
     }
 
     /**

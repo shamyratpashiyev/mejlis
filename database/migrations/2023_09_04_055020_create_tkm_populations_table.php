@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tkm_history', function (Blueprint $table) {
+        Schema::create('tkm_population', function (Blueprint $table) {
             $table->id();
-            $table->string('title_tm',500);
-            $table->string('title_ru',500);
-            $table->string('title_en',500);
+            $table->string('title_tm', 500);
+            $table->string('title_ru', 500);
+            $table->string('title_en', 500);
             $table->mediumText('content_tm');
             $table->mediumText('content_ru');
             $table->mediumText('content_en');
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tkm_histories');
+        Schema::dropIfExists('tkm_population');
     }
 };

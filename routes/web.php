@@ -1,26 +1,31 @@
 <?php
 
+use App\Models\FriendshipGroup;
 use App\Models\NewsCooperation;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CodeController;
+use App\Http\Controllers\LawsController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CodesController;
 use App\Http\Controllers\DeputyController;
+use App\Http\Controllers\TkmAreaController;
 use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\CommitteesController;
-use App\Http\Controllers\ConvocationController;
-use App\Http\Controllers\ElectionDistrictController;
-use App\Http\Controllers\FriendshipGroupController;
-use App\Http\Controllers\LawsController;
-use App\Http\Controllers\NewsCooperationController;
-use App\Http\Controllers\MejlisActivitiesController;
-use App\Http\Controllers\MejlisDecreesController;
-use App\Http\Controllers\NewsInternationalController;
-use App\Http\Controllers\TkmAreaController;
 use App\Http\Controllers\TkmHistoryController;
-use App\Models\FriendshipGroup;
+use App\Http\Controllers\ConvocationController;
+use App\Http\Controllers\MejlisDecreesController;
+use App\Http\Controllers\TkmPopulationController;
+use App\Http\Controllers\FriendshipGroupController;
+use App\Http\Controllers\NewsCooperationController;
+use App\Http\Controllers\ElectionDistrictController;
+use App\Http\Controllers\MejlisActivitiesController;
+use App\Http\Controllers\NewsInternationalController;
+use App\Http\Controllers\TkmConstitutionController;
+use App\Http\Controllers\TkmStateHolidaysController;
+use App\Http\Controllers\TkmStateSymbolsController;
+use App\Models\TkmConstitution;
 
 /*
 |--------------------------------------------------------------------------
@@ -99,6 +104,10 @@ Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::resource('election_districts', ElectionDistrictController::class);
     Route::resource('tkm_history', TkmHistoryController::class);
     Route::resource('tkm_area', TkmAreaController::class);
+    Route::resource('tkm_population', TkmPopulationController::class);
+    Route::resource('tkm_state_symbols', TkmStateSymbolsController::class);
+    Route::resource('tkm_constitution', TkmConstitutionController::class);
+    Route::resource('tkm_state_holidays', TkmStateHolidaysController::class);
     Route::get('/settings',[AdminController::class, 'settings'])->name('settings');
     Route::post('/langs-update',[AdminController::class, 'langs_update'])->name('langs_update');
 });

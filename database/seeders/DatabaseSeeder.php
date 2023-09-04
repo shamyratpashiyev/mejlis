@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Database\Seeders\AdminSeeder;
+use Database\Seeders\TkmPagesSeeder;
 
 
 class DatabaseSeeder extends Seeder
@@ -26,6 +27,7 @@ class DatabaseSeeder extends Seeder
             // ElectionDistrictSeeder::class,
             // DummyDataSeeder::class,
             AdminSeeder::class,
+            TkmPagesSeeder::class
         ]);
     }
 }

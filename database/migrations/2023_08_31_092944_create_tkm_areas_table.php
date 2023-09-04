@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tkm_areas', function (Blueprint $table) {
+        Schema::create('tkm_area', function (Blueprint $table) {
             $table->id();
-            $table->text('title_tm');
-            $table->text('title_ru');
-            $table->text('title_en');
+            $table->string('title_tm',500);
+            $table->string('title_ru',500);
+            $table->string('title_en',500);
             $table->mediumText('content_tm');
             $table->mediumText('content_ru');
             $table->mediumText('content_en');
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tkm_areas');
+        Schema::dropIfExists('tkm_area');
     }
 };

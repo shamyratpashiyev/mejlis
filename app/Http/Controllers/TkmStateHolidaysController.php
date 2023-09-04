@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TkmArea;
+use App\Models\TkmStateHolidays;
 use Illuminate\Http\Request;
 
-class TkmAreaController extends Controller
+class TkmStateHolidaysController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $areas_all = TkmArea::get();
+        $state_holidays_all = TkmStateHolidays::get();
 
-        return view('admin.tkm_area.index',['areas_all' => $areas_all]);
+        return view('admin.tkm_state_holidays.index',['state_holidays_all' => $state_holidays_all]);
     }
 
     /**
@@ -46,9 +46,9 @@ class TkmAreaController extends Controller
      */
     public function edit(string $id)
     {
-        $selected_area = TkmArea::firstOrFail();
+        $selected_state_holiday = TkmStateHolidays::firstOrFail();
 
-        return view('admin.tkm_area.edit',['selected_area' => $selected_area]);
+        return view('admin.tkm_state_holidays.edit',['selected_state_holiday' => $selected_state_holiday]);
     }
 
     /**
@@ -65,16 +65,16 @@ class TkmAreaController extends Controller
             'content_en' => 'required',
         ]);
 
-        $selected_area = TkmArea::findOrFail($id);
-        $selected_area->title_tm = $request->title_tm;
-        $selected_area->title_ru = $request->title_ru;
-        $selected_area->title_en = $request->title_en;
-        $selected_area->content_tm = $request->content_tm;
-        $selected_area->content_ru = $request->content_ru;
-        $selected_area->content_en = $request->content_en;
-        $selected_area->save();
+        $selected_state_holiday = TkmStateHolidays::findOrFail($id);
+        $selected_state_holiday->title_tm = $request->title_tm;
+        $selected_state_holiday->title_ru = $request->title_ru;
+        $selected_state_holiday->title_en = $request->title_en;
+        $selected_state_holiday->content_tm = $request->content_tm;
+        $selected_state_holiday->content_ru = $request->content_ru;
+        $selected_state_holiday->content_en = $request->content_en;
+        $selected_state_holiday->save();
 
-        return redirect()->route('tkm_area.index');
+        return redirect()->route('tkm_state_holidays.index');
     }
 
     /**
