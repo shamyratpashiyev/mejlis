@@ -16,6 +16,7 @@ use App\Models\NewsCooperation;
 use Illuminate\Database\Seeder;
 use App\Models\NewsInternational;
 use App\Models\FriendshipGroupDeputy;
+use Database\Seeders\ElectionDistrictSeeder;
 use Database\Factories\FriendshipGroupDeputyFactory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -26,7 +27,9 @@ class DummyDataSeeder extends Seeder
      */
     public function run(): void
     {
-       
+        $this->call([
+           ElectionDistrictSeeder::class,
+        ]);
         Article::factory(100)->create();
         MejlisActivity::factory(100)->create();
         Code::factory(100)->create();
