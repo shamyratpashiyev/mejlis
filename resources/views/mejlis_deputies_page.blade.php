@@ -117,7 +117,7 @@
             let selected_velayat_id = '--';
             let selected_district_id = '--';
 
-            $('.letter, #velayats_select, #districts_select').on('click', (event) => {
+            $('.letter, #velayats_select, #districts_select').on('click change', (event) => {
                 if($(event.target).hasClass('letter')){
                     if($(event.target).hasClass('active')){
                         $('.letter').removeClass('active')

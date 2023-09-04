@@ -66,7 +66,7 @@
             let selected_letter = '--'
             let selected_district_id = '--'
             
-            $('.letter, .select_row select').on('click', (event) => {
+            $('.letter, .select_row select').on('click change', (event) => {
                 if($(event.target).hasClass('letter')){
                     if($(event.target).hasClass('active')){
                         $('.letter').removeClass('active')
