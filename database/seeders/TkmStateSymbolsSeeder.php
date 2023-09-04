@@ -18,7 +18,7 @@ class TkmStateSymbolsSeeder extends Seeder
 
             'flag_title_ru' => 'Государственный флаг Туркменистана',
             'flag_title_en' => 'State flag of Turkmenistan',
-            'flag_img' => '',
+            'flag_img' => 'img/flag.jpg',
             'flag_text_tm' => '<p>
                                       Türkmenistanyň Döwlet baýdagy milletiň agzybirliginiň we Garaşsyzlygynyň hem-de döwlet Bitaraplygynyň nyşanydyr.
                                 </p>
@@ -43,7 +43,7 @@ class TkmStateSymbolsSeeder extends Seeder
             'emblem_title_tm' => 'Türkmenistanyň döwlet tugrasy',
             'emblem_title_ru' => 'Государственный герб Туркменистана',
             'emblem_title_en' => 'State Emblem of Turkmenistan',
-            'emblem_img' => '',
+            'emblem_img' => 'img/state_emblem.jpg',
             'emblem_text_tm' => '<p>
                                       Türkmenistanyň döwlet häkimiýetiniň nyşany hökmünde türkmen halkynyň nesilbaşylary Beýik Oguzhan Türkmeniň we kuwwatly döwletleri döreden hem-de adamzadyň ösüşine düýpli täsirini ýetiren Beýik seljuklaryň gadymy medeni mirasyny özünde jemlän Türkmenistanyň Döwlet TugrasyTürkmenistanyň Döwlet häkimiýetiniň nyşanydyr.
                                 </p>',

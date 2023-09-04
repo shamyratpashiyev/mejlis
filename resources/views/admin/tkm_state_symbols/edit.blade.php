@@ -103,11 +103,11 @@
 
             <div class="form__item alignBot w30">
                 <div class="file__box">
-                    <label for="file-3" class="file">
+                    <label for="file-1" class="file">
                         Прикрепить файл
                         <img src="{{ asset('admins/img/ico/link.svg') }}">
                     </label>
-                    <input type="file" id="file-3" class="inputFile" accept="image/png, image/jpg, image/jpeg" name="flag_img">
+                    <input type="file" id="file-1" class="inputFile" accept="image/png, image/jpg, image/jpeg" name="flag_img">
                     <!-- HELP -->
                     <div class="help">
                         <div class="help__icon">?</div>
@@ -193,11 +193,11 @@
 
             <div class="form__item alignBot w30">
                 <div class="file__box">
-                    <label for="file-3" class="file">
+                    <label for="file-2" class="file">
                         Прикрепить файл
                         <img src="{{ asset('admins/img/ico/link.svg') }}">
                     </label>
-                    <input type="file" id="file-3" class="inputFile" accept="image/png, image/jpg, image/jpeg" name="emblem_img">
+                    <input type="file" id="file-2" class="inputFile" accept="image/png, image/jpg, image/jpeg" name="emblem_img">
                     <!-- HELP -->
                     <div class="help">
                         <div class="help__icon">?</div>

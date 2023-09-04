@@ -33,9 +33,11 @@
 
                 <div class="middle_column flex_column">
 
-                    <h3 class="block_title">@lang('app.tkm.constitution_page.title')</h3>
+                    <h3 class="block_title">{{ $constitution->{'title_' . app()->getLocale()} }}</h3>
 
-                    @lang('app.tkm.constitution_page.text')
+                    <div class="text_wrapper">
+                        {!! $constitution->{'content_' . app()->getLocale()} !!}
+                    </div>
                 </div>
 
                 <x-sidebar-right title="" :items-list="$sidebar_right" 

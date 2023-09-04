@@ -49,11 +49,11 @@
             <div class="list__item">
                 <div class="item__txt">
                     <div class="w5">{{ $state_symbol->id }}</div>
-                    <div class="w35"> {{ $state_symbol->title_tm }} </div>
+                    <div class="w35"> {{ $state_symbol->flag_title_tm }} </div>
                     <div class="w35">
                         {!! $state_symbol->content_tm !!}
                     </div>
-                    <div class="date w15"> {{ $state_symbol->event_date }} </div>
+                    <div class="date w15"> {{ $state_symbol->created_at }} </div>
                 </div>
 
                 <div class="item__button w5a5">

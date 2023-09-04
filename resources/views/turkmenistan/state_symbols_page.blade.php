@@ -35,42 +35,42 @@
 
                     <div class="symbol_container">
 
-                        <h3 class="block_title">@lang('app.tkm.state_symbols_page.flag.title')</h3>
+                        <h3 class="block_title">{{ $symbols->{'flag_title_' . app()->getLocale()} }}</h3>
 
                         <div class="image_wrapper flex_row">
-                            <img src="{{ asset('img/flag.jpg') }}" alt="">
+                            <img src="{{ asset($symbols->flag_img) }}" alt="">
                         </div>
-                        @lang('app.tkm.state_symbols_page.flag.text')
+                        {!! $symbols->{'flag_text_' . app()->getLocale()} !!}
                     </div>
 
                     <hr>
 
                     <div class="symbol_container">
 
-                        <h3 class="block_title">@lang('app.tkm.state_symbols_page.emblem.title')</h3>
+                        <h3 class="block_title">{{ $symbols->{'emblem_title_' . app()->getLocale()} }}</h3>
 
                         <div class="image_wrapper flex_row">
-                            <img src="{{ asset('img/state_emblem.jpg') }}" alt="">
+                            <img src="{{ asset($symbols->emblem_img) }}" alt="">
                         </div>
-                        @lang('app.tkm.state_symbols_page.emblem.text')
+                        {!! $symbols->{'emblem_text_' . app()->getLocale()} !!}
                     </div>
 
                     <hr>
 
                     <div class="symbol_container">
 
-                        <h3 class="block_title">@lang('app.tkm.state_symbols_page.anthem_desc.title')</h3>
+                        <h3 class="block_title">{{ $symbols->{'anthem_description_title_' . app()->getLocale()} }}</h3>
                         
-                        @lang('app.tkm.state_symbols_page.anthem_desc.text')
+                        {!! $symbols->{'anthem_description_text_' . app()->getLocale()} !!}
                     </div>
 
                     <hr>
 
                     <div class="symbol_container anthem_container">
 
-                        <h3 class="block_title">@lang('app.tkm.state_symbols_page.anthem.title')</h3>
+                        <h3 class="block_title">{{ $symbols->{'anthem_title_' . app()->getLocale()} }}</h3>
                         
-                        @lang('app.tkm.state_symbols_page.anthem.text')
+                        {!! $symbols->{'anthem_text_' . app()->getLocale()} !!}
 
                     </div>
 

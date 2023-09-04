@@ -33,9 +33,11 @@
                 <x-sidebar :links-list="$links_list" title="--"/>
 
                 <div class="middle_column flex_column">
-                    <h3 class="column_title">@lang('app.tkm.population_page.text_title')</h3>
+                    <h3 class="column_title">{{ $population->{'title_' . app()->getLocale()} }}</h3>
 
-                    @lang('app.tkm.population_page.text')
+                    <div class="text_wrapper">
+                        {!! $population->{'content_' . app()->getLocale()} !!}
+                    </div>
                 </div>
 
                 <x-sidebar-right title="" :items-list="$sidebar_right" 

@@ -25,18 +25,18 @@ class DeputyStore extends FormRequest
             'fullname_tm' => 'required',
             'fullname_ru' => 'required',
             'fullname_en' => 'required',
-            'biography_en' => 'required',
-            'biography_tm' => 'required',
-            'biography_ru' => 'required',
-            'position_tm' => 'required',
-            'position_ru' => 'required',
-            'position_en' => 'required',
-            'birth_year_tm' => 'required',
-            'birth_year_ru' => 'required',
-            'birth_year_en' => 'required',
-            'velayat_id' => '', 
-            'election_district_id' => '',
-            'email' => 'required|email'
+            'biography_en' => '',
+            'biography_tm' => '',
+            'biography_ru' => '',
+            'position_tm' => '',
+            'position_ru' => '',
+            'position_en' => '',
+            'birth_year_tm' => '',
+            'birth_year_ru' => '',
+            'birth_year_en' => '',
+            'velayat_id' => 'required', 
+            'election_district_id' => 'required',
+            'email' => 'email'
         ];
     }
 }

@@ -22,10 +22,10 @@
           font-size: 25px;
           margin: 0 0 25px 0;
           text-align: center; }
-        .tkm_state_holidays_page .inner_wrapper .page_content_block .middle_column p {
-          font-family: 'OpenSansRegular', sans-serif !important;
-          font-size: 16px !important;
-          margin: 0 !important;
+        .tkm_state_holidays_page .inner_wrapper .page_content_block .middle_column .text_wrapper, .tkm_state_holidays_page .inner_wrapper .page_content_block .middle_column .text_wrapper * {
+          font-family: 'OpenSansRegular', sans-serif;
+          font-size: 16px;
+          margin: 0;
           color: var(--text_black_default); }
   @media (max-width: 1400px) {
     .tkm_state_holidays_page .inner_wrapper .page_content_block {
