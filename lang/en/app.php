@@ -19,11 +19,11 @@ return [
         'contacts_page' => 'Contacts',
         'mejlis_history_page' => 'About Mejlis',
         'convocation_page' => 'List of Deputies of :number convocation',
-        'mejlis_committees_page' => 'Mejlis Committees',
-        'mejlis_deputies_page' => 'Mejlis Deputies',
+        'mejlis_committees_page' => 'Committees of Mejlis',
+        'mejlis_deputies_page' => 'Deputies of Mejlis',
         'codes_page' => 'Codes',
         'laws_page' => 'Laws',
-        'mejlis_decrees_page' => 'Mejlis Decrees',
+        'mejlis_decrees_page' => 'Resolutions of Mejlis',
         'constitutional_law_page' => 'Constitutional Law',
         'international_cooperation_page' => 'International Cooperation',
         'friendship_groups_page' => 'Friendship Groups',
@@ -144,12 +144,12 @@ return [
     ],
 
     'mejlis_committees_page' => [
-        'title' => 'Mejlis Committees',
-        'mejlis_committees' => 'Mejlis Committees',
+        'title' => 'Committees of Mejlis',
+        'mejlis_committees' => 'Committees of Mejlis',
     ],
 
     'mejlis_deputies_page' => [
-        'title' => 'Mejlis Deputies',
+        'title' => 'Deputies of Mejlis',
         'deputies' => 'Deputies',
         'election_district' => 'Constituency',
         'position' => 'Position',
@@ -176,7 +176,7 @@ return [
     ],
 
     'mejlis_decrees_page' => [
-        'title' => 'Decrees of the Mejlis',
+        'title' => 'Resolutions of Mejlis',
         'document_name' => 'Name of the legal document',
         'choose_year' => 'Choose a year',
         'choose_month' => 'Choose a month',
