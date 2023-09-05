@@ -513,12 +513,13 @@ a {
   min-height: 147px; }
   .news_container_small .image_wrapper {
     width: 28.2%;
+    height: 100%;
     align-items: center; }
     .news_container_small .image_wrapper img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center; }
+      object-position: top; }
   .news_container_small .content_block {
     justify-content: space-between;
     height: 100%;
