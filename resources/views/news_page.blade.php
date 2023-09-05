@@ -21,7 +21,7 @@
             <x-breadcrumbs :breadcrumbs-array="$breadcrumbs_array" />
 
             <div class="title_row flex_row">
-                <h2 class="title">@lang('app.layout.headlines')</h2>
+                <h2 class="title">@lang('app.main.headlines_section')</h2>
                 <a href="#" class="news_page_link hover_underline flex_row">
                     <span>@lang('app.buttons.see_all')</span>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">

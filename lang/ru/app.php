@@ -12,9 +12,9 @@ return [
         'logo_description' => 'представительный орган, осуществляющий законодательную власть',
         'main_page' => 'Главная страница',
         'about_mejlis' => 'О Меджлисе',
-        'mejlis_structure' => 'Состав И Структура',
+        'mejlis_structure' => 'Состав и Структура',
         'media' => 'Медиа',
-        'international' => 'Международное',
+        'international' => 'Международная деятельность',
         'legislation' => 'Законодательство',
         'contacts_page' => 'Контакты',
         'mejlis_history_page' => 'История Меджлиса',
@@ -26,11 +26,12 @@ return [
         'mejlis_decrees_page' => 'Постановления Меджлиса',
         'constitutional_law_page' => 'Конституционный закон',
         'international_cooperation_page' => 'Международное сотрудничество',
-        'friendship_groups_page' => 'Группа дружбы',
+        'friendship_groups_page' => 'Группы дружбы',
         'news_page' => 'Новости',
-        'headlines' => 'Заголовки',
+        'news_inter_page' => 'Международные Новости',
+        'headlines' => 'Внутренняя деятельность',
         'articles_page' => 'Выступления и Статьи',
-        'mejlis_activities_page' => 'Деятельность Меджлиса Туркменистана ',
+        'mejlis_activities_page' => 'Деятельность Меджлиса',
         'gallery_page' => 'Галерея',
         'tkm_page' => 'Туркменистан',
         'copyright_text' => 'Все права защищены',
@@ -232,12 +233,12 @@ return [
     ],
 
     'friendship_group_page' => [
-        'title' => 'Группа дружбы',
+        'title' => 'Группы дружбы',
         'title_full' => 'Межпарламентские группы дружбы с парламентами иностранных государств'
     ],
 
     'news_international_page' => [
-        'title' => 'Новости',
+        'title' => 'Международные Новости',
     ],
 
     'news_page' => [
@@ -250,7 +251,7 @@ return [
     ],
 
     'mejlis_activities_page' => [
-        'title' => 'Деятельность Меджлиса<br/> Туркменистана',
+        'title' => 'Деятельность Меджлиса',
         'title_short' => 'ДЕЯТЕЛЬНОСТЬ Меджлиса'
     ],
 

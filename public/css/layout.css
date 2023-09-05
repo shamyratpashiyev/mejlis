@@ -52,7 +52,9 @@
     align-items: center;
     position: relative; }
     .bottom_header .inner_wrapper .nav_block {
-      column-gap: 50px; }
+      column-gap: 25px;
+      min-width: 90%;
+      justify-content: space-between; }
       .bottom_header .inner_wrapper .nav_block .nav_button_wrapper {
         text-decoration: none;
         cursor: pointer;

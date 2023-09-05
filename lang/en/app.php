@@ -26,11 +26,12 @@ return [
         'mejlis_decrees_page' => 'Mejlis Decrees',
         'constitutional_law_page' => 'Constitutional Law',
         'international_cooperation_page' => 'International Cooperation',
-        'friendship_groups_page' => 'Friendship Group',
+        'friendship_groups_page' => 'Friendship Groups',
         'news_page' => 'News',
+        'news_inter_page' => 'International News',
         'headlines' => 'Headlines',
         'articles_page' => 'Speeches and Articles',
-        'mejlis_activities_page' => 'Activities of the Mejlis of Turkmenistan',
+        'mejlis_activities_page' => 'Activities of Mejlis',
         'gallery_page' => 'Gallery',
         'tkm_page' => 'Turkmenistan',
         'copyright_text' => 'All rights reserved',
@@ -232,7 +233,7 @@ return [
     ],
 
     'news_international_page' => [
-        'title' => 'News',
+        'title' => 'International News',
     ],
 
     'news_page' => [
@@ -245,7 +246,7 @@ return [
     ],
 
     'mejlis_activities_page' => [
-        'title' => 'Activity of the Mejlis<br/> of Turkmenistan',
+        'title' => 'Activities of Mejlis',
         'title_short' => 'Mejlis Activity'
     ],
 

@@ -110,7 +110,7 @@
                             <a href="{{ route('friendship_group_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.friendship_groups_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('news_international_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_page')</a>
+                            <a href="{{ route('news_international_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_inter_page')</a>
                         </div>
                     </div>
                 </div>
@@ -241,7 +241,7 @@
                             <a href="{{ route('friendship_group_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.friendship_groups_page')</a>
                         </div>
                         <div class="item_wrapper hover_underline">
-                            <a href="{{ route('news_international_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_page')</a>
+                            <a href="{{ route('news_international_page',['lang'=>app()->getLocale()]) }}">@lang('app.layout.news_inter_page')</a>
                         </div>
                     </div>
                 </div>

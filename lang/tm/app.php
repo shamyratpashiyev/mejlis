@@ -26,8 +26,9 @@ return [
         'mejlis_decrees_page' => 'Mejlisiň kararlary',
         'constitutional_law_page' => 'Konstitusion kanuny',
         'international_cooperation_page' => 'Halkara hyzmatdaşlyk',
-        'friendship_groups_page' => 'Dostluk topar',
+        'friendship_groups_page' => 'Dostluk toparlary',
         'news_page' => 'Täzelikler',
+        'news_inter_page' => 'Täzelikler',
         'headlines' => 'Habarlar',
         'articles_page' => 'Çykyşlar we makalalar',
         'mejlis_activities_page' => 'Türkmenistanyň mejlisinde alnyp barylýan işler',
@@ -231,7 +232,7 @@ return [
     ],
 
     'friendship_group_page' => [
-        'title' => 'Dostluk topar',
+        'title' => 'Dostluk toparlary',
         'title_full' => 'Daşary ýurt döwletleriniň parlamentleri bilen parlamentara dostluk toparlary'
     ],
 

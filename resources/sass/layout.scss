@@ -76,7 +76,9 @@
         position: relative;
         
         .nav_block{
-            column-gap: 50px;
+            column-gap: 25px;
+            min-width: 90%;
+            justify-content: space-between;
 
             .nav_button_wrapper{
                 text-decoration: none;
