@@ -17,7 +17,7 @@ return [
         'international' => 'International',
         'legislation' => 'Legislation',
         'contacts_page' => 'Contacts',
-        'mejlis_history_page' => 'History of Mejlis',
+        'mejlis_history_page' => 'About Mejlis',
         'convocation_page' => 'List of Deputies of :number convocation',
         'mejlis_committees_page' => 'Mejlis Committees',
         'mejlis_deputies_page' => 'Mejlis Deputies',
@@ -65,7 +65,7 @@ return [
     ],
 
     'mejlis_history_page' => [
-        'title' => 'History of Mejlis',
+        'title' => 'About Mejlis',
         'text_title' => 'Information about the Mejlis of Turkmenistan',
         'text' => '<p style="font-weight: bold; text-align:center">General Information</p>
         <br />

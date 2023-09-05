@@ -17,7 +17,7 @@ return [
         'international' => 'Halkara',
         'legislation' => 'Kanunçylyk',
         'contacts_page' => 'Habarlaşmak üçin',
-        'mejlis_history_page' => 'Mejlisiň taryhy',
+        'mejlis_history_page' => 'Mejlis barada',
         'convocation_page' => ':number çagyrylyşynyň deputatlarynyň<br> sanawy',
         'mejlis_committees_page' => 'Mejlis komitetleri',
         'mejlis_deputies_page' => 'Mejlis deputatlary',
@@ -64,7 +64,7 @@ return [
     ],
 
     'mejlis_history_page' => [
-        'title' => 'Mejlisiň taryhy',
+        'title' => 'Mejlis barada',
         'text_title' => 'Türkmenistanyň Mejlisi hakynda Maglumat',
         'text' => '<p style="font-weight: bold; text-align:center">Umumy maglumat</p>
         <br />

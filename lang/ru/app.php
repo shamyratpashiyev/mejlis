@@ -17,7 +17,7 @@ return [
         'international' => 'Международная деятельность',
         'legislation' => 'Законодательство',
         'contacts_page' => 'Контакты',
-        'mejlis_history_page' => 'История Меджлиса',
+        'mejlis_history_page' => 'О Меджлисе',
         'convocation_page' => 'Список депутатов :number созыва',
         'mejlis_committees_page' => 'Комитеты Меджлиса',
         'mejlis_deputies_page' => 'Депутаты Меджлиса',
@@ -65,7 +65,7 @@ return [
     ],
 
     'mejlis_history_page' => [
-        'title' => 'История Меджлиса',
+        'title' => 'О Меджлисе',
         'text_title' => 'Информация о Меджлисе Туркменистана',
         'text' => '<p style="font-weight: bold; text-align:center">Общая информация</p>
         <br />
