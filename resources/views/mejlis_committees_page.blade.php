@@ -30,16 +30,18 @@
                 <div class="middle_column">
                     <h3 class="block_title">{{ $selected_committee->{'name_' . $current_lang->code} }}</h3>
 
-                    <div class="committee_head_block flex_column">
-                        <div class="committee_member_container flex_column">
-                            <a href="{{ route('single_deputy_page', ['id'=>$selected_committee->committee_head->id, 'lang'=>app()->getLocale()]) }}" class="name">
-                                {{ $selected_committee->committee_head->{'fullname_' . $current_lang->code} }}
-                            </a>
-                            <p class="position_name">
-                                {{ $selected_committee->committee_head->{'position_' . $current_lang->code} }}
-                            </p>
+                    @if($selected_committee->committee_head)
+                        <div class="committee_head_block flex_column">
+                            <div class="committee_member_container flex_column">
+                                <a href="{{ route('single_deputy_page', ['id'=>$selected_committee->committee_head->id, 'lang'=>app()->getLocale()]) }}" class="name">
+                                    {{ $selected_committee->committee_head->{'fullname_' . $current_lang->code} }}
+                                </a>
+                                <p class="position_name">
+                                    {{ $selected_committee->committee_head->{'position_' . $current_lang->code} }}
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    @endif
 
                     <div class="committee_members_block flex_row">
                         @foreach ($selected_committee->deputies as $deputy)
