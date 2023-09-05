@@ -255,14 +255,17 @@ return [
     ],
 
     'tkm' => [
-        'general_information' => 'General Information',
-        'president' => 'President',
-        'history' => 'History',
-        'area' => 'Area',
-        'population' => 'Population',
-        'state_symbols' => 'State Symbols',
-        'constitution' => 'Constitution',
-        'state_holidays' => 'Public holidays and mourning days',
+        'general_information' => 'GENERAL INFORMATION',
+        'foreign_policy' => 'FOREIGN POLICY',
+        'economy' => 'ECONOMY',
+        'social_sphere' => 'SOCIAL SPHERE',
+        'healthcare' => 'HEALTHCARE',
+        'education' => 'EDUCATION',
+        'science' => 'SCIENCE',
+        'sport' => 'SPORT AND INTERNATIONAL SPORT COOPERATION OF TURKMENISTAN',
+        'culture' => 'CULTURE',
+        'tourism' => 'TOURISM',
+        'avaza' => 'AVAZA NATIONAL TOURIST ZONE',
 
         'history_page' => [
             'title' => 'History of Turkmenistan',

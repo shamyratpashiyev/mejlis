@@ -259,14 +259,17 @@ return [
     ],
 
     'tkm' => [
-        'general_information' => 'Umumy Maglumat',
-        'president' => 'Prezidenti',
-        'history' => 'Taryhy',
-        'area' => 'Meýdany',
-        'population' => 'Ilaty',
-        'state_symbols' => 'Döwlet nyşanlary',
-        'constitution' => 'Konstitusiýasy',
-        'state_holidays' => 'Döwlet baýramçylyklary we matam günleri',
+        'general_information' => 'UMUMY MAGLUMATLAR',
+        'foreign_policy' => 'DAŞARY SYÝASAT',
+        'economy' => 'YKDYSADYÝET',
+        'social_sphere' => 'DURMUŞ PUDAGY',
+        'healthcare' => 'SAGLYGY GORAÝYŞ',
+        'education' => 'BILIM',
+        'science' => 'YLYM',
+        'sport' => 'TÜRKMENISTANYŇ HALKARA SPORT HYZMATDAŞLYGY',
+        'culture' => 'MEDENIÝET',
+        'tourism' => 'SYÝAHATÇYLYK',
+        'avaza' => '«AWAZA» MILLI SYÝAHATÇYLYK ZOLAGY',
 
         'history_page' => [
             'title' => 'Türkmenistanyň Taryhy',

@@ -134,7 +134,7 @@
                     </div>
                 </div>
 
-                <a href="{{ route('tkm_general_information_page',['lang'=>app()->getLocale()]) }}" class="nav_button_wrapper hover_underline @if(Route::current()->getPrefix() == '/turkmenistan') active @endif">
+                <a href="{{ route('tkm_general_information',['lang'=>app()->getLocale()]) }}" class="nav_button_wrapper hover_underline @if(Route::current()->getPrefix() == '/turkmenistan') active @endif">
                     <span>@lang('app.layout.tkm_page')</span>
                 </a>
             </div>
@@ -271,7 +271,7 @@
                     </div>
                 </div>
 
-                <a href="{{ route('tkm_general_information_page',['lang'=>app()->getLocale()]) }}" class="nav_button_wrapper hover_underline @if(Route::current()->getPrefix() == '/turkmenistan') active @endif">
+                <a href="{{ route('tkm_general_information',['lang'=>app()->getLocale()]) }}" class="nav_button_wrapper hover_underline @if(Route::current()->getPrefix() == '/turkmenistan') active @endif">
                     <span>@lang('app.layout.tkm_page')</span>
                 </a>
 

@@ -8,22 +8,23 @@ use App\Models\Lang;
 use App\Models\News;
 use App\Models\Deputy;
 use App\Models\Article;
-use App\Models\TkmStateHolidays;
+use App\Models\TkmArea;
 use App\Models\Velayat;
 use App\Models\Committee;
+use App\Models\TkmHistory;
 use App\Models\Convocation;
 use App\Models\MejlisDecree;
 use Illuminate\Http\Request;
+use App\Models\TkmPopulation;
 use App\Models\MejlisActivity;
 use App\Models\FriendshipGroup;
 use App\Models\NewsCooperation;
-use App\Models\ElectionDistrict;
-use App\Models\NewsInternational;
-use App\Models\TkmArea;
 use App\Models\TkmConstitution;
-use App\Models\TkmHistory;
-use App\Models\TkmPopulation;
 use App\Models\TkmStateSymbols;
+use App\Models\ElectionDistrict;
+use App\Models\TkmStateHolidays;
+use App\Models\NewsInternational;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 class SiteController extends Controller
@@ -308,8 +309,28 @@ class SiteController extends Controller
     }
 
     public function tkm_pages(){
+        $sidebar_right = [
+            (object)['id' => '1','routeName'=>'tkm_general_information','name_tm' => __('app.tkm.general_information'),'name_ru' => __('app.tkm.general_information'),'name_en' => __('app.tkm.general_information')],
+            (object)['id' => '2','routeName'=>'tkm_foreign_policy','name_tm' => __('app.tkm.foreign_policy'),'name_ru' => __('app.tkm.foreign_policy'),'name_en' => __('app.tkm.foreign_policy')],
+            (object)['id' => '3','routeName'=>'tkm_economy','name_tm' => __('app.tkm.economy'),'name_ru' => __('app.tkm.economy'),'name_en' => __('app.tkm.economy')],
+            (object)['id' => '4','routeName'=>'tkm_social_sphere','name_tm' => __('app.tkm.social_sphere'),'name_ru' => __('app.tkm.social_sphere'),'name_en' => __('app.tkm.social_sphere')],
+            (object)['id' => '5','routeName'=>'tkm_healthcare','name_tm' => __('app.tkm.healthcare'),'name_ru' => __('app.tkm.healthcare'),'name_en' => __('app.tkm.healthcare')],
+            (object)['id' => '6','routeName'=>'tkm_education','name_tm' => __('app.tkm.education'),'name_ru' => __('app.tkm.education'),'name_en' => __('app.tkm.education')],
+            (object)['id' => '7','routeName'=>'tkm_science','name_tm' => __('app.tkm.science'),'name_ru' => __('app.tkm.science'),'name_en' => __('app.tkm.science')],
+            (object)['id' => '8','routeName'=>'tkm_sport','name_tm' => __('app.tkm.sport'),'name_ru' => __('app.tkm.sport'),'name_en' => __('app.tkm.sport')],
+            (object)['id' => '9','routeName'=>'tkm_culture','name_tm' => __('app.tkm.culture'),'name_ru' => __('app.tkm.culture'),'name_en' => __('app.tkm.culture')],
+            (object)['id' => '10','routeName'=>'tkm_tourism','name_tm' => __('app.tkm.tourism'),'name_ru' => __('app.tkm.tourism'),'name_en' => __('app.tkm.tourism')],
+            (object)['id' => '11','routeName'=>'tkm_avaza','name_tm' => __('app.tkm.avaza'),'name_ru' => __('app.tkm.avaza'),'name_en' => __('app.tkm.avaza')],
+        ];        
+        $this->sidebar_right = (object) $sidebar_right;
 
-        return view('turkmenistan.general_information', $this->data);
+        $tkm_pages = ['tkm_general_information','tkm_foreign_policy','tkm_economy','tkm_social_sphere','tkm_healthcare','tkm_education','tkm_science','tkm_sport','tkm_culture','tkm_tourism','tkm_avaza'];
+        $current_route_name = Route::currentRouteName();
+        $locale = $this->current_lang->code;
+        $this->sidebar_active_page = array_search($current_route_name, $tkm_pages) + 1;
+        $this->current_item = DB::table($current_route_name)->first(["title_{$locale}", "content_{$locale}"]);
+       
+        return view('turkmenistan.tkm_pages', $this->data);
     }
 
     public function paginate($currentPage, $pagesTotal) {

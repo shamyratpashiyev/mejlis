@@ -65,7 +65,17 @@ Route::group(['middleware'=>'localization'],function (){
     Route::get('/gallery', [SiteController::class, 'gallery'])->name('gallery_page');
 
     Route::group(['prefix' => 'turkmenistan'],function (){
-        Route::get('/general-information', [SiteController::class, 'tkm_pages'])->name('tkm_general_information_page');
+        Route::get('/general-information', [SiteController::class, 'tkm_pages'])->name('tkm_general_information');
+        Route::get('/foreign-policy', [SiteController::class, 'tkm_pages'])->name('tkm_foreign_policy');
+        Route::get('/economy', [SiteController::class, 'tkm_pages'])->name('tkm_economy');
+        Route::get('/social-sphere', [SiteController::class, 'tkm_pages'])->name('tkm_social_sphere');
+        Route::get('/healthcare', [SiteController::class, 'tkm_pages'])->name('tkm_healthcare');
+        Route::get('/education', [SiteController::class, 'tkm_pages'])->name('tkm_education');
+        Route::get('/science', [SiteController::class, 'tkm_pages'])->name('tkm_science');
+        Route::get('/sport', [SiteController::class, 'tkm_pages'])->name('tkm_sport');
+        Route::get('/culture', [SiteController::class, 'tkm_pages'])->name('tkm_culture');
+        Route::get('/tourism', [SiteController::class, 'tkm_pages'])->name('tkm_tourism');
+        Route::get('/avaza', [SiteController::class, 'tkm_pages'])->name('tkm_avaza');
     });
 });
 

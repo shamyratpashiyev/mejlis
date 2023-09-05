@@ -10,10 +10,6 @@
                     ['name' => __('app.main.title'), 'url' => route('main_page', ['lang' => app()->getLocale()])],
                     ['name' => __('app.tkm.history_page.title'), 'url' => route(Route::currentRouteName(), ['lang' => app()->getLocale()])],
     ];
-     $sidebar_right = [
-                    (object)['id' => '1','routeName'=>'tkm_general_information_page','name_tm' => __('app.tkm.general_information'),'name_ru' => __('app.tkm.general_information'),'name_en' => __('app.tkm.general_information')],
-    ];
-    $sidebar_right = (object) $sidebar_right;
     
 @endphp
 
@@ -27,15 +23,15 @@
                 <x-sidebar :links-list="$links_list" title="--"/>
 
                 <div class="middle_column flex_column">
-                    <h3 class="column_title"></h3>
+                    <h3 class="column_title">{{ $current_item->{'title_' . app()->getLocale()} }}</h3>
                     
                     <div class="text_wrapper">
-                        
+                        {!! $current_item->{'content_' . app()->getLocale()} !!}
                     </div>
                 </div>
 
                 <x-sidebar-right title="" :items-list="$sidebar_right" 
-                    current-item-id="1" :routeName="0" classes="turkmenistan_pages"/>
+                    :current-item-id="$sidebar_active_page" :routeName="0" classes="turkmenistan_pages"/>
             </div>
         </div>
     </div>
