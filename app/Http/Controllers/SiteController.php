@@ -307,41 +307,9 @@ class SiteController extends Controller
 
     }
 
-    public function tkm_history(){
-        $this->history = TkmHistory::select('title_' . $this->current_lang->code, 'content_' . $this->current_lang->code)->firstOrFail();
-        return view('turkmenistan.history_page', $this->data);
-    }
+    public function tkm_pages(){
 
-    public function tkm_area(){
-        $this->area = TkmArea::select('title_' . $this->current_lang->code, 'content_' . $this->current_lang->code)->firstOrFail();
-        return view('turkmenistan.area_page', $this->data);
-    }
-
-    public function tkm_population(){
-        $this->population = TkmPopulation::select('title_' . $this->current_lang->code, 'content_' . $this->current_lang->code)->firstOrFail();
-        return view('turkmenistan.population_page', $this->data);
-    }
-
-    public function tkm_state_symbols(){
-        $current_lang = $this->current_lang->code;
-
-        $this->symbols = TkmStateSymbols::select([
-            'flag_title_' . $current_lang, 'flag_text_' . $current_lang, 'flag_img',
-            'emblem_title_' . $current_lang, 'emblem_text_' . $current_lang, 'emblem_img',
-            'anthem_description_title_' . $current_lang, 'anthem_description_text_' . $current_lang,
-            'anthem_title_' . $current_lang, 'anthem_text_' . $current_lang,
-            ])->firstOrFail();
-        return view('turkmenistan.state_symbols_page', $this->data);
-    }
-
-    public function tkm_state_holidays(){
-        $this->holidays = TkmStateHolidays::select(['title_' . $this->current_lang->code, 'content_' . $this->current_lang->code])->firstOrFail();
-        return view('turkmenistan.state_holidays_page', $this->data);
-    }
-
-    public function tkm_constitution(){
-        $this->constitution = TkmConstitution::select('title_' . $this->current_lang->code, 'content_' . $this->current_lang->code)->firstOrFail();
-        return view('turkmenistan.constitution_page', $this->data);
+        return view('turkmenistan.general_information', $this->data);
     }
 
     public function paginate($currentPage, $pagesTotal) {

@@ -260,6 +260,7 @@ return [
     ],
 
     'tkm' => [
+        'general_information' => 'Общая информация',
         'president' => 'Президент',
         'history' => 'История',
         'area' => 'Площадь',

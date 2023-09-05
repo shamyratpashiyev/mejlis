@@ -50,52 +50,12 @@
     </div>
 
 
-    <a href="{{ route('tkm_history.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'tkm_history.') ? 'active' : '' }}">
+    <a href="{{ route('tkm_pages.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'tkm_history.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
             <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
         </div>
-        <span>История</span>
-    </a>
-
-    <a href="{{ route('tkm_area.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'tkm_area.') ? 'active' : '' }}">
-        <div class="icon">
-            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
-            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
-        </div>
-        <span>Площадь</span>
-    </a>
-
-    <a href="{{ route('tkm_population.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'tkm_population.') ? 'active' : '' }}">
-        <div class="icon">
-            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
-            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
-        </div>
-        <span>Население</span>
-    </a>
-
-    <a href="{{ route('tkm_state_symbols.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'tkm_state_symbols.') ? 'active' : '' }}">
-        <div class="icon">
-            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
-            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
-        </div>
-        <span>Государственные Символы</span>
-    </a>
-
-    <a href="{{ route('tkm_constitution.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'tkm_constitution.') ? 'active' : '' }}">
-        <div class="icon">
-            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
-            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
-        </div>
-        <span>Конституция</span>
-    </a>
-
-    <a href="{{ route('tkm_state_holidays.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'tkm_state_holidays.') ? 'active' : '' }}">
-        <div class="icon">
-            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
-            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
-        </div>
-        <span>Государственные праздники и дни траура</span>
+        <span>Общая информация</span>
     </a>
 
     <a href="{{ route('articles.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'articles.') ? 'active' : '' }}">

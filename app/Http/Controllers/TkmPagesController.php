@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TkmPopulation;
+use App\Models\TkmHistory;
 use Illuminate\Http\Request;
 
-class TkmPopulationController extends Controller
+class TkmPagesController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $populations_all = TkmPopulation::get();
+        // $histories_all = TkmHistory::get();
 
-        return view('admin.tkm_population.index',['populations_all' => $populations_all]);
+        // return view('admin.tkm_history.index',['histories_all' => $histories_all]);
     }
 
     /**
@@ -46,9 +46,9 @@ class TkmPopulationController extends Controller
      */
     public function edit(string $id)
     {
-        $selected_population = TkmPopulation::firstOrFail();
+        $selected_history = TkmHistory::firstOrFail();
 
-        return view('admin.tkm_population.edit',['selected_population' => $selected_population]);
+        return view('admin.tkm_history.edit',['selected_history' => $selected_history]);
     }
 
     /**
@@ -65,16 +65,17 @@ class TkmPopulationController extends Controller
             'content_en' => 'required',
         ]);
 
-        $selected_population = TkmPopulation::findOrFail($id);
-        $selected_population->title_tm = $request->title_tm;
-        $selected_population->title_ru = $request->title_ru;
-        $selected_population->title_en = $request->title_en;
-        $selected_population->content_tm = $request->content_tm;
-        $selected_population->content_ru = $request->content_ru;
-        $selected_population->content_en = $request->content_en;
-        $selected_population->save();
+        $selected_history = TkmHistory::findOrFail($id);
+        $selected_history->title_tm = $request->title_tm;
+        $selected_history->title_ru = $request->title_ru;
+        $selected_history->title_en = $request->title_en;
+        $selected_history->content_tm = $request->content_tm;
+        $selected_history->content_ru = $request->content_ru;
+        $selected_history->content_en = $request->content_en;
+        $selected_history->save();
 
-        return redirect()->route('tkm_population.index');
+        return redirect()->route('tkm_history.index');
+
     }
 
     /**

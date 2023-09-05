@@ -255,6 +255,7 @@ return [
     ],
 
     'tkm' => [
+        'general_information' => 'General Information',
         'president' => 'President',
         'history' => 'History',
         'area' => 'Area',

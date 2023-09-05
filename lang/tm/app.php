@@ -259,6 +259,7 @@ return [
     ],
 
     'tkm' => [
+        'general_information' => 'Umumy Maglumat',
         'president' => 'Prezidenti',
         'history' => 'Taryhy',
         'area' => 'Meýdany',
