@@ -50,12 +50,92 @@
     </div>
 
 
-    <a href="{{ route('tkm_pages.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'tkm_history.') ? 'active' : '' }}">
+    <a href="{{ route('general_information.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'general_information.') ? 'active' : '' }}">
         <div class="icon">
             <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
             <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
         </div>
         <span>Общая информация</span>
+    </a>
+
+    <a href="{{ route('foreign_policy.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'foreign_policy.') ? 'active' : '' }}">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>Внешняя политика</span>
+    </a>
+
+    <a href="{{ route('economy.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'economy.') ? 'active' : '' }}">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>Экономика</span>
+    </a>
+
+    <a href="{{ route('social_sphere.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'social_sphere.') ? 'active' : '' }}">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>Социальная сфера</span>
+    </a>
+
+    <a href="{{ route('healthcare.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'healthcare.') ? 'active' : '' }}">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>Здравохранение</span>
+    </a>
+
+    <a href="{{ route('education.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'education.') ? 'active' : '' }}">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>Образование</span>
+    </a>
+
+    <a href="{{ route('science.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'science.') ? 'active' : '' }}">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>Наука</span>
+    </a>
+
+    <a href="{{ route('sport.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'sport.') ? 'active' : '' }}">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>Спорт</span>
+    </a>
+
+    <a href="{{ route('culture.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'culture.') ? 'active' : '' }}">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>Культура</span>
+    </a>
+
+    <a href="{{ route('tourism.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'tourism.') ? 'active' : '' }}">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>Туризм</span>
+    </a>
+
+    <a href="{{ route('avaza.index') }}" class="menu__link ml {{ str_contains(Route::currentRouteName(),'avaza.') ? 'active' : '' }}">
+        <div class="icon">
+            <img class="img1 circle" src="{{ asset('admins/img/ico/dark-circle.svg') }}">
+            <img class="img2 circle" src="{{ asset('admins/img/ico/circle.svg') }}">
+        </div>
+        <span>Аваза</span>
     </a>
 
     <a href="{{ route('articles.index') }}" class="menu__link {{ str_contains(Route::currentRouteName(),'articles.') ? 'active' : '' }}">

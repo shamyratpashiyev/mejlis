@@ -8,7 +8,7 @@
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
     <div>
-        Конституция
+        История
     </div>
 </div>
 
@@ -19,7 +19,7 @@
 
 <div class="content">
     <div class="title">
-        <h1 class="title">Конституция</h1>
+        <h1 class="title">История</h1>
 
 
         
@@ -44,20 +44,20 @@
 
     <div class="content__list">
         <!-- list__item -->
-        @foreach($constitutions_all as $constitution )
+        @foreach($items_all as $item )
 
             <div class="list__item">
                 <div class="item__txt">
-                    <div class="w5">{{ $constitution->id }}</div>
-                    <div class="w35"> {{ $constitution->title_tm }} </div>
+                    <div class="w5">{{ $item->id }}</div>
+                    <div class="w35"> {{ $item->title_tm }} </div>
                     <div class="w35">
-                        {!! $constitution->content_tm !!}
+                        {!! $item->content_tm !!}
                     </div>
-                    <div class="date w15"> {{ $constitution->event_date }} </div>
+                    <div class="date w15"> {{ $item->event_date }} </div>
                 </div>
 
                 <div class="item__button w5a5">
-                    <a href="{{ route('tkm_constitution.edit', $constitution->id) }}">
+                    <a href="{{ route("{$current_route_name}.edit", $item->id) }}">
                         <img src="{{ asset('admins/img/ico/edit_v2.svg') }}">
                     </a>
 

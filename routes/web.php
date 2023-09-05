@@ -91,7 +91,51 @@ Route::group(['prefix' => 'adminpanel', 'middleware'=>['auth']],function (){
     Route::resource('mejlis_decrees', MejlisDecreesController::class);
     Route::resource('friendship_groups', FriendshipGroupController::class);
     Route::resource('election_districts', ElectionDistrictController::class);
-    Route::resource('tkm_pages', TkmPagesController::class);
+
+    Route::get('/tkm_general_information', [TkmPagesController::class, 'index'])->name('general_information.index');
+    Route::get('/tkm_general_information/{id}', [TkmPagesController::class, 'edit'])->name('general_information.edit');
+    Route::put('/tkm_general_information/{id}', [TkmPagesController::class, 'update'])->name('general_information.update');
+
+    Route::get('/tkm_foreign_policy', [TkmPagesController::class, 'index'])->name('foreign_policy.index');
+    Route::get('/tkm_foreign_policy/{id}', [TkmPagesController::class, 'edit'])->name('foreign_policy.edit');
+    Route::put('/tkm_foreign_policy/{id}', [TkmPagesController::class, 'update'])->name('foreign_policy.update');
+
+    Route::get('/tkm_economy', [TkmPagesController::class, 'index'])->name('economy.index');
+    Route::get('/tkm_economy/{id}', [TkmPagesController::class, 'edit'])->name('economy.edit');
+    Route::put('/tkm_economy/{id}', [TkmPagesController::class, 'update'])->name('economy.update');
+
+    Route::get('/tkm_social_sphere', [TkmPagesController::class, 'index'])->name('social_sphere.index');
+    Route::get('/tkm_social_sphere/{id}', [TkmPagesController::class, 'edit'])->name('social_sphere.edit');
+    Route::put('/tkm_social_sphere/{id}', [TkmPagesController::class, 'update'])->name('social_sphere.update');
+
+    Route::get('/tkm_healthcare', [TkmPagesController::class, 'index'])->name('healthcare.index');
+    Route::get('/tkm_healthcare/{id}', [TkmPagesController::class, 'edit'])->name('healthcare.edit');
+    Route::put('/tkm_healthcare/{id}', [TkmPagesController::class, 'update'])->name('healthcare.update');
+
+    Route::get('/tkm_education', [TkmPagesController::class, 'index'])->name('education.index');
+    Route::get('/tkm_education/{id}', [TkmPagesController::class, 'edit'])->name('education.edit');
+    Route::put('/tkm_education/{id}', [TkmPagesController::class, 'update'])->name('education.update');
+
+    Route::get('/tkm_science', [TkmPagesController::class, 'index'])->name('science.index');
+    Route::get('/tkm_science/{id}', [TkmPagesController::class, 'edit'])->name('science.edit');
+    Route::put('/tkm_science/{id}', [TkmPagesController::class, 'update'])->name('science.update');
+
+    Route::get('/tkm_sport', [TkmPagesController::class, 'index'])->name('sport.index');
+    Route::get('/tkm_sport/{id}', [TkmPagesController::class, 'edit'])->name('sport.edit');
+    Route::put('/tkm_sport/{id}', [TkmPagesController::class, 'update'])->name('sport.update');
+
+    Route::get('/tkm_culture', [TkmPagesController::class, 'index'])->name('culture.index');
+    Route::get('/tkm_culture/{id}', [TkmPagesController::class, 'edit'])->name('culture.edit');
+    Route::put('/tkm_culture/{id}', [TkmPagesController::class, 'update'])->name('culture.update');
+
+    Route::get('/tkm_tourism', [TkmPagesController::class, 'index'])->name('tourism.index');
+    Route::get('/tkm_tourism/{id}', [TkmPagesController::class, 'edit'])->name('tourism.edit');
+    Route::put('/tkm_tourism/{id}', [TkmPagesController::class, 'update'])->name('tourism.update');
+
+    Route::get('/tkm_avaza', [TkmPagesController::class, 'index'])->name('avaza.index');
+    Route::get('/tkm_avaza/{id}', [TkmPagesController::class, 'edit'])->name('avaza.edit');
+    Route::put('/tkm_avaza/{id}', [TkmPagesController::class, 'update'])->name('avaza.update');
+    
     Route::get('/settings',[AdminController::class, 'settings'])->name('settings');
     Route::post('/langs-update',[AdminController::class, 'langs_update'])->name('langs_update');
 });
