@@ -55,7 +55,7 @@
                 <div class="w5">{{ $committee->id }}</div>
                 <div class="w35">{{ $committee->name_tm }}</div>
                 <div class="w35">
-                    {{ $committee->committee_head->fullname_tm }}
+                    {{ $committee->committee_head?->fullname_tm }}
                 </div>
                 <div class="date w15">{{ $committee->created_at }} </div>
             </div>
