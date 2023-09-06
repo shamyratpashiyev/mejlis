@@ -360,6 +360,18 @@
         </div>
     </footer>
 
+    @if($current_lang->code == 'ru')
+    <style>
+        .bottom_header .inner_wrapper .nav_block {
+            width: 100%;
+            column-gap: 0;
+        }
+
+        .bottom_header .inner_wrapper .nav_block .nav_button_wrapper{
+            flex-shrink: 0;
+        }
+    </style>
+    @endif
 
     <script>
         $(document).ready(()=>{

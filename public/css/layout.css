@@ -23,7 +23,8 @@
         font-family: 'OpenSansExtraBold', sans-serif;
         font-size: 20px;
         margin: 0;
-        color: var(--text_black_default); }
+        color: var(--text_black_default);
+        text-align: center; }
     .top_header .inner_wrapper .lang_wrapper {
       position: absolute;
       right: 0;
