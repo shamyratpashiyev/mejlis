@@ -3,14 +3,14 @@
 @section('crumbs')
 
 
-<div class="crumbs">
+{{-- <div class="crumbs">
     <img src="{{ asset('admins/img/ico/purple-home.svg') }}" alt="">
 
     <img src="{{ asset('admins/img/ico/arrow.svg') }}">
     <div>
         История
     </div>
-</div>
+</div> --}}
 
 @endsection
 
@@ -19,7 +19,7 @@
 
 <div class="content">
     <div class="title">
-        <h1 class="title">История</h1>
+        {{-- <h1 class="title">История</h1> --}}
 
 
         

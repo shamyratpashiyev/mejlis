@@ -5,7 +5,7 @@
 <!--====================================
                         CRUMBS SECTION
             =====================================-->
-<div class="crumbs">
+{{-- <div class="crumbs">
     <img src="{{ asset('admins/img/ico/purple-home.svg') }}" alt="">
 
 
@@ -23,7 +23,7 @@
 
 
 
-</div>
+</div> --}}
 
 @endsection
 
@@ -32,9 +32,9 @@
 
 <div class="content">
 
-    <div class="title">
+    {{-- <div class="title">
         <h1 class="title">Изменение Новости</h1>
-    </div>
+    </div> --}}
 
     <form action="{{ route("{$current_route_name}.update", $selected_item->id) }}" method="POST" class="edit__form" enctype="multipart/form-data">
         @csrf
