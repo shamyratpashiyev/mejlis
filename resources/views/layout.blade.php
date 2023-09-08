@@ -22,8 +22,7 @@
         <div class="inner_wrapper flex_column">
             <div class="mejlis_description_wrapper">
                 <p>
-                    Türkmenistanyň Mejlisi(Parlament) kanun çykaryjy häkimiýeti
-                    amala aşyrýan iň ýokary wekilçilikli edaradyr.
+                    @lang('app.layout.mejlis_description')
                 </p>
             </div>
 

@@ -40,7 +40,9 @@ return [
                         friendship groups with the parliaments of dozens of countries. The Mejlis of Turkmenistan actively participates in the work of 
                         a number of parliamentary assemblies. The Mejlis of Turkmenistan is a member of the OSCE Parliamentary Assembly and Inter-Parliamentary Union,
                         which are authoritative parliamentary organizations.",
-        'footer_address_value' => 'Ashgabat, Independence Ave., 110'
+        'footer_address_value' => 'Ashgabat, Independence Ave., 110',
+        'mejlis_description' => 'Türkmenistanyň Mejlisi(Parlament) kanun çykaryjy häkimiýeti
+                                    amala aşyrýan iň ýokary wekilçilikli edaradyr.'
     ],
 
     'main' => [
