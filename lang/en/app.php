@@ -41,8 +41,7 @@ return [
                         a number of parliamentary assemblies. The Mejlis of Turkmenistan is a member of the OSCE Parliamentary Assembly and Inter-Parliamentary Union,
                         which are authoritative parliamentary organizations.",
         'footer_address_value' => 'Ashgabat, Independence Ave., 110',
-        'mejlis_description' => 'Türkmenistanyň Mejlisi(Parlament) kanun çykaryjy häkimiýeti
-                                    amala aşyrýan iň ýokary wekilçilikli edaradyr.'
+        'mejlis_description' => 'The Mejlis (Parliament) of Turkmenistan is a legislature representative body'
     ],
 
     'main' => [

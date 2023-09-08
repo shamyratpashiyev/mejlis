@@ -40,8 +40,7 @@ return [
                         Türkmenistanyň Mejlisi parlamentara assambleýalaryň birnäçesiniň işine işjeň gatnaşýar. Türkmenistanyň Mejlisi dünýäniň 
                         abraýly parlamentara guramalary bolan ÝHHG-nyň Parlament Assambleýasynyň we Parlamentara Bileleşiginiň agzasydyr.",
         'footer_address_value' => 'Aşgabat ş., Garaşsyzlyk şaýoly, 110',
-        'mejlis_description' => 'Türkmenistanyň Mejlisi(Parlament) kanun çykaryjy häkimiýeti
-                                    amala aşyrýan iň ýokary wekilçilikli edaradyr.'
+        'mejlis_description' => 'Türkmenistanyň Mejlisi (Parlament) kanun çykaryjy häkimiýeti amala aşyrýan wekilçilikli edaradyr'
     ],
 
     'main' => [
