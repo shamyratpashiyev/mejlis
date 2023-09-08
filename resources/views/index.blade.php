@@ -7,6 +7,23 @@
 @section('content')
 <div class="sections_container">
 
+    <div class="slider_section">
+        <div class="inner_wrapper flex_row">
+
+            <div class="slider_container flex_column">
+                <div class="image_wrapper flex_row">
+                    <img src="{{ asset('img/flag_emblem.png') }}" alt="">
+                </div>
+                <div class="text_wrapper flex_column">
+                    <h2 class="slider_title">Türkmenistanyň Prezidenti<br/> Serdar Berdimuhamedow:</h2>
+                    <p class="slider_description">"Türkmenistanyň hoşniýetli goňşyçylyga, özara hormatlamaga we deň-hukuklylyga, dünýäniň ähli ýurtlary bilen özara bähbitli
+                        hyzmatdaşygy ýola goýmaga esaslanan Bitaraplyk syýasatyny dowam eder".</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
     <div class="news_section_main flex_row">
         <div class="inner_wrapper flex_column">
             <div class="title_row flex_row">
