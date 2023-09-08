@@ -20,6 +20,13 @@
 <body>
     <div class="top_header flex_row">
         <div class="inner_wrapper flex_column">
+            <div class="mejlis_description_wrapper">
+                <p>
+                    Türkmenistanyň Mejlisi(Parlament) kanun çykaryjy häkimiýeti
+                    amala aşyrýan iň ýokary wekilçilikli edaradyr.
+                </p>
+            </div>
+
             <a href="{{ route('main_page',['lang'=>app()->getLocale()]) }}" class="logo_wrapper flex_column">
                 <img src="{{ asset('img/mejlis_building.svg') }}" alt="">
                 <h3 class="logo_text">@lang('app.layout.logo_title')</h3>
@@ -313,7 +320,7 @@
                 </div>
 
                 <h4 class="column_title">@lang('app.layout.logo_title')</h4>
-                <p class="column_description">@lang('app.layout.logo_description')</p>
+                {{-- <p class="column_description">@lang('app.layout.logo_description')</p> --}}
                 <span class="copyright_text">{{ date('Y') }} @lang('app.layout.copyright_text')</span>
             </a>
 

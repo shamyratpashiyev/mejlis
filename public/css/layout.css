@@ -9,10 +9,19 @@
   z-index: 101;
   position: relative; }
   .top_header .inner_wrapper {
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     width: var(--default_width);
     align-items: center; }
+    .top_header .inner_wrapper .mejlis_description_wrapper {
+      position: absolute;
+      left: 0;
+      width: 22%; }
+      .top_header .inner_wrapper .mejlis_description_wrapper p {
+        margin: 0;
+        font-family: 'OpenSansBold', sans-serif;
+        text-align: center;
+        font-size: 17px; }
     .top_header .inner_wrapper .logo_wrapper {
       row-gap: 10px;
       align-items: center; }
@@ -302,7 +311,7 @@ footer {
       footer .inner_wrapper .left_column .copyright_text {
         font-size: 12px;
         font-family: 'OpenSansRegular', sans-serif;
-        margin: 0;
+        margin: 15px 0 0 0;
         text-align: center; }
     footer .inner_wrapper .middle_column {
       width: 772px;

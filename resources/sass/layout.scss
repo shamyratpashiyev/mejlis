@@ -11,10 +11,23 @@
     position: relative;
 
     .inner_wrapper{
-        justify-content: space-between;
+        justify-content: center;
         position: relative;
         width: var(--default_width);
         align-items: center;
+
+        .mejlis_description_wrapper{
+            position: absolute;
+            left: 0;
+            width: 22%;
+
+            p{
+                margin: 0;
+                font-family: 'OpenSansBold', sans-serif;
+                text-align: center;
+                font-size: 17px;
+            }
+        }
 
         .logo_wrapper{
             row-gap: 10px;
@@ -453,7 +466,7 @@ footer {
             .copyright_text{
                 font-size: 12px;
                 font-family: 'OpenSansRegular', sans-serif;
-                margin: 0;
+                margin: 15px 0 0 0;
                 text-align: center;
 
             }
