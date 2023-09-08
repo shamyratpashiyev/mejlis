@@ -16,11 +16,11 @@
                 </div>
                 <div class="text_wrapper flex_column">
                     <h2 class="slider_title">Türkmenistanyň Prezidenti<br/> Serdar Berdimuhamedow:</h2>
-                    <p class="slider_description">"Türkmenistanyň hoşniýetli goňşyçylyga, özara hormatlamaga we deň-hukuklylyga, dünýäniň ähli ýurtlary bilen özara bähbitli
-                        hyzmatdaşygy ýola goýmaga esaslanan Bitaraplyk syýasatyny dowam eder".</p>
+                    <p class="slider_description">«Türkmenistanyň hoşniýetli goňşuçylyga, özara hormatlamaga we deň-hukuklylyga, dünýäniň ähli ýurtlary bilen özara bähbitli
+                        hyzmatdaşygy ýola goýmaga esaslanan Bitaraplyk syýasatyny dowam eder».</p>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
