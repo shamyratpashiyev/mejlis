@@ -7,7 +7,7 @@
 @section('content')
 <div class="sections_container">
 
-    <div class="slider_section">
+    {{-- <div class="slider_section">
         <div class="inner_wrapper flex_row">
 
             <div class="slider_container flex_column">
@@ -21,7 +21,7 @@
             </div>
 
         </div>
-    </div>
+    </div> --}}
 
     <div class="news_section_main flex_row">
         <div class="inner_wrapper flex_column">
