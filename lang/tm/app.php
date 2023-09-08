@@ -61,6 +61,12 @@ return [
         'mary_region' => 'Mary welaýaty',
         'legislation_section' => 'Soňky kabul edilen kanunlar',
         'websites_section' => 'Web Saýtlar',
+
+        'slider_section' => [
+            'title' => 'Türkmenistanyň Prezidenti<br/> Serdar Berdimuhamedow:',
+            'text' => '«Türkmenistanyň hoşniýetli goňşuçylyga, özara hormatlamaga we deň-hukuklylyga, dünýäniň ähli ýurtlary bilen özara bähbitli
+                        hyzmatdaşygy ýola goýmaga esaslanan Bitaraplyk syýasatyny dowam eder».'
+        ],
     ],
 
     'mejlis_history_page' => [

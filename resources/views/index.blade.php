@@ -15,9 +15,8 @@
                     <img src="{{ asset('img/flag_emblem.png') }}" alt="">
                 </div>
                 <div class="text_wrapper flex_column">
-                    <h2 class="slider_title">Türkmenistanyň Prezidenti<br/> Serdar Berdimuhamedow:</h2>
-                    <p class="slider_description">«Türkmenistanyň hoşniýetli goňşuçylyga, özara hormatlamaga we deň-hukuklylyga, dünýäniň ähli ýurtlary bilen özara bähbitli
-                        hyzmatdaşygy ýola goýmaga esaslanan Bitaraplyk syýasatyny dowam eder».</p>
+                    <h2 class="slider_title">@lang('app.main.slider_section.title')</h2>
+                    <p class="slider_description">@lang('app.main.slider_section.text')</p>
                 </div>
             </div>
 

@@ -62,6 +62,12 @@ return [
         'mary_region' => 'Mary Province',
         'legislation_section' => 'Passed Laws',
         'websites_section' => 'Websites',
+
+        'slider_section' => [
+            'title' => 'President of Turkmenistan<br/> Serdar Berdimuhamedov:',
+            'text' => '«Turkmenistan will continue the policy of neutrality based on good neighborliness, mutual respect and equality, 
+                        establishing mutually beneficial partnerships with all countries of the world».'
+        ],
     ],
 
     'mejlis_history_page' => [
