@@ -317,12 +317,12 @@
                 <span class="copyright_text">{{ date('Y') }} @lang('app.layout.copyright_text')</span>
             </a>
 
-            <div class="middle_column flex_column">
+            {{-- <div class="middle_column flex_column">
                 <h3 class="column_title">@lang('app.layout.about_mejlis')</h3>
                 <p class="column_description">
                     &emsp;&emsp;@lang('app.layout.footer_text')
                 </p>
-            </div>
+            </div> --}}
 
             <div class="right_column flex_column">
                 <a href="{{ route('contacts_page',['lang'=>app()->getLocale()]) }}" class="column_title">@lang('app.layout.contacts_page')</a>
