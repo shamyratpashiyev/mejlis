@@ -9,7 +9,7 @@
   z-index: 101;
   position: relative; }
   .top_header .inner_wrapper {
-    justify-content: center;
+    justify-content: flex-end;
     position: relative;
     width: var(--default_width);
     align-items: center; }
@@ -21,7 +21,8 @@
         margin: 0;
         font-family: 'OpenSansBold', sans-serif;
         text-align: center;
-        font-size: 17px; }
+        font-size: 17px;
+        color: #00008b; }
     .top_header .inner_wrapper .logo_wrapper {
       row-gap: 10px;
       align-items: center; }

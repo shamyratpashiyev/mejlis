@@ -11,7 +11,7 @@
     position: relative;
 
     .inner_wrapper{
-        justify-content: center;
+        justify-content: flex-end;
         position: relative;
         width: var(--default_width);
         align-items: center;
@@ -26,6 +26,7 @@
                 font-family: 'OpenSansBold', sans-serif;
                 text-align: center;
                 font-size: 17px;
+                color: #00008b;
             }
         }
 
