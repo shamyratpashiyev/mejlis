@@ -20,7 +20,7 @@
 <body>
     <div class="top_header flex_row">
         <div class="inner_wrapper flex_column">
-            <div class="mejlis_description_wrapper">
+            <div class="mejlis_description_wrapper flex_column">
                 <p>
                     @lang('app.layout.mejlis_description')
                 </p>
