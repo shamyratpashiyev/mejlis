@@ -14,7 +14,7 @@ class MejlisActivitiesController extends Controller
      */
     public function index()
     {
-        $activities_all = MejlisActivity::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, event_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
+        $activities_all = MejlisActivity::orderBy('created_at','DESC')->select(['id', 'title_tm', 'event_date'])->get();
         return view('admin.mejlis_activities.index', ['activities_all' => $activities_all]);
     }
 

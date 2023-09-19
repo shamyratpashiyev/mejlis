@@ -14,7 +14,7 @@ class CodesController extends Controller
      */
     public function index()
     {
-        $codes_all = Code::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, published_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
+        $codes_all = Code::orderBy('created_at','DESC')->select(['id', 'title_tm', 'published_date'])->get();
         return view('admin.codes.index', ['codes_all' => $codes_all]);
     }
 

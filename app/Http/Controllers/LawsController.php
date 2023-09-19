@@ -14,7 +14,7 @@ class LawsController extends Controller
      */
     public function index()
     {
-        $laws_all = Law::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, published_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
+        $laws_all = Law::orderBy('created_at','DESC')->select(['id', 'title_tm', 'published_date'])->get();
         return view('admin.laws.index', ['laws_all' => $laws_all]);
     }
 

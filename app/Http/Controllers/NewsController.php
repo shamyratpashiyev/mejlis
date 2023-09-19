@@ -16,7 +16,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $news_all = News::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, event_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
+        $news_all = News::orderBy('created_at','DESC')->select(['id', 'title_tm', 'event_date'])->get();
         return view('admin.news.index',['news_all' => $news_all]);
     }
 

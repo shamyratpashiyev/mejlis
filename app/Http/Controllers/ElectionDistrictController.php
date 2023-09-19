@@ -11,7 +11,7 @@ class ElectionDistrictController extends Controller
 {
     public function index()
     {
-        $districts_all = ElectionDistrict::orderBy('created_at','DESC')->select(DB::raw('id, name_tm, created_at, SUBSTRING(borders_tm, 1, 150) AS borders_tm'))->get();
+        $districts_all = ElectionDistrict::orderBy('created_at','DESC')->select(['id', 'name_tm', 'created_at'])->get();
         return view('admin.election_districts.index', ['districts_all' => $districts_all]);
     }
 

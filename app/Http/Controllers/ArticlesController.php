@@ -15,7 +15,7 @@ class ArticlesController extends Controller
      */
     public function index()
     {
-        $articles_all = Article::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, published_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
+        $articles_all = Article::orderBy('created_at','DESC')->select(['id', 'title_tm', 'published_date'])->get();
         return view('admin.articles.index', ['articles_all' => $articles_all]);
     }
 
