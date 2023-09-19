@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\LawsStore;
 use App\Models\Law;
 use Illuminate\Http\Request;
+use App\Http\Requests\LawsStore;
+use Illuminate\Support\Facades\DB;
 
 class LawsController extends Controller
 {
@@ -13,7 +14,7 @@ class LawsController extends Controller
      */
     public function index()
     {
-        $laws_all = Law::orderBy('created_at','DESC')->get();
+        $laws_all = Law::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, published_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
         return view('admin.laws.index', ['laws_all' => $laws_all]);
     }
 

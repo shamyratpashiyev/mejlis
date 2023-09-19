@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\NewsCooperation;
 use App\Http\Requests\NewsStore;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
 class NewsCooperationController extends Controller
@@ -14,7 +15,7 @@ class NewsCooperationController extends Controller
      */
     public function index()
     {
-        $news_all = NewsCooperation::orderBy('created_at','DESC')->get();
+        $news_all = NewsCooperation::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, event_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
 
         return view('admin.news_coop.index', ['news_all' => $news_all]);
     }

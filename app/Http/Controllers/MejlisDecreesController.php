@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\MejlisDecreesStore;
 use App\Models\MejlisDecree;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Http\Requests\MejlisDecreesStore;
 
 class MejlisDecreesController extends Controller
 {
@@ -13,7 +14,7 @@ class MejlisDecreesController extends Controller
      */
     public function index()
     {
-        $decrees_all = MejlisDecree::orderBy('created_at','DESC')->get();
+        $decrees_all = MejlisDecree::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, published_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
         return view('admin.mejlis_decrees.index', ['decrees_all' => $decrees_all]);
     }
 

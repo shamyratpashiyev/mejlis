@@ -15,7 +15,7 @@ class CommitteesController extends Controller
      */
     public function index()
     {
-        $committees_all = Committee::orderBy('created_at','DESC')->get();
+        $committees_all = Committee::with(['committee_head:id,fullname_tm'])->select(['id','name_tm','created_at','committee_head_id'])->orderBy('created_at','DESC')->get();
         return view('admin.committees.index', ['committees_all' => $committees_all]);
     }
 

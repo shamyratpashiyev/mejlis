@@ -38,7 +38,7 @@
     <div class="list__head">
         <div class="name">
             <div class="w5">№</div>
-            <div class="w35">Название</div>
+            <div class="w35">Имя</div>
             <div class="w35">Должность</div>
             <div class="date w15">Год Рождения</div>
         </div>

@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\MejlisActivityStore;
 use Illuminate\Http\Request;
 use App\Models\MejlisActivity;
+use Illuminate\Support\Facades\DB;
+use App\Http\Requests\MejlisActivityStore;
 
 class MejlisActivitiesController extends Controller
 {
@@ -13,7 +14,7 @@ class MejlisActivitiesController extends Controller
      */
     public function index()
     {
-        $activities_all = MejlisActivity::orderBy('created_at','DESC')->get();
+        $activities_all = MejlisActivity::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, event_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
         return view('admin.mejlis_activities.index', ['activities_all' => $activities_all]);
     }
 

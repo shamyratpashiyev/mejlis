@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\News;
 use Illuminate\Http\Request;
 use App\Http\Requests\NewsStore;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\File;
 
@@ -15,8 +16,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $news_all = News::orderBy('created_at','DESC')->get();
-
+        $news_all = News::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, event_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
         return view('admin.news.index',['news_all' => $news_all]);
     }
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Requests\ArticleStore;
 use Illuminate\Support\Facades\File;
 
@@ -14,7 +15,7 @@ class ArticlesController extends Controller
      */
     public function index()
     {
-        $articles_all = Article::orderBy('created_at','DESC')->get();
+        $articles_all = Article::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, published_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
         return view('admin.articles.index', ['articles_all' => $articles_all]);
     }
 

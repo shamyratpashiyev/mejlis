@@ -16,7 +16,7 @@ class DeputyController extends Controller
      */
     public function index()
     {
-        $deputies_all = Deputy::orderBy('created_at','DESC')->get();
+        $deputies_all = Deputy::orderBy('created_at','DESC')->select(['id','fullname_tm','position_tm','birth_year_tm'])->get();
         return view('admin.deputies.index', ['deputies_all' => $deputies_all]);
     }
 

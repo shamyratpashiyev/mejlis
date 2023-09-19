@@ -3,18 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\TkmAvaza;
+use App\Models\TkmSport;
 use App\Models\TkmCulture;
 use App\Models\TkmEconomy;
-use App\Models\TkmEducation;
-use App\Models\TkmForeignPolicy;
 use App\Models\TkmHistory;
-use Illuminate\Http\Request;
-use App\Models\TkmGeneralInformation;
-use App\Models\TkmHealthcare;
 use App\Models\TkmScience;
-use App\Models\TkmSocialSphere;
-use App\Models\TkmSport;
 use App\Models\TkmTourism;
+use App\Models\TkmEducation;
+use Illuminate\Http\Request;
+use App\Models\TkmHealthcare;
+use App\Models\TkmSocialSphere;
+use App\Models\TkmForeignPolicy;
+use Illuminate\Support\Facades\DB;
+use App\Models\TkmGeneralInformation;
 use Illuminate\Support\Facades\Route;
 
 class TkmPagesController extends Controller
@@ -30,48 +31,48 @@ class TkmPagesController extends Controller
     {
         switch($this->current_route_name){
             case 'general_information':
-                $this->items_all = TkmGeneralInformation::get();
+                $this->items_all = TkmGeneralInformation::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
             case 'foreign_policy':
-                $this->items_all = TkmForeignPolicy::get();
+                $this->items_all = TkmForeignPolicy::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
             case 'economy':
-                $this->items_all = TkmEconomy::get();
+                $this->items_all = TkmEconomy::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
 
             case 'social_sphere':
-                $this->items_all = TkmSocialSphere::get();
+                $this->items_all = TkmSocialSphere::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
 
             case 'healthcare':
-                $this->items_all = TkmHealthcare::get();
+                $this->items_all = TkmHealthcare::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
 
             case 'education':
-                $this->items_all = TkmEducation::get();
+                $this->items_all = TkmEducation::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
 
             case 'science':
-                $this->items_all = TkmScience::get();
+                $this->items_all = TkmScience::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
 
             case 'sport':
-                $this->items_all = TkmSport::get();
+                $this->items_all = TkmSport::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
 
             case 'culture':
-                $this->items_all = TkmCulture::get();
+                $this->items_all = TkmCulture::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
 
             case 'tourism':
-                $this->items_all = TkmTourism::get();
+                $this->items_all = TkmTourism::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
 
             case 'avaza':
-                $this->items_all = TkmAvaza::get();
+                $this->items_all = TkmAvaza::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
         }
-
+        // dd($this->items_all);
         return view('admin.tkm_pages.index',$this->data);
     }
 

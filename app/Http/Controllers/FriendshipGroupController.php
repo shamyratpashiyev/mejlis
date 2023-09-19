@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Deputy;
 use Illuminate\Http\Request;
 use App\Models\FriendshipGroup;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use App\Http\Requests\FriendshipGroupsStore;
 
@@ -15,7 +16,7 @@ class FriendshipGroupController extends Controller
      */
     public function index()
     {
-        $groups_all = FriendshipGroup::orderBy('created_at','DESC')->get();
+        $groups_all = FriendshipGroup::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, published_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
         return view('admin.friendship_groups.index', ['groups_all' => $groups_all]);
     }
 

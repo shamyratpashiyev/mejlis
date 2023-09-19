@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Code;
 use Illuminate\Http\Request;
 use App\Http\Requests\CodesStore;
+use Illuminate\Support\Facades\DB;
 
 class CodesController extends Controller
 {
@@ -13,7 +14,7 @@ class CodesController extends Controller
      */
     public function index()
     {
-        $codes_all = Code::orderBy('created_at','DESC')->get();
+        $codes_all = Code::orderBy('created_at','DESC')->select(DB::raw('id, title_tm, published_date, SUBSTRING(description_tm, 1, 150) AS description_tm'))->get();
         return view('admin.codes.index', ['codes_all' => $codes_all]);
     }
 

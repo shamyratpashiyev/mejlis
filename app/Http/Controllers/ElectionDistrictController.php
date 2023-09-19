@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ElectionDistrictStore;
 use Illuminate\Http\Request;
 use App\Models\ElectionDistrict;
+use Illuminate\Support\Facades\DB;
+use App\Http\Requests\ElectionDistrictStore;
 
 class ElectionDistrictController extends Controller
 {
     public function index()
     {
-        $districts_all = ElectionDistrict::orderBy('created_at','DESC')->get();
+        $districts_all = ElectionDistrict::orderBy('created_at','DESC')->select(DB::raw('id, name_tm, created_at, SUBSTRING(borders_tm, 1, 150) AS borders_tm'))->get();
         return view('admin.election_districts.index', ['districts_all' => $districts_all]);
     }
 
