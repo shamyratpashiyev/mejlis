@@ -72,7 +72,6 @@ class TkmPagesController extends Controller
                 $this->items_all = TkmAvaza::select(DB::raw('id, title_tm, SUBSTRING(content_tm, 1, 150) AS content_tm'))->get();
                 break;
         }
-        // dd($this->items_all);
         return view('admin.tkm_pages.index',$this->data);
     }
 

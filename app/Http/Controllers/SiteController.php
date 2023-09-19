@@ -38,7 +38,6 @@ class SiteController extends Controller
     public function index(){
         $news_all = News::orderBy('event_date','desc')->limit(11)->select(['id',"title_{$this->current_lang->code}",
                                                                 "description_{$this->current_lang->code}", 'event_date', 'image'])->get();
-        // dd($news_all);
         $this->news_big = $news_all->slice(0,1)->first();
         $this->news_small = $news_all->slice(1,6);
         $this->news_medium = $news_all->slice(7);
