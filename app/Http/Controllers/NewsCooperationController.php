@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\NewsCooperation;
 use App\Http\Requests\NewsStore;
+use App\Http\Requests\NewsUpdate;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
@@ -91,7 +92,7 @@ class NewsCooperationController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(NewsStore $request, string $id)
+    public function update(NewsUpdate $request, string $id)
     {
         $selected_news = NewsCooperation::findOrFail($id);
         

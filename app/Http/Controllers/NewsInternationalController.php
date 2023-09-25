@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\NewsStore;
+use App\Http\Requests\NewsUpdate;
 use App\Models\NewsInternational;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -91,7 +92,7 @@ class NewsInternationalController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(NewsStore $request, string $id)
+    public function update(NewsUpdate $request, string $id)
     {
         $selected_news = NewsInternational::findOrFail($id);
         

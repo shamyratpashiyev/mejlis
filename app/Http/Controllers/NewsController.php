@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\News;
 use Illuminate\Http\Request;
 use App\Http\Requests\NewsStore;
+use App\Http\Requests\NewsUpdate;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\File;
@@ -71,16 +72,8 @@ class NewsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(NewsStore $request, string $id)
+    public function update(NewsUpdate $request, string $id)
     {
-        $request->validate([ 
-            'title_tm' => 'required',
-            'title_ru' => 'required',
-            'title_en' => 'required',
-            'description_tm' => 'required',
-            'description_ru' => 'required',
-            'description_en' => 'required',
-        ]);
         $selected_news = News::findOrFail($id);
         
         $selected_news->title_tm = $request->title_tm;
