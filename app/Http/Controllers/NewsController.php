@@ -73,6 +73,14 @@ class NewsController extends Controller
      */
     public function update(NewsStore $request, string $id)
     {
+        $request->validate([ 
+            'title_tm' => 'required',
+            'title_ru' => 'required',
+            'title_en' => 'required',
+            'description_tm' => 'required',
+            'description_ru' => 'required',
+            'description_en' => 'required',
+        ]);
         $selected_news = News::findOrFail($id);
         
         $selected_news->title_tm = $request->title_tm;
