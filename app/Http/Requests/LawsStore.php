@@ -24,10 +24,10 @@ class LawsStore extends FormRequest
         return [
             'title_tm' => 'required',
             'title_ru' => 'required',
-            'title_en' => 'required',
+            // 'title_en' => 'required',
             'description_tm' => 'required',
             'description_ru' => 'required',
-            'description_en' => 'required',
+            // 'description_en' => 'required',
             'published_date' => 'required|date'
         ];
     }
